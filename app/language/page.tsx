@@ -8,7 +8,7 @@ export default function LanguagePage() {
     {
       title: "C++",
       description: "A powerful general-purpose programming language.",
-      link: "/cpp",
+      link: "language/cplusplus",
     },
     {
       title: "JavaScript",
