@@ -17,6 +17,11 @@ export default function Home() {
       src: "/backend.png",
       href: "/cloud",
     },
+    {
+      title: "CP",
+      src: "/cp.png",
+      href: "/cp",
+    },
   ];
   
 
