@@ -2,6 +2,11 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { oneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { okaidia } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { dark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { IconCheck, IconCopy } from "@tabler/icons-react";
 
 type CodeBlockProps = {
@@ -87,7 +92,12 @@ export const CodeBlock = ({
       </div>
       <SyntaxHighlighter
         language={activeLanguage}
-        style={atomDark}
+        // style={atomDark}
+        // style={oneDark}
+        // style={okaidia}
+        style={dracula}
+        // style={nightOwl}
+        // style={dark}
         customStyle={{
           margin: 0,
           padding: 0,
