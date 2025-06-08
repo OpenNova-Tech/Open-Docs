@@ -6,12 +6,13 @@ import { InfiniteSlider } from '@/components/ui/infinite-slider'
 import { ProgressiveBlur } from '@/components/ui/progressive-blur'
 import { cn } from '@/lib/utils'
 import { Menu, X } from 'lucide-react'
+import { GradientButton } from './ui/gradient-button'
 
 export function HeroSection() {
 	return (
 		<>
 			{/* <HeroHeader /> */}
-			<main className="overflow-x-hidden overflow-y-hidden">
+			<main className="h-screen mt-40 md:mt-0 overflow-x-hidden overflow-y-hidden">
 				<section>
 					<div className="pb-24 pt-12 md:pb-32 lg:pb-56 lg:pt-44">
 						<div className="relative mx-auto flex max-w-6xl flex-col px-6 lg:block">
@@ -19,25 +20,13 @@ export function HeroSection() {
 								<h1 className="mt-8 max-w-2xl text-balance text-4xl font-medium md:text-5xl lg:mt-16 xl:text-6xl">Project Amethyst</h1>
 								<p className="mt-8 max-w-2xl text-pretty text-lg">Building the coolest documentation website.</p>
 
-								<div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start">
-									<Button
-										asChild
-										size="lg"
-										className="px-5 text-base">
-										<Link href="#link">
-											<span className="text-nowrap">Read Docs</span>
-										</Link>
-									</Button>
-									<Button
-										key={2}
-										asChild
-										size="lg"
-										variant="ghost"
-										className="px-5 text-base">
-										<Link href="#link">
-											<span className="text-nowrap">Support</span>
-										</Link>
-									</Button>
+								 <div className="flex gap-8 mt-10">
+									<Link href='/docs'>
+										<GradientButton>Read Docs</GradientButton>
+									</Link>
+									<Link href='/support'>
+										<GradientButton variant="variant">Support</GradientButton>
+									</Link>
 								</div>
 							</div>
 							<img
