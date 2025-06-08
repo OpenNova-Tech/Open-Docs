@@ -324,7 +324,7 @@ export const GradientCard1 = () => {
             }}
           >
             <motion.h3
-              className="text-2xl font-medium text-white mb-3"
+              className="text-4xl font-bold text-white mb-3"
               style={{
                 letterSpacing: "-0.01em",
                 lineHeight: 1.2,
@@ -341,7 +341,7 @@ export const GradientCard1 = () => {
             </motion.h3>
 
             <motion.p
-              className="text-sm mb-6 text-gray-300"
+              className="text-lg font-bold mb-6 text-gray-300"
               style={{
                 lineHeight: 1.5,
                 fontWeight: 350,
@@ -354,7 +354,7 @@ export const GradientCard1 = () => {
                 transition: { duration: 1.2, delay: 0.4 }
               }}
             >
-              Learn Languages capable of 
+              Programming Languages are the fundamental of any development. Explore documentations of low level and high level languages along with scripting and markdown styles/.
             </motion.p>
 
             {/* Learn More with arrow - matching the image */}
