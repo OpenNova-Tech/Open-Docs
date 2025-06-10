@@ -5,6 +5,8 @@ import { AnimatePresence, motion } from "motion/react";
 
 import { useState } from "react";
 
+import Image from "next/image";
+
 export const HoverEffect = ({
   items,
   className,
@@ -13,6 +15,7 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    iconSrc?: string;
   }[];
   className?: string;
 }) => {
@@ -51,7 +54,7 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
+            <CardTitle iconSrc={item.iconSrc}>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
         </a>
@@ -83,14 +86,32 @@ export const Card = ({
 export const CardTitle = ({
   className,
   children,
+  iconSrc,
 }: {
   className?: string;
   children: React.ReactNode;
+  iconSrc?: string;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
-      {children}
-    </h4>
+    <div
+      className={cn(
+        "flex items-center justify-between mt-4",
+        className
+      )}
+    >
+      <h4 className="text-zinc-100 font-bold tracking-wide">
+        {children}
+      </h4>
+      {iconSrc && (
+        <Image
+          src={iconSrc}
+          alt="Icon"
+          width={20}
+          height={20}
+          className="ml-2"
+        />
+      )}
+    </div>
   );
 };
 export const CardDescription = ({
