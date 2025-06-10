@@ -18,7 +18,7 @@ export function HeroSection() {
 						<div className="relative mx-auto flex max-w-6xl flex-col px-6 lg:block">
 							<div className="mx-auto max-w-lg text-center lg:ml-0 lg:w-1/2 lg:text-left">
 								<h1 className="mt-8 max-w-2xl text-balance text-4xl font-medium md:text-5xl lg:mt-16 xl:text-6xl">Project Amethyst</h1>
-								<p className="mt-8 max-w-2xl text-pretty text-lg">Building the coolest documentation website.</p>
+								<p className="mt-8 max-w-2xl text-pretty text-lg">Building the coolest -( Crystal Clear )- documentation website.</p>
 
 								 <div className="flex gap-8 mt-10">
 									<Link href='/docs'>

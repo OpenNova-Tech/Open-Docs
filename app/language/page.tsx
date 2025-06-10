@@ -7,13 +7,13 @@ export default function LanguagePage() {
   const development = [
     {
       title: "HTML",
-      description: "",
+      description: "The standard markup language for creating web pages and web applications.",
       link: "/language/html",
       iconSrc: "icons/langs/html.svg"
     },
     {
       title: "CSS",
-      description: "",
+      description: "Style sheet language used to design the visual presentation of web pages.",
       link: "/language/css",
       iconSrc: "icons/langs/css.svg"
     },
@@ -82,7 +82,7 @@ export default function LanguagePage() {
   const systems = [
     {
       title: "C",
-      description: "",
+      description: "Low-level procedural language foundational for system and embedded programming.",
       link: "/language/c",
       iconSrc: "icons/langs/c.svg"
     },
@@ -145,7 +145,7 @@ export default function LanguagePage() {
     },
     {
       title: "Julia",
-      description: "",
+      description: "High-performance dynamic language for scientific computing and machine learning.",
       link: "/language/julia",
       iconSrc: "icons/langs/jl.svg"
     },
@@ -176,12 +176,24 @@ export default function LanguagePage() {
       link: "/language/haskell",
       iconSrc: "icons/langs/hs.svg"
     },
+    {
+      title: "Nim",
+      description: "Fast, typed language with Python-like syntax and system focus.",
+      link: "/language/nim",
+      iconSrc: "icons/langs/nim.svg"
+    },
+    {
+      title: "Crystal",
+      description: "Ruby-like syntax with static typing and compiled performance.",
+      link: "/language/crystal",
+      iconSrc: "icons/langs/cr.svg"
+    },
   ]
 
   const legacy = [
     {
       title: "Erlang",
-      description: "",
+      description: "Legacy Concurrent functional language used in telecom and fault-tolerant systems.",
       link: "/language/erlang",
       iconSrc: "icons/langs/erl.svg"
     },
