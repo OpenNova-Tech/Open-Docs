@@ -82,7 +82,7 @@ export function Navbar() {
   );
 
   return (
-    <header className={`fixed top-6 left-1/2 transform -translate-x-1/2 z-20
+    <header className={`fixed top-6 left-1/2 transform -translate-x-1/2 z-100
                        flex flex-col items-center
                        pl-6 pr-6 py-3 backdrop-blur-sm
                        ${headerShapeClass}
