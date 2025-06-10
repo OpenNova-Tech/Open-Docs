@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-export const GradientCard1 = () => {
+export const GradientCard4 = () => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -85,7 +85,7 @@ export const GradientCard1 = () => {
         <motion.div
           className="absolute inset-0 z-0"
           style={{
-    backgroundImage: 'url("/languages.png")',
+    backgroundImage: 'url("/backend.png")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backdropFilter: 'blur(2px)',
@@ -99,8 +99,8 @@ export const GradientCard1 = () => {
         <motion.div
           className="absolute inset-0 opacity-30 mix-blend-overlay z-10"
           style={{
+            backgroundImage: `url("/backend.png")`,
             // backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-            backgroundImage: `url("/languages.png")`,
           }}
           animate={{
             z: -0.5
@@ -324,7 +324,7 @@ export const GradientCard1 = () => {
             }}
           >
             <motion.h3
-              className="text-4xl font-bold text-white mb-3"
+              className="text-2xl font-medium text-white mb-3"
               style={{
                 letterSpacing: "-0.01em",
                 lineHeight: 1.2,
@@ -337,11 +337,11 @@ export const GradientCard1 = () => {
                 transition: { duration: 1.2, delay: 0.2 }
               }}
             >
-              Languages
+              AI-Powered Inbox Sorting
             </motion.h3>
 
             <motion.p
-              className="text-lg font-bold mb-6 text-gray-300"
+              className="text-sm mb-6 text-gray-300"
               style={{
                 lineHeight: 1.5,
                 fontWeight: 350,
@@ -354,7 +354,8 @@ export const GradientCard1 = () => {
                 transition: { duration: 1.2, delay: 0.4 }
               }}
             >
-              Programming Languages are the fundamental of any development. Explore documentations of low level and high level languages along with scripting and markdown styles/.
+              OpenMail revolutionizes email management with AI-driven sorting,
+              boosting productivity and accessibility
             </motion.p>
 
             {/* Learn More with arrow - matching the image */}
