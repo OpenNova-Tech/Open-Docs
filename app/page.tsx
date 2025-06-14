@@ -19,7 +19,7 @@ export default function Home() {
         {/* <FocusCards cards={cards} /> */}
       
       <OpenSource
-        repository="OprahDingus/unity-oliver-phi"
+        repository="https://github.com/Amethyst-Docs/Amethyst"
         title="Proudly open-source"
         description="Our source code is available on GitHub - feel free to read, review, or contribute to it however you want!"
         buttonText="Star on GitHub"
@@ -27,7 +27,7 @@ export default function Home() {
           stars: 10,
           contributors: [
             {
-              login: "OprahDingus",
+              login: "DarkmodeWorking",
               avatar_url: "https://avatars.githubusercontent.com/u/12345678?v=4",
             },
           ],
