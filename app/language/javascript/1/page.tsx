@@ -5,12 +5,12 @@ import { CodeBlock } from "@/components/ui/code-block";
 import {
   Table,
   TableBody,
-  TableCaption,
+  // TableCaption,
   TableCell,
   TableHead,
   TableHeader,
   TableRow,
-  TableFooter
+  // TableFooter
 } from "@/components/ui/table"
 
 export default function JavaScriptDocPage() {
@@ -173,7 +173,7 @@ switch (day) {
             - JavaScript (JS) is a high-level, interpreted, multi-paradigm language. <br />
             - Originally created to add interactivity to web pages (pop-ups, form validation, animations) <br />
             - Now it runs everywhere: Browsers, Servers, Apps etc. <br />
-            - Created by Brendan Eich in 1995, earlier known as "Mocha", then "LiveScript", then "JavaScript". <br />
+            - Created by Brendan Eich in 1995, earlier known as Mocha, then LiveScript, then JavaScript. <br />
             <br />
             Famous Websites that run on JavaScript: Google, Facebook, Youtube, Netflix.
           </div>
@@ -194,8 +194,8 @@ switch (day) {
             <br />
             Example Code as in a HTML file.
             <CodeBlock language="html" filename="samplePage.html" code={code1} /> <br />
-            On loading the page you will find an alert saying "Welcome to JavaScript!". <br />
-            On going to the Console Tab from Inspect you will find the message "JavaScript inside HTML!" <br />
+            On loading the page you will find an alert saying &quot;Welcome to JavaScript!&quot;. <br />
+            On going to the Console Tab from Inspect you will find the message &quot;JavaScript inside HTML!&quot; <br />
             <br />
             You can also directly write this code in Console.
             <CodeBlock language="js" filename="console.js" code={code2} />
@@ -228,7 +228,7 @@ switch (day) {
             <br />
             Example of Variable
             <CodeBlock language="js" filename="variable.js" code={code7} /> 
-            Here "Hello, World!" is stored in a box labelled message. <br />
+            Here Hello, World! is stored in a box labelled message. <br />
             <br />
             Declaration and Scope of Variables <br />
             <br />
@@ -266,7 +266,7 @@ switch (day) {
           <div className="max-w-3xl mx-auto">
             Primitive Data Types - These hold only single values <br />
             <br />
-            - String - ( "Hello" , 'JavaScript' )  <br />
+            - String - ( &quot;Hello&quot; , &apos;JavaScript&apos; )  <br />
             - Number - ( 10 , 3.14 , -5 )  <br />
             - Boolean - ( true , false )  <br />
             - Undefined - ( A declared variable with no value )  <br />
@@ -302,7 +302,7 @@ switch (day) {
             Expression is any valid unit of code that evaluates to a value <br />
             <br />
             3 + 5 = 8 <br />
-            "Hello" + "World" = "HelloWorld" <br />
+            &quot;Hello&quot; + &quot;World&quot; = &quot;HelloWorld&quot; <br />
             true && false = false <br />
             <br />
             We write expressions using operators and values <br />

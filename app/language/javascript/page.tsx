@@ -1,48 +1,53 @@
 // app/lectures/javascript/page.tsx
 
-import { GlareCard } from "@/components/ui/glare-card"; // assuming you have this component
+import {
+  // IconAdjustmentsBolt,
+  IconBrandJavascript,
+  // IconCloud,
+  // IconCurrencyDollar,
+  // IconEaseInOut,
+  // IconHeart,
+  // IconHelp,
+  // IconRouteAltLeft,
+  // IconTerminal2,
+} from "@tabler/icons-react";
+import { Feature } from "@/components/feature-section-with-hover-effects";
+import Link from "next/link";
 
-const lectures = [
-  { title: "Introduction", href: "/language/javascript/1" },
-  { title: "DOM and Functions", href: "/language/javascript/2" },
-  { title: "Arrays, OOP, Events", href: "/language/javascript/3" },
-  { title: "Async, APIS, Storage", href: "/language/javascript/4" },
-  { title: "ES6+, Event Loop", href: "/language/javascript/5" },
-  { title: "Functional Programming", href: "/language/javascript/6" },
-  { title: "Memory, Optimization", href: "/language/javascript/7" },
-  { title: "Design Patterns", href: "/language/javascript/8" },
-  { title: "Generators, Web Workers", href: "/language/javascript/9" },
+const features = [
+  { title: "Introduction", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/1" },
+  { title: "DOM and Functions", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/2" },
+  { title: "Arrays, OOP, Events", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/3" },
+  { title: "Async, APIS, Storage", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/4" },
+  { title: "ES6+, Event Loop", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/5" },
+  { title: "Functional Programming", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/6" },
+  { title: "Memory, Optimization", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/7" },
+  { title: "Design Patterns", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/8" },
+  { title: "Generators, Web Workers", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/9" },
 ];
 
-export default function JavaScriptLectures() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-6">
-      <h1 className="text-3xl font-bold mb-8 text-white">Choose a JavaScript Lecture</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {lectures.map((lecture) => (
-          <a key={lecture.href} href={lecture.href}>
-            <GlareCard className="flex flex-col items-center justify-center p-6 cursor-pointer hover:scale-105 transition">
-              {/* <svg
-                width="66"
-                height="65"
-                viewBox="0 0 66 65"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10 text-white"
-              >
-                <path
-                  d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-                  stroke="currentColor"
-                  strokeWidth="15"
-                  strokeMiterlimit="3.86874"
-                  strokeLinecap="round"
-                />
-              </svg> */}
-              <p className="text-white font-bold text-lg mt-4 text-center">{lecture.title}</p>
-            </GlareCard>
-          </a>
-        ))}
-      </div>
-    </main>
-  );
+export default function page() {
+	return (
+		<div className="m-10 py-12 md:py-16 lg:py-20">
+			<h1 className="text-3xl md:text-5xl max-w-2xl mx-auto font-extrabold text-neutral-800 dark:text-neutral-100 mb-4">
+				Welcome to Express.JS
+			</h1>
+			<p className="text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto text-base md:text-lg">
+				Express.js is a minimal and flexible Node.js web application framework that provides robust features for building web and mobile applications.
+				<br /><br />
+				Creator: TJ Holowaychuk <a target="_blank" href="https://github.com/tj" className="text-neutral-500">Profile</a>
+				<br />
+				<a target="_blank" href="https://github.com/expressjs/express" className="text-violet-500">Github Repo Link</a>
+			</p>
+
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 py-10 max-w-7xl mx-auto">
+				{features.map((feature) => (
+					<Link href={feature.link} key={feature.title} className="contents">
+						<Feature {...feature} />
+					</Link>
+				))}
+			</div>
+		</div>
+
+	);
 }

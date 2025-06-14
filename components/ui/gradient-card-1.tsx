@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const GradientCard1 = () => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [, setMousePosition] = useState({ x: 0, y: 0 });
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
 
   // Handle mouse movement for 3D effect
