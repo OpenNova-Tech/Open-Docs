@@ -19,7 +19,7 @@ export default function Home() {
         {/* <FocusCards cards={cards} /> */}
       
       <OpenSource
-        repository="https://github.com/Amethyst-Docs/Amethyst"
+        repository="Amethyst-Docs/Amethyst"
         title="Proudly open-source"
         description="Our source code is available on GitHub - feel free to read, review, or contribute to it however you want!"
         buttonText="Star on GitHub"
