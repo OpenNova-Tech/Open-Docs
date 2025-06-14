@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-export const GradientCard1 = () => {
+export const GradientCard8 = () => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -85,7 +85,7 @@ export const GradientCard1 = () => {
         <motion.div
           className="absolute inset-0 z-0"
           style={{
-    // backgroundImage: 'url("/languages.png")',
+    // backgroundImage: 'url("/backend.png")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backdropFilter: 'blur(2px)',
@@ -99,8 +99,8 @@ export const GradientCard1 = () => {
         <motion.div
           className="absolute inset-0 opacity-30 mix-blend-overlay z-10"
           style={{
+            backgroundImage: `url("/backend.png")`,
             // backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-            backgroundImage: `url("/languages.png")`,
           }}
           animate={{
             z: -0.5
@@ -337,7 +337,7 @@ export const GradientCard1 = () => {
                 transition: { duration: 1.2, delay: 0.2 }
               }}
             >
-              Languages
+              Competetive Programming
             </motion.h3>
 
             <motion.p
@@ -354,7 +354,7 @@ export const GradientCard1 = () => {
                 transition: { duration: 1.2, delay: 0.4 }
               }}
             >
-              Start your programming journey with clear, beginner-friendly resources designed to teach you how to think like a developer. Learn syntax, logic, problem-solving, and real-world application through languages like Python, JavaScript, C++, and more. Build a solid foundation to create web apps, automate tasks, or launch your software career.
+              Sharpen your problem-solving and algorithmic thinking through timed challenges. Practice data structures, dynamic programming, and graph algorithms to prepare for contests and coding interviews.
             </motion.p>
 
             {/* Learn More with arrow - matching the image */}

@@ -85,7 +85,7 @@ export const GradientCard4 = () => {
         <motion.div
           className="absolute inset-0 z-0"
           style={{
-    backgroundImage: 'url("/backend.png")',
+    // backgroundImage: 'url("/backend.png")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backdropFilter: 'blur(2px)',
@@ -337,7 +337,7 @@ export const GradientCard4 = () => {
                 transition: { duration: 1.2, delay: 0.2 }
               }}
             >
-              AI-Powered Inbox Sorting
+              Cloud Computing
             </motion.h3>
 
             <motion.p
@@ -354,8 +354,7 @@ export const GradientCard4 = () => {
                 transition: { duration: 1.2, delay: 0.4 }
               }}
             >
-              OpenMail revolutionizes email management with AI-driven sorting,
-              boosting productivity and accessibility
+              Master cloud platforms like AWS, Azure, and GCP to build scalable, resilient systems. Learn cloud architecture, storage, compute, serverless, and DevOps integration for modern infrastructure.
             </motion.p>
 
             {/* Learn More with arrow - matching the image */}

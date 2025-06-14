@@ -85,7 +85,7 @@ export const GradientCard3 = () => {
         <motion.div
           className="absolute inset-0 z-0"
           style={{
-    backgroundImage: 'url("/backend.png")',
+    // backgroundImage: 'url("/backend.png")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backdropFilter: 'blur(2px)',
@@ -337,7 +337,7 @@ export const GradientCard3 = () => {
                 transition: { duration: 1.2, delay: 0.2 }
               }}
             >
-              AI-Powered Inbox Sorting
+              Machine Learning and Data
             </motion.h3>
 
             <motion.p
@@ -354,8 +354,7 @@ export const GradientCard3 = () => {
                 transition: { duration: 1.2, delay: 0.4 }
               }}
             >
-              OpenMail revolutionizes email management with AI-driven sorting,
-              boosting productivity and accessibility
+              Unlock insights from data and build intelligent systems using Python, pandas, scikit-learn, TensorFlow, and more. Learn data analysis, visualization, model building, and deployment for real-world AI applications.
             </motion.p>
 
             {/* Learn More with arrow - matching the image */}

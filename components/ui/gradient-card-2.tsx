@@ -85,7 +85,7 @@ export const GradientCard2 = () => {
         <motion.div
           className="absolute inset-0 z-0"
           style={{
-    backgroundImage: 'url("/frontend.png")',
+    // backgroundImage: 'url("/frontend.png")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backdropFilter: 'blur(2px)',
@@ -337,7 +337,7 @@ export const GradientCard2 = () => {
                 transition: { duration: 1.2, delay: 0.2 }
               }}
             >
-              AI-Powered Inbox Sorting
+              Development
             </motion.h3>
 
             <motion.p
@@ -354,8 +354,7 @@ export const GradientCard2 = () => {
                 transition: { duration: 1.2, delay: 0.4 }
               }}
             >
-              OpenMail revolutionizes email management with AI-driven sorting,
-              boosting productivity and accessibility
+              Learn to build powerful software for the web, mobile, and desktop platforms. Start with core development principles and move into tools like React, Flutter, Electron, and more. Create responsive websites, native mobile apps, and cross-platform desktop solutions while mastering real-world development workflows and best practices.
             </motion.p>
 
             {/* Learn More with arrow - matching the image */}
