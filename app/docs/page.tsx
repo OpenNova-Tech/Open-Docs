@@ -22,7 +22,7 @@ const page = () => {
         <Link href='/development'>
           <GradientCard2 />
         </Link>
-        <Link href='/artificial'>
+        <Link href='/aiml'>
           <GradientCard3 />
         </Link>
         <Link href='/cloud'>
