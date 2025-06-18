@@ -87,10 +87,10 @@ function StarIcon({
         duration: 0.8,
         delay,
         ease: [0.16, 1, 0.3, 1],
-        hover: {
-          duration: 0.2,
-          ease: "easeOut",
-        },
+        // hover: {
+        //   duration: 0.2,
+        //   ease: "easeOut",
+        // },
       }}
       className={className}
     >
