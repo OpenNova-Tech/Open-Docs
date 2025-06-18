@@ -241,7 +241,7 @@ function OpenSourceContent({
   buttonText?: string;
 }) {
   return (
-    <section className="container relative py-20">
+    <section className="container bg-black relative py-20">
       <div className="text-center mb-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
