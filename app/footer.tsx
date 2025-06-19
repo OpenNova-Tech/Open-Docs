@@ -44,7 +44,7 @@ export function FloatingDockFooter() {
   ];
 
   return (
-    <footer className="w-full bg-black text-white pt-10">
+    <footer className="w-full bg-black text-white pt-20">
       {/* Top Footer Content */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 pb-20">
         <div>
