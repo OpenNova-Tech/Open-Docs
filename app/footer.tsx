@@ -45,45 +45,58 @@ export function FloatingDockFooter() {
 
   return (
     <footer className="w-full bg-black text-white pt-20">
-      {/* Top Footer Content */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 pb-20">
-        <div>
-          <h3 className="text-lg font-semibold mb-2">Docs</h3>
-          <ul className="space-y-1 text-sm text-neutral-400">
-            <li><a href="#">Libraries</a></li>
-            <li><a href="#">Frameworks</a></li>
-            <li><a href="#">Languages</a></li>
-            <li><a href="#">All Technologies</a></li>
-          </ul>
-        </div>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-8 pb-20">
+  <div>
+    <h3 className="text-lg font-semibold mb-2">Organization</h3>
+    <ul className="space-y-1 text-sm text-neutral-400">
+      <li><a href="about" className="hover:text-purple-400">About</a></li>
+      <li><a href="blog" className="hover:text-purple-400">Blog</a></li>
+      <li><a href="team" className="hover:text-purple-400">Team</a></li>
+    </ul>
+  </div>
 
-        <div>
-          <h3 className="text-lg font-semibold mb-2">Community</h3>
-          <ul className="space-y-1 text-sm text-neutral-400">
-            <li><a href="#">Join Discord</a></li>
-            <li><a href="#">Follow on X</a></li>
-            <li><a href="#">Star us on GitHub</a></li>
-          </ul>
-        </div>
+  <div>
+    <h3 className="text-lg font-semibold mb-2">Community</h3>
+    <ul className="space-y-1 text-sm text-neutral-400">
+      <li><a href="#" className="hover:text-purple-400">Community</a></li>
+      <li><a href="#" className="hover:text-purple-400">Forum</a></li>
+      <li><a href="#" className="hover:text-purple-400">Chat</a></li>
+    </ul>
+  </div>
 
-        <div>
-          <h3 className="text-lg font-semibold mb-2">Contribute</h3>
-          <ul className="space-y-1 text-sm text-neutral-400">
-            <li><a href="#">Write Docs</a></li>
-            <li><a href="#">Open an Issue</a></li>
-            <li><a href="#">GitHub Repository</a></li>
-          </ul>
-        </div>
+  <div>
+    <h3 className="text-lg font-semibold mb-2">Contribute</h3>
+    <ul className="space-y-1 text-sm text-neutral-400">
+      <li><a href="#" className="hover:text-purple-400">Write Docs</a></li>
+      <li><a href="#" className="hover:text-purple-400">Open an Issue</a></li>
+      <li><a href="#" className="hover:text-purple-400">GitHub Repository</a></li>
+    </ul>
+  </div>
 
-        <div>
-          <h3 className="text-lg font-semibold mb-2">More</h3>
-          <ul className="space-y-1 text-sm text-neutral-400">
-            <li><a href="#">Changelog</a></li>
-            <li><a href="#">Roadmap</a></li>
-            <li><a href="#">License</a></li>
-          </ul>
-        </div>
-      </div>
+  <div>
+    <h3 className="text-lg font-semibold mb-2">More</h3>
+    <ul className="space-y-1 text-sm text-neutral-400">
+      <li><a href="#" className="hover:text-purple-400">Changelog</a></li>
+      <li><a href="#" className="hover:text-purple-400">Roadmap</a></li>
+      <li><a href="#" className="hover:text-purple-400">License</a></li>
+    </ul>
+  </div>
+
+  {/* Made Using Tech */}
+  <div className="hidden md:flex flex-col items-end justify-center text-xs text-neutral-500">
+  <div className="flex flex-col items-center">
+    <span className="mb-2">Made using</span>
+    <div className="flex gap-2">
+      <img src="icons/web/next.svg" alt="Next.js" className="h-4" />
+      <img src="icons/web/tailwind.svg" alt="Tailwind CSS" className="h-4" />
+      <img src="icons/web/shadcn.svg" alt="ShadCN UI" className="h-4" />
+      <img src="icons/web/appwrite.svg" alt="Appwrite" className="h-4" />
+      <img src="icons/web/vercel.svg" alt="Vercel" className="h-4" />
+    </div>
+  </div>
+</div>
+</div>
+
 
       {/* Floating Dock */}
       <div className="flex items-center justify-center">
@@ -100,3 +113,4 @@ export function FloatingDockFooter() {
     </footer>
   );
 }
+

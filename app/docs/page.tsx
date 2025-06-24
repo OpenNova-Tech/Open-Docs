@@ -1,58 +1,124 @@
-import { GradientCard1 } from '@/components/ui/gradient-card-1'
-import { GradientCard10 } from '@/components/ui/gradient-card-10'
-import { GradientCard11 } from '@/components/ui/gradient-card-11'
-import { GradientCard2 } from '@/components/ui/gradient-card-2'
-import { GradientCard3 } from '@/components/ui/gradient-card-3'
-import { GradientCard4 } from '@/components/ui/gradient-card-4'
-import { GradientCard5 } from '@/components/ui/gradient-card-5'
-import { GradientCard6 } from '@/components/ui/gradient-card-6'
-import { GradientCard7 } from '@/components/ui/gradient-card-7'
-import { GradientCard8 } from '@/components/ui/gradient-card-8'
-import { GradientCard9 } from '@/components/ui/gradient-card-9'
-import Link from 'next/link'
-import React from 'react'
+import React from "react";
+import { Card } from '@/components/Card';
+
+const sections = [
+  {
+    title: "Languages, Libraries, Frameworks and Software Tools",
+    cards: [
+      {
+        title: "Programming Languages",
+        subtitle: "Code logic using powerful languages",
+        image: "/languages.webp",
+        readMoreLink: "/language"
+      },
+      {
+        title: "Website and Application Development",
+        subtitle: "Build modern web-based applications",
+        image: "/development.webp",
+        readMoreLink: "/development"
+      },
+      {
+        title: "Software Tools",
+        subtitle: "Tools enhancing productivity and automation",
+        image: "/languages.webp",
+      },
+    ],
+  },
+  {
+    title: "Technology Domains and Sectors",
+    cards: [
+      {
+        title: "Cloud Computing",
+        subtitle: "Deploy scalable services on cloud",
+        image: "/development.webp",
+      },
+      {
+        title: "Machine Learning",
+        subtitle: "Train models with meaningful data",
+        image: "/languages.webp",
+        readMoreLink: "/aiml"
+      },
+      {
+        title: "Dev-Ops",
+        subtitle: "Streamline development and deployment pipelines",
+        image: "/development.webp",
+      },
+      {
+        title: "Cybersecurity",
+        subtitle: "Protect systems from digital threats",
+        image: "/languages.webp",
+      },
+    ],
+  },
+  {
+    title: "Other Technologies",
+    cards: [
+      {
+        title: "Web 3.0",
+        subtitle: "Decentralized future of the web",
+        image: "/languages.webp",
+      },
+      {
+        title: "Internet of Things",
+        subtitle: "Smart devices communicating through internet",
+        image: "/development.webp",
+      },
+      {
+        title: "Competitive Programming",
+        subtitle: "Solve algorithmic challenges under pressure",
+        image: "/languages.webp",
+        readMoreLink: "/cp"
+      },
+    ],
+  },
+  {
+    title: "System Knowledge and Theory",
+    cards: [
+      {
+        title: "Operating Systems",
+        subtitle: "Foundation managing hardware and software",
+        image: "/development.webp",
+      },
+      {
+        title: "System Design",
+        subtitle: "Design scalable and maintainable architecture",
+        image: "/languages.webp",
+      },
+      {
+        title: "Theoretical Computer Science",
+        subtitle: "Mathematical foundations behind computation",
+        image: "/development.webp",
+      },
+    ],
+  },
+];
+
+
 
 const page = () => {
   return (
-    <div>
-      <div className="grid md:grid-cols-3 p-4">
-        <Link href='/language'>
-          <GradientCard1 />
-        </Link>
-        <Link href='/development'>
-          <GradientCard2 />
-        </Link>
-        <Link href='/aiml'>
-          <GradientCard3 />
-        </Link>
-        <Link href='/cloud'>
-          <GradientCard4 />
-        </Link>
-        <Link href='/devops'>
-          <GradientCard5 />
-        </Link>
-        <Link href='/cybersecurity'>
-          <GradientCard6 />
-        </Link>
-        <Link href='/web3'>
-          <GradientCard10 />
-        </Link>
-        <Link href='/tools'>
-          <GradientCard11 />
-        </Link>
-        <Link href='/iot'>
-          <GradientCard9 />
-        </Link>
-        <Link href='/theory'>
-          <GradientCard7 />
-        </Link>
-        <Link href='/cp'>
-          <GradientCard8 />
-        </Link>
-        
+  <div className="pt-32 px-20 bg-black pb-16">
+    {sections.map((section, sectionIndex) => (
+      <div key={sectionIndex}>
+        <p className="text-neutral-500 py-10">{section.title}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+          {section.cards.map((card, cardIndex) => (
+            <Card
+              key={cardIndex}
+              title={card.title}
+              subtitle={card.subtitle}
+              image={card.image}
+              readMoreLink={card.readMoreLink}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-  )
+    ))}
+  </div>
+);
+
 }
+
+
 
 export default page
