@@ -13,7 +13,7 @@ const sections = [
       },
       {
         title: "Website and Application Development",
-        subtitle: "Build modern web-based applications",
+        subtitle: "Build modern tech applications",
         image: "/docs/development.webp",
         readMoreLink: "/development"
       },
@@ -63,12 +63,6 @@ const sections = [
         subtitle: "Smart devices communicating through internet",
         image: "/docs/iot.jpg",
       },
-      {
-        title: "Competitive Programming",
-        subtitle: "Solve algorithmic challenges under pressure",
-        image: "/docs/cp.webp",
-        readMoreLink: "/cp"
-      },
     ],
   },
   {
@@ -88,6 +82,12 @@ const sections = [
         title: "Theoretical Computer Science",
         subtitle: "Mathematical foundations behind computation",
         image: "/docs/theory.jpg",
+      },
+      {
+        title: "Data Structures & Algorithms",
+        subtitle: "Master logic, speed, and code.",
+        image: "/docs/cp.webp",
+        readMoreLink: "/cp"
       },
     ],
   },
