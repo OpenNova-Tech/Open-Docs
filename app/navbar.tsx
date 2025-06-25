@@ -3,16 +3,16 @@
 import React from 'react'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
-import { Button } from '@/components/ui/moving-border'
+// import { Button } from '@/components/ui/moving-border'
 import { motion } from 'framer-motion'
-import { useRouter } from 'next/navigation'
+// import { useRouter } from 'next/navigation'
 
 
 const MotionLink = motion(Link)
 
 
 export function Navbar({ className }: { className?: string }) {
-  const router = useRouter()
+  // const router = useRouter()
   return (
     <nav
       className={cn(
