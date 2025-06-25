@@ -62,6 +62,7 @@ const sections = [
         title: "Internet of Things",
         subtitle: "Smart devices communicating through internet",
         image: "/docs/iot.jpg",
+        readMoreLink: "/aiml"
       },
     ],
   },
