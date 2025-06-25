@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <main className="bg-black">
-      <StickyBanner className="bg-gradient-to-b from-blue-500 to-blue-600">
+      <StickyBanner className="bg-gradient-to-b from-indigo-500 to-indigo-600">
         <p className="mx-0 max-w-[90%] text-white drop-shadow-md">
           OpenDocs Pro in development.{" "}
           <a href="#" className="transition duration-200 hover:underline">
