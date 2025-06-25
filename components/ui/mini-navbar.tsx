@@ -48,10 +48,10 @@ export function Navbar() {
 
   const logoElement = (
     <div className="relative w-5 h-5 flex items-center justify-center">
-    <span className="absolute w-1.5 h-1.5 rounded-full bg-gray-200 top-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
-    <span className="absolute w-1.5 h-1.5 rounded-full bg-gray-200 left-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
-    <span className="absolute w-1.5 h-1.5 rounded-full bg-gray-200 right-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
-    <span className="absolute w-1.5 h-1.5 rounded-full bg-gray-200 bottom-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
+    <span className="absolute w-1.5 h-1.5 rounded-full bg-indigo-500 top-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
+    <span className="absolute w-1.5 h-1.5 rounded-full bg-indigo-500 left-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
+    <span className="absolute w-1.5 h-1.5 rounded-full bg-indigo-500 right-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
+    <span className="absolute w-1.5 h-1.5 rounded-full bg-indigo-500 bottom-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
  </div>
   );
 
