@@ -11,12 +11,21 @@ import { BackgroundPaths } from "@/components/ui/background-paths";
 import { OpenSource } from "@/components/open-source";
 import { WorldMap } from "@/components/ui/world-map";
 import { motion } from "motion/react";
+import { StickyBanner } from "@/components/ui/sticky-banner";
 
 export default function Home() {
 
 
   return (
-    <main>
+    <main className="bg-black">
+      <StickyBanner className="bg-gradient-to-b from-blue-500 to-blue-600">
+        <p className="mx-0 max-w-[90%] text-white drop-shadow-md">
+          OpenDocs Pro in development.{" "}
+          <a href="#" className="transition duration-200 hover:underline">
+            Read full development logs here.
+          </a>
+        </p>
+      </StickyBanner>
       {/* <HeroSection /> */}
       <div className="relative h-screen py-40 dark:bg-black bg-white w-full">
         {/* Text Positioned Absolutely in Center */}

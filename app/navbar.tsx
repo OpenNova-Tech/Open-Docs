@@ -5,10 +5,14 @@ import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/moving-border'
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/navigation'
+
 
 const MotionLink = motion(Link)
 
+
 export function Navbar({ className }: { className?: string }) {
+  const router = useRouter()
   return (
     <nav
       className={cn(
@@ -18,7 +22,7 @@ export function Navbar({ className }: { className?: string }) {
     >
       <MotionLink
         href='/'
-        whileHover={{ y: -4, color: '#c27aff' }}
+        whileHover={{ y: -4 }}
         transition={{ type: 'spring', stiffness: 300 }}
         className='text-white cursor-pointer'
       >
@@ -26,7 +30,7 @@ export function Navbar({ className }: { className?: string }) {
       </MotionLink>
       <MotionLink
         href='/docs'
-        whileHover={{ y: -4, color: '#c27aff' }}
+        whileHover={{ y: -4 }}
         transition={{ type: 'spring', stiffness: 300 }}
         className='text-white cursor-pointer'
       >
@@ -34,19 +38,14 @@ export function Navbar({ className }: { className?: string }) {
       </MotionLink>
       <MotionLink
         href='/support'
-        whileHover={{ y: -4, color: '#c27aff' }}
+        whileHover={{ y: -4 }}
         transition={{ type: 'spring', stiffness: 300 }}
         className='text-white cursor-pointer'
       >
         Support
       </MotionLink>
 
-      <Button
-        borderRadius='1.75rem'
-        className='bg-white dark:bg-zinc-900 text-black dark:text-white border-neutral-200 dark:border-purple-950'
-      >
-        Login
-      </Button>
+      
     </nav>
   )
 }

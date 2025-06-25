@@ -49,36 +49,36 @@ export function FloatingDockFooter() {
   <div>
     <h3 className="text-lg font-semibold mb-2">Organization</h3>
     <ul className="space-y-1 text-sm text-neutral-400">
-      <li><a href="about" className="hover:text-purple-400">About</a></li>
-      <li><a href="blog" className="hover:text-purple-400">Blog</a></li>
-      <li><a href="team" className="hover:text-purple-400">Team</a></li>
+      <li><a href="about" className="hover:text-blue-400">About</a></li>
+      <li><a href="blog" className="hover:text-blue-400">Blog</a></li>
+      <li><a href="team" className="hover:text-blue-400">Team</a></li>
     </ul>
   </div>
 
   <div>
     <h3 className="text-lg font-semibold mb-2">Community</h3>
     <ul className="space-y-1 text-sm text-neutral-400">
-      <li><a href="#" className="hover:text-purple-400">Community</a></li>
-      <li><a href="#" className="hover:text-purple-400">Forum</a></li>
-      <li><a href="#" className="hover:text-purple-400">Chat</a></li>
+      <li><a href="#" className="hover:text-blue-400">Community</a></li>
+      <li><a href="#" className="hover:text-blue-400">Forum</a></li>
+      <li><a href="#" className="hover:text-blue-400">Chat</a></li>
     </ul>
   </div>
 
   <div>
     <h3 className="text-lg font-semibold mb-2">Contribute</h3>
     <ul className="space-y-1 text-sm text-neutral-400">
-      <li><a href="#" className="hover:text-purple-400">Write Docs</a></li>
-      <li><a href="#" className="hover:text-purple-400">Open an Issue</a></li>
-      <li><a href="#" className="hover:text-purple-400">GitHub Repository</a></li>
+      <li><a href="#" className="hover:text-blue-400">Write Docs</a></li>
+      <li><a href="#" className="hover:text-blue-400">Open an Issue</a></li>
+      <li><a href="#" className="hover:text-blue-400">GitHub Repository</a></li>
     </ul>
   </div>
 
   <div>
     <h3 className="text-lg font-semibold mb-2">More</h3>
     <ul className="space-y-1 text-sm text-neutral-400">
-      <li><a href="#" className="hover:text-purple-400">Changelog</a></li>
-      <li><a href="#" className="hover:text-purple-400">Roadmap</a></li>
-      <li><a href="#" className="hover:text-purple-400">License</a></li>
+      <li><a href="#" className="hover:text-blue-400">Changelog</a></li>
+      <li><a href="#" className="hover:text-blue-400">Roadmap</a></li>
+      <li><a href="#" className="hover:text-blue-400">License</a></li>
     </ul>
   </div>
 

@@ -256,7 +256,7 @@ function OpenSourceContent({
             {description}
           </p>
           <div className="mt-6">
-            <Button variant="outline" size="lg" className="gap-2" asChild>
+            <Button  size="lg" className="gap-2 rounded-xl p-7 text-lg bg-violet-700 font-bold font-mono hover:bg-violet-800" asChild>
               <a
                 href={`https://github.com/${repository}`}
                 target="_blank"

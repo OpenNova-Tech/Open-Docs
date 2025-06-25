@@ -8,19 +8,19 @@ const sections = [
       {
         title: "Programming Languages",
         subtitle: "Code logic using powerful languages",
-        image: "/languages.webp",
+        image: "/docs/languages.jpg",
         readMoreLink: "/language"
       },
       {
         title: "Website and Application Development",
         subtitle: "Build modern web-based applications",
-        image: "/development.webp",
+        image: "/docs/development.webp",
         readMoreLink: "/development"
       },
       {
         title: "Software Tools",
         subtitle: "Tools enhancing productivity and automation",
-        image: "/languages.webp",
+        image: "/docs/tools.jpg",
       },
     ],
   },
@@ -30,23 +30,23 @@ const sections = [
       {
         title: "Cloud Computing",
         subtitle: "Deploy scalable services on cloud",
-        image: "/development.webp",
+        image: "/docs/cloud.webp",
       },
       {
         title: "Machine Learning",
         subtitle: "Train models with meaningful data",
-        image: "/languages.webp",
+        image: "/docs/aiml.webp",
         readMoreLink: "/aiml"
       },
       {
         title: "Dev-Ops",
         subtitle: "Streamline development and deployment pipelines",
-        image: "/development.webp",
+        image: "/docs/devops.webp",
       },
       {
         title: "Cybersecurity",
         subtitle: "Protect systems from digital threats",
-        image: "/languages.webp",
+        image: "/docs/cyber.webp",
       },
     ],
   },
@@ -56,17 +56,17 @@ const sections = [
       {
         title: "Web 3.0",
         subtitle: "Decentralized future of the web",
-        image: "/languages.webp",
+        image: "/docs/web3.jpg",
       },
       {
         title: "Internet of Things",
         subtitle: "Smart devices communicating through internet",
-        image: "/development.webp",
+        image: "/docs/iot.jpg",
       },
       {
         title: "Competitive Programming",
         subtitle: "Solve algorithmic challenges under pressure",
-        image: "/languages.webp",
+        image: "/docs/cp.webp",
         readMoreLink: "/cp"
       },
     ],
@@ -77,17 +77,17 @@ const sections = [
       {
         title: "Operating Systems",
         subtitle: "Foundation managing hardware and software",
-        image: "/development.webp",
+        image: "/docs/os.jpg",
       },
       {
         title: "System Design",
         subtitle: "Design scalable and maintainable architecture",
-        image: "/languages.webp",
+        image: "/docs/system.png",
       },
       {
         title: "Theoretical Computer Science",
         subtitle: "Mathematical foundations behind computation",
-        image: "/development.webp",
+        image: "/docs/theory.jpg",
       },
     ],
   },
