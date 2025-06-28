@@ -122,7 +122,7 @@ export default function Home() {
           ],
         }}
       />
-      <BackgroundPaths title="Read Docs Like Smooth Lines Flow" />
+      <BackgroundPaths title="Want to Discover?" />
     </main>
   );
 }
