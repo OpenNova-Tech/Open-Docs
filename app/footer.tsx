@@ -34,9 +34,9 @@ const socialLinks = [
         <div>
           <h3 className="text-lg font-semibold mb-2">Organization</h3>
           <ul className="space-y-1 text-sm text-neutral-400">
-            <li><a href="about" className="hover:text-indigo-400">About</a></li>
-            <li><a href="blog" className="hover:text-indigo-400">Blog</a></li>
-            <li><a href="team" className="hover:text-indigo-400">Team</a></li>
+            <li><a href="/about" className="hover:text-indigo-400">About</a></li>
+            <li><a href="/blog" className="hover:text-indigo-400">Blog</a></li>
+            <li><a href="/team" className="hover:text-indigo-400">Team</a></li>
           </ul>
         </div>
 
