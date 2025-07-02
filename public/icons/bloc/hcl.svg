@@ -1,0 +1,18 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1512 602" width="1512" height="602">
+	<title>hcltech-new-logo-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m3295.5 0v603h-3295.5v-603z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: #0f5fdc } 
+	</style>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g id="Layer">
+			<path id="Layer" class="s0" d="m458.6 6.7v588h-126.9v-246.1h-205.6v246.1h-126.1v-588h126.1v233.5h205.6v-233.5z"/>
+			<path id="Layer" class="s0" d="m527.2 300.7c0-198.2 128.2-300.7 274.3-300.7 137.7 0 238.5 84 253.4 210.8h-122.8c-7.8-61.3-61.8-102.5-130.6-102.5-88.3 0-156.4 66.4-156.4 192.4 0 125.9 68.1 191.5 156.4 191.5 70.4 0 124.3-41.1 133.8-101.6h117.3c-10.2 126-111.1 210.8-251 210.8-148.5 0-274.4-102.5-274.4-300.7z"/>
+			<path id="Layer" class="s0" d="m1255.2 485.5v-478.8h-126.2v475.5c0 73 39.6 112.5 112.7 112.5h269.4v-109.2z"/>
+		</g>
+	</g>
+</svg>

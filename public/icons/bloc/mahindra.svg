@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 449 140" width="449" height="140">
+	<title>TECHM</title>
+	<style>
+		.s0 { fill: #4d4d4f } 
+		.s1 { fill: #e31837 } 
+	</style>
+	<path id="Layer" class="s0" d="m151.4 33.9h-56v105.8h-39.1v-105.8h-56.2v-31.9h151.3z"/>
+	<path id="path14" fill-rule="evenodd" class="s1" d="m414.4 137.7v-89.5c0-12.2-10.8-21.5-22.8-21.5h-53.1c-2.7 0-5.9 2.3-5.9 5.2v105.8h-33.9v-105.8c0-3.2-2.9-5.2-5.8-5.2h-70.1c-2.7 0-5.8 2.3-5.8 5.2v105.8h-33.9v-137.7h222.5c23.9 0 43.4 18.8 43.4 41.9v95.8z"/>
+</svg>
