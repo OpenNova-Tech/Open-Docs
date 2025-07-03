@@ -1,42 +1,75 @@
 'use client'
 
-// import { HeroSection } from "@/components/hero-section-4";
-
-// import Link from "next/link";
-
-import { BackgroundPaths } from "@/components/ui/background-paths";
-// import { GradientCard1 } from "@/components/ui/gradient-card-1";
-// import { GradientCard2 } from "@/components/ui/gradient-card-2";
-// import { GradientCard3 } from "@/components/ui/gradient-card-3";
-import { OpenSource } from "@/components/open-source";
-import { WorldMap } from "@/components/ui/world-map";
-import { motion } from "motion/react";
-import { StickyBanner } from "@/components/ui/sticky-banner";
+import { BackgroundPaths } from '@/components/ui/background-paths'
+import { OpenSource } from '@/components/open-source'
+import { WorldMap } from '@/components/ui/world-map'
+import { motion } from 'motion/react'
+import { StickyBanner } from '@/components/ui/sticky-banner'
+import { PricingCard } from '@/components/ui/pricing-card'
 
 export default function Home() {
+  const proprietory = {
+    heading: "Proprietory Pack",
+    description: "Contains docs related to proprietory software used in software services.",
+    price: 29,
+    buttonText: "Proceed",
+    list: [
+      "SAP Docs",
+      "Salesforce Docs",
+      "Oracle Docs",
+      "Microsoft Docs",
+    ],
+  }
 
+  const campusing = {
+    heading: "Campusing Pack",
+    description: "Contains docs related to campusing of College students to Corporates.",
+    price: 99,
+    discount: 20,
+    buttonText: "Proceed",
+    list: [
+      "Accenture Prep",
+      "TCS Prep",
+      "Cognizant Prep",
+      "Capgemini Prep",
+    ],
+  }
+
+  const quantum = {
+    heading: "Quantum Pack",
+    description: "Contains research files and docs related to the Quantum Computing.",
+    price: 29,
+    buttonText: "Proceed",
+    listHeading: "",
+    list: [
+      "Quantum Computing",
+      "Quantum Simulation",
+      "Quantum Programming",
+      "Quantum Algorithm",
+    ],
+  }
 
   return (
-    <main className="bg-black">
-      <StickyBanner className="bg-gradient-to-b from-indigo-500 to-indigo-600">
-        <p className="mx-0 max-w-[90%] text-white drop-shadow-md">
-          OpenDocs Pro in development.{" "}
-          <a href="#" className="transition duration-200 hover:underline">
+    <main className='bg-black'>
+
+      <StickyBanner className='bg-gradient-to-b from-indigo-500 to-indigo-600'>
+        <p className='mx-0 max-w-[90%] text-white drop-shadow-md'>
+          OpenDocs Pro in development.{' '}
+          <a href='#' className='transition duration-200 hover:underline'>
             Read full development logs here.
           </a>
         </p>
       </StickyBanner>
-      {/* <HeroSection /> */}
-      <div className="relative h-screen py-40 dark:bg-black bg-white w-full">
-        {/* Text Positioned Absolutely in Center */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10 pointer-events-none">
-          <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
-            Open{" "}
-            <span className="text-neutral-200">
-              {"Docs".split("").map((word, idx) => (
+
+      <div className='relative h-screen py-40 dark:bg-black bg-white w-full'>
+        <div className='absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10 pointer-events-none'>
+          <p className='font-bold text-xl md:text-4xl dark:text-white text-black'>
+            Open{' '}
+            <span className='text-neutral-200'>
+              {'Docs'.split('').map((word, idx) => (
                 <motion.span
                   key={idx}
-                  className="inline-block"
+                  className='inline-block'
                   initial={{ x: -10, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.5, delay: idx * 0.04 }}
@@ -46,13 +79,12 @@ export default function Home() {
               ))}
             </span>
           </p>
-          <p className="text-sm md:text-lg text-neutral-300 max-w-2xl py-4">
+          <p className='text-sm md:text-lg text-neutral-300 max-w-2xl py-4'>
             Building the coolest documentation website for programming, languages, frameworks, libraries, tools and systems.
           </p>
         </div>
 
-        {/* World Map is background content */}
-        <div className="mx-auto max-w-6xl z-0 relative">
+        <div className='mx-auto max-w-6xl z-0 relative'>
           <WorldMap
             dots={[
               {
@@ -105,24 +137,30 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <FocusCards cards={cards} /> */}
-
       <OpenSource
-        repository="OpenNova-Tech/Open-Docs"
-        title="Proudly open-source"
-        description="Our source code is available on GitHub - feel free to read, review, or contribute to it however you want!"
-        buttonText="Star on GitHub"
+        repository='OpenNova-Tech/Open-Docs'
+        title='Proudly open-source'
+        description='Our source code is available on GitHub - feel free to read, review, or contribute to it however you want!'
+        buttonText='Star on GitHub'
         defaultStats={{
           stars: 10,
           contributors: [
             {
-              login: "DarkmodeWorking",
-              avatar_url: "https://avatars.githubusercontent.com/u/12345678?v=4",
+              login: 'DarkmodeWorking',
+              avatar_url: 'https://avatars.githubusercontent.com/u/12345678?v=4',
             },
           ],
         }}
       />
-      <BackgroundPaths title="Want to Discover?" />
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center py-32 px-4 md:px-20">
+        <PricingCard {...proprietory} />
+        <PricingCard {...campusing} />
+        <PricingCard {...quantum} />
+      </div>
+
+      <BackgroundPaths title='Want to Discover?' />
+
     </main>
-  );
+  )
 }
