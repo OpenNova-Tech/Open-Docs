@@ -9,43 +9,43 @@ import { PricingCard } from '@/components/ui/pricing-card'
 
 export default function Home() {
   const proprietory = {
-    heading: "Proprietory Pack",
-    description: "Contains docs related to proprietory software used in software services.",
+    heading: 'Proprietory Pack',
+    description: 'Contains docs related to proprietory software used in software services.',
     price: 29,
-    buttonText: "Proceed",
+    buttonText: 'Proceed',
     list: [
-      "SAP Docs",
-      "Salesforce Docs",
-      "Oracle Docs",
-      "Microsoft Docs",
+      'SAP Docs',
+      'Salesforce Docs',
+      'Oracle Docs',
+      'Microsoft Docs',
     ],
   }
 
   const campusing = {
-    heading: "Campusing Pack",
-    description: "Contains docs related to campusing of College students to Corporates.",
+    heading: 'Campusing Pack',
+    description: 'Contains docs related to campusing of College students to Corporates.',
     price: 99,
     discount: 20,
-    buttonText: "Proceed",
+    buttonText: 'Proceed',
     list: [
-      "Accenture Prep",
-      "TCS Prep",
-      "Cognizant Prep",
-      "Capgemini Prep",
+      'Accenture Prep',
+      'TCS Prep',
+      'Cognizant Prep',
+      'Capgemini Prep',
     ],
   }
 
   const quantum = {
-    heading: "Quantum Pack",
-    description: "Contains research files and docs related to the Quantum Computing.",
+    heading: 'Quantum Pack',
+    description: 'Contains research files and docs related to the Quantum Computing.',
     price: 29,
-    buttonText: "Proceed",
-    listHeading: "",
+    buttonText: 'Proceed',
+    listHeading: '',
     list: [
-      "Quantum Computing",
-      "Quantum Simulation",
-      "Quantum Programming",
-      "Quantum Algorithm",
+      'Quantum Computing',
+      'Quantum Simulation',
+      'Quantum Programming',
+      'Quantum Algorithm',
     ],
   }
 
@@ -153,7 +153,7 @@ export default function Home() {
         }}
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center py-32 px-4 md:px-20">
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center py-32 px-4 md:px-20'>
         <PricingCard {...proprietory} />
         <PricingCard {...campusing} />
         <PricingCard {...quantum} />
