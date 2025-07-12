@@ -94,8 +94,6 @@ const sections = [
   },
 ]
 
-
-
 const page = () => {
   return (
     <div className='pt-32 px-20 bg-black pb-16'>
@@ -117,9 +115,6 @@ const page = () => {
       ))}
     </div>
   )
-
 }
-
-
 
 export default page

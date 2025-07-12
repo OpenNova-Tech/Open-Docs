@@ -9,8 +9,7 @@ export default function Page() {
       <div className='max-w-3xl mx-auto pt-40 text-center space-y-4'>
         <h2 className='text-3xl font-bold text-indigo-400'>Meet the Team Behind OpenDocs</h2>
         <p className='text-gray-300 text-lg'>
-          The OpenDocs project is powered by a small but passionate team of developers, writers, and open-source
-          enthusiasts from <strong>OpenNova Tech</strong>.
+          The OpenDocs project is powered by a small but passionate team of developers, writers, and open-source enthusiasts from <strong>OpenNova Tech</strong>.
         </p>
         <p className='text-sm text-gray-500 italic'>
           From frontend frameworks to backend stacks — if it&apos;s worth learning, it&apos;s worth documenting right.

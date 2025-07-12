@@ -2,9 +2,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { Navbar } from "@/components/ui/mini-navbar";
-// import Footer from "@/components/footer";
-// import { Navbar } from "./navbar";
-import { FloatingDockFooter } from "./footer";
+import { Footer } from "./footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,8 +25,7 @@ export default function RootLayout({
         {/* <Navbar className="top-10" /> */}
         <Navbar />
         {children}
-        {/* <Footer /> */}
-        <FloatingDockFooter />
+        <Footer />
       </body>
     </html>
   );

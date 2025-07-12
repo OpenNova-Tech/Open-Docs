@@ -13,7 +13,7 @@ import {
 } from '@tabler/icons-react'
 import { motion } from 'framer-motion'
 
-export function FloatingDockFooter() {
+export function Footer() {
   const socialLinks = [
     { icon: IconBrandGithub, href: 'https://github.com', color: 'text-white' },
     { icon: IconBrandInstagram, href: 'https://instagram.com', color: 'text-pink-400' },
