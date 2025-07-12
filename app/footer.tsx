@@ -26,7 +26,7 @@ export function Footer() {
   ]
 
   return (
-    <footer className='w-full bg-black text-white pt-20'>
+    <footer className='bg-black text-white pt-20'>
       <div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-8 pb-20'>
         <div>
           <h3 className='text-lg font-semibold mb-2'>Organization</h3>
@@ -87,7 +87,7 @@ export function Footer() {
                 target='_blank'
                 rel='noopener noreferrer'
                 whileHover={{ y: -5 }}
-                className='w-10 h-10 bg-neutral-800 rounded-full flex items-center justify-center'
+                className='lg:w-10 lg:h-10 w-5 h-5 bg-neutral-800 rounded-full flex items-center justify-center'
               >
                 <Icon size={20} className={color} />
               </motion.a>
