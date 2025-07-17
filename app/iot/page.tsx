@@ -1,7 +1,7 @@
-"use client"
+'use client'
 
-import React from "react";
-import { HoverEffect } from "@/components/ui/card-hover-effect";
+import React from "react"
+import { HoverEffect } from "@/components/ui/card-hover-effect"
 
 export default function LanguagePage() {
 	const systems = [
