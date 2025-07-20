@@ -21,6 +21,7 @@ const sections = [
         title: 'Software Tools',
         subtitle: 'Tools enhancing productivity and automation',
         image: '/docs/tools.jpg',
+        readMoreLink: '/tool'
       },
     ],
   },
