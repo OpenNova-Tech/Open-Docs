@@ -7,7 +7,7 @@ export default function page() {
   const version = [
     {
       title: 'Git',
-      description: '',
+      description: 'Distributed version control system for managing code efficiently.',
       link: '/tool/git',
       iconSrc: 'icons/tools/git.svg'
     },
@@ -15,41 +15,41 @@ export default function page() {
 
   const testing = [
     {
-        title: 'Jest',
-        description: '',
-        link: '/tool/jest',
-        iconSrc: 'icons/tools/jest.svg'
+      title: 'Jest',
+      description: 'Delightful JavaScript testing framework with a focus on simplicity.',
+      link: '/tool/jest',
+      iconSrc: 'icons/tools/jest.svg'
     },
     {
-        title: 'Selenium',
-        description: '',
-        link: '/tool/selenium',
-        iconSrc: 'icons/tools/selenium.svg'
+      title: 'Selenium',
+      description: 'Automates web browsers for testing across multiple platforms.',
+      link: '/tool/selenium',
+      iconSrc: 'icons/tools/selenium.svg'
     },
     {
-        title: 'JUnit',
-        description: '',
-        link: '/tool/junit5',
-        iconSrc: 'icons/tools/junit5.svg'
+      title: 'JUnit',
+      description: 'Widely used testing framework for Java-based applications.',
+      link: '/tool/junit5',
+      iconSrc: 'icons/tools/junit5.svg'
     },
     {
-        title: 'Cypress',
-        description: '',
-        link: '/tool/cypress',
-        iconSrc: 'icons/tools/cypress.svg'
+      title: 'Cypress',
+      description: 'Fast, easy, and reliable testing for web applications.',
+      link: '/tool/cypress',
+      iconSrc: 'icons/tools/cypress.svg'
     },
   ]
 
   const design = [
     {
       title: 'Figma',
-      description: '',
+      description: 'Collaborative interface design tool for teams and individuals.',
       link: '/tool/figma',
       iconSrc: 'icons/tools/figma.svg'
     },
     {
       title: 'Sketch',
-      description: '',
+      description: 'Vector-based design tool for macOS used by professionals.',
       link: '/tool/sketch',
       iconSrc: 'icons/tools/sketch.svg'
     },
@@ -58,13 +58,13 @@ export default function page() {
   const project = [
     {
       title: 'Notion',
-      description: '',
+      description: 'All-in-one workspace for notes, tasks, and collaboration.',
       link: '/tool/notion',
       iconSrc: 'icons/tools/notion.svg'
     },
     {
       title: 'Jira',
-      description: '',
+      description: 'Agile project management tool for tracking issues and tasks.',
       link: '/tool/jira',
       iconSrc: 'icons/tools/jira.svg'
     },
@@ -72,16 +72,19 @@ export default function page() {
 
   return (
     <div className='bg-black pt-20'>
-        <div className='max-w-5xl mx-auto px-8 py-12'>
-            Version Controls
-            <HoverEffect items={version} />
-            Testing Tools
-            <HoverEffect items={testing} />
-            Design and Prototyping
-            <HoverEffect items={design} />
-            Project and Documentation 
-            <HoverEffect items={project} />
-        </div>
+      <div className='max-w-5xl mx-auto px-8 py-12'>
+        <p className="text-white text-xl font-semibold mb-4">Version Controls</p>
+        <HoverEffect items={version} />
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">Testing Tools</p>
+        <HoverEffect items={testing} />
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">Design and Prototyping</p>
+        <HoverEffect items={design} />
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">Project and Documentation</p>
+        <HoverEffect items={project} />
+      </div>
     </div>
   )
 }
