@@ -238,3 +238,11 @@ body {
     --border-color-2: hsla(320, 50%, 90%, 0.75);
   }
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
