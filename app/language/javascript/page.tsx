@@ -15,15 +15,15 @@ import { Feature } from "@/components/feature-section-with-hover-effects";
 import Link from "next/link";
 
 const features = [
-  { title: "Introduction", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/1" },
-  { title: "DOM and Functions", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/2" },
-  { title: "Arrays, OOP, Events", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/3" },
-  { title: "Async, APIS, Storage", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/4" },
-  { title: "ES6+, Event Loop", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/5" },
-  { title: "Functional Programming", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/6" },
-  { title: "Memory, Optimization", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/7" },
-  { title: "Design Patterns", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/8" },
-  { title: "Generators, Web Workers", description: "He;p", icon: <IconBrandJavascript />, link: "/language/javascript/9" },
+  { title: "Introduction", description: "Help", icon: <IconBrandJavascript />, link: "/language/javascript/1" },
+  { title: "DOM and Functions", description: "Help", icon: <IconBrandJavascript />, link: "/language/javascript/2" },
+  { title: "Arrays, OOP, Events", description: "Help", icon: <IconBrandJavascript />, link: "/language/javascript/3" },
+  { title: "Async, APIS, Storage", description: "Help", icon: <IconBrandJavascript />, link: "/language/javascript/4" },
+  { title: "ES6+, Event Loop", description: "Help", icon: <IconBrandJavascript />, link: "/language/javascript/5" },
+  { title: "Functional Programming", description: "Help", icon: <IconBrandJavascript />, link: "/language/javascript/6" },
+  { title: "Memory, Optimization", description: "Help", icon: <IconBrandJavascript />, link: "/language/javascript/7" },
+  { title: "Design Patterns", description: "Help", icon: <IconBrandJavascript />, link: "/language/javascript/8" },
+  { title: "Generators, Web Workers", description: "Help", icon: <IconBrandJavascript />, link: "/language/javascript/9" },
 ];
 
 export default function page() {
