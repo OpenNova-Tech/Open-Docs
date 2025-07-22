@@ -12,8 +12,8 @@ import {
 	// IconRouteAltLeft,
 	// IconTerminal2,
 } from "@tabler/icons-react";
-import { Feature } from "@/components/feature-section-with-hover-effects";
-import Link from "next/link";
+// import { Feature } from "@/components/feature-section-with-hover-effects";
+// import Link from "next/link";
 import { ScrollableFeatureRow } from "@/components/ScrollableRow";
 
 
