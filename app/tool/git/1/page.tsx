@@ -63,7 +63,7 @@ export default function page() {
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						• Track every change: See what was changed, when, and by whom. <br />
-						• Work collaboratively: Multiple developers can contribute without overwriting each other's work. <br />
+						• Work collaboratively: Multiple developers can contribute without overwriting each other&apos;s work. <br />
 						• Undo mistakes: Roll back to previous versions easily. <br />
 						• Branch with ease: Work on features in isolation, then merge them in.
 					</div>
