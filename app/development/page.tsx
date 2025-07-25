@@ -312,31 +312,47 @@ export default function page() {
 
 
   return (
-    <div className='max-w-5xl mt-20 mx-auto px-8 py-12'>
-      Frontend Web Frameworks
-      <HoverEffect items={frontend} />
-      Frontend Cross-Platform Frameworks
-      <HoverEffect items={cross} />
-      UI Libraries
-      <HoverEffect items={libraries} />
-      State Management Libaries
-      <HoverEffect items={state} />
-      Backend Frameworks
-      <HoverEffect items={backend} />
-      Full Stack Web Frameworks
-      <HoverEffect items={full} />
-      Full Stack Cross Platform Frameworks
-      <HoverEffect items={crossfull} />
-      Databases
-      <HoverEffect items={database} />
-      Database Tools
-      <HoverEffect items={dbtools} />
-      Schema Frameworks
-      <HoverEffect items={schema} />
-      Package Managers
-      <HoverEffect items={packages} />
-      Build Tools
-      <HoverEffect items={build} />
+    <div className='bg-black pt-20'>
+      <div className='max-w-5xl mx-auto px-8 py-12'>
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">Frontend Web Frameworks</p>
+        <HoverEffect items={frontend} />
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">Frontend Cross-Platform Frameworks</p>
+        <HoverEffect items={cross} />
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">UI Libraries</p>
+        <HoverEffect items={libraries} />
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">State Management Libraries</p>
+        <HoverEffect items={state} />
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">Backend Frameworks</p>
+        <HoverEffect items={backend} />
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">Full Stack Web Frameworks</p>
+        <HoverEffect items={full} />
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">Full Stack Cross Platform Frameworks</p>
+        <HoverEffect items={crossfull} />
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">Databases</p>
+        <HoverEffect items={database} />
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">Database Tools</p>
+        <HoverEffect items={dbtools} />
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">Schema Frameworks</p>
+        <HoverEffect items={schema} />
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">Package Managers</p>
+        <HoverEffect items={packages} />
+
+        <p className="text-white text-xl font-semibold mt-10 mb-4">Build Tools</p>
+        <HoverEffect items={build} />
+
+      </div>
     </div>
+
   )
 }
