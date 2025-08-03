@@ -44,7 +44,7 @@ sudo apt install git`
           className='shadow-[#F05032] border border-[#F05032]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100'>
-            <b className='text-[#F05032]'>1.1</b> Windows Installation
+            <b className='text-[#F05032]'>2.1</b> Windows Installation
           </h2>
           <div className='max-w-3xl mx-auto'>
             1. Go to <a className='text-indigo-500 underline' href='https://git-scm.com'>https://git-scm.com</a>. <br />
@@ -70,7 +70,7 @@ sudo apt install git`
           className='shadow-[#F05032] border border-[#F05032]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100'>
-            <b className='text-[#F05032]'>1.2</b> MacOS Installation
+            <b className='text-[#F05032]'>2.2</b> MacOS Installation
           </h2>
           <div className='max-w-3xl mx-auto'>
             OPTION 1: Using Homebrew (Recommended)
@@ -91,7 +91,7 @@ sudo apt install git`
           className='shadow-[#F05032] border border-[#F05032]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100'>
-            <b className='text-[#F05032]'>1.3</b> Linux Installation
+            <b className='text-[#F05032]'>2.3</b> Linux Installation
           </h2>
           <div className='max-w-3xl mx-auto'>
             For Ubuntu / Debian:
@@ -114,7 +114,7 @@ sudo apt install git`
           className='shadow-[#F05032] border border-[#F05032]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100'>
-            <b className='text-[#F05032]'>1.4</b> Confirm Git Installation Installation
+            <b className='text-[#F05032]'>2.4</b> Confirm Git Installation Installation
           </h2>
           <div className='max-w-3xl mx-auto'>
             Once installed, run:
