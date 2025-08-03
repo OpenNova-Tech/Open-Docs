@@ -81,7 +81,7 @@ const advanced = [
 export default function page() {
 	return (
 		<div className='bg-black p-10 py-32'>
-			<h1 className='text-3xl md:text-5xl max-w-2xl mx-auto font-extrabold text-[#f1e05a] mb-4 flex items-center gap-3'>
+			<h1 className='text-3xl md:text-5xl max-w-2xl mx-auto font-extrabold text-[#F1E05A] mb-4 flex items-center gap-3'>
 				<img src="/icons/langs/js.svg" alt="JavaScript Logo" className="w-10 h-10" />
 				&nbsp;JavaScript Docs
 			</h1>

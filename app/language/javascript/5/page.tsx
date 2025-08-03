@@ -23,7 +23,7 @@ pi = 3.14159  // error`
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
 				>
-					<h1 className='text-5xl font-extrabold tracking-tight bg-clip-text text-yellow-400 bg-black'>
+					<h1 className='text-5xl font-extrabold tracking-tight bg-clip-text text-[#F1E05A] bg-black'>
 						JavaScript Variables
 					</h1>
 				</motion.header>
@@ -33,10 +33,10 @@ pi = 3.14159  // error`
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6, delay: 0.1 }}
 					whileHover={{ scale: 1.03, transition: { duration: 0.15, ease: 'easeOut' } }}
-					className='shadow-yellow-400 border border-yellow-400/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
+					className='shadow-[#F1E05A] border border-[#F1E05A]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
-						<b className='text-yellow-400'>5.1</b> JavaScript Variables
+						<b className='text-[#F1E05A]'>5.1</b> JavaScript Variables
 					</h2>
 					<div className="max-w-3xl mx-auto text-gray-300">
 						A variable is a container that stores data which you can use and manipulate later. <br />
@@ -84,12 +84,12 @@ pi = 3.14159  // error`
 					transition={{ duration: 0.6 }}
 				>
 					<Link href='4'>
-						<button className='bg-transparent border border-yellow-400 cursor-pointer text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:-translate-x-2'>
+						<button className='bg-transparent border border-[#F1E05A] cursor-pointer text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:-translate-x-2'>
 							← View Previous
 						</button>
 					</Link>
 					<Link href='6'>
-						<button className='bg-transparent border border-yellow-400 cursor-pointer text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:translate-x-2'>
+						<button className='bg-transparent border border-[#F1E05A] cursor-pointer text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:translate-x-2'>
 							View Next →
 						</button>
 					</Link>

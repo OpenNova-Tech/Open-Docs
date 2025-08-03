@@ -30,7 +30,7 @@ export default function page() {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
 				>
-					<h1 className='text-5xl font-extrabold tracking-tight bg-clip-text text-orange-400 bg-black'>
+					<h1 className='text-5xl font-extrabold tracking-tight bg-clip-text text-[#F05032] bg-black'>
 						What is Git ?
 					</h1>
 				</motion.header>
@@ -40,10 +40,10 @@ export default function page() {
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6, delay: 0.1 }}
 					whileHover={{ scale: 1.03, transition: { duration: 0.15, ease: 'easeOut' } }}
-					className='shadow-orange-400 border border-orange-400/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
+					className='shadow-[#F05032] border border-[#F05032]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
-						<b className='text-orange-400'>1.1</b> What is Git
+						<b className='text-[#F05032]'>1.1</b> What is Git
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						Git is a distributed version control system (DVCS) that lets you track changes in your codebase, collaborate with others, and manage project history efficiently. <br /><br />
@@ -56,10 +56,10 @@ export default function page() {
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6, delay: 0.2 }}
 					whileHover={{ scale: 1.03, transition: { duration: 0.15, ease: 'easeOut' } }}
-					className='shadow-orange-400 border border-orange-400/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
+					className='shadow-[#F05032] border border-[#F05032]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
-						<b className='text-orange-400'>1.2</b> Why use Git ?
+						<b className='text-[#F05032]'>1.2</b> Why use Git ?
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						• Track every change: See what was changed, when, and by whom. <br />
@@ -74,10 +74,10 @@ export default function page() {
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6, delay: 0.3 }}
 					whileHover={{ scale: 1.03, transition: { duration: 0.15, ease: 'easeOut' } }}
-					className='shadow-orange-400 border border-orange-400/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
+					className='shadow-[#F05032] border border-[#F05032]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
-						<b className='text-orange-400'>1.3</b> Git vs Traditional Version Control
+						<b className='text-[#F05032]'>1.3</b> Git vs Traditional Version Control
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						<Table>
@@ -106,10 +106,10 @@ export default function page() {
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6, delay: 0.4 }}
 					whileHover={{ scale: 1.03, transition: { duration: 0.15, ease: 'easeOut' } }}
-					className='shadow-orange-400 border border-orange-400/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
+					className='shadow-[#F05032] border border-[#F05032]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
-						<b className='text-orange-400'>1.4</b> Git in real world
+						<b className='text-[#F05032]'>1.4</b> Git in real world
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						Imagine you are writing a novel with a friend: <br /><br />
@@ -126,12 +126,12 @@ export default function page() {
 					transition={{ duration: 0.6 }}
 				>
 					<Link href='1'>
-						<button className='bg-transparent border border-orange-400 cursor-pointer text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:-translate-x-2'>
+						<button className='bg-transparent border border-[#F05032] cursor-pointer text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:-translate-x-2'>
 							← View Previous
 						</button>
 					</Link>
 					<Link href='2'>
-						<button className='bg-transparent border border-orange-400 cursor-pointer text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:translate-x-2'>
+						<button className='bg-transparent border border-[#F05032] cursor-pointer text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:translate-x-2'>
 							View Next →
 						</button>
 					</Link>
