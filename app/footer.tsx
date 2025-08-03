@@ -86,15 +86,15 @@ export function Footer() {
             <ul className='space-y-1 text-sm text-neutral-400'>
               {section.links.map((link) => (
                 <motion.li key={link.label}>
-  <motion.a
-    href={link.href}
-    className="hover:text-indigo-400 inline-block"
-    whileHover={{ x: 4 }}
-    transition={{ type: 'spring', stiffness: 300 }}
-  >
-    {link.label}
-  </motion.a>
-</motion.li>
+                  <motion.a
+                    href={link.href}
+                    className="hover:text-indigo-400 inline-block"
+                    whileHover={{ x: 4 }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                  >
+                    {link.label}
+                  </motion.a>
+                </motion.li>
 
               ))}
             </ul>
