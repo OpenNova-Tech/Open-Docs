@@ -49,7 +49,7 @@ const aptitude = [
 		title: 'Quantitative',
 		description: 'Covers arithmetic, algebra, percentages, and logical reasoning basics.',
 		icon: <IconBrain />,
-		link: 'cognizant/aptitude/1',
+		link: 'cognizant/aptitude',
 	},
 ]
 
