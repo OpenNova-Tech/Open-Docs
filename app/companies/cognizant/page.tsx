@@ -40,7 +40,7 @@ const communication = [
 		title: 'Grammar',
 		description: 'Test your grammar basics, tenses, and sentence structures.',
 		icon: <IconMessage />,
-		link: 'cognizant/communication/3',
+		link: 'cognizant/grammar',
 	},
 ]
 
