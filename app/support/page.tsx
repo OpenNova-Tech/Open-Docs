@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Heart, Gift, Sparkles } from 'lucide-react'
+import { RazorpayOptions, RazorpayResponse } from '@/types/razorpay'
 
 export default function SupportPage() {
   const [amount, setAmount] = useState('')
@@ -40,15 +41,18 @@ export default function SupportPage() {
 
     const order = await orderRes.json()
 
-    const options: any = {
-      key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
+    const options: RazorpayOptions = {
+      key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID!,
       amount: order.amount,
       currency: 'INR',
       name: 'Our Website',
       description: 'Donation Support',
       order_id: order.id,
-      handler: function (response: any) {
-        alert('🎉 Thank you for donating!\nPayment ID: ' + response.razorpay_payment_id)
+      handler: function (response: RazorpayResponse) {
+        alert(
+          '🎉 Thank you for donating!\nPayment ID: ' +
+          response.razorpay_payment_id
+        )
       },
       theme: {
         color: '#2a1466',
@@ -56,7 +60,7 @@ export default function SupportPage() {
       },
     }
 
-    const paymentObject = new (window as any).Razorpay(options)
+    const paymentObject = new window.Razorpay(options)
     paymentObject.open()
     setLoading(false)
   }
