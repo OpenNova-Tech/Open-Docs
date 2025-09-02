@@ -77,8 +77,8 @@ export function Footer() {
           <motion.div
             key={section.title}
             custom={index}
-            initial="hidden"
-            whileInView="visible"
+            initial='hidden'
+            whileInView='visible'
             viewport={{ once: true }}
             variants={fadeIn}
           >
@@ -88,7 +88,7 @@ export function Footer() {
                 <motion.li key={link.label}>
                   <motion.a
                     href={link.href}
-                    className="hover:text-indigo-400 inline-block"
+                    className='hover:text-indigo-400 inline-block'
                     whileHover={{ x: 4 }}
                     transition={{ type: 'spring', stiffness: 300 }}
                   >
@@ -117,10 +117,12 @@ export function Footer() {
               transition={{ delay: 0.6, duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <img src='/icons/web/next.svg' alt='Next.js' className='h-4' />
-              <img src='/icons/web/tailwind.svg' alt='Tailwind CSS' className='h-4' />
-              <img src='/icons/web/shadcn.svg' alt='ShadCN UI' className='h-4' />
-              <img src='/icons/web/vercel.svg' alt='Vercel' className='h-4' />
+                <img src='https://cdn.simpleicons.org/next.js/FFFFFF' className='h-4' />
+                <img src='https://cdn.simpleicons.org/tailwindcss/06B6D4' className='h-4' />
+                <img src='https://cdn.worldvectorlogo.com/logos/framer-motion.svg' className='h-4' />
+                <img src='https://cdn.worldvectorlogo.com/logos/gemini-icon-logo.svg' className='h-4' />
+                <img src='razorpay.svg' className='h-4' />
+                <img src='https://cdn.simpleicons.org/vercel/FFFFFF' className='h-4' />
             </motion.div>
           </div>
         </motion.div>
@@ -141,7 +143,7 @@ export function Footer() {
                 href={href}
                 target='_blank'
                 rel='noopener noreferrer'
-                whileHover={{ y: -5, scale: 1.2, rotate: -5 }} // 👈 combine all effects here
+                whileHover={{ y: -5, scale: 1.2, rotate: -5 }} 
                 transition={{ type: 'spring', stiffness: 300, damping: 20 }}
                 className='lg:w-10 lg:h-10 w-5 h-5 bg-neutral-800 rounded-full flex items-center justify-center'
               >
