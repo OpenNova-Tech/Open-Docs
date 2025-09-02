@@ -121,7 +121,7 @@ export function Footer() {
                 <img src='https://cdn.simpleicons.org/tailwindcss/06B6D4' className='h-4' />
                 <img src='https://cdn.worldvectorlogo.com/logos/framer-motion.svg' className='h-4' />
                 <img src='https://cdn.worldvectorlogo.com/logos/gemini-icon-logo.svg' className='h-4' />
-                <img src='razorpay.svg' className='h-4' />
+                <img src='/razorpay.svg' className='h-4' />
                 <img src='https://cdn.simpleicons.org/vercel/FFFFFF' className='h-4' />
             </motion.div>
           </div>
