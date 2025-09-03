@@ -34,11 +34,10 @@ export default function Chatbot() {
 				const botMsg: Message = { role: 'bot', text: data.reply }
 				setMessages((prev) => [...prev, botMsg])
 			} else {
-				// fallback for API error
 				const errorMsg: Message = { role: 'bot', text: data.reply || '⚠️ Gemini is busy, please try again.' }
 				setMessages((prev) => [...prev, errorMsg])
 			}
-		} catch (err) {
+		} catch {
 			const errorMsg: Message = { role: 'bot', text: '⚠️ Failed to reach Gemini. Try again later.' }
 			setMessages((prev) => [...prev, errorMsg])
 		} finally {

@@ -12,7 +12,7 @@ export async function POST(req: Request) {
     const reply = result.response.text()
 
     return NextResponse.json({ reply })
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error('Gemini API error:', err)
 
     return NextResponse.json(
