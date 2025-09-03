@@ -87,7 +87,7 @@ export default function SupportPage() {
   ]
 
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen px-6 py-20 bg-black text-white'>
+    <div className='flex flex-col items-center justify-center px-6 py-40 bg-black text-white'>
 
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
