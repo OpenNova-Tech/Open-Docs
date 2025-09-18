@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 24 24"
+     width="24" height="24"
+     role="img" aria-labelledby="titleDesc">
+  <title id="titleDesc">Array icon with indices</title>
+  <desc>Five contiguous squares filling the 24x24 canvas, first highlighted, with indices 0–4 below.</desc>
+
+  <!-- cells (use most of the 24px width) -->
+  <rect x="1"   y="2" width="4"  height="14" rx="0.6" ry="0.6" fill="#F59E0B" stroke="#F59E0B" stroke-width="0.25"/>
+  <rect x="5.5" y="2" width="4"  height="14" rx="0.6" ry="0.6" fill="#0F172A" stroke="#94A3B8" stroke-width="0.25"/>
+  <rect x="10"  y="2" width="4"  height="14" rx="0.6" ry="0.6" fill="#0F172A" stroke="#94A3B8" stroke-width="0.25"/>
+  <rect x="14.5" y="2" width="4"  height="14" rx="0.6" ry="0.6" fill="#0F172A" stroke="#94A3B8" stroke-width="0.25"/>
+  <rect x="19"  y="2" width="4"  height="14" rx="0.6" ry="0.6" fill="#0F172A" stroke="#94A3B8" stroke-width="0.25"/>
+
+  <!-- indices below each cell -->
+  <text x="3"   y="20.2" font-family="Inter, Arial, sans-serif" font-size="3.2" fill="#0B1220" text-anchor="middle">0</text>
+  <text x="7.5" y="20.2" font-family="Inter, Arial, sans-serif" font-size="3.2" fill="#94A3B8" text-anchor="middle">1</text>
+  <text x="12"  y="20.2" font-family="Inter, Arial, sans-serif" font-size="3.2" fill="#94A3B8" text-anchor="middle">2</text>
+  <text x="16.5" y="20.2" font-family="Inter, Arial, sans-serif" font-size="3.2" fill="#94A3B8" text-anchor="middle">3</text>
+  <text x="21"  y="20.2" font-family="Inter, Arial, sans-serif" font-size="3.2" fill="#94A3B8" text-anchor="middle">4</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg fill="#e67e22" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <title>Graph Algorithms (DFS/BFS)</title>
+  <!-- Nodes -->
+  <circle cx="6" cy="6" r="1.5"/>
+  <circle cx="18" cy="6" r="1.5"/>
+  <circle cx="12" cy="12" r="1.5"/>
+  <circle cx="6" cy="18" r="1.5"/>
+  <circle cx="18" cy="18" r="1.5"/>
+  
+  <!-- Edges -->
+  <line x1="6" y1="6" x2="12" y2="12" stroke="#e67e22" stroke-width="1.5"/>
+  <line x1="12" y1="12" x2="18" y2="6" stroke="#e67e22" stroke-width="1.5"/>
+  <line x1="12" y1="12" x2="6" y2="18" stroke="#e67e22" stroke-width="1.5"/>
+  <line x1="12" y1="12" x2="18" y2="18" stroke="#e67e22" stroke-width="1.5"/>
+  <line x1="6" y1="6" x2="18" y2="6" stroke="#e67e22" stroke-width="1.5"/>
+  <line x1="6" y1="18" x2="18" y2="18" stroke="#e67e22" stroke-width="1.5"/>
+  
+  <!-- Traversal path (example DFS/BFS) -->
+  <line x1="6" y1="6" x2="12" y2="12" stroke="#3498db" stroke-width="2"/>
+  <line x1="12" y1="12" x2="18" y2="18" stroke="#3498db" stroke-width="2"/>
+  <line x1="18" y1="18" x2="18" y2="6" stroke="#3498db" stroke-width="2"/>
+</svg>

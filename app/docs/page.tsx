@@ -89,7 +89,7 @@ const sections = [
         title: 'Data Structures & Algorithms',
         subtitle: 'Master logic, speed, and code.',
         image: '/docs/cp.webp',
-        readMoreLink: '/cp'
+        readMoreLink: 'docs/dsa'
       },
     ],
   },

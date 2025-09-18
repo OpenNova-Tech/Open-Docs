@@ -1,0 +1,10 @@
+<svg fill="#d32f2f" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <title>Stack</title>
+  <!-- Stack layers -->
+  <rect x="5" y="5" width="14" height="3" rx="1" />
+  <rect x="5" y="9" width="14" height="3" rx="1" />
+  <rect x="5" y="13" width="14" height="3" rx="1" />
+  <rect x="5" y="17" width="14" height="3" rx="1" />
+  <!-- Upward arrow to show push -->
+  <path d="M12 2l-3 3h2v2h2V5h2l-3-3z"/>
+</svg>
