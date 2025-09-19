@@ -244,7 +244,7 @@ print(arr)`
 					className='shadow-[#16a085] border border-[#16a085]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
-						<b className='text-[#16a085]'>2.2</b> How it Works
+						<b className='text-[#16a085]'>5.2</b> How it Works
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						1. Start from the first element. <br />
@@ -264,7 +264,7 @@ print(arr)`
 					className='shadow-[#16a085] border border-[#16a085]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
-						<b className='text-[#16a085]'>2.3</b> Working Procedure
+						<b className='text-[#16a085]'>5.3</b> Working Procedure
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						Input: <br />
@@ -289,7 +289,7 @@ print(arr)`
 					className='shadow-[#16a085] border border-[#16a085]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
-						<b className='text-[#16a085]'>2.4</b> Pseudocode
+						<b className='text-[#16a085]'>5.4</b> Pseudocode
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						<CodeBlock language="pgsql" filename="pseudocode" code={code1} />
@@ -304,7 +304,7 @@ print(arr)`
 					className='shadow-[#16a085] border border-[#16a085]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
-						<b className='text-[#16a085]'>2.5</b> Implementation
+						<b className='text-[#16a085]'>5.5</b> Implementation
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						<CodeBlock
@@ -327,7 +327,7 @@ print(arr)`
 					className='shadow-[#16a085] border border-[#16a085]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
-						<b className='text-[#16a085]'>2.6</b> Complexity Analysis
+						<b className='text-[#16a085]'>5.6</b> Complexity Analysis
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						• <b>Best Case (Already Sorted)</b>: O(n) with optimization <br />
@@ -346,7 +346,7 @@ print(arr)`
 					className='shadow-[#16a085] border border-[#16a085]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
-						<b className='text-[#16a085]'>2.7</b> Variants
+						<b className='text-[#16a085]'>5.7</b> Variants
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						• <b>Optimized Bubble Sort</b>: O(n) Stops early if no swaps occur in a pass. <br />
@@ -383,7 +383,7 @@ print(arr)`
 					className='shadow-[#16a085] border border-[#16a085]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
-						<b className='text-[#16a085]'>2.8</b> Real-Life Use Cases
+						<b className='text-[#16a085]'>5.8</b> Real-Life Use Cases
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						Rarely used in practice, but helpful for: <br />
@@ -401,7 +401,7 @@ print(arr)`
 					className='shadow-[#16a085] border border-[#16a085]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
-						<b className='text-[#16a085]'>2.9</b> Key Takeaways
+						<b className='text-[#16a085]'>5.9</b> Key Takeaways
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						• Bubble Sort is <b>easy to understand</b> but <b>inefficient</b> for large inputs. <br />
