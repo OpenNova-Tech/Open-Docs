@@ -124,9 +124,9 @@ export default function page() {
       >
         <h3 className='text-lg font-semibold mb-3'>Add a Reply</h3>
         <textarea
-          className='w-full p-3 resize-none rounded-xl bg-gray-800 text-white'
+          className='w-full focus:outline-none focus:ring-0 p-3 resize-none rounded-xl bg-gray-800 text-white'
           rows={4}
-          placeholder='Write your reply...'
+          placeholder='Write your reply'
           value={replyContent}
           onChange={(e) => setReplyContent(e.target.value)}
         />

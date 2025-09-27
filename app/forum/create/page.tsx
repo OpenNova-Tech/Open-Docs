@@ -67,7 +67,7 @@ export default function page() {
             onChange={(e) => setTitle(e.target.value)}
             placeholder='Enter thread title'
             required
-            className='w-full p-3 rounded-xl bg-gray-800 text-white'
+            className='w-full p-3 rounded-xl bg-gray-800 text-white focus:outline-none focus:ring-0'
           />
         </div>
 
@@ -79,7 +79,7 @@ export default function page() {
             placeholder='Describe your question or discussion topic'
             rows={5}
             required
-            className='w-full p-3 rounded-xl bg-gray-800 text-white'
+            className='w-full p-3 rounded-xl resize-none bg-gray-800 text-white focus:outline-none focus:ring-0'
           />
         </div>
 
@@ -88,7 +88,7 @@ export default function page() {
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            className='w-full p-3 rounded-xl bg-gray-800 text-white'
+            className='w-full p-3 rounded-xl bg-gray-800 text-white focus:outline-none focus:ring-0'
           >
             <option>General</option>
             <option>Language</option>
