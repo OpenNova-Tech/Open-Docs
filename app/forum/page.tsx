@@ -13,7 +13,7 @@ type ForumThread = {
   lastActivity: string
 }
 
-export default function page() {
+export default function Page() {
   const [threads, setThreads] = useState<ForumThread[]>([])
   const [loading, setLoading] = useState(true)
 

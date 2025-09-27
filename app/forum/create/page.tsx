@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
-export default function page() {
+export default function Page() {
   const [title, setTitle] = useState('')
   const [desc, setDesc] = useState('')
   const [category, setCategory] = useState('General')

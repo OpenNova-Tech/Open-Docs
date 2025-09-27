@@ -20,7 +20,7 @@ type Thread = {
   replies: Reply[]
 }
 
-export default function page() {
+export default function Page() {
   const { id } = useParams()
   const [thread, setThread] = useState<Thread | null>(null)
   const [loading, setLoading] = useState(true)
