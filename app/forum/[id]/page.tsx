@@ -20,7 +20,7 @@ type Thread = {
   replies: Reply[]
 }
 
-export default function ThreadPage() {
+export default function page() {
   const { id } = useParams()
   const [thread, setThread] = useState<Thread | null>(null)
   const [loading, setLoading] = useState(true)
@@ -82,16 +82,16 @@ export default function ThreadPage() {
     )
 
   return (
-    <section className='py-12 px-6 max-w-4xl mx-auto'>
+    <section className='py-36 bg-black px-6  mx-auto'>
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className='mb-8'
+        className='mb-8 max-w-5xl mx-auto'
       >
         <h1 className='text-3xl font-bold mb-2'>{thread.title}</h1>
-        <p className='text-gray-600 dark:text-gray-400 mb-4'>{thread.desc}</p>
-        <span className='px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-xs font-medium'>
+        <p className='text-gray-400 mb-4'>{thread.desc}</p>
+        <span className='px-3 py-1 bg-gray-800 rounded-full text-xs font-medium'>
           {thread.category}
         </span>
       </motion.div>
@@ -103,7 +103,7 @@ export default function ThreadPage() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className='p-5 bg-white dark:bg-gray-900 rounded-xl shadow'
+            className='p-5 max-w-5xl mx-auto bg-white dark:bg-gray-900 rounded-xl shadow'
           >
             <div className='flex justify-between mb-2'>
               <span className='font-semibold'>{reply.author}</span>
@@ -120,11 +120,11 @@ export default function ThreadPage() {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className='mt-10'
+        className='mt-10 max-w-5xl mx-auto'
       >
         <h3 className='text-lg font-semibold mb-3'>Add a Reply</h3>
         <textarea
-          className='w-full p-3 border rounded-xl bg-gray-50 dark:bg-gray-800 dark:text-white'
+          className='w-full p-3 resize-none rounded-xl bg-gray-800 text-white'
           rows={4}
           placeholder='Write your reply...'
           value={replyContent}
@@ -133,7 +133,7 @@ export default function ThreadPage() {
         <button
           onClick={handleReply}
           disabled={posting}
-          className='mt-3 px-5 py-2 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed'
+          className='mt-3 px-5 py-2 bg-indigo-500 text-white font-semibold rounded-xl hover:bg-indigo-600 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed'
         >
           {posting ? 'Posting...' : 'Post Reply'}
         </button>
@@ -142,7 +142,7 @@ export default function ThreadPage() {
       <div className='text-center mt-12'>
         <Link
           href='/forum'
-          className='inline-block px-5 py-2 bg-gray-200 dark:bg-gray-800 rounded-xl text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700'
+          className='inline-block px-5 py-2 bg-gray-800 rounded-xl text-gray-300 hover:bg-gray-700'
         >
           ← Back to Forum
         </Link>

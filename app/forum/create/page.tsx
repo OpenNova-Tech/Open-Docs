@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
-export default function CreateThreadPage() {
+export default function page() {
   const [title, setTitle] = useState('')
   const [desc, setDesc] = useState('')
   const [category, setCategory] = useState('General')
@@ -39,7 +39,7 @@ export default function CreateThreadPage() {
   }
 
   return (
-    <section className='py-12 px-6 max-w-3xl mx-auto'>
+    <section className='py-36 px-6 bg-black'>
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export default function CreateThreadPage() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className='bg-white dark:bg-gray-900 p-6 rounded-2xl shadow space-y-6'
+        className=' max-w-5xl mx-auto bg-gray-900 p-6 rounded-2xl shadow space-y-6'
       >
         <div>
           <label className='block font-semibold mb-2'>Title</label>
@@ -65,9 +65,9 @@ export default function CreateThreadPage() {
             type='text'
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder='Enter thread title...'
+            placeholder='Enter thread title'
             required
-            className='w-full p-3 border rounded-xl bg-gray-50 dark:bg-gray-800 dark:text-white'
+            className='w-full p-3 rounded-xl bg-gray-800 text-white'
           />
         </div>
 
@@ -76,10 +76,10 @@ export default function CreateThreadPage() {
           <textarea
             value={desc}
             onChange={(e) => setDesc(e.target.value)}
-            placeholder='Describe your question or discussion topic...'
+            placeholder='Describe your question or discussion topic'
             rows={5}
             required
-            className='w-full p-3 border rounded-xl bg-gray-50 dark:bg-gray-800 dark:text-white'
+            className='w-full p-3 rounded-xl bg-gray-800 text-white'
           />
         </div>
 
@@ -88,14 +88,18 @@ export default function CreateThreadPage() {
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            className='w-full p-3 border rounded-xl bg-gray-50 dark:bg-gray-800 dark:text-white'
+            className='w-full p-3 rounded-xl bg-gray-800 text-white'
           >
             <option>General</option>
-            <option>Next.js</option>
-            <option>React</option>
-            <option>Svelte</option>
-            <option>Vue</option>
-            <option>Other</option>
+            <option>Language</option>
+            <option>Development</option>
+            <option>Tools</option>
+            <option>AIML</option>
+            <option>Cloud</option>
+            <option>Dev Ops</option>
+            <option>Security</option>
+            <option>Web 3.0</option>
+            <option>IOT</option>
           </select>
         </div>
 
@@ -109,7 +113,7 @@ export default function CreateThreadPage() {
           <button
             type='submit'
             disabled={loading}
-            className='px-6 py-2 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition disabled:opacity-50 disabled:cursor-not-allowed'
+            className='px-6 py-2 bg-indigo-500 text-white font-semibold rounded-xl cursor-pointer hover:bg-indigo-600 transition disabled:opacity-50 disabled:cursor-not-allowed'
           >
             {loading ? 'Creating...' : 'Create Thread'}
           </button>

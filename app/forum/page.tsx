@@ -13,7 +13,7 @@ type ForumThread = {
   lastActivity: string
 }
 
-export default function ForumPage() {
+export default function page() {
   const [threads, setThreads] = useState<ForumThread[]>([])
   const [loading, setLoading] = useState(true)
 
@@ -42,20 +42,20 @@ export default function ForumPage() {
   }
 
   return (
-    <section className='py-12 px-6 max-w-5xl mx-auto'>
+    <section className='py-12 bg-black px-6 '>
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className='text-center mb-12'
+        className='text-center mb-12 pt-24'
       >
-        <h1 className='text-4xl font-bold mb-2'>OpenDocs Forum</h1>
+        <h1 className='text-5xl font-bold mb-5 text-indigo-400'>OpenDocs Forum</h1>
         <p className='text-gray-600 dark:text-gray-400'>
           Discuss, ask questions, and share knowledge with the community.
         </p>
       </motion.div>
 
-      <div className='grid gap-6'>
+      <div className='px-32 grid grid-cols-3 gap-6'>
         {threads.map((thread) => (
           <motion.div
             key={thread.id}
@@ -90,7 +90,7 @@ export default function ForumPage() {
       >
         <Link
           href='/forum/create'
-          className='inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow hover:bg-blue-700 transition'
+          className='inline-block px-6 py-3 bg-indigo-500 text-white font-semibold rounded-xl shadow hover:bg-indigo-600 transition'
         >
           + Create New Thread
         </Link>
