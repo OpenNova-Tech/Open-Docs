@@ -47,7 +47,7 @@ export function Footer() {
       title: 'Community',
       links: [
         { label: 'Community', href: '#' },
-        { label: 'Forum', href: '#' },
+        { label: 'Forum', href: '/forum' },
         { label: 'Chat', href: '#' },
       ],
     },
