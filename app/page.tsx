@@ -54,9 +54,9 @@ export default function Home() {
 
       <StickyBanner className='bg-gradient-to-b from-indigo-500 to-indigo-600'>
         <p className='mx-0 max-w-[90%] text-white drop-shadow-md'>
-          OpenDocs Pro in development.{' '}
-          <a href='#' className='transition duration-200 hover:underline'>
-            Read full development logs here.
+          Want learn about future of Technology into the Quantum Realm.{' '}
+          <a href='https://rubys-beta.vercel.app' className='transition duration-200 hover:underline'>
+            Open Quantum in development see beta.
           </a>
         </p>
       </StickyBanner>
