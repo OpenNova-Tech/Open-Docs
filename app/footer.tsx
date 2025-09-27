@@ -120,6 +120,9 @@ export function Footer() {
                 <img src='https://cdn.simpleicons.org/next.js/FFFFFF' className='h-4' />
                 <img src='https://cdn.simpleicons.org/tailwindcss/06B6D4' className='h-4' />
                 <img src='https://cdn.worldvectorlogo.com/logos/framer-motion.svg' className='h-4' />
+                <img src='/prisma-2.svg' className='h-4' />
+                <img src='/postgresql.svg' className='h-4' />
+                {/* <img src='/neondb.svg' className='h-4' /> */}
                 <img src='https://cdn.worldvectorlogo.com/logos/gemini-icon-logo.svg' className='h-4' />
                 <img src='/razorpay.svg' className='h-4' />
                 <img src='https://cdn.simpleicons.org/vercel/FFFFFF' className='h-4' />
