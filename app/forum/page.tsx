@@ -35,7 +35,7 @@ export default function Page() {
 
   if (loading) {
     return (
-      <div className='text-center py-20 text-gray-600 dark:text-gray-400'>
+      <div className='flex justify-center items-center h-screen bg-black text-gray-400 text-3xl'>
         Loading threads...
       </div>
     )

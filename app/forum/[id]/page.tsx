@@ -70,7 +70,10 @@ export default function Page() {
     }
   }
 
-  if (loading) return <div className='py-20 text-center'>Loading thread...</div>
+  if (loading) return (<div className='flex justify-center items-center h-screen bg-black text-gray-400 text-3xl'>
+        Loading thread...
+      </div>)
+      
   if (!thread)
     return (
       <div className='py-20 text-center'>
