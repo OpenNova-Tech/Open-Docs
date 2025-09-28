@@ -13,6 +13,19 @@ type ForumThread = {
   lastActivity: string
 }
 
+function formatTimeAgo(dateString: string) {
+  const date = new Date(dateString)
+  const now = new Date()
+  const diffMs = now.getTime() - date.getTime()
+  const diffHours = Math.floor(diffMs / (1000 * 60 * 60))
+
+  if (diffHours < 24) {
+    return `${diffHours} hour${diffHours !== 1 ? 's' : ''} ago`
+  }
+  const diffDays = Math.floor(diffHours / 24)
+  return `${diffDays} day${diffDays !== 1 ? 's' : ''} ago`
+}
+
 export default function Page() {
   const [threads, setThreads] = useState<ForumThread[]>([])
   const [loading, setLoading] = useState(true)
@@ -66,7 +79,7 @@ export default function Page() {
           >
             <Link href={`/forum/${thread.id}`}>
               <h2 className='text-xl font-semibold mb-1'>{thread.title}</h2>
-              <p className='text-gray-600 dark:text-gray-400 text-sm mb-3'>
+              <p className='text-gray-600 dark:text-gray-400 text-sm mb-3 line-clamp-3'>
                 {thread.desc}
               </p>
               <div className='flex justify-between text-sm text-gray-500 dark:text-gray-400'>
@@ -74,7 +87,7 @@ export default function Page() {
                   {thread.category}
                 </span>
                 <span>
-                  {thread.replies} replies • {thread.lastActivity}
+                  {thread.replies} replies • {formatTimeAgo(thread.lastActivity)}
                 </span>
               </div>
             </Link>
