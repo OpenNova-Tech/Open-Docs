@@ -5,50 +5,8 @@ import { OpenSource } from '@/components/open-source'
 import { WorldMap } from '@/components/ui/world-map'
 import { motion } from 'motion/react'
 import { StickyBanner } from '@/components/ui/sticky-banner'
-import { PricingCard } from '@/components/ui/pricing-card'
 
 export default function Home() {
-  const proprietory = {
-    heading: 'Proprietory Pack',
-    description: 'Contains docs related to proprietory software used in software services.',
-    price: 29,
-    buttonText: 'Proceed',
-    list: [
-      'SAP Docs',
-      'Salesforce Docs',
-      'Oracle Docs',
-      'Microsoft Docs',
-    ],
-  }
-
-  const campusing = {
-    heading: 'Campusing Pack',
-    description: 'Contains docs related to campusing of College students to Corporates.',
-    price: 99,
-    discount: 20,
-    buttonText: 'Proceed',
-    list: [
-      'Accenture Prep',
-      'TCS Prep',
-      'Cognizant Prep',
-      'Capgemini Prep',
-    ],
-  }
-
-  const quantum = {
-    heading: 'Quantum Pack',
-    description: 'Contains research files and docs related to the Quantum Computing.',
-    price: 29,
-    buttonText: 'Proceed',
-    listHeading: '',
-    list: [
-      'Quantum Computing',
-      'Quantum Simulation',
-      'Quantum Programming',
-      'Quantum Algorithm',
-    ],
-  }
-
   return (
     <main className='bg-black'>
 
@@ -137,6 +95,30 @@ export default function Home() {
         </div>
       </div>
 
+      <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="mb-36 mt-56 flex flex-col items-center text-center space-y-6"
+    >
+      <h2 className="text-5xl font-bold mb-20">
+        🚀 Shoutout for building <span className="text-indigo-400">Open Docs</span>
+      </h2>
+
+      <div className="flex flex-wrap justify-center gap-8">
+        <motion.div whileHover={{ scale: 1.1 }} className="flex flex-col items-center space-y-2">
+          <img src="https://ui.aceternity.com/logo.png" alt="" className='h-20 w-20' />
+          <p className="text-lg mt-5 font-medium">Aceternity UI</p>
+        </motion.div>
+
+        <motion.div whileHover={{ scale: 1.1 }} className="flex flex-col items-center space-y-2">
+          <img src="/neondb.svg" alt="" className='h-20 w-20' />
+          <p className="text-lg mt-5 font-medium">NeonDB</p>
+        </motion.div>
+      </div>
+    </motion.div>
+
       <OpenSource
         repository='OpenNova-Tech/Open-Docs'
         title='Proudly open-source'
@@ -152,6 +134,8 @@ export default function Home() {
           ],
         }}
       />
+
+      
 
       <BackgroundPaths title='Want to Discover?' />
 
