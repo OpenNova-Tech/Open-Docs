@@ -9,19 +9,19 @@ const sections = [
         title: 'Programming Languages',
         subtitle: 'Code logic using powerful languages',
         image: '/docs/languages.jpg',
-        readMoreLink: '/language'
+        readMoreLink: '/docs/language'
       },
       {
         title: 'Website and Application Development',
         subtitle: 'Build modern tech applications',
         image: '/docs/development.webp',
-        readMoreLink: '/development'
+        readMoreLink: '/docs/development'
       },
       {
         title: 'Software Tools',
         subtitle: 'Tools enhancing productivity and automation',
         image: '/docs/tools.jpg',
-        readMoreLink: '/tool'
+        readMoreLink: '/docs/tool'
       },
     ],
   },
@@ -37,7 +37,7 @@ const sections = [
         title: 'Machine Learning',
         subtitle: 'Train models with meaningful data',
         image: '/docs/aiml.webp',
-        readMoreLink: '/aiml'
+        readMoreLink: '/docs/aiml'
       },
       {
         title: 'Dev-Ops',
@@ -63,7 +63,7 @@ const sections = [
         title: 'Internet of Things',
         subtitle: 'Smart devices communicating through internet',
         image: '/docs/iot.jpg',
-        readMoreLink: '/iot'
+        readMoreLink: '/docs/iot'
       },
     ],
   },
