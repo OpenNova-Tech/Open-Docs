@@ -153,12 +153,6 @@ export default function Home() {
         }}
       />
 
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center py-32 px-4 md:px-20'>
-        <PricingCard {...proprietory} />
-        <PricingCard {...campusing} />
-        <PricingCard {...quantum} />
-      </div>
-
       <BackgroundPaths title='Want to Discover?' />
 
     </main>
