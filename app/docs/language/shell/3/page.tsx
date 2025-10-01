@@ -118,7 +118,7 @@ echo "Hello, World!"`
           <div className='max-w-3xl mx-auto text-gray-300'>
             • <span className='bg-neutral-800 px-2 rounded-lg'>#!/bin/bash</span> → Called a <b>shebang</b>, tells the system which interpreter to use (in this case, Bash). <br />
             • <span className='bg-neutral-800 px-2 rounded-lg'>#</span> → Anything after <span className='bg-neutral-800 px-2 rounded-lg'>#</span> is a <b>comment</b>, ignored by the shell. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>echo "Hello, World!"</span> → Prints text to the terminal.
+            • <span className='bg-neutral-800 px-2 rounded-lg'>echo &apos;Hello, World!&apos;</span> → Prints text to the terminal.
           </div>
         </motion.div>
 
