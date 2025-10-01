@@ -48,9 +48,23 @@ export default function Page() {
 
   if (loading) {
     return (
-      <div className='flex justify-center items-center h-screen bg-black text-gray-400 text-3xl'>
-        Loading threads...
-      </div>
+      <section className='py-12 bg-black px-6'>
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className='text-center bg-black mb-12 pt-24'
+        >
+          <h1 className='text-5xl font-bold mb-5 text-indigo-400'>OpenDocs Forum</h1>
+          <p className='text-gray-600 dark:text-gray-400'>
+            Discuss, ask questions, and share knowledge with the community.
+          </p>
+        </motion.div>
+        <div className='py-20 flex justify-center items-center bg-black text-gray-400 text-3xl'>
+          Loading threads...
+        </div>
+      </section>
+      
     )
   }
 
