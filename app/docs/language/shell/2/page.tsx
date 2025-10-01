@@ -3,17 +3,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { CodeBlock } from '@/components/ui/code-block'
 
 export default function page() {
-	const code1 = `echo "Hello, World!"`
-
-	const code2 = `#!/bin/bash
-# This is a comment
-echo "Hello from Shell!"`
-
-	const code3 = `bash hello.sh`
-
 	return (
 		<main className='pt-32 dark:bg-black py-12 px-6'>
 			<div className='max-w-4xl mx-auto space-y-12'>
