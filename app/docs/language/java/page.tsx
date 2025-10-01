@@ -1,7 +1,6 @@
 'use client'
 
 import {
-	IconSettings,
 	IconTerminal2,
 	IconFileCode,
 	IconHistory,
@@ -21,7 +20,6 @@ import {
 	IconClock,
 	IconTableOptions,
 	IconHash,
-	IconRegex,
 	IconRecycle,
 	IconDatabase,
 	IconServer,
