@@ -38,28 +38,19 @@ import {
 import { ScrollableFeatureRow } from '@/components/ScrollableRow'
 
 const intro = [
-	{
-	title: 'Introduction to Java',
-    description: 'Java is an object-oriented programming language.',
-    icon: <IconTerminal2 />,
-    link: 'java/0'
-	},
-	{ title: 'History of Java', description: 'James Gosling, Sun Microsystems, Oracle.', icon: <IconHistory />, link: 'java/1' },
-	{ title: 'Java Features', description: 'Platform Independent, Secure, Robust, Multithreaded.', icon: <IconShieldLock />, link: 'java/2' },
-	{ title: 'JVM vs JDK vs JRE', description: 'Key differences and roles in Java ecosystem.', icon: <IconAdjustments />, link: 'java/3' },
-	{ title: 'Hello World in Java', description: 'Basic program structure & output.', icon: <IconFileCode />, link: 'java/4' },
-	{ title: 'Compilation Workflow', description: '.java → .class → JVM execution.', icon: <IconRocket />, link: 'java/5' },
+	{ title: 'Introduction to Java', description: 'Java is an object-oriented programming language.', icon: <IconTerminal2 />, link: 'java/1' },
+	{ title: 'History of Java', description: 'James Gosling, Sun Microsystems, Oracle.', icon: <IconHistory />, link: 'java/2' },
+	{ title: 'Java Features', description: 'Platform Independent, Secure, Robust, Multithreaded.', icon: <IconShieldLock />, link: 'java/3' },
+	{ title: 'JVM vs JDK vs JRE', description: 'Key differences and roles in Java ecosystem.', icon: <IconAdjustments />, link: 'java/4' },
+	{ title: 'Hello World in Java', description: 'Basic program structure & output.', icon: <IconFileCode />, link: 'java/5' },
+	{ title: 'Compilation Workflow', description: '.java → .class → JVM execution.', icon: <IconRocket />, link: 'java/6' },
 ]
 
 const fundamentals = [
-	{ title: 'Java Syntax Basics', description: 'Structure of a Java program.', icon: <IconCode />, link: 'java/6' },
-	{ title: 'Variables & Data Types', description: 'Primitive & Non-primitive data types.', icon: <IconAdjustments />, link: 'java/7' },
-	{ title: 'Operators', description: 'Arithmetic, Logical, Bitwise, Ternary.', icon: <IconArrowsShuffle />, link: 'java/8' },
-	{ title: 'Type Casting', description: 'Implicit & explicit conversions.', icon: <IconFunction />, link: 'java/9' },
-	{ title: 'Comments', description: 'Single-line, Multi-line, Javadoc.', icon: <IconMessage />, link: 'java/10' },
-]
-
-const controlFlow = [
+	{ title: 'Java Syntax Basics', description: 'Structure of a Java program.', icon: <IconCode />, link: 'java/7' },
+	{ title: 'Variables & Data Types', description: 'Primitive & Non-primitive data types.', icon: <IconAdjustments />, link: 'java/8' },
+	{ title: 'Operators', description: 'Arithmetic, Logical, Bitwise, Ternary.', icon: <IconArrowsShuffle />, link: 'java/9' },
+	{ title: 'Type Casting', description: 'Implicit & explicit conversions.', icon: <IconFunction />, link: 'java/10' },
 	{ title: 'Decision Making', description: 'if, else-if, switch.', icon: <IconHierarchy2 />, link: 'java/11' },
 	{ title: 'Loops', description: 'for, while, do-while, enhanced-for.', icon: <IconLoader2 />, link: 'java/12' },
 	{ title: 'Break & Continue', description: 'Control loop execution flow.', icon: <IconAlertTriangle />, link: 'java/13' },
@@ -177,9 +168,6 @@ export default function Page() {
 
 			<p className="px-10">Java Fundamentals</p>
 			<ScrollableFeatureRow features={fundamentals} />
-
-			<p className="px-10">Control Flow</p>
-			<ScrollableFeatureRow features={controlFlow} />
 
 			<p className="px-10">Object-Oriented Programming</p>
 			<ScrollableFeatureRow features={oop} />
