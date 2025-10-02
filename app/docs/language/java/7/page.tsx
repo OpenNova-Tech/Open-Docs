@@ -164,9 +164,9 @@ int b = 20;`
             <b className='text-[#b07219]'>7.7</b> Comments
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Single-line: <span className='bg-neutral-800 px-2 rounded-lg'>// comment</span> <br />
-            • Multi-line: <span className='bg-neutral-800 px-2 rounded-lg'>/* comment */</span>  <br />
-            • Documentation: <span className='bg-neutral-800 px-2 rounded-lg'>/** comment */</span>  <br />
+            • Single-line: <span className='bg-neutral-800 px-2 rounded-lg'>{'// comment'}</span> <br />
+            • Multi-line: <span className='bg-neutral-800 px-2 rounded-lg'>{'/* comment */'}</span>  <br />
+            • Documentation: <span className='bg-neutral-800 px-2 rounded-lg'>{'/** comment */'}</span>  <br />
             <br />
             <CodeBlock language="java" filename="java" code={code5} />
           </div>
