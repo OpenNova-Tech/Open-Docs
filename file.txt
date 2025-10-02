@@ -1,74 +1,17 @@
-EXPRESS JS
+Open-Docs LOGS
 
-PHASE 1: Core Fundamentals
+-.-.-
+LTR
+- Main Update
+- Content Added
+- Bug Fixes
 
-1. Introduction and setup
-- What is Express.JS
-- Installing Express
-- Basic Hello World app
-- NodeJS vs ExpressJS
+LAUNCH
 
-2. Routing
-- app.get(), app.post(), app.put(), app.delete()
-- Route Parameters (:id)
-- Query Strings (req.query)
-- Chained route handlers
-- Router objects (express.Router())
-
-3. Middleware
-- What is Middleware
-- Built-in Middleware (express.json(), express.static())
-- Third-party Middleware (morgan, cors, etc)
-- Custom Middleware (function(req, res, next))
-- Middleware order and flow
-
-4. Request and Response objects
-- req.params, req.query, req.body, req.headers
-- res.send(), res.json(), res.status(), res.redirect()
-
-5. Serving Static Files
-- Using express.static()
-- Serving HTML, CSS, JS, images
-
-6. Templating Engines (optional)
-- Using EJS, Pug or Handlebars
-- Rendering dynamic content
-
-7. Working with JSON and URL-encoded data
-
-PHASE 2: Security and Auth
-
-8. CORS
-9. Authentication (Sessions, JWT)
-10. Passport.js (OAuth)
-11. Helmet and Secuity Headers
-
-PHASE 3: Data Handling
-
-12. Form data and file uploads
-13. Input validation (express-validator, Joi)
-
-PHASE 4: Databases
-
-14. MongoDB with Mongoose
-15. SQL with Sequelize or Prisma (optional)
-
-PHASE 5: Testing
-
-16. Testing with Jest and Supertest
-
-PHASE 6: Deployment and Production
-
-17. Environemtn variables with dotenv
-18. Error Handling
-19. PM2 and logging (winston, morgan)
-20. Compression and rate limiting
-
-PHASE 7: Advanced Topics
-
-21. Nested routing and API versioning
-22. Global error handling
-23. Express with WebSockets(Socket.io)
-24. Role-based access control
-25. Swagger for API Docs
-26. Express with TypeScript
+Version 1.0.0 - 03/10/2025
+- Launched Open-Docs to public as a part of Public Testing.
+- Sections include: Languages, Tools.
+- Languages Topics Added: HTML | JavaScript | Java.
+- Tools Topics Added: Git.
+- Base Design as Pre-Alpha.
+- Open-Docs Forum Teased as stay tuned.
