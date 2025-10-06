@@ -48,53 +48,55 @@ export function Navbar() {
 
   const logoElement = (
     <div className="relative w-5 h-5 flex items-center justify-center">
-    <span className="absolute w-1.5 h-1.5 rounded-full bg-indigo-500 top-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
-    <span className="absolute w-1.5 h-1.5 rounded-full bg-indigo-500 left-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
-    <span className="absolute w-1.5 h-1.5 rounded-full bg-indigo-500 right-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
-    <span className="absolute w-1.5 h-1.5 rounded-full bg-indigo-500 bottom-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
- </div>
+      <span className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 top-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
+      <span className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 left-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
+      <span className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 right-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
+      <span className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 bottom-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
+    </div>
   );
 
   const navLinksData = [
     { label: 'Home', href: '/' },
     { label: 'Docs', href: '/docs' },
+    { label: 'Forum', href: '/forum' },
     { label: 'Support', href: '/support' },
+    { label: 'Github', href: 'https://www.github.com/OpenNova-Tech/Open-Docs' },
   ];
 
   const loginButtonElement = (
     <button className="px-4 py-2 sm:px-3 text-xs sm:text-sm border border-[#333] bg-[rgba(31,31,31,0.62)] text-gray-300 rounded-full hover:border-white/50 hover:text-white transition-colors duration-200 w-full sm:w-auto">
-      LogIn
+      Log In
     </button>
   );
 
   const signupButtonElement = (
     <div className="relative group w-full sm:w-auto">
-       <div className="absolute inset-0 -m-2 rounded-full
+      <div className="absolute inset-0 -m-2 rounded-full
                      hidden sm:block
                      bg-gray-100
                      opacity-40 filter blur-lg pointer-events-none
                      transition-all duration-300 ease-out
                      group-hover:opacity-60 group-hover:blur-xl group-hover:-m-3"></div>
-       <button className="relative z-10 px-4 py-2 sm:px-3 text-xs sm:text-sm font-semibold text-black bg-gradient-to-br from-gray-100 to-gray-300 rounded-full hover:from-gray-200 hover:to-gray-400 transition-all duration-200 w-full sm:w-auto">
-         Signup
-       </button>
+      <button className="relative z-10 px-4 py-2 sm:px-3 text-xs sm:text-sm font-semibold text-black bg-gradient-to-br from-gray-100 to-gray-300 rounded-full hover:from-gray-200 hover:to-gray-400 transition-all duration-200 w-full sm:w-auto">
+        Sign Up
+      </button>
     </div>
   );
 
   return (
     <header className={`fixed top-10 left-1/2 transform -translate-x-1/2 z-100
                        flex flex-col items-center
-                       pl-6 pr-6 py-3 backdrop-blur-sm
-                       ${headerShapeClass}
+                       px-6 py-3 backdrop-blur-xs
+                       ${headerShapeClass} md:max-w-7xl
                        border border-[#333] bg-[#1f1f1f57]
-                       w-[calc(100%-2rem)] sm:w-auto
+                       w-[calc(100%-2rem)]
                        transition-[border-radius] duration-0 ease-in-out`}>
 
       <div className="flex items-center justify-between w-full gap-x-6 sm:gap-x-8">
         <div className="flex items-center">
-           {logoElement}
+          {logoElement}
+          <b className='pl-4 text-lg'>OPEN DOCS</b>
         </div>
-
         <nav className="hidden sm:flex items-center space-x-4 sm:space-x-6 text-sm">
           {navLinksData.map((link) => (
             <AnimatedNavLink key={link.href} href={link.href}>
@@ -110,9 +112,9 @@ export function Navbar() {
 
         <button className="sm:hidden flex items-center justify-center w-8 h-8 text-gray-300 focus:outline-none" onClick={toggleMenu} aria-label={isOpen ? 'Close Menu' : 'Open Menu'}>
           {isOpen ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
           ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
           )}
         </button>
       </div>
