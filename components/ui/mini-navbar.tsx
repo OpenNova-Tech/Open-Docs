@@ -87,9 +87,9 @@ export function Navbar() {
     <header className={`fixed top-10 left-1/2 transform -translate-x-1/2 z-100
                        flex flex-col items-center
                        px-6 py-3 backdrop-blur-xs
-                       ${headerShapeClass} md:max-w-7xl
+                       ${headerShapeClass} 
                        border border-[#333] bg-[#1f1f1f57]
-                       w-[calc(100%-2rem)]
+                       w-[calc(100%-2rem)] md:w-[calc(100%-7rem)]
                        transition-[border-radius] duration-0 ease-in-out`}>
 
       <div className="flex items-center justify-between w-full gap-x-6 sm:gap-x-8">
