@@ -50,10 +50,10 @@ const fundamentals = [
 	{ title: 'Java Syntax Basics', description: 'Structure of a Java program.', icon: <IconCode />, link: 'java/7' },
 	{ title: 'Variables & Data Types', description: 'Primitive & Non-primitive data types.', icon: <IconAdjustments />, link: 'java/8' },
 	{ title: 'Operators', description: 'Arithmetic, Logical, Bitwise, Ternary.', icon: <IconArrowsShuffle />, link: 'java/9' },
-	{ title: 'Type Casting', description: 'Implicit & explicit conversions.', icon: <IconFunction />, link: 'java/10' },
-	{ title: 'Decision Making', description: 'if, else-if, switch.', icon: <IconHierarchy2 />, link: 'java/11' },
-	{ title: 'Loops', description: 'for, while, do-while, enhanced-for.', icon: <IconLoader2 />, link: 'java/12' },
-	{ title: 'Break & Continue', description: 'Control loop execution flow.', icon: <IconAlertTriangle />, link: 'java/13' },
+	{ title: 'Decision Making', description: 'if, else-if, switch.', icon: <IconHierarchy2 />, link: 'java/10' },
+	{ title: 'Loops', description: 'for, while, do-while, enhanced-for.', icon: <IconLoader2 />, link: 'java/11' },
+	{ title: 'Break & Continue', description: 'Control loop execution flow.', icon: <IconAlertTriangle />, link: 'java/12' },
+	{ title: 'Functions', description: '', icon: <IconFunction />, link: 'java/12' },
 	{ title: 'Exception Basics', description: 'try, catch, finally, throw, throws.', icon: <IconBug />, link: 'java/14' },
 ]
 

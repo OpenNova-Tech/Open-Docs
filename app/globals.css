@@ -252,3 +252,13 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Hide scrollbar for sidebar */
+.sidebar-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.sidebar-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
