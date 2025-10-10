@@ -13,11 +13,12 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
     { id: 8, title: 'Variables and Data Types' },
     { id: 9, title: 'Operators' },
     { id: 10, title: 'Decision Making' },
+    { id: 11, title: 'Loops' },
   ]
 
   return (
     <div className='flex bg-black min-h-screen'>
-      <aside className='w-64 bg-black pt-32 text-white border-r-2 border-[#b07219]/30 sticky top-0 h-screen flex flex-col'>
+      <aside className='w-64 bg-black pt-32 text-white border-r-2 border-[#b07219]/50 sticky top-0 h-screen flex flex-col'>
         <div className='p-5'>
           <Link href='/docs/language/java'>
             <h2 className='text-3xl font-bold text-center text-[#b07219]'>Java</h2>
