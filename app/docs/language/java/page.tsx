@@ -52,9 +52,8 @@ const fundamentals = [
 	{ title: 'Operators', description: 'Arithmetic, Logical, Bitwise, Ternary.', icon: <IconArrowsShuffle />, link: 'java/9' },
 	{ title: 'Decision Making', description: 'if, else-if, switch.', icon: <IconHierarchy2 />, link: 'java/10' },
 	{ title: 'Loops', description: 'for, while, do-while, enhanced-for.', icon: <IconLoader2 />, link: 'java/11' },
-	{ title: 'Break & Continue', description: 'Control loop execution flow.', icon: <IconAlertTriangle />, link: 'java/12' },
 	{ title: 'Functions', description: '', icon: <IconFunction />, link: 'java/12' },
-	{ title: 'Exception Basics', description: 'try, catch, finally, throw, throws.', icon: <IconBug />, link: 'java/14' },
+	{ title: 'Exception Basics', description: 'try, catch, finally, throw, throws.', icon: <IconBug />, link: 'java/13' },
 ]
 
 const oop = [

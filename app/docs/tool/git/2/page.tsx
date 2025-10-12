@@ -40,7 +40,7 @@ sudo apt install git`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03, transition: { duration: 0.15, ease: 'easeOut' } }}
+          whileHover={{ scale: 1.03,  }}
           className='shadow-[#F05032] border border-[#F05032]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100'>
@@ -66,7 +66,7 @@ sudo apt install git`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03, transition: { duration: 0.15, ease: 'easeOut' } }}
+          whileHover={{ scale: 1.03,  }}
           className='shadow-[#F05032] border border-[#F05032]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100'>
@@ -87,7 +87,7 @@ sudo apt install git`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03, transition: { duration: 0.15, ease: 'easeOut' } }}
+          whileHover={{ scale: 1.03,  }}
           className='shadow-[#F05032] border border-[#F05032]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100'>
@@ -110,7 +110,7 @@ sudo apt install git`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03, transition: { duration: 0.15, ease: 'easeOut' } }}
+          whileHover={{ scale: 1.03,  }}
           className='shadow-[#F05032] border border-[#F05032]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100'>

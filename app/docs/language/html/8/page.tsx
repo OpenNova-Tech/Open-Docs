@@ -54,7 +54,7 @@ export default function page() {
 					initial={{ opacity: 0, x: -50 }}
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6, delay: 0.1 }}
-					whileHover={{ scale: 1.03, transition: { duration: 0.15, ease: 'easeOut' } }}
+					whileHover={{ scale: 1.03,  }}
 					className='shadow-[#e34c26] border border-[#e34c26]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -80,7 +80,7 @@ export default function page() {
 					initial={{ opacity: 0, x: 50 }}
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6, delay: 0.1 }}
-					whileHover={{ scale: 1.03, transition: { duration: 0.15, ease: 'easeOut' } }}
+					whileHover={{ scale: 1.03,  }}
 					className='shadow-[#e34c26] border border-[#e34c26]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -106,7 +106,7 @@ export default function page() {
 					initial={{ opacity: 0, x: -50 }}
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6, delay: 0.1 }}
-					whileHover={{ scale: 1.03, transition: { duration: 0.15, ease: 'easeOut' } }}
+					whileHover={{ scale: 1.03,  }}
 					className='shadow-[#e34c26] border border-[#e34c26]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -133,7 +133,7 @@ export default function page() {
 					initial={{ opacity: 0, x: 50 }}
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6, delay: 0.1 }}
-					whileHover={{ scale: 1.03, transition: { duration: 0.15, ease: 'easeOut' } }}
+					whileHover={{ scale: 1.03,  }}
 					className='shadow-[#e34c26] border border-[#e34c26]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -158,7 +158,7 @@ export default function page() {
 					initial={{ opacity: 0, x: -50 }}
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6, delay: 0.1 }}
-					whileHover={{ scale: 1.03, transition: { duration: 0.15, ease: 'easeOut' } }}
+					whileHover={{ scale: 1.03,  }}
 					className='shadow-[#e34c26] border border-[#e34c26]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
 				>
 					<h2 className='text-2xl font-bold mb-4 text-gray-100'>
