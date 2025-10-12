@@ -14,6 +14,7 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
     { id: 9, title: 'Operators' },
     { id: 10, title: 'Decision Making' },
     { id: 11, title: 'Loops' },
+    { id: 12, title: 'Exception Basics' },
   ]
 
   return (
