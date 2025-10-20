@@ -251,23 +251,7 @@ int x = (int) d; // double to int`
           </div>
         </motion.div>
 
-        <motion.div
-          className='flex justify-center gap-6 pt-20'
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <Link href='7'>
-            <button className='bg-transparent border border-[#b07219] cursor-pointer text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:-translate-x-2'>
-              ← View Previous
-            </button>
-          </Link>
-          <Link href='9'>
-            <button className='bg-transparent border border-[#b07219] cursor-pointer text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:translate-x-2'>
-              View Next →
-            </button>
-          </Link>
-        </motion.div>
+      
       </div>
     </main>
   )
