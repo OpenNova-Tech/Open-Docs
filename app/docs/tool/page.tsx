@@ -9,7 +9,7 @@ export default function page() {
       title: 'Git',
       description: 'Distributed version control system for managing code efficiently.',
       link: '/tool/git',
-      iconSrc: 'icons/tools/git.svg'
+      iconSrc: '/icons/tools/git.svg'
     },
   ]
 
@@ -18,25 +18,25 @@ export default function page() {
       title: 'Jest',
       description: 'Delightful JavaScript testing framework with a focus on simplicity.',
       link: '/tool/jest',
-      iconSrc: 'icons/tools/jest.svg'
+      iconSrc: '/icons/tools/jest.svg'
     },
     {
       title: 'Selenium',
       description: 'Automates web browsers for testing across multiple platforms.',
       link: '/tool/selenium',
-      iconSrc: 'icons/tools/selenium.svg'
+      iconSrc: '/icons/tools/selenium.svg'
     },
     {
       title: 'JUnit',
       description: 'Widely used testing framework for Java-based applications.',
       link: '/tool/junit5',
-      iconSrc: 'icons/tools/junit5.svg'
+      iconSrc: '/icons/tools/junit5.svg'
     },
     {
       title: 'Cypress',
       description: 'Fast, easy, and reliable testing for web applications.',
       link: '/tool/cypress',
-      iconSrc: 'icons/tools/cypress.svg'
+      iconSrc: '/icons/tools/cypress.svg'
     },
   ]
 
@@ -45,13 +45,13 @@ export default function page() {
       title: 'Figma',
       description: 'Collaborative interface design tool for teams and individuals.',
       link: '/tool/figma',
-      iconSrc: 'icons/tools/figma.svg'
+      iconSrc: '/icons/tools/figma.svg'
     },
     {
       title: 'Sketch',
       description: 'Vector-based design tool for macOS used by professionals.',
       link: '/tool/sketch',
-      iconSrc: 'icons/tools/sketch.svg'
+      iconSrc: '/icons/tools/sketch.svg'
     },
   ]
 
@@ -60,13 +60,13 @@ export default function page() {
       title: 'Notion',
       description: 'All-in-one workspace for notes, tasks, and collaboration.',
       link: '/tool/notion',
-      iconSrc: 'icons/tools/notion.svg'
+      iconSrc: '/icons/tools/notion.svg'
     },
     {
       title: 'Jira',
       description: 'Agile project management tool for tracking issues and tasks.',
       link: '/tool/jira',
-      iconSrc: 'icons/tools/jira.svg'
+      iconSrc: '/icons/tools/jira.svg'
     },
   ]
 
