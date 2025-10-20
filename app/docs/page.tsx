@@ -64,13 +64,7 @@ const sections = [
         subtitle: 'Smart devices communicating through internet',
         image: '/docs/iot.jpg',
         readMoreLink: '/docs/iot'
-      },
-      {
-        title: 'System Design',
-        subtitle: 'Design scalable and maintainable architecture',
-        image: '/docs/oth.jpg',
-        readMoreLink: '/docs/iot'
-      },
+      }
     ],
   },
   {
