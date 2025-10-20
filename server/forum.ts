@@ -40,8 +40,12 @@ export async function createThread(title: string, desc: string, category: string
   })
 }
 
-export async function addReply(threadId: number, author: string, content: string) {
+export async function addReply(threadId: number, authorId: number, content: string) {
   return prisma.reply.create({
-    data: { threadId, author, content },
+    data: {
+      content,
+      thread: { connect: { id: threadId } },
+      author: { connect: { id: authorId } },
+    },
   })
 }
