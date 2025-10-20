@@ -5,6 +5,7 @@ import { OpenSource } from '@/components/open-source'
 import { WorldMap } from '@/components/ui/world-map'
 import { motion } from 'motion/react'
 import { StickyBanner } from '@/components/ui/sticky-banner'
+import { signOut } from 'next-auth/react'
 
 export default function Home() {
 	return (
@@ -139,6 +140,12 @@ export default function Home() {
 
 			<BackgroundPaths title='Want to Discover?' />
 
+			<button
+      onClick={() => signOut({ callbackUrl: '/login' })}
+      className="bg-red-600 text-white px-4 py-2 rounded"
+    >
+      Logout
+    </button>
 		</main>
 	)
 }

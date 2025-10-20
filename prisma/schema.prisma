@@ -7,20 +7,33 @@ datasource db {
   url      = env("POSTGRESQL_URL")
 }
 
+model User {
+  id             Int       @id @default(autoincrement())
+  username       String    @unique
+  realName       String
+  email          String    @unique
+  password       String
+  profilePicture String?
+  createdAt      DateTime  @default(now())
+  replies        Reply[]
+}
+
 model Thread {
-  id        Int      @id @default(autoincrement())
+  id        Int       @id @default(autoincrement())
   title     String
   desc      String
   category  String
-  createdAt DateTime @default(now())
+  createdAt DateTime  @default(now())
   replies   Reply[]
 }
 
 model Reply {
-  id        Int      @id @default(autoincrement())
-  author    String
+  id        Int       @id @default(autoincrement())
   content   String
-  createdAt DateTime @default(now())
+  createdAt DateTime  @default(now())
   threadId  Int
-  thread    Thread   @relation(fields: [threadId], references: [id])
+  userId    Int
+  
+  thread    Thread    @relation(fields: [threadId], references: [id])
+  author    User      @relation(fields: [userId], references: [id])
 }
