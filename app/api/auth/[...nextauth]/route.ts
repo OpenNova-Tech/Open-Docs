@@ -1,8 +1,8 @@
-import NextAuth from "next-auth"
+import NextAuth, { type DefaultSession } from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
 import { PrismaAdapter } from "@auth/prisma-adapter"
 import { PrismaClient } from "@prisma/client"
-import bcrypt from "bcrypt"
+import bcrypt from 'bcrypt'
 
 const prisma = new PrismaClient()
 
@@ -27,7 +27,15 @@ const handler = NextAuth({
         const isValid = await bcrypt.compare(credentials.password, user.password)
         if (!isValid) return null
 
-        return user
+        // map Prisma user to NextAuth expected shape (id must be a string); avoid returning password
+        return {
+          id: String(user.id),
+          username: user.username,
+          realName: user.realName,
+          email: user.email,
+          profilePicture: user.profilePicture,
+          createdAt: user.createdAt,
+        }
       },
     }),
   ],
@@ -40,7 +48,9 @@ const handler = NextAuth({
       return token
     },
     async session({ session, token }) {
-      if (token) session.user.id = token.id
+      if (token) {
+        session.user = { ...(session.user ?? {}), id: String(token.id) } as DefaultSession["user"] & { id?: string }
+      }
       return session
     },
   },

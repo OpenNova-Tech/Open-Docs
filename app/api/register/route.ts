@@ -1,7 +1,5 @@
-import { PrismaClient } from "@prisma/client"
+import { prisma } from "@/lib/prisma"
 import bcrypt from "bcrypt"
-
-const prisma = new PrismaClient()
 
 export async function POST(req: Request) {
   const { username, realName, email, password, profilePicture } = await req.json()
@@ -10,7 +8,10 @@ export async function POST(req: Request) {
     return new Response(JSON.stringify({ error: "Missing fields" }), { status: 400 })
   }
 
-  const existingUser = await prisma.user.findUnique({ where: { email } })
+  const existingUser = await prisma.user.findUnique({
+    where: { email },
+  })
+
   if (existingUser) {
     return new Response(JSON.stringify({ error: "User already exists" }), { status: 400 })
   }
