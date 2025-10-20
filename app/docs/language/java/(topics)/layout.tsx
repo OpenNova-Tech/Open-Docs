@@ -1,5 +1,6 @@
 'use client'
 
+import NavigationButtons from '@/components/PageChanger'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -8,13 +9,19 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
 
   const topics = [
     { id: 1, title: 'Introduction to Java' },
-    { id: 2, title: 'Histor of Java' },
+    { id: 2, title: 'History of Java' },
     { id: 7, title: 'Java Syntax Basics' },
     { id: 8, title: 'Variables and Data Types' },
     { id: 9, title: 'Operators' },
     { id: 10, title: 'Decision Making' },
     { id: 11, title: 'Loops' },
     { id: 12, title: 'Exception Basics' },
+    { id: 13, title: 'Classes and Objects' },
+    { id: 14, title: 'Constructors' },
+    { id: 15, title: 'Inheritance' },
+    { id: 16, title: 'Polymorphism' },
+    { id: 17, title: 'Abstraction' },
+    { id: 18, title: 'Encapsulation' },
   ]
 
   return (
@@ -47,6 +54,7 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
       </aside>
       <main className='flex-1 bg-black text-white p-6 overflow-y-auto'>
         {children}
+        <NavigationButtons color='#b07219' />
       </main>
     </div>
   )
