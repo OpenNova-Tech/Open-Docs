@@ -125,7 +125,7 @@ export function Footer() {
                 {/* <img src='/neondb.svg' className='h-4' /> */}
                 <img src='https://cdn.worldvectorlogo.com/logos/gemini-icon-logo.svg' className='h-4' />
                 <img src='/razorpay.svg' className='h-4' />
-                <img src='https://cdn.simpleicons.org/vercel/FFFFFF' className='h-4' />
+                <img src='https://cdn.simpleicons.org/render/FFFFFF' className='h-4' />
             </motion.div>
           </div>
         </motion.div>
