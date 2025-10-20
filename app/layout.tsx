@@ -1,11 +1,10 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { Navbar } from "@/components/ui/mini-navbar"
+import { Navbar } from "@/components/mini-navbar"
 import { Footer } from "./footer"
 import "katex/dist/katex.min.css"
 import Chatbot from "@/components/Chatbot"
-
 
 const inter = Inter({
   subsets: ["latin"],
