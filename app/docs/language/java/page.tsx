@@ -56,14 +56,14 @@ const fundamentals = [
 ]
 
 const oop = [
-	{ title: 'Classes & Objects', description: 'Blueprint and instance creation.', icon: <IconCpu />, link: 'java/15' },
-	{ title: 'Constructors', description: 'Default, parameterized, initialization blocks.', icon: <IconLayoutDashboard />, link: 'java/16' },
-	{ title: 'Inheritance', description: 'Single, multilevel, hierarchical.', icon: <IconBoxMultiple />, link: 'java/17' },
-	{ title: 'Polymorphism', description: 'Compile-time & runtime polymorphism.', icon: <IconFunction />, link: 'java/18' },
-	{ title: 'Abstraction', description: 'Abstract class & interface.', icon: <IconHierarchy />, link: 'java/19' },
-	{ title: 'Encapsulation', description: 'Access modifiers, getters/setters.', icon: <IconShieldLock />, link: 'java/20' },
-	{ title: 'this & super', description: 'Access parent & current object.', icon: <IconArrowsShuffle />, link: 'java/21' },
-	{ title: 'Static vs Instance', description: 'Class-level vs object-level members.', icon: <IconAdjustments />, link: 'java/22' },
+	{ title: 'Classes & Objects', description: 'Blueprint and instance creation.', icon: <IconCpu />, link: 'java/13' },
+	{ title: 'Constructors', description: 'Default, parameterized, initialization blocks.', icon: <IconLayoutDashboard />, link: 'java/14' },
+	{ title: 'Inheritance', description: 'Single, multilevel, hierarchical.', icon: <IconBoxMultiple />, link: 'java/15' },
+	{ title: 'Polymorphism', description: 'Compile-time & runtime polymorphism.', icon: <IconFunction />, link: 'java/16' },
+	{ title: 'Abstraction', description: 'Abstract class & interface.', icon: <IconHierarchy />, link: 'java/17' },
+	{ title: 'Encapsulation', description: 'Access modifiers, getters/setters.', icon: <IconShieldLock />, link: 'java/18' },
+	{ title: 'this & super', description: 'Access parent & current object.', icon: <IconArrowsShuffle />, link: 'java/19' },
+	{ title: 'Static vs Instance', description: 'Class-level vs object-level members.', icon: <IconAdjustments />, link: 'java/20' },
 ]
 
 const stringsArrays = [

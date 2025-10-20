@@ -65,6 +65,12 @@ const sections = [
         image: '/docs/iot.jpg',
         readMoreLink: '/docs/iot'
       },
+      {
+        title: 'System Design',
+        subtitle: 'Design scalable and maintainable architecture',
+        image: '/docs/oth.jpg',
+        readMoreLink: '/docs/iot'
+      },
     ],
   },
   {
@@ -76,9 +82,38 @@ const sections = [
         image: '/docs/os.jpg',
       },
       {
-        title: 'System Design',
-        subtitle: 'Design scalable and maintainable architecture',
+        title: 'Software Engineering',
+        subtitle: 'Principles for building reliable software systems.',
         image: '/docs/system.png',
+      },
+      {
+        title: 'Data Structures & Algorithms',
+        subtitle: 'Master logic, speed, and code.',
+        image: '/docs/cp.webp',
+        readMoreLink: 'docs/dsa'
+      }, {
+        title: 'Computer Networks',
+        subtitle: 'Learn protocols and data communication systems.',
+        image: '/docs/net.jpg',
+        readMoreLink: 'docs/net'
+      },
+      {
+        title: 'Database Management',
+        subtitle: 'Design and manage structured data efficiently.',
+        image: '/docs/dbms.webp',
+        readMoreLink: 'docs/db'
+      },
+      {
+        title: 'Computer Graphics',
+        subtitle: 'Understand visuals and rendering algorithms.',
+        image: '/docs/ai.webp',
+        readMoreLink: 'docs/graphics'
+      },
+      {
+        title: 'Cryptography',
+        subtitle: 'Secure data using encryption techniques.',
+        image: '/docs/cys.avif',
+        readMoreLink: 'docs/cryptography'
       },
       {
         title: 'Theoretical Computer Science',
@@ -86,10 +121,14 @@ const sections = [
         image: '/docs/theory.jpg',
       },
       {
-        title: 'Data Structures & Algorithms',
-        subtitle: 'Master logic, speed, and code.',
-        image: '/docs/cp.webp',
-        readMoreLink: 'docs/dsa'
+        title: 'Artificial Intelligence',
+        subtitle: 'Study logic, reasoning, and learning principles.',
+        image: '/docs/ait.jpg',
+      },
+      {
+        title: 'Computer Architecture',
+        subtitle: 'Study processors, memory, and instruction design.',
+        image: '/docs/arc.jpg',
       },
     ],
   },
