@@ -5,7 +5,6 @@ import {
 	IconFileCode,
 	IconHistory,
 	IconMessage,
-	IconAlertTriangle,
 	IconAdjustments,
 	IconArrowsShuffle,
 	IconHierarchy2,
@@ -23,7 +22,6 @@ import {
 	IconRecycle,
 	IconDatabase,
 	IconServer,
-	IconActivityHeartbeat,
 	IconGitBranch,
 	IconListDetails,
 	IconFileLambda,
@@ -32,7 +30,6 @@ import {
 	IconBug,
 	IconGauge,
 	IconRocket,
-	IconCheckbox,
 	IconCode,
 } from '@tabler/icons-react'
 import { ScrollableFeatureRow } from '@/components/ScrollableRow'
@@ -117,27 +114,6 @@ const memoryPerformance = [
 	{ title: 'Performance Tuning', description: 'Optimization techniques.', icon: <IconRocket />, link: 'java/55' },
 ]
 
-const realWorld = [
-	{ title: 'Desktop Apps', description: 'Swing & JavaFX.', icon: <IconActivityHeartbeat />, link: 'java/56' },
-	{ title: 'Web Apps', description: 'Servlets & JSP.', icon: <IconServer />, link: 'java/57' },
-	{ title: 'Enterprise Apps', description: 'Spring & Hibernate.', icon: <IconCpu />, link: 'java/58' },
-	{ title: 'Mobile Apps', description: 'Android basics.', icon: <IconBolt />, link: 'java/59' },
-	{ title: 'Cloud & Microservices', description: 'Modern deployments.', icon: <IconRocket />, link: 'java/60' },
-]
-
-const security = [
-	{ title: 'Java Security Manager', description: 'Sandbox & access control.', icon: <IconShieldLock />, link: 'java/61' },
-	{ title: 'Cryptography APIs', description: 'Encryption, hashing.', icon: <IconBug />, link: 'java/62' },
-	{ title: 'SQL Injection Prevention', description: 'Secure coding tips.', icon: <IconAlertTriangle />, link: 'java/63' },
-]
-
-const testing = [
-	{ title: 'JUnit Basics', description: 'Unit testing in Java.', icon: <IconCheckbox />, link: 'java/64' },
-	{ title: 'Mockito', description: 'Mocking framework.', icon: <IconFunction />, link: 'java/65' },
-	{ title: 'TestNG', description: 'Testing alternative.', icon: <IconAdjustments />, link: 'java/66' },
-	{ title: 'Best Practices', description: 'Effective unit tests.', icon: <IconGauge />, link: 'java/67' },
-]
-
 const tools = [
 	{ title: 'Popular IDEs', description: 'IntelliJ, Eclipse, NetBeans, VS Code.', icon: <IconListDetails />, link: 'java/68' },
 	{ title: 'Build Tools', description: 'Maven, Gradle, Ant.', icon: <IconGitBranch />, link: 'java/69' },
@@ -187,15 +163,6 @@ export default function Page() {
 
 			<p className="px-10">Memory & Performance</p>
 			<ScrollableFeatureRow features={memoryPerformance} />
-
-			<p className="px-10">Java in Real-World Development</p>
-			<ScrollableFeatureRow features={realWorld} />
-
-			<p className="px-10">Security in Java</p>
-			<ScrollableFeatureRow features={security} />
-
-			<p className="px-10">Testing in Java</p>
-			<ScrollableFeatureRow features={testing} />
 
 			<p className="px-10">Tools & Ecosystem</p>
 			<ScrollableFeatureRow features={tools} />
