@@ -5,9 +5,18 @@ import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 
 export default function ProfilePage() {
-  const { data: session, status } = useSession()
+  const { status } = useSession()
   const router = useRouter()
-  const [user, setUser] = useState<any>(null)
+
+  type User = {
+    profilePicture?: string
+    realName?: string
+    username?: string
+    email?: string
+    createdAt?: string
+  }
+
+  const [user, setUser] = useState<User | null>(null)
 
   useEffect(() => {
     if (status === "authenticated") {
@@ -43,7 +52,7 @@ export default function ProfilePage() {
           <p className="text-gray-500 dark:text-gray-400">@{user.username}</p>
           <p className="text-gray-600 dark:text-gray-300">{user.email}</p>
           <p className="text-sm text-gray-400 mt-2">
-            Joined on {new Date(user.createdAt).toLocaleDateString()}
+            Joined on {user.createdAt ? new Date(user.createdAt).toLocaleDateString() : 'Unknown'}
           </p>
 
           <button
