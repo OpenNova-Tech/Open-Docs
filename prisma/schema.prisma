@@ -15,4 +15,6 @@ model User {
   password       String
   profilePicture String?
   createdAt      DateTime @default(now())
+
+  @@map("User")
 }
