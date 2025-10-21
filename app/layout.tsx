@@ -5,6 +5,7 @@ import { Navbar } from "@/components/mini-navbar"
 import { Footer } from "./footer"
 import "katex/dist/katex.min.css"
 import Chatbot from "@/components/Chatbot"
+import { SessionProviderWrapper } from "@/components/SessionProviderWrapper"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,10 +29,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} dark antialiased`}>
         {/* <Navbar className="top-10" /> */}
+        <SessionProviderWrapper>
+          
         <Navbar />
         {children}
         <Chatbot />
         <Footer />
+        </SessionProviderWrapper>
       </body>
     </html>
   )

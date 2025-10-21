@@ -15,25 +15,4 @@ model User {
   password       String
   profilePicture String?
   createdAt      DateTime  @default(now())
-  replies        Reply[]
-}
-
-model Thread {
-  id        Int       @id @default(autoincrement())
-  title     String
-  desc      String
-  category  String
-  createdAt DateTime  @default(now())
-  replies   Reply[]
-}
-
-model Reply {
-  id        Int       @id @default(autoincrement())
-  content   String
-  createdAt DateTime  @default(now())
-  threadId  Int
-  userId    Int
-  
-  thread    Thread    @relation(fields: [threadId], references: [id])
-  author    User      @relation(fields: [userId], references: [id])
 }

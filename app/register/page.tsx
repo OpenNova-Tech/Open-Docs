@@ -1,128 +1,68 @@
 'use client'
 
-import React, { useState } from 'react'
-import { Eye, EyeOff } from 'lucide-react'
+import { useState } from "react"
+import { signIn } from "next-auth/react"
+import { useRouter } from "next/navigation"
 
 export default function RegisterPage() {
-  const [form, setForm] = useState({
-    username: '',
-    realName: '',
-    email: '',
-    password: ''
-  })
-  const [message, setMessage] = useState('')
-  const [error, setError] = useState('')
-  const [passwordVisible, setPasswordVisible] = useState(false)
+  const [form, setForm] = useState({ username: "", realName: "", email: "", password: "" })
+  const [loading, setLoading] = useState(false)
+  const router = useRouter()
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setMessage('')
-    setError('')
+    setLoading(true)
 
-    try {
-      const res = await fetch('/api/register', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form)
-      })
-      const data = await res.json()
-      if (res.ok) {
-        setMessage(data.message || 'Registration successful!')
-      } else {
-        setError(data.error || 'Something went wrong.')
-      }
-    } catch {
-      setError('Server error. Please try again.')
+    const res = await fetch("/api/register", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    })
+
+    const data = await res.json()
+
+    if (!res.ok) {
+      alert(data.error || "Registration failed")
+      setLoading(false)
+      return
+    }
+
+    // ✅ Auto login immediately after successful registration
+    const loginRes = await signIn("credentials", {
+      email: form.email,
+      password: form.password,
+      redirect: false, // prevent NextAuth redirect
+    })
+
+    setLoading(false)
+
+    if (loginRes?.error) {
+      alert("Login failed after registration")
+    } else {
+      router.push("/") // ✅ redirect to home
     }
   }
 
-  const handleGoogleRegister = () => {
-    window.location.href = 'http://localhost:8000/auth/google'
-  }
-
-  const handleGithubRegister = () => {
-    window.location.href = 'http://localhost:8000/auth/github'
-  }
-
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center px-4">
-      <div className="bg-zinc-900 p-8 rounded-lg shadow-lg w-full max-w-md space-y-6">
-        <div className="text-left">
-          <h2 className="text-2xl font-bold">Create your Open Auth account</h2>
-          <p className="text-sm text-zinc-400 mt-1">Sign up to access Open Docs</p>
-        </div>
-
-        <form className="space-y-4" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Username"
-            value={form.username}
-            onChange={(e) => setForm({ ...form, username: e.target.value })}
-            className="w-full bg-zinc-800 border border-zinc-700 rounded px-3 py-2 text-sm text-white focus:outline-none focus:ring focus:ring-indigo-500"
-          />
-
-          <input
-            type="text"
-            placeholder="Full Name"
-            value={form.realName}
-            onChange={(e) => setForm({ ...form, realName: e.target.value })}
-            className="w-full bg-zinc-800 border border-zinc-700 rounded px-3 py-2 text-sm text-white focus:outline-none focus:ring focus:ring-indigo-500"
-          />
-
-          <input
-            type="email"
-            placeholder="Email"
-            value={form.email}
-            onChange={(e) => setForm({ ...form, email: e.target.value })}
-            className="w-full bg-zinc-800 border border-zinc-700 rounded px-3 py-2 text-sm text-white focus:outline-none focus:ring focus:ring-indigo-500"
-          />
-
-          <div className="relative">
-            <input
-              type={passwordVisible ? 'text' : 'password'}
-              placeholder="Password"
-              value={form.password}
-              onChange={(e) => setForm({ ...form, password: e.target.value })}
-              className="w-full bg-zinc-800 border border-zinc-700 rounded px-3 py-2 text-sm text-white focus:outline-none focus:ring focus:ring-indigo-500 pr-10"
-            />
-            <button
-              type="button"
-              onClick={() => setPasswordVisible(!passwordVisible)}
-              className="absolute top-1/2 right-3 transform -translate-y-1/2 text-zinc-400 hover:text-white"
-            >
-              {passwordVisible ? <EyeOff size={18} /> : <Eye size={18} />}
-            </button>
-          </div>
-
-          <button
-            type="submit"
-            className="w-full bg-indigo-600 hover:bg-indigo-700 transition text-white py-2 rounded font-semibold"
-          >
-            Sign up →
-          </button>
-        </form>
-
-        {message && <p className="text-green-400 text-center text-sm">{message}</p>}
-        {error && <p className="text-red-400 text-center text-sm">{error}</p>}
-
-        <div className="space-y-3 pt-2">
-          <button
-            onClick={handleGoogleRegister}
-            className="w-full flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 transition text-white py-2 rounded"
-          >
-            <img src="/google.svg" alt="Google" className="w-5 h-5" />
-            Sign up with Google
-          </button>
-
-          <button
-            onClick={handleGithubRegister}
-            className="w-full flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 transition text-white py-2 rounded"
-          >
-            <img src="/github.svg" alt="GitHub" className="w-5 h-5" />
-            Sign up with GitHub
-          </button>
-        </div>
-      </div>
-    </div>
+    <form onSubmit={handleSubmit} className="max-w-sm mx-auto p-6">
+      <h2 className="text-2xl font-bold mb-4">Register</h2>
+      {["username", "realName", "email", "password"].map((f) => (
+        <input
+          key={f}
+          type={f === "password" ? "password" : f === "email" ? "email" : "text"}
+          placeholder={f.charAt(0).toUpperCase() + f.slice(1)}
+          className="w-full mb-3 border p-2 rounded"
+          onChange={(e) => setForm({ ...form, [f]: e.target.value })}
+          required
+        />
+      ))}
+      <button
+        type="submit"
+        className="w-full bg-green-600 text-white p-2 rounded disabled:opacity-50"
+        disabled={loading}
+      >
+        {loading ? "Registering..." : "Register"}
+      </button>
+    </form>
   )
 }
