@@ -22,6 +22,8 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
     { id: 16, title: 'Polymorphism' },
     { id: 17, title: 'Abstraction' },
     { id: 18, title: 'Encapsulation' },
+    { id: 19, title: 'this & super' },
+    { id: 20, title: 'Static and Instance' },
   ]
 
   return (
