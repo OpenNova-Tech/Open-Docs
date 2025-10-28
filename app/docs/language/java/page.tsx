@@ -64,10 +64,10 @@ const oop = [
 ]
 
 const stringsArrays = [
-	{ title: 'String Class', description: 'Immutability & usage.', icon: <IconLink />, link: 'java/23' },
-	{ title: 'StringBuilder & Buffer', description: 'Mutable strings for performance.', icon: <IconBolt />, link: 'java/24' },
-	{ title: 'Arrays in Java', description: '1D, 2D, Jagged arrays.', icon: <IconTableOptions />, link: 'java/25' },
-	{ title: 'Array Utilities', description: 'Arrays.sort, Arrays.copyOf, etc.', icon: <IconHash />, link: 'java/26' },
+	{ title: 'String Class', description: 'Immutability & usage.', icon: <IconLink />, link: 'java/21' },
+	{ title: 'StringBuilder & Buffer', description: 'Mutable strings for performance.', icon: <IconBolt />, link: 'java/22' },
+	{ title: 'Arrays in Java', description: '1D, 2D, Jagged arrays.', icon: <IconTableOptions />, link: 'java/23' },
+	{ title: 'Array Utilities', description: 'Arrays.sort, Arrays.copyOf, etc.', icon: <IconHash />, link: 'java/24' },
 ]
 
 const collections = [

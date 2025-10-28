@@ -24,6 +24,10 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
     { id: 18, title: 'Encapsulation' },
     { id: 19, title: 'this & super' },
     { id: 20, title: 'Static and Instance' },
+    { id: 21, title: 'String' },
+    { id: 22, title: 'StringBuilder & StringBuffer' },
+    { id: 23, title: 'Arrays' },
+    { id: 24, title: 'Array Utilities' },
   ]
 
   return (
