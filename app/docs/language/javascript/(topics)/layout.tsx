@@ -4,7 +4,7 @@ import { useState } from 'react'
 import NavigationButtons from '@/components/PageChanger'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { ChevronDown, ChevronRight } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function TopicsLayout({ children }: { children: React.ReactNode }) {
