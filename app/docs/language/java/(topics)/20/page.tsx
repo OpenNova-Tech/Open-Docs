@@ -43,11 +43,11 @@ class Main {
         s1.roll = 1;
 
         Student s2 = new Student();
-        s2.name = "Riya";
+        s2.name = "Verdona";
         s2.roll = 2;
 
         s1.display(); // Anurag - 1
-        s2.display(); // Riya - 2
+        s2.display(); // Verdona - 2
     }
 }`
 
@@ -68,7 +68,7 @@ class Main {
         s1.name = "Anurag";
 
         Student s2 = new Student();
-        s2.name = "Riya";
+        s2.name = "Verdona";
 
         System.out.println(s1.college); // GNIT
         System.out.println(s2.college); // GNIT
