@@ -71,12 +71,12 @@ const stringsArrays = [
 ]
 
 const collections = [
-	{ title: 'List', description: 'ArrayList, LinkedList, Vector, Stack.', icon: <IconCirclesRelation />, link: 'java/27' },
-	{ title: 'Set', description: 'HashSet, LinkedHashSet, TreeSet.', icon: <IconHierarchy />, link: 'java/28' },
-	{ title: 'Map', description: 'HashMap, TreeMap, Hashtable.', icon: <IconDatabase />, link: 'java/29' },
-	{ title: 'Queue', description: 'PriorityQueue, Deque.', icon: <IconServer />, link: 'java/30' },
-	{ title: 'Iterators', description: 'Iteration techniques.', icon: <IconLoader2 />, link: 'java/31' },
-	{ title: 'Generics', description: 'Type-safe collections.', icon: <IconFunction />, link: 'java/32' },
+	{ title: 'List', description: 'ArrayList, LinkedList, Vector, Stack.', icon: <IconCirclesRelation />, link: 'java/25' },
+	{ title: 'Set', description: 'HashSet, LinkedHashSet, TreeSet.', icon: <IconHierarchy />, link: 'java/26' },
+	{ title: 'Map', description: 'HashMap, TreeMap, Hashtable.', icon: <IconDatabase />, link: 'java/27' },
+	{ title: 'Queue', description: 'PriorityQueue, Deque.', icon: <IconServer />, link: 'java/28' },
+	{ title: 'Iterators', description: 'Iteration techniques.', icon: <IconLoader2 />, link: 'java/29' },
+	{ title: 'Generics', description: 'Type-safe collections.', icon: <IconFunction />, link: 'java/30' },
 ]
 
 const exceptionsThreads = [

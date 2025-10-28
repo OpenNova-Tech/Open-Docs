@@ -28,6 +28,12 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
     { id: 22, title: 'StringBuilder & StringBuffer' },
     { id: 23, title: 'Arrays' },
     { id: 24, title: 'Array Utilities' },
+    { id: 25, title: 'List' },
+    { id: 26, title: 'Set' },
+    { id: 27, title: 'Map' },
+    { id: 28, title: 'Queue' },
+    { id: 29, title: 'Iterators' },
+    { id: 30, title: 'Generics' },
   ]
 
   return (
