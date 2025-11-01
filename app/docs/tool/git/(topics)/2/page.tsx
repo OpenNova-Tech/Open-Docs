@@ -122,27 +122,6 @@ sudo apt install git`
             If Git responds with a version number, you are all set to move forward!
           </div>
         </motion.div>
-        <motion.div
-          className='flex justify-center gap-6 pt-20'
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <Link href='1'>
-            <button
-              className='bg-transparent border border-[#F05032] cursor-pointer text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:-translate-x-2'
-            >
-              ← View Previous
-            </button>
-          </Link>
-          <Link href='3'>
-            <button
-              className='bg-transparent border border-[#F05032] cursor-pointer text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:translate-x-2'
-            >
-              View Next →
-            </button>
-          </Link>
-        </motion.div>
       </div>
     </main>
   )

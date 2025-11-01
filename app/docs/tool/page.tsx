@@ -8,7 +8,7 @@ export default function page() {
     {
       title: 'Git',
       description: 'Distributed version control system for managing code efficiently.',
-      link: '/tool/git',
+      link: '/docs/tool/git',
       iconSrc: '/icons/tools/git.svg'
     },
   ]
@@ -17,25 +17,25 @@ export default function page() {
     {
       title: 'Jest',
       description: 'Delightful JavaScript testing framework with a focus on simplicity.',
-      link: '/tool/jest',
+      link: '/docs/tool/jest',
       iconSrc: '/icons/tools/jest.svg'
     },
     {
       title: 'Selenium',
       description: 'Automates web browsers for testing across multiple platforms.',
-      link: '/tool/selenium',
+      link: '/docs/tool/selenium',
       iconSrc: '/icons/tools/selenium.svg'
     },
     {
       title: 'JUnit',
       description: 'Widely used testing framework for Java-based applications.',
-      link: '/tool/junit5',
+      link: '/docs/tool/junit5',
       iconSrc: '/icons/tools/junit5.svg'
     },
     {
       title: 'Cypress',
       description: 'Fast, easy, and reliable testing for web applications.',
-      link: '/tool/cypress',
+      link: '/docs/tool/cypress',
       iconSrc: '/icons/tools/cypress.svg'
     },
   ]
@@ -44,13 +44,13 @@ export default function page() {
     {
       title: 'Figma',
       description: 'Collaborative interface design tool for teams and individuals.',
-      link: '/tool/figma',
+      link: '/docs/tool/figma',
       iconSrc: '/icons/tools/figma.svg'
     },
     {
       title: 'Sketch',
       description: 'Vector-based design tool for macOS used by professionals.',
-      link: '/tool/sketch',
+      link: '/docs/tool/sketch',
       iconSrc: '/icons/tools/sketch.svg'
     },
   ]
@@ -59,13 +59,13 @@ export default function page() {
     {
       title: 'Notion',
       description: 'All-in-one workspace for notes, tasks, and collaboration.',
-      link: '/tool/notion',
+      link: '/docs/tool/notion',
       iconSrc: '/icons/tools/notion.svg'
     },
     {
       title: 'Jira',
       description: 'Agile project management tool for tracking issues and tasks.',
-      link: '/tool/jira',
+      link: '/docs/tool/jira',
       iconSrc: '/icons/tools/jira.svg'
     },
   ]
