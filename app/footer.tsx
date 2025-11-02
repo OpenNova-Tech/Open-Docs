@@ -46,9 +46,10 @@ export function Footer() {
     {
       title: 'Community',
       links: [
-        { label: 'Community', href: '#' },
+        // { label: 'Community', href: '#' },
         { label: 'Forum', href: '/forum' },
-        { label: 'Chat', href: '#' },
+        { label: 'Support', href: '/support' },
+        // { label: 'Chat', href: '#' },
       ],
     },
     {
@@ -56,7 +57,7 @@ export function Footer() {
       links: [
         { label: 'Write Docs', href: '/github' },
         { label: 'Open an Issue', href: 'https://github.com/OpenNova-Tech/Open-Docs/issues' },
-        { label: 'GitHub Repository', href: 'https://github.com/OpenNova-Tech/Open-Docs/' },
+        { label: 'Create Pull Request', href: 'https://github.com/OpenNova-Tech/Open-Docs/pulls' },
       ],
     },
     {
