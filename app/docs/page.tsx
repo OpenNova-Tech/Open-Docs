@@ -130,7 +130,7 @@ const sections = [
 
 const page = () => {
   return (
-    <div className='pt-32 px-20 bg-black pb-16'>
+    <div className='pt-32 px-10 md:px-20 bg-black pb-16'>
       {sections.map((section, sectionIndex) => (
         <div key={sectionIndex}>
           <p className='text-neutral-500 py-10'>{section.title}</p>
