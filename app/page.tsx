@@ -22,9 +22,9 @@ export default function Home() {
 			<div className='relative h-[30rem] md:h-screen pt-40 md:pb-40 bg-black w-full'>
 				<div className='absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10 pointer-events-none'>
 					<p className='font-bold text-xl md:text-4xl text-white'>
-						Open{' '}
+						OPEN{' '}
 						<span className='text-neutral-200'>
-							{'Docs'.split('').map((word, idx) => (
+							{'DOCS'.split('').map((word, idx) => (
 								<motion.span
 									key={idx}
 									className='inline-block'

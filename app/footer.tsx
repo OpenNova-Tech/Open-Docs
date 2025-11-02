@@ -38,33 +38,35 @@ export function Footer() {
     {
       title: 'Organization',
       links: [
-        { label: 'About', href: '/about' },
-        { label: 'Blog', href: '/blog' },
-        { label: 'Team', href: '/team' },
+        { label: 'About', href: '/dev/about' },
+        { label: 'Blog', href: '/dev/blog' },
+        { label: 'Team', href: '/dev/team' },
       ],
     },
     {
       title: 'Community',
       links: [
-        { label: 'Community', href: '#' },
+        // { label: 'Community', href: '#' },
         { label: 'Forum', href: '/forum' },
-        { label: 'Chat', href: '#' },
+        { label: 'Support', href: '/support' },
+        // { label: 'Chat', href: '#' },
       ],
     },
     {
       title: 'Contribute',
       links: [
-        { label: 'Write Docs', href: '#' },
-        { label: 'Open an Issue', href: '#' },
-        { label: 'GitHub Repository', href: '#' },
+        { label: 'Write Docs', href: '/github' },
+        { label: 'Open an Issue', href: 'https://github.com/OpenNova-Tech/Open-Docs/issues' },
+        { label: 'Create Pull Request', href: 'https://github.com/OpenNova-Tech/Open-Docs/pulls' },
       ],
     },
     {
       title: 'More',
       links: [
-        { label: 'Changelog', href: '#' },
-        { label: 'Roadmap', href: '#' },
-        { label: 'License', href: '#' },
+        // { label: 'Changelog', href: '#' },
+        // { label: 'Roadmap', href: '#' },
+        // { label: 'License', href: '#' },
+        { label: 'Open Quantum', href: 'https://rubys-beta.vercel.app' },
       ],
     },
   ]
