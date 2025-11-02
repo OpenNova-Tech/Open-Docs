@@ -63,7 +63,7 @@ export default function Chatbot() {
 						animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
 						exit={{ opacity: 0, scale: 0.8, x: 60, y: 60 }}
 						transition={{ duration: 0.35, ease: 'easeInOut' }}
-						className='fixed bottom-28 right-12 w-100 shadow-lg shadow-[#626262] bg-[#18181b9d] flex flex-col rounded-xl overflow-hidden backdrop-blur-md origin-bottom-right'
+						className='fixed bottom-28 right-12 w-80 md:w-100 shadow-lg shadow-[#626262] bg-[#18181b9d] flex flex-col rounded-xl overflow-hidden backdrop-blur-md origin-bottom-right'
 					>
 						<div className='relative p-2 bg-gradient-to-r from-[#4285F4] via-[#6858c4] to-[#EA4335] font-bold flex justify-center items-center text-white'>
 							BOTLA &nbsp; <Bot />
