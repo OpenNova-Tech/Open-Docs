@@ -252,7 +252,7 @@ function OpenSourceContent({
           <h2 className="text-2xl md:text-4xl font-bold tracking-tight sm:text-6xl mb-4">
             {title}
           </h2>
-          <p className=" px-10 text-sm md:text-xl text-muted-foreground max-w-[800px] mx-auto">
+          <p className=" md:px-10 text-sm md:text-xl text-muted-foreground max-w-[800px] mx-auto">
             {description}
           </p>
           <div className="mt-6">

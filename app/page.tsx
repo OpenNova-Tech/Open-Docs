@@ -19,7 +19,7 @@ export default function Home() {
 				</p>
 			</StickyBanner>
 
-			<div className='relative h-[40rem] md:h-screen pt-40 md:pb-40 bg-black w-full'>
+			<div className='relative h-[30rem] md:h-screen pt-40 md:pb-40 bg-black w-full'>
 				<div className='absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10 pointer-events-none'>
 					<p className='font-bold text-xl md:text-4xl text-white'>
 						Open{' '}
