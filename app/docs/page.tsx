@@ -11,12 +11,12 @@ const sections = [
         image: '/docs/languages.jpg',
         readMoreLink: '/docs/language'
       },
-      {
-        title: 'Website and Application Development',
-        subtitle: 'Build modern tech applications',
-        image: '/docs/development.webp',
-        readMoreLink: '/docs/development'
-      },
+      // {
+      //   title: 'Website and Application Development',
+      //   subtitle: 'Build modern tech applications',
+      //   image: '/docs/development.webp',
+      //   readMoreLink: '/docs/development'
+      // },
       {
         title: 'Software Tools',
         subtitle: 'Tools enhancing productivity and automation',
