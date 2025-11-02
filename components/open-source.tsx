@@ -249,10 +249,10 @@ function OpenSourceContent({
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold tracking-tight sm:text-6xl mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold tracking-tight sm:text-6xl mb-4">
             {title}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-[800px] mx-auto">
+          <p className=" px-10 text-sm md:text-xl text-muted-foreground max-w-[800px] mx-auto">
             {description}
           </p>
           <div className="mt-6">
