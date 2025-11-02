@@ -19,7 +19,7 @@ export default function Home() {
 				</p>
 			</StickyBanner>
 
-			<div className='relative h-screen py-40 bg-black w-full'>
+			<div className='relative h-[30rem] md:h-screen pt-40 md:pb-40 bg-black w-full'>
 				<div className='absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10 pointer-events-none'>
 					<p className='font-bold text-xl md:text-4xl text-white'>
 						Open{' '}
@@ -100,20 +100,20 @@ export default function Home() {
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.7, ease: "easeOut" }}
 				viewport={{ once: true }}
-				className="mb-36 mt-56 flex flex-col items-center text-center space-y-6"
+				className="mb-36 px-10 md:mt-56 flex flex-col items-center text-center space-y-6"
 			>
-				<h2 className="text-4xl font-bold mb-20">
+				<h2 className="text-xl md:text-4xl font-bold mb-20">
 					Thank You for the platform for building <span className="text-indigo-400">Open Docs</span>
 				</h2>
 
 				<div className="flex flex-wrap justify-center gap-8">
 					<motion.div whileHover={{ scale: 1.1 }} className="flex flex-col items-center space-y-2">
-						<img src="https://ui.aceternity.com/logo.png" alt="" className='h-20 w-20' />
+						<img src="https://ui.aceternity.com/logo.png" alt="" className='h-10 w-10 md:h-20 md:w-20' />
 						<p className="text-lg mt-5 font-medium">Aceternity UI</p>
 					</motion.div>
 
 					<motion.div whileHover={{ scale: 1.1 }} className="flex flex-col items-center space-y-2">
-						<img src="/neondb.svg" alt="" className='h-20 w-20' />
+						<img src="/neondb.svg" alt="" className='h-10 w-10 md:h-20 md:w-20' />
 						<p className="text-lg mt-5 font-medium">NeonDB</p>
 					</motion.div>
 				</div>

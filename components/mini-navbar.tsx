@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const AnimatedNavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
   const defaultTextColor = "text-gray-300";
@@ -24,50 +25,35 @@ const AnimatedNavLink = ({ href, children }: { href: string; children: React.Rea
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [headerShapeClass, setHeaderShapeClass] = useState("rounded-full");
-  const shapeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-
   const pathname = usePathname();
   const router = useRouter();
 
-  // ✅ NextAuth session
   const { data: session, status } = useSession();
   const user = session?.user;
   const mounted = status !== "loading";
 
-  const toggleMenu = () => setIsOpen(!isOpen);
-
-  useEffect(() => {
-    if (shapeTimeoutRef.current) clearTimeout(shapeTimeoutRef.current);
-    if (isOpen) setHeaderShapeClass("rounded-xl");
-    else shapeTimeoutRef.current = setTimeout(() => setHeaderShapeClass("rounded-full"), 300);
-    return () => {
-      if (shapeTimeoutRef.current) clearTimeout(shapeTimeoutRef.current);
-    };
-  }, [isOpen]);
-
   if (!mounted) return null;
 
+  const toggleMenu = () => setIsOpen((prev) => !prev);
+  const handleLogout = async () => await signOut({ callbackUrl: "/" });
   const topClass = pathname === "/" ? "top-10" : "top-5";
-
-  const handleLogout = async () => {
-    await signOut({ callbackUrl: "/" });
-  };
 
   const navLinksData = [
     { label: "Home", href: "/" },
     { label: "Docs", href: "/docs" },
-    { label: "Forum", href: "/forum" },
     { label: "Support", href: "/support" },
     { label: "Github", href: "https://www.github.com/OpenNova-Tech/Open-Docs" },
   ];
 
   return (
-    <header
-      className={`fixed ${topClass} left-1/2 transform -translate-x-1/2 z-100 flex flex-col items-center px-6 py-3 backdrop-blur-xs
-                  ${headerShapeClass} border border-[#333] bg-[#1f1f1f57]
-                  w-[calc(100%-2rem)] md:w-[calc(100%-7rem)]
-                  transition-[border-radius] duration-0 ease-in-out`}
+    <motion.header
+      animate={{
+        height: isOpen ? "auto" : "fit-content",
+      }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+      className={`fixed ${topClass} left-1/2 transform -translate-x-1/2 z-100 flex flex-col items-center
+                  px-6 py-3 backdrop-blur-xs border border-[#333] bg-[#1f1f1f57]
+                  w-[calc(100%-2rem)] md:w-[calc(100%-7rem)] rounded-4xl`}
     >
       <div className="flex items-center justify-between w-full gap-x-6 sm:gap-x-8">
         {/* Logo */}
@@ -90,7 +76,7 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* ✅ Auth Section */}
+        {/* Desktop Auth Section */}
         <div className="hidden sm:flex items-center gap-3">
           {!user ? (
             <>
@@ -110,7 +96,10 @@ export function Navbar() {
           ) : (
             <>
               <img
-                src={user.image || "https://wallpapers.com/images/hd/cartoon-developer-profile-picture-j23xefhmfofeiayv.png"}
+                src={
+                  user.image ||
+                  "https://wallpapers.com/images/hd/cartoon-developer-profile-picture-j23xefhmfofeiayv.png"
+                }
                 alt="Profile"
                 className="w-8 h-8 rounded-full border border-gray-400"
               />
@@ -141,6 +130,64 @@ export function Navbar() {
           )}
         </button>
       </div>
-    </header>
+
+      {/* ✅ Smooth Animated Mobile Dropdown Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.nav
+            key="mobile-nav"
+            initial={{ opacity: 0, height: 0, y: -10 }}
+            animate={{ opacity: 1, height: "auto", y: 0 }}
+            exit={{ opacity: 0, height: 0, y: -10 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+            className="sm:hidden mt-4 flex flex-col w-full items-center space-y-3 text-sm border-t border-[#333] pt-3 overflow-hidden"
+          >
+            {navLinksData.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-gray-300 hover:text-white transition-colors duration-150"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.label}
+              </a>
+            ))}
+
+            {!user ? (
+              <>
+                <button
+                  onClick={() => {
+                    router.push("/login");
+                    setIsOpen(false);
+                  }}
+                  className="w-full py-2 border border-[#333] text-gray-300 rounded-full hover:border-white/50 hover:text-white transition-colors duration-200"
+                >
+                  Log In
+                </button>
+                <button
+                  onClick={() => {
+                    router.push("/register");
+                    setIsOpen(false);
+                  }}
+                  className="w-full py-2 font-semibold text-black bg-gradient-to-br from-gray-100 to-gray-300 rounded-full hover:from-gray-200 hover:to-gray-400 transition-all duration-200"
+                >
+                  Sign Up
+                </button>
+              </>
+            ) : (
+              <button
+                onClick={() => {
+                  handleLogout();
+                  setIsOpen(false);
+                }}
+                className="w-full py-2 border border-[#470e0e] bg-[rgba(33,9,9,0.62)] text-red-300 rounded-full hover:border-red-100/50 hover:text-red-50 transition-colors duration-200"
+              >
+                Log Out
+              </button>
+            )}
+          </motion.nav>
+        )}
+      </AnimatePresence>
+    </motion.header>
   );
 }
