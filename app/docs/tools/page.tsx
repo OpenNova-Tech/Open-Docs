@@ -8,7 +8,7 @@ export default function page() {
     {
       title: 'Git',
       description: 'Distributed version control system for managing code efficiently.',
-      link: '/docs/tool/git',
+      link: '/docs/tools/git',
       iconSrc: '/icons/tools/git.svg'
     },
   ]

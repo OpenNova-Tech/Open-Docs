@@ -93,7 +93,7 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
               <div key={header} className='mb-4'>
                 <button
                   onClick={() => toggleSection(header)}
-                  className='flex justify-between items-center w-full text-left text-[#b07219] text-lg font-semibold mb-1 border-b border-[#b07219]/30 pb-1 transition'
+                  className='cursor-pointer flex justify-between items-center w-full text-left text-[#b07219] text-lg font-semibold mb-1 border-b border-[#b07219]/30 pb-1 transition'
                 >
                   {header}
                   <motion.span
