@@ -33,17 +33,16 @@ const core = [
   { title: 'What is Git', description: 'Distributed version control system for code tracking changes.', icon: <IconGitCommit />, link: 'git/1' },
   { title: 'Installation of Git', description: 'Steps to install Git on various operating systems.', icon: <IconSettings />, link: 'git/2' },
   { title: 'Git Configuration', description: 'Initial setup for Git with username and email.', icon: <IconSettings2 />, link: 'git/3' },
-  { title: 'Basic Workflow', description: 'Typical flow: add, commit, push, and pull operations.', icon: <IconDeviceFloppy />, link: 'git/4' },
-  { title: 'Understanding .git Folder', description: 'Contains all metadata and object history for project.', icon: <IconFolder />, link: 'git/5' },
-  { title: 'Why Git Over Other VCS', description: 'Advantages of Git compared to traditional version control tools.', icon: <IconQuestionMark />, link: 'git/6' }
+  { title: 'Understanding .git Folder', description: 'Contains all metadata and object history for project.', icon: <IconFolder />, link: 'git/4' },
+  { title: 'Why Git Over Other VCS', description: 'Advantages of Git compared to traditional version control tools.', icon: <IconQuestionMark />, link: 'git/5' }
 ]
 
 const repo = [
-  { title: 'Creating Repository', description: 'Initialize a Git repository to start version control.', icon: <IconFolder />, link: 'git/7' },
-  { title: 'Staging Area', description: 'Area where changes are prepared before committing.', icon: <IconFiles />, link: 'git/8' },
-  { title: 'Making Commits', description: 'Record changes to the repository with commit messages.', icon: <IconGitCommit />, link: 'git/9' },
-  { title: 'Viewing History', description: 'See previous commits and changes using Git log.', icon: <IconHistory />, link: 'git/10' },
-  { title: 'Ignoring Files', description: 'Exclude files from tracking using .gitignore configuration.', icon: <IconTrash />, link: 'git/11' }
+  { title: 'Creating Repository', description: 'Initialize a Git repository to start version control.', icon: <IconFolder />, link: 'git/6' },
+  { title: 'Staging Area', description: 'Area where changes are prepared before committing.', icon: <IconFiles />, link: 'git/7' },
+  { title: 'Making Commits', description: 'Record changes to the repository with commit messages.', icon: <IconGitCommit />, link: 'git/8' },
+  { title: 'Viewing History', description: 'See previous commits and changes using Git log.', icon: <IconHistory />, link: 'git/9' },
+  { title: 'Ignoring Files', description: 'Exclude files from tracking using .gitignore configuration.', icon: <IconTrash />, link: 'git/10' }
 ]
 
 const branch = [
