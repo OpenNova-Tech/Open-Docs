@@ -17,19 +17,18 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
         { id: 1, title: 'What is Git' },
         { id: 2, title: 'Installation of Git' },
         { id: 3, title: 'Git Configuration' },
-        { id: 4, title: 'Basic Workflow' },
-        { id: 5, title: 'Understanding .git Folder' },
-        { id: 6, title: 'Why Git Over Other VCS' },
+        { id: 4, title: 'Understanding .git Folder' },
+        { id: 5, title: 'Why Git Over Other VCS' },
       ],
     },
     {
       header: 'Repository and Commits',
       topics: [
-        { id: 7, title: 'Creating Repository' },
-        { id: 8, title: 'Staging Area' },
-        { id: 9, title: 'Making Commits' },
-        { id: 10, title: 'Viewing History' },
-        { id: 11, title: 'Ignoring Files' },
+        { id: 6, title: 'Creating Repository' },
+        { id: 7, title: 'Staging Area' },
+        { id: 8, title: 'Making Commits' },
+        { id: 9, title: 'Viewing History' },
+        { id: 10, title: 'Ignoring Files' },
       ],
     },
     {
@@ -89,7 +88,7 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
     <div className='flex bg-black min-h-screen'>
       <aside className='w-64 hidden md:flex bg-black pt-20 text-white border-r-2 border-[#F05032]/50 sticky top-0 h-screen md:flex-col'>
         <div className='p-5'>
-          <Link href='/docs/tool/git'>
+          <Link href='/docs/tools/git'>
             <h2 className='text-3xl font-bold text-center text-[#F05032]'>Git</h2>
           </Link>
         </div>
@@ -102,7 +101,7 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
               <div key={header} className='mb-4'>
                 <button
                   onClick={() => toggleSection(header)}
-                  className='flex justify-between items-center w-full text-left text-[#F05032] text-lg font-semibold mb-1 border-b border-[#F05032]/30 pb-1 hover:text-[#e68b7b] transition'
+                  className='flex justify-between items-center w-full text-left text-[#F05032] text-lg font-semibold mb-1 border-b cursor-pointer border-[#F05032]/30 pb-1 transition'
                 >
                   {header}
                   <motion.span
@@ -125,11 +124,11 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
                     >
                       <ul className='space-y-1 mt-2'>
                         {topics.map(({ id, title }) => {
-                          const active = pathname === `/docs/tool/git/${id}`
+                          const active = pathname === `/docs/tools/git/${id}`
                           return (
                             <li key={id}>
                               <Link
-                                href={`/docs/tool/git/${id}`}
+                                href={`/docs/tools/git/${id}`}
                                 className={`block px-3 py-2 rounded-lg transition ${
                                   active ? 'bg-neutral-800' : 'hover:bg-neutral-700'
                                 }`}
