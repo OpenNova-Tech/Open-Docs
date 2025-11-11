@@ -3,7 +3,6 @@
 import {
   IconGitBranch,
   IconSettings,
-  IconDeviceFloppy,
   IconFolder,
   IconGitCommit,
   IconGitCompare,
