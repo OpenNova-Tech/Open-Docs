@@ -40,9 +40,12 @@ export function Navbar() {
 
   const navLinksData = [
     { label: "Home", href: "/" },
-    { label: "Docs", href: "/docs" },
-    { label: "Support", href: "/support" },
-    { label: "Github", href: "https://www.github.com/OpenNova-Tech/Open-Docs" },
+    { label: "Documentations", href: "/docs" },
+    { label: "CP-Vault", href: "/code" },
+    // { label: "Theory", href: "/docs/theory" },
+    { label: "Botla.AI", href: "/bot" },
+    { label: "Contribute", href: "/github" },
+    // { label: "Jobs", href: "/jobs" },
   ];
 
   return (
@@ -56,7 +59,6 @@ export function Navbar() {
                   w-[calc(100%-2rem)] md:w-[calc(100%-7rem)] rounded-4xl`}
     >
       <div className="flex items-center justify-between w-full gap-x-6 sm:gap-x-8">
-        {/* Logo */}
         <div className="flex items-center">
           <div className="relative w-5 h-5 flex items-center justify-center">
             <span className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 top-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
@@ -67,8 +69,7 @@ export function Navbar() {
           <b className="pl-4 text-lg">OPEN DOCS</b>
         </div>
 
-        {/* Desktop Nav */}
-        <nav className="hidden sm:flex items-center space-x-4 sm:space-x-6 text-sm">
+        <nav className="hidden sm:flex items-center space-x-4 sm:space-x-10 text-sm">
           {navLinksData.map((link) => (
             <AnimatedNavLink key={link.href} href={link.href}>
               {link.label}
