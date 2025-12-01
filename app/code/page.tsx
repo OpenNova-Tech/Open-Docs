@@ -17,7 +17,14 @@ const CodeVault = () => {
       tags: ["Array", "Hash Table"],
       link: "code/leetcode/two-sum"
     },
-    
+    {
+      id: 33,
+      title: 'Search in Rotated Sorted Array',
+      platform: 'LeetCode',
+      difficulty: 'Medium',
+      tags: ['Array', 'Binary Search'],
+      link: 'code/leetcode/search-in-rotated-sorted-array'
+    }
   ];
 
   const filteredProblems = problems.filter(problem => {
@@ -56,7 +63,7 @@ const CodeVault = () => {
   return (
     <div className="min-h-screen bg-black text-gray-100">
       {/* Header */}
-      <div className="bg-gradient-to-r mt-32 mb-20 from-cyan-600 to-cyan-800 border-b border-cyan-500/20">
+      <div className="bg-gradient-to-r mt-32 mb-20 from-cyan-600 to-cyan-900 border-b border-cyan-500/20">
         <div className="max-w-7xl mx-auto px-6 py-8">
           <div className="flex items-center gap-4 mb-4">
             <div className="w-16 h-16 bg-cyan-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/50">
