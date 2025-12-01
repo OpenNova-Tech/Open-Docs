@@ -45,13 +45,13 @@ const repo = [
 ]
 
 const branch = [
-  { title: 'What is Branch', description: 'Branches let you diverge from main development line.', icon: <IconGitBranch />, link: 'git/12' },
-  { title: 'Creating Branches', description: 'Generate new branches for features or experiments.', icon: <IconGitFork />, link: 'git/13' },
-  { title: 'Switching Branches', description: 'Move between branches to manage development flow.', icon: <IconGitCompare />, link: 'git/14' },
-  { title: 'Merging', description: 'Combine different branches into a single unified one.', icon: <IconGitMerge />, link: 'git/15' },
-  { title: 'Fast Forward and others', description: 'Different merge behaviors depending on history divergence.', icon: <IconGitPullRequest />, link: 'git/16' },
-  { title: 'Naming Conventions', description: 'Common conventions for clear and consistent branch naming.', icon: <IconEdit />, link: 'git/17' },
-  { title: 'Deleting Branches', description: 'Clean up branches locally and on remote.', icon: <IconTrash />, link: 'git/18' }
+  { title: 'What is Branch', description: 'Branches let you diverge from main development line.', icon: <IconGitBranch />, link: 'git/11' },
+  { title: 'Creating Branches', description: 'Generate new branches for features or experiments.', icon: <IconGitFork />, link: 'git/12' },
+  { title: 'Switching Branches', description: 'Move between branches to manage development flow.', icon: <IconGitCompare />, link: 'git/13' },
+  { title: 'Merging', description: 'Combine different branches into a single unified one.', icon: <IconGitMerge />, link: 'git/14' },
+  { title: 'Fast Forward and others', description: 'Different merge behaviors depending on history divergence.', icon: <IconGitPullRequest />, link: 'git/15' },
+  { title: 'Naming Conventions', description: 'Common conventions for clear and consistent branch naming.', icon: <IconEdit />, link: 'git/16' },
+  { title: 'Deleting Branches', description: 'Clean up branches locally and on remote.', icon: <IconTrash />, link: 'git/17' }
 ]
 
 const remote = [
