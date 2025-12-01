@@ -41,6 +41,7 @@ export function Footer() {
         { label: 'About', href: '/dev/about' },
         { label: 'Blog', href: '/dev/blog' },
         { label: 'Team', href: '/dev/team' },
+        { label: 'Contact', href: '/dev/contact' },
       ],
     },
     {
@@ -48,14 +49,14 @@ export function Footer() {
       links: [
         // { label: 'Community', href: '#' },
         { label: 'Forum', href: '/forum' },
-        { label: 'Support', href: '/support' },
+        { label: 'Donate', href: '/support' },
         // { label: 'Chat', href: '#' },
       ],
     },
     {
-      title: 'Contribute',
+      title: 'Open Source',
       links: [
-        { label: 'Write Docs', href: '/github' },
+        { label: 'Source Code', href: 'https://github.com/OpenNova-Tech/Open-Docs/' },
         { label: 'Open an Issue', href: 'https://github.com/OpenNova-Tech/Open-Docs/issues' },
         { label: 'Create Pull Request', href: 'https://github.com/OpenNova-Tech/Open-Docs/pulls' },
       ],
