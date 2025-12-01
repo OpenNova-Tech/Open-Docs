@@ -41,7 +41,7 @@ export function Navbar() {
   const navLinksData = [
     { label: "Home", href: "/" },
     { label: "Documentations", href: "/docs" },
-    { label: "CP-Vault", href: "/code" },
+    { label: "Code-Vault", href: "/code" },
     // { label: "Theory", href: "/docs/theory" },
     { label: "Botla.AI", href: "/bot" },
     { label: "Contribute", href: "/github" },
