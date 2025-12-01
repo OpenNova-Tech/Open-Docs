@@ -170,7 +170,7 @@ const CodeVault = () => {
       <div className='mx-auto px-12 py-12 flex gap-6'>
         <div className='w-1/2 bg-gray-900 border border-gray-800 p-6 rounded-xl h-fit sticky top-6'>
           <h1 className='text-2xl font-bold'>Search in Rotated Sorted Array</h1>
-          <p className='text-sm text-gray-400 mt-1'>Medium</p>
+          <p className='text-sm text-amber-400 mt-1'>Medium</p>
 
           <div className='mt-4 space-y-3 text-sm'>
             <p>There is an integer array nums sorted in ascending order (with distinct values).</p>
@@ -199,8 +199,7 @@ Output: -1`}
             <h3 className='text-lg font-semibold mt-4'>Constraints:</h3>
             <ul className='list-disc ml-5 space-y-2'>
               <li><pre className='bg-gray-800 py-1 px-3 rounded-lg'>1 &lt;= nums.length &lt;= 5000</pre></li>
-              <li><pre className='bg-gray-800 py-1 px-3 rounded-lg'>-104 &lt;= nums[i] &lt;= 104
-</pre></li>
+              <li><pre className='bg-gray-800 py-1 px-3 rounded-lg'>-104 &lt;= nums[i] &lt;= 104</pre></li>
               <li><pre className='bg-gray-800 py-1 px-3 rounded-lg'>All values of nums are unique.</pre></li>
               <li><pre className='bg-gray-800 py-1 px-3 rounded-lg'>nums is an ascending array that is possibly rotated.</pre></li>
               <li><pre className='bg-gray-800 py-1 px-3 rounded-lg'>-104 &lt;= target &lt;= 104</pre></li>
@@ -208,7 +207,6 @@ Output: -1`}
           </div>
         </div>
 
-        {/* RIGHT CODE VAULT */}
         <div className='w-1/2 space-y-4'>
           {problems.map((problem) => {
             const langKeys = Object.keys(problem.languages)
@@ -224,7 +222,7 @@ Output: -1`}
                       <button
                         key={lang}
                         onClick={() => setSelectedLang({ ...selectedLang, [problem.id]: lang })}
-                        className={`px-3 py-1 rounded-lg text-sm capitalize border transition
+                        className={`cursor-pointer px-3 py-1 rounded-lg text-sm capitalize border transition
                        ${activeLang === lang ? 'bg-cyan-600 border-cyan-400' : 'bg-gray-800 border-gray-700 hover:bg-gray-700'}`}
                       >
                         {lang}
@@ -239,7 +237,7 @@ Output: -1`}
                     className='absolute top-4 right-4 p-2 bg-gray-800 hover:bg-gray-700 rounded-lg border border-gray-700 flex items-center gap-2'
                   >
                     {copiedId === problem.id ? <Check className='w-4 h-4 text-green-400' /> : <Copy className='w-4 h-4 text-cyan-400' />}
-                    <span className='text-xs'>{copiedId === problem.id ? 'Copied!' : 'Copy'}</span>
+                    <span className='text-xs cursor-pointer'>{copiedId === problem.id ? 'Copied!' : 'Copy'}</span>
                   </button>
 
                   <SyntaxHighlighterPrism
