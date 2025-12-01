@@ -34,13 +34,13 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
     {
       header: 'Branching and Merging',
       topics: [
-        { id: 12, title: 'What is Branch' },
-        { id: 13, title: 'Creating Branches' },
-        { id: 14, title: 'Switching Branches' },
-        { id: 15, title: 'Merging' },
-        { id: 16, title: 'Fast Forward and others' },
-        { id: 17, title: 'Naming Conventions' },
-        { id: 18, title: 'Deleting Branches' },
+        { id: 11, title: 'What is Branch' },
+        { id: 12, title: 'Creating Branches' },
+        { id: 13, title: 'Switching Branches' },
+        { id: 14, title: 'Merging' },
+        { id: 15, title: 'Fast Forward and others' },
+        { id: 16, title: 'Naming Conventions' },
+        { id: 17, title: 'Deleting Branches' },
       ],
     },
     {
