@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Code2, Search, Filter, ExternalLink, Trophy, TrendingUp, BookOpen } from 'lucide-react';
+import { platform } from 'os';
 
 const CodeVault = () => {
   const [selectedPlatform, setSelectedPlatform] = useState('all');
@@ -24,7 +25,39 @@ const CodeVault = () => {
       difficulty: 'Medium',
       tags: ['Array', 'Binary Search'],
       link: 'code/leetcode/search-in-rotated-sorted-array'
-    }
+    },
+    {
+      id: 10001,
+      title: 'Welcome to Java!',
+      platform: 'HackerRank',
+      difficulty: 'Easy',
+      tags: [],
+      link: 'code/hackerrank/java/welcome-to-java'
+    },
+    {
+      id: 10002,
+      title: 'Java Stdin and Stdout I',
+      platform: 'HackerRank',
+      difficulty: 'Easy',
+      tags: [],
+      link: 'code/hackerrank/java/java-stdin-and-stdout-1'
+    },
+    {
+      id: 10009,
+      title: 'Java Regex',
+      platform: 'HackerRank',
+      difficulty: 'Medium',
+      tags: [],
+      link: 'code/hackerrank/java/java-regex'
+    },
+    {
+      id: 10078,
+      title: 'Java Priority Queue',
+      platform: 'HackerRank',
+      difficulty: 'Medium',
+      tags: [],
+      link: 'code/hackerrank/java/java-priority-queue'
+    },
   ];
 
   const filteredProblems = problems.filter(problem => {
