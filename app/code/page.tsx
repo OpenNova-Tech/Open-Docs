@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { Code2, Search, Filter, ExternalLink, Trophy, TrendingUp, BookOpen } from 'lucide-react';
-import { platform } from 'os';
 
 const CodeVault = () => {
   const [selectedPlatform, setSelectedPlatform] = useState('all');
