@@ -210,7 +210,7 @@ git commit -m "Add login feature"`
             <b className='text-[#F05032]'>{num(6)}</b> Choosing the Right Merge Behavior
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Your decision depends on your team's workflow: <br />
+            Your decision depends on your team&apos;s workflow: <br />
             <br />
             <b>Fast-Forward (Default)</b> <br />
             • Clean linear history <br />
