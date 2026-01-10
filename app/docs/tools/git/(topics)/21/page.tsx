@@ -13,20 +13,6 @@ export default function Page() {
   const code1 = `git fetch origin
 git rebase origin/main`
 
-  const code2 = `git clone https://github.com/username/project.git`
-
-  const code3 = `git clone https://github.com/username/project.git`
-
-  const code4 = `git clone git@github.com:username/project.git`
-
-  const code5 = `git clone <repo-url> <folder-name>`
-
-  const code6 = `git clone https://github.com/username/project.git my-project`
-
-  const code7 = `git clone --depth 1 <repo-url>`
-
-  const code8 = `git clone -b develop <repo-url>`
-
 
   return (
     <main className='pt-32 dark:bg-black py-12 px-6'>
