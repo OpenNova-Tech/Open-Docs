@@ -183,9 +183,9 @@ git switch -`
             or using older syntax:
             <CodeBlock language="bash" filename="" code={code15} /> <br />
             You enter <b>detached HEAD</b>, meaning: <br />
-            • You are not on a branch <br />
-            • New commits do not belong to any branch <br />
-            • They can be lost if not saved <br />
+            <b>•</b> You are not on a branch <br />
+            <b>•</b> New commits do not belong to any branch <br />
+            <b>•</b> They can be lost if not saved <br />
             <br />
             To save the work:
             <CodeBlock language="bash" filename="" code={code16} />
@@ -203,11 +203,11 @@ git switch -`
             <b className='text-[#F05032]'>{num(7)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>git switch &lt;branch&gt;</span> for modern switching; <span className='bg-neutral-800 px-2 rounded-lg'>git checkout</span>  still works. <br />
-            • Switch safely: stash or commit before changing branches to prevent data loss. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>git switch -</span> toggles between the last two branches. <br />
-            • Remote branches require <span className='bg-neutral-800 px-2 rounded-lg'>git switch -c &lt;branch&gt; origin/&lt;branch&gt;</span>. <br />
-            • Switching to a commit creates a <b>detached HEAD</b>, so create a branch if you want to keep the work.
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>git switch &lt;branch&gt;</span> for modern switching; <span className='bg-neutral-800 px-2 rounded-lg'>git checkout</span>  still works. <br />
+            <b>•</b> Switch safely: stash or commit before changing branches to prevent data loss. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>git switch -</span> toggles between the last two branches. <br />
+            <b>•</b> Remote branches require <span className='bg-neutral-800 px-2 rounded-lg'>git switch -c &lt;branch&gt; origin/&lt;branch&gt;</span>. <br />
+            <b>•</b> Switching to a commit creates a <b>detached HEAD</b>, so create a branch if you want to keep the work.
           </div>
         </motion.div>
       </div>

@@ -209,28 +209,28 @@ Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>ArrayList</b> <br />
-            • Backed by a <b>dynamic array</b>. <br />
-            • Default initial capacity: <b>10</b> (doubles automatically when exceeded). <br />
-            • Provides <b>O(1)</b> access, <b>O(n)</b> insertion/removal in the middle. <br />
+            <b>•</b> Backed by a <b>dynamic array</b>. <br />
+            <b>•</b> Default initial capacity: <b>10</b> (doubles automatically when exceeded). <br />
+            <b>•</b> Provides <b>O(1)</b> access, <b>O(n)</b> insertion/removal in the middle. <br />
             <br />
             <b>Example</b>:
             <CodeBlock language="java" filename="java" code={code2} /> <br />
             <b>LinkedList</b> <br />
-            • Based on <b>doubly linked list</b>. <br />
-            • Provides <b>O(1)</b> insertion/deletion at head or tail. <br />
-            • Slightly higher memory due to node references. <br />
+            <b>•</b> Based on <b>doubly linked list</b>. <br />
+            <b>•</b> Provides <b>O(1)</b> insertion/deletion at head or tail. <br />
+            <b>•</b> Slightly higher memory due to node references. <br />
             <br />
             <b>Example</b>:
             <CodeBlock language="java" filename="java" code={code3} /> <br />
             <b>Vector</b> <br />
-            • <b>Synchronized</b>, making it thread-safe but slower. <br />
-            • Capacity doubles by <b>100%</b> (unlike ArrayList&apos;s 50%). <br />
+            <b>•</b> <b>Synchronized</b>, making it thread-safe but slower. <br />
+            <b>•</b> Capacity doubles by <b>100%</b> (unlike ArrayList&apos;s 50%). <br />
             <br />
             <b>Example</b>:
             <CodeBlock language="java" filename="java" code={code4} /> <br />
             <b>Stack</b> <br />
-            • Subclass of Vector following <b>LIFO</b> (Last In, First Out). <br />
-            • Used for <b>backtracking</b>, <b>parsing</b>, and <b>undo</b> operations. <br />
+            <b>•</b> Subclass of Vector following <b>LIFO</b> (Last In, First Out). <br />
+            <b>•</b> Used for <b>backtracking</b>, <b>parsing</b>, and <b>undo</b> operations. <br />
             <br />
             <b>Example</b>:
             <CodeBlock language="java" filename="java" code={code5} />
@@ -329,11 +329,11 @@ Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
             <b className='text-[#b07219]'>{num(9)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>List</span> maintains insertion order and supports duplicates. <br />
-            • Choose <span className='bg-neutral-800 px-2 rounded-lg'>ArrayList</span> for most general purposes. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>LinkedList</span> for efficient insertions/deletions. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>Vector</span> and <span className='bg-neutral-800 px-2 rounded-lg'>Stack</span> are legacy but still usable when synchronization is needed. <br />
-            • Prefer <b>interface references</b> (<span className='bg-neutral-800 px-2 rounded-lg'>List&lt;String&gt; list = new ArrayList&lt;&gt;();</span>) for flexibility.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>List</span> maintains insertion order and supports duplicates. <br />
+            <b>•</b> Choose <span className='bg-neutral-800 px-2 rounded-lg'>ArrayList</span> for most general purposes. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>LinkedList</span> for efficient insertions/deletions. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>Vector</span> and <span className='bg-neutral-800 px-2 rounded-lg'>Stack</span> are legacy but still usable when synchronization is needed. <br />
+            <b>•</b> Prefer <b>interface references</b> (<span className='bg-neutral-800 px-2 rounded-lg'>List&lt;String&gt; list = new ArrayList&lt;&gt;();</span>) for flexibility.
           </div>
         </motion.div>
       </div>

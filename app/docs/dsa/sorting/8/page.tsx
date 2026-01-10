@@ -244,10 +244,10 @@ int main() {
 					<div className='text-gray-300'>
 						Input: <span className='bg-neutral-800 px-2 rounded-lg'>[5, 3, 8, 4, 2]</span><br /><br />
 						Process:<br />
-						• Split into [5, 3, 8] and [4, 2]<br />
-						• Split further → [5], [3, 8], [4], [2]<br />
-						• Merge step by step → [3, 5, 8], [2, 4]<br />
-						• Final merge → <span className='bg-neutral-800 px-2 rounded-lg'>[2, 3, 4, 5, 8]</span>
+						<b>•</b> Split into [5, 3, 8] and [4, 2]<br />
+						<b>•</b> Split further → [5], [3, 8], [4], [2]<br />
+						<b>•</b> Merge step by step → [3, 5, 8], [2, 4]<br />
+						<b>•</b> Final merge → <span className='bg-neutral-800 px-2 rounded-lg'>[2, 3, 4, 5, 8]</span>
 					</div>
 				</motion.div>
 
@@ -299,11 +299,11 @@ int main() {
 						<b className='text-[#16a085]'>6.6</b> Complexity Analysis
 					</h2>
 					<div className='text-gray-300'>
-						• <b>Best Case</b>: O(n log n) <br />
-						• <b>Average Case</b>: O(n log n) <br />
-						• <b>Worst Case</b>: O(n log n) <br />
-						• <b>Space Complexity</b>: O(n) <br />
-						• <b>Stability</b>: ✔️ Stable
+						<b>•</b> <b>Best Case</b>: O(n log n) <br />
+						<b>•</b> <b>Average Case</b>: O(n log n) <br />
+						<b>•</b> <b>Worst Case</b>: O(n log n) <br />
+						<b>•</b> <b>Space Complexity</b>: O(n) <br />
+						<b>•</b> <b>Stability</b>: ✔️ Stable
 					</div>
 				</motion.div>
 
@@ -320,9 +320,9 @@ int main() {
 					</h2>
 					<div className='text-gray-300'>
 						Merge Sort is widely used in:<br />
-						• External sorting (large datasets that don’t fit in memory).<br />
-						• Linked lists sorting.<br />
-						• In stable sorting operations in databases and libraries.
+						<b>•</b> External sorting (large datasets that don’t fit in memory).<br />
+						<b>•</b> Linked lists sorting.<br />
+						<b>•</b> In stable sorting operations in databases and libraries.
 					</div>
 				</motion.div>
 
@@ -338,10 +338,10 @@ int main() {
 						<b className='text-[#16a085]'>6.8</b> Key Takeaways
 					</h2>
 					<div className='text-gray-300'>
-						• Merge Sort follows the <b>divide and conquer</b> strategy.<br />
-						• Consistent time complexity of <b>O(n log n)</b>.<br />
-						• Requires extra space but is <b>stable and predictable</b>.<br />
-						• Suitable for <b>large datasets</b> and linked lists.
+						<b>•</b> Merge Sort follows the <b>divide and conquer</b> strategy.<br />
+						<b>•</b> Consistent time complexity of <b>O(n log n)</b>.<br />
+						<b>•</b> Requires extra space but is <b>stable and predictable</b>.<br />
+						<b>•</b> Suitable for <b>large datasets</b> and linked lists.
 					</div>
 				</motion.div>
 

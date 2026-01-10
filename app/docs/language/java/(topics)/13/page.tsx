@@ -76,8 +76,8 @@ Black`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             In Java, everything revolves around <b>classes</b> and <b>objects</b> — they&apos;re the foundation of Object-Oriented Programming (OOP). <br />
-            • A <b>class</b> is a <b>blueprint</b> for creating objects. <br />
-            • An <b>object</b> is an <b>instance</b> of a class, containing real data and behavior. <br />
+            <b>•</b> A <b>class</b> is a <b>blueprint</b> for creating objects. <br />
+            <b>•</b> An <b>object</b> is an <b>instance</b> of a class, containing real data and behavior. <br />
             <br />
             <b>Example:</b>
             <CodeBlock language="java" filename="java" code={code1} /> <br />
@@ -186,8 +186,8 @@ Black`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             When you create an object using <span className='bg-neutral-800 px-2 rounded-lg'>new</span>, Java allocates memory for: <br />
-            • <b>Instance variables</b> of that class. <br />
-            • The <b>reference</b> stored in the variable (e.g., <span className='bg-neutral-800 px-2 rounded-lg'>myCar</span>). <br />
+            <b>•</b> <b>Instance variables</b> of that class. <br />
+            <b>•</b> The <b>reference</b> stored in the variable (e.g., <span className='bg-neutral-800 px-2 rounded-lg'>myCar</span>). <br />
             Objects are stored in the <b>heap memory</b>, and references are in the <b>stack</b>.
           </div>
         </motion.div>
@@ -203,11 +203,11 @@ Black`
             <b className='text-[#b07219]'>13.7</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>Class</b> → Blueprint for creating objects. <br />
-            • <b>Object</b> → Real instance of a class. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>new</span> to create objects. <br />
-            • Each object maintains its own copy of data fields. <br />
-            • Objects are stored in heap memory.
+            <b>•</b> <b>Class</b> → Blueprint for creating objects. <br />
+            <b>•</b> <b>Object</b> → Real instance of a class. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>new</span> to create objects. <br />
+            <b>•</b> Each object maintains its own copy of data fields. <br />
+            <b>•</b> Objects are stored in heap memory.
           </div>
         </motion.div>
       </div>

@@ -117,9 +117,9 @@ export default function Page() {
             Use:
             <CodeBlock language="bash" filename="" code={code5} /> <br />
             You&apos;ll see three categories: <br />
-            • <b>Untracked files</b>: new files not staged yet <br />
-            • <b>Changes not staged for commit</b>: modified but unstaged <br />
-            • <b>Changes to be committed</b>: staged and ready for commit <br />
+            <b>•</b> <b>Untracked files</b>: new files not staged yet <br />
+            <b>•</b> <b>Changes not staged for commit</b>: modified but unstaged <br />
+            <b>•</b> <b>Changes to be committed</b>: staged and ready for commit <br />
             You can also preview exact staged changes: <br />
             <br />
             You can also preview exact staged changes:
@@ -157,9 +157,9 @@ export default function Page() {
             <b className='text-[#F05032]'>{num(5)}</b> Why the Staging Area Matters
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>Selective Commits</b>: You can commit only specific changes rather than everything modified. <br />
-            • <b>Review Before Commit</b>: Ensures you don&apos;t accidentally save debug code or temporary edits. <br />
-            • <b>Organized History</b>: Enables clean commit messages tied to logical feature units. <br />
+            <b>•</b> <b>Selective Commits</b>: You can commit only specific changes rather than everything modified. <br />
+            <b>•</b> <b>Review Before Commit</b>: Ensures you don&apos;t accidentally save debug code or temporary edits. <br />
+            <b>•</b> <b>Organized History</b>: Enables clean commit messages tied to logical feature units. <br />
             Without the staging area, every change would go directly into commits — making history messy and harder to manage.
           </div>
         </motion.div>
@@ -205,10 +205,10 @@ export default function Page() {
             <b className='text-[#F05032]'>{num(7)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • The <b>staging area</b> is Git&apos;s &quot;review zone&quot; — where you prepare what goes into your next commit. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>git add</span> to stage and <span className='bg-neutral-800 px-2 rounded-lg'>git restore --staged</span> to unstage changes. <br />
-            • Always run <span className='bg-neutral-800 px-2 rounded-lg'>git status</span> before committing to confirm what&apos;s being saved. <br />
-            • A clean, deliberate staging process keeps your Git history readable and professional.
+            <b>•</b> The <b>staging area</b> is Git&apos;s &quot;review zone&quot; — where you prepare what goes into your next commit. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>git add</span> to stage and <span className='bg-neutral-800 px-2 rounded-lg'>git restore --staged</span> to unstage changes. <br />
+            <b>•</b> Always run <span className='bg-neutral-800 px-2 rounded-lg'>git status</span> before committing to confirm what&apos;s being saved. <br />
+            <b>•</b> A clean, deliberate staging process keeps your Git history readable and professional.
           </div>
         </motion.div>
       </div>

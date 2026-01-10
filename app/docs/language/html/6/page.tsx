@@ -82,9 +82,9 @@ export default function page() {
 						<b className='text-[#e34c26]'>6.2</b> Paragraphs and Line Breaks
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• <span className='bg-neutral-800 px-2 rounded-lg'>&lt;p&gt;</span>: Defines a paragraph. <br />
-						• <span className='bg-neutral-800 px-2 rounded-lg'>&lt;br&gt;</span>: Creates a line break. <br />
-						• <span className='bg-neutral-800 px-2 rounded-lg'>&lt;hr&gt;</span>: Inserts a horizontal line (thematic break). <br />
+						<b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>&lt;p&gt;</span>: Defines a paragraph. <br />
+						<b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>&lt;br&gt;</span>: Creates a line break. <br />
+						<b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>&lt;hr&gt;</span>: Inserts a horizontal line (thematic break). <br />
 						<br />
 						<b>Example:</b> <br />
 						<br />
@@ -137,15 +137,15 @@ export default function page() {
 						<b className='text-[#e34c26]'>6.4</b> Key Takeaways
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• <span className='bg-neutral-800 px-2 rounded-lg'>&lt;h1&gt;</span> should usually be used once per page for SEO and clarity. <br />
-						• Use headings to create a logical structure, not just for styling. <br />
-						• Search engines give higher importance to <span className='bg-neutral-800 px-2 rounded-lg'>&lt;h1&gt;</span> compared to <span className='bg-neutral-800 px-2 rounded-lg'>&lt;h6&gt;</span>. <br />
-						•	Use <span className='bg-neutral-800 px-2 rounded-lg'>&lt;p&gt;</span> for blocks of text, not just <span className='bg-neutral-800 px-2 rounded-lg'>&lt;br&gt;</span>. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>&lt;br&gt;</span> is useful for poetry, addresses, or cases where spacing matters. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>&lt;hr&gt;</span> represents a thematic break or section change. <br />
-						• Prefer <b>semantic tags</b> (<span className='bg-neutral-800 px-2 rounded-lg'>&lt;strong&gt;</span>, <span className='bg-neutral-800 px-2 rounded-lg'>&lt;em&gt;</span>) for better SEO and accessibility. <br />
-						• Use <span className='bg-neutral-800 px-2 rounded-lg'>&lt;mark&gt;</span> for highlighting search results or key terms. <br />
-						• <span className='bg-neutral-800 px-2 rounded-lg'>&lt;sub&gt;</span> and <span className='bg-neutral-800 px-2 rounded-lg'>&lt;sup&gt;</span> are mainly used in formulas, footnotes, or chemical notations.
+						<b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>&lt;h1&gt;</span> should usually be used once per page for SEO and clarity. <br />
+						<b>•</b> Use headings to create a logical structure, not just for styling. <br />
+						<b>•</b> Search engines give higher importance to <span className='bg-neutral-800 px-2 rounded-lg'>&lt;h1&gt;</span> compared to <span className='bg-neutral-800 px-2 rounded-lg'>&lt;h6&gt;</span>. <br />
+						<b>•</b>	Use <span className='bg-neutral-800 px-2 rounded-lg'>&lt;p&gt;</span> for blocks of text, not just <span className='bg-neutral-800 px-2 rounded-lg'>&lt;br&gt;</span>. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>&lt;br&gt;</span> is useful for poetry, addresses, or cases where spacing matters. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>&lt;hr&gt;</span> represents a thematic break or section change. <br />
+						<b>•</b> Prefer <b>semantic tags</b> (<span className='bg-neutral-800 px-2 rounded-lg'>&lt;strong&gt;</span>, <span className='bg-neutral-800 px-2 rounded-lg'>&lt;em&gt;</span>) for better SEO and accessibility. <br />
+						<b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>&lt;mark&gt;</span> for highlighting search results or key terms. <br />
+						<b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>&lt;sub&gt;</span> and <span className='bg-neutral-800 px-2 rounded-lg'>&lt;sup&gt;</span> are mainly used in formulas, footnotes, or chemical notations.
 					</div>
 				</motion.div>
 

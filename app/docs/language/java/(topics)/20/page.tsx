@@ -231,9 +231,9 @@ class Main {
             <b className='text-[#b07219]'>{num(6)}</b> Rules & Restrictions
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Static methods <b>cannot access instance variables</b> directly.
-            • You <b>can&apos;t use</b>  <span className='bg-neutral-800 px-2 rounded-lg'>this</span> <b>or</b> <span className='bg-neutral-800 px-2 rounded-lg'>super</span> inside static methods.
-            • Static variables and methods are <b>initialized once</b>, not per object.
+            <b>•</b> Static methods <b>cannot access instance variables</b> directly.
+            <b>•</b> You <b>can&apos;t use</b>  <span className='bg-neutral-800 px-2 rounded-lg'>this</span> <b>or</b> <span className='bg-neutral-800 px-2 rounded-lg'>super</span> inside static methods.
+            <b>•</b> Static variables and methods are <b>initialized once</b>, not per object.
           </div>
         </motion.div>
 
@@ -278,10 +278,10 @@ class Main {
             <b className='text-[#b07219]'>{num(8)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>Static</b> → shared by all, class-level, single copy. <br />
-            • <b>Instance</b> → unique to each object. <br />
-            • Static members save memory and define global behaviors. <br />
-            • Use static wisely — overuse can break object-oriented principles.
+            <b>•</b> <b>Static</b> → shared by all, class-level, single copy. <br />
+            <b>•</b> <b>Instance</b> → unique to each object. <br />
+            <b>•</b> Static members save memory and define global behaviors. <br />
+            <b>•</b> Use static wisely — overuse can break object-oriented principles.
           </div>
         </motion.div>
       </div>

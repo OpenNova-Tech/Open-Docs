@@ -204,9 +204,9 @@ double add(int a, int b);  // ❌ Error`
             <b className='text-[#b07219]'>{num(5)}</b> Upcasting and Dynamic Method Dispatch
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>Upcasting</b>: Reference of parent class refers to a child object. <br />
+            <b>•</b> <b>Upcasting</b>: Reference of parent class refers to a child object. <br />
             <CodeBlock language="java" filename="java" code={code3} /> <br />
-            • <b>Dynamic Method Dispatch</b>: JVM determines which overridden method to invoke at runtime. <br />
+            <b>•</b> <b>Dynamic Method Dispatch</b>: JVM determines which overridden method to invoke at runtime. <br />
             <br />
             This mechanism allows Java to call the <b>most specific method implementation</b> dynamically.
           </div>
@@ -259,11 +259,11 @@ double add(int a, int b);  // ❌ Error`
             <b className='text-[#b07219]'>{num(8)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>Polymorphism</b> = <b>One name, many forms</b>. <br />
-            • <b>Compile-time</b>: Method overloading (decided by compiler). <br />
-            • <b>Runtime</b>: Method overriding (decided by JVM). <br />
-            • Achieved via <b>inheritance</b> or <b>interfaces</b>. <br />
-            • Enables <b>dynamic behavior</b> and <b>flexible code design</b>.
+            <b>•</b> <b>Polymorphism</b> = <b>One name, many forms</b>. <br />
+            <b>•</b> <b>Compile-time</b>: Method overloading (decided by compiler). <br />
+            <b>•</b> <b>Runtime</b>: Method overriding (decided by JVM). <br />
+            <b>•</b> Achieved via <b>inheritance</b> or <b>interfaces</b>. <br />
+            <b>•</b> Enables <b>dynamic behavior</b> and <b>flexible code design</b>.
           </div>
         </motion.div>
       </div>

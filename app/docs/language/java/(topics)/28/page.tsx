@@ -97,10 +97,10 @@ export default function Page() {
             <b className='text-[#b07219]'>{num(2)}</b> Key Features of Queue
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Elements are <b>inserted at the rear</b> and <b>removed from the front</b>. <br />
-            • Maintains <b>order of insertion</b>. <br />
-            • Useful for <b>task scheduling</b>, <b>buffering</b>, <b>thread management</b>, etc. <br />
-            • Offers <b>specialized methods</b> beyond standard collection operations.
+            <b>•</b> Elements are <b>inserted at the rear</b> and <b>removed from the front</b>. <br />
+            <b>•</b> Maintains <b>order of insertion</b>. <br />
+            <b>•</b> Useful for <b>task scheduling</b>, <b>buffering</b>, <b>thread management</b>, etc. <br />
+            <b>•</b> Offers <b>specialized methods</b> beyond standard collection operations.
           </div>
         </motion.div>
 
@@ -146,21 +146,21 @@ export default function Page() {
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>PriorityQueue</b> <br />
-            • Orders elements according to <b>natural ordering</b> or a <b>custom comparator</b>. <br />
-            • <b>Does not guarantee FIFO order</b>. <br />
-            • Commonly used in <b>task scheduling</b> where priorities matter. <br />
+            <b>•</b> Orders elements according to <b>natural ordering</b> or a <b>custom comparator</b>. <br />
+            <b>•</b> <b>Does not guarantee FIFO order</b>. <br />
+            <b>•</b> Commonly used in <b>task scheduling</b> where priorities matter. <br />
             <br />
             <b>Example</b>:
             <CodeBlock language="java" filename="java" code={code1} /> <br />
             <b>Output</b>:
             <CodeBlock language="bash" filename="" code={code2} /> <br />
             <b>Deque (Double-Ended Queue)</b> <br />
-            • Extends <span className='bg-neutral-800 px-2 rounded-lg'>Queue</span> interface. <br />
-            • Supports <b>insertion and removal from both ends</b>. <br />
-            • Can function as both <b>Queue (FIFO)</b> and <b>Stack (LIFO)</b>. <br />
+            <b>•</b> Extends <span className='bg-neutral-800 px-2 rounded-lg'>Queue</span> interface. <br />
+            <b>•</b> Supports <b>insertion and removal from both ends</b>. <br />
+            <b>•</b> Can function as both <b>Queue (FIFO)</b> and <b>Stack (LIFO)</b>. <br />
             <b>Common Classes</b>: <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>ArrayDeque</span> <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>LinkedList</span> (implements both <span className='bg-neutral-800 px-2 rounded-lg'>List</span> and <span className='bg-neutral-800 px-2 rounded-lg'>Deque</span>) <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>ArrayDeque</span> <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>LinkedList</span> (implements both <span className='bg-neutral-800 px-2 rounded-lg'>List</span> and <span className='bg-neutral-800 px-2 rounded-lg'>Deque</span>) <br />
             <br />
             <b>Example</b>:
             <CodeBlock language="java" filename="java" code={code3} />

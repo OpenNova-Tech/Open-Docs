@@ -311,10 +311,10 @@ StringBuilder sb2 = new StringBuilder(str); // String → Builder`
             <b className='text-[#b07219]'>{num(10)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>StringBuilder</span> and <span className='bg-neutral-800 px-2 rounded-lg'>StringBuffer</span> are <b>mutable</b>, faster for modifications. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>StringBuilder</span> → faster but <b>not thread-safe</b>. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>StringBuffer</span> → thread-safe but <b>slower</b>. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>toString()</span> to convert back to a regular <span className='bg-neutral-800 px-2 rounded-lg'>String</span>.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>StringBuilder</span> and <span className='bg-neutral-800 px-2 rounded-lg'>StringBuffer</span> are <b>mutable</b>, faster for modifications. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>StringBuilder</span> → faster but <b>not thread-safe</b>. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>StringBuffer</span> → thread-safe but <b>slower</b>. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>toString()</span> to convert back to a regular <span className='bg-neutral-800 px-2 rounded-lg'>String</span>.
           </div>
         </motion.div>
       </div>

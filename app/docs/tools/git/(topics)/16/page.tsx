@@ -67,10 +67,10 @@ bugfix/JIRA-222-fix-checkout-error`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             Clear branch names help teams: <br />
-            • Instantly understand the purpose of a branch <br />
-            • Reduce confusion during code reviews <br />
-            • Avoid accidental merges into wrong branches <br />
-            • Integrate smoothly with CI/CD and issue trackers <br />
+            <b>•</b> Instantly understand the purpose of a branch <br />
+            <b>•</b> Reduce confusion during code reviews <br />
+            <b>•</b> Avoid accidental merges into wrong branches <br />
+            <b>•</b> Integrate smoothly with CI/CD and issue trackers <br />
             Poor naming like <span className='bg-neutral-800 px-2 rounded-lg'>test123</span> or <span className='bg-neutral-800 px-2 rounded-lg'>new-branch</span> creates long-term maintenance issues.
           </div>
         </motion.div>
@@ -91,8 +91,8 @@ bugfix/JIRA-222-fix-checkout-error`
             <b>Main Branches</b> <br />
             <br />
             These represent stable or long-lived code: <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>main</span> / <span className='bg-neutral-800 px-2 rounded-lg'>master</span> → production-ready code <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>develop</span> → integration branch for upcoming releases <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>main</span> / <span className='bg-neutral-800 px-2 rounded-lg'>master</span> → production-ready code <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>develop</span> → integration branch for upcoming releases <br />
             These branches should remain clean and protected.
           </div>
         </motion.div>
@@ -115,9 +115,9 @@ bugfix/JIRA-222-fix-checkout-error`
             <b>Examples:</b>
             <CodeBlock language="bash" filename="" code={code2} /> <br />
             Best practices: <br />
-            • Use lowercase <br />
-            • Use hyphens instead of spaces <br />
-            • Keep names short but meaningful
+            <b>•</b> Use lowercase <br />
+            <b>•</b> Use hyphens instead of spaces <br />
+            <b>•</b> Keep names short but meaningful
           </div>
         </motion.div>
 
@@ -161,9 +161,9 @@ bugfix/JIRA-222-fix-checkout-error`
             <b>Examples:</b>
             <CodeBlock language="bash" filename="" code={code7} /> <br />
             Release branches allow: <br />
-            • Final bug fixes <br />
-            • Version bumps <br />
-            • Release-specific testing 
+            <b>•</b> Final bug fixes <br />
+            <b>•</b> Version bumps <br />
+            <b>•</b> Release-specific testing 
           </div>
         </motion.div>
 
@@ -185,9 +185,9 @@ bugfix/JIRA-222-fix-checkout-error`
             <b>Examples:</b>
             <CodeBlock language="bash" filename="" code={code9} /> <br />
             Useful for: <br />
-            • Dependency upgrades <br />
-            • Code refactoring <br />
-            • Build system changes
+            <b>•</b> Dependency upgrades <br />
+            <b>•</b> Code refactoring <br />
+            <b>•</b> Build system changes
           </div>
         </motion.div>
 
@@ -207,9 +207,9 @@ bugfix/JIRA-222-fix-checkout-error`
             <b>Format:</b>
             <CodeBlock language="bash" filename="" code={code10} /> <br />
             Benefits: <br />
-            • Direct traceability <br />
-            • Automated linking in PRs <br />
-            • Easier auditing
+            <b>•</b> Direct traceability <br />
+            <b>•</b> Automated linking in PRs <br />
+            <b>•</b> Easier auditing
           </div>
         </motion.div>
 
@@ -225,11 +225,11 @@ bugfix/JIRA-222-fix-checkout-error`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             General rules that scale well: <br />
-            • Use <b>lowercase</b> <br />
-            • Use <b>hyphens (-)</b> instead of underscores <br />
-            • Avoid vague names (<span className='bg-neutral-800 px-2 rounded-lg'>test</span>, <span className='bg-neutral-800 px-2 rounded-lg'>temo</span>, <span className='bg-neutral-800 px-2 rounded-lg'>new</span>) <br />
-            • Keep it readable and searchable <br />
-            • Be consistent across the team
+            <b>•</b> Use <b>lowercase</b> <br />
+            <b>•</b> Use <b>hyphens (-)</b> instead of underscores <br />
+            <b>•</b> Avoid vague names (<span className='bg-neutral-800 px-2 rounded-lg'>test</span>, <span className='bg-neutral-800 px-2 rounded-lg'>temo</span>, <span className='bg-neutral-800 px-2 rounded-lg'>new</span>) <br />
+            <b>•</b> Keep it readable and searchable <br />
+            <b>•</b> Be consistent across the team
           </div>
         </motion.div>
 
@@ -262,11 +262,11 @@ bugfix/JIRA-222-fix-checkout-error`
             <b className='text-[#F05032]'>{num(10)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Branch naming improves clarity, collaboration, and automation. <br />
-            • Use prefixes like <span className='bg-neutral-800 px-2 rounded-lg'>feature/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>bugfix/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>hotfix/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>release/</span>, and <span className='bg-neutral-800 px-2 rounded-lg'>chore/</span>. <br />
-            • Keep names lowercase, short, and descriptive. <br />
-            • Include issue IDs for traceability when possible. <br />
-            • Consistency matters more than perfection—agree on a team standard.
+            <b>•</b> Branch naming improves clarity, collaboration, and automation. <br />
+            <b>•</b> Use prefixes like <span className='bg-neutral-800 px-2 rounded-lg'>feature/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>bugfix/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>hotfix/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>release/</span>, and <span className='bg-neutral-800 px-2 rounded-lg'>chore/</span>. <br />
+            <b>•</b> Keep names lowercase, short, and descriptive. <br />
+            <b>•</b> Include issue IDs for traceability when possible. <br />
+            <b>•</b> Consistency matters more than perfection—agree on a team standard.
           </div>
         </motion.div>
       </div>

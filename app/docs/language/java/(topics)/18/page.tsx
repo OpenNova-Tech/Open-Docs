@@ -107,8 +107,8 @@ class Main {
             Example: <br />
             <CodeBlock language="java" filename="java" code={code1} /> <br />
             Here: <br />
-            • Variables <span className='bg-neutral-800 px-2 rounded-lg'>name</span> and <span className='bg-neutral-800 px-2 rounded-lg'>age</span> are <b>hidden</b> (private). <br />
-            • Access is allowed only through controlled <b>getters</b> and <b>setters</b>.
+            <b>•</b> Variables <span className='bg-neutral-800 px-2 rounded-lg'>name</span> and <span className='bg-neutral-800 px-2 rounded-lg'>age</span> are <b>hidden</b> (private). <br />
+            <b>•</b> Access is allowed only through controlled <b>getters</b> and <b>setters</b>.
           </div>
         </motion.div>
 
@@ -123,10 +123,10 @@ class Main {
             <b className='text-[#b07219]'>{num(3)}</b> Benefits of Encapsulation
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • ✅ <b>Data protection</b>: Prevents direct modification of sensitive data. <br />
-            • ✅ <b>Control</b>: You can validate data before setting it. <br />
-            • ✅ <b>Flexibility</b>: Internal changes don&apos;t affect external code. <br />
-            • ✅ <b>Modularity</b>: Easier to maintain and debug.
+            <b>•</b> ✅ <b>Data protection</b>: Prevents direct modification of sensitive data. <br />
+            <b>•</b> ✅ <b>Control</b>: You can validate data before setting it. <br />
+            <b>•</b> ✅ <b>Flexibility</b>: Internal changes don&apos;t affect external code. <br />
+            <b>•</b> ✅ <b>Modularity</b>: Easier to maintain and debug.
           </div>
         </motion.div>
 
@@ -221,10 +221,10 @@ class Main {
             <b className='text-[#b07219]'>{num(7)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Encapsulation = combining data and methods + restricting access. <br />
-            • Achieved using <b>private fields</b> and <b>public getters/setters</b>. <br />
-            • Improves data security, modularity, and maintainability. <br />
-            • Fundamental for writing <b>clean, robust, and secure</b> Java code.
+            <b>•</b> Encapsulation = combining data and methods + restricting access. <br />
+            <b>•</b> Achieved using <b>private fields</b> and <b>public getters/setters</b>. <br />
+            <b>•</b> Improves data security, modularity, and maintainability. <br />
+            <b>•</b> Fundamental for writing <b>clean, robust, and secure</b> Java code.
           </div>
         </motion.div>
       </div>

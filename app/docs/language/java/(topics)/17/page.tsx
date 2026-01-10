@@ -138,9 +138,9 @@ public class Main {
             Output:
             <CodeBlock language="bash" filename="" code={code2} /> <br />
             ✅ Key points: <br />
-            • You <b>cannot instantiate</b> an abstract class. <br />
-            • Subclasses must <b>implement all abstract methods</b>. <br />
-            • Can have constructors, variables, and non-abstract methods.
+            <b>•</b> You <b>cannot instantiate</b> an abstract class. <br />
+            <b>•</b> Subclasses must <b>implement all abstract methods</b>. <br />
+            <b>•</b> Can have constructors, variables, and non-abstract methods.
           </div>
         </motion.div>
 
@@ -163,9 +163,9 @@ public class Main {
             Output:
             <CodeBlock language="bash" filename="" code={code4} /> <br />
             ✅ Key points: <br />
-            • All methods in an interface are <b>public and abstract</b> by default. <br />
-            • Supports <b>multiple inheritance</b> (a class can implement multiple interfaces). <br />
-            • Variables inside interfaces are <b>public</b>, <b>static</b>, and <b>final</b> by default.
+            <b>•</b> All methods in an interface are <b>public and abstract</b> by default. <br />
+            <b>•</b> Supports <b>multiple inheritance</b> (a class can implement multiple interfaces). <br />
+            <b>•</b> Variables inside interfaces are <b>public</b>, <b>static</b>, and <b>final</b> by default.
           </div>
         </motion.div>
 
@@ -213,8 +213,8 @@ public class Main {
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             Interfaces can now include: <br />
-            • <b>Default methods</b> - have a body. <br />
-            • <b>Static methods</b> - called via interface name. <br />
+            <b>•</b> <b>Default methods</b> - have a body. <br />
+            <b>•</b> <b>Static methods</b> - called via interface name. <br />
             <br />
             <CodeBlock language="java" filename="java" code={code5} /> 
           </div>
@@ -231,10 +231,10 @@ public class Main {
             <b className='text-[#b07219]'>{num(6)}</b> Why Use Abstraction?
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Simplifies complex systems by <b>focusing on essentials</b>. <br />
-            • Increases <b>security</b> by hiding internal logic. <br />
-            • Enhances <b>maintainability</b> and <b>scalability</b>. <br />
-            • Enables <b>loose coupling</b> between components.
+            <b>•</b> Simplifies complex systems by <b>focusing on essentials</b>. <br />
+            <b>•</b> Increases <b>security</b> by hiding internal logic. <br />
+            <b>•</b> Enhances <b>maintainability</b> and <b>scalability</b>. <br />
+            <b>•</b> Enables <b>loose coupling</b> between components.
           </div>
         </motion.div>
 
@@ -249,11 +249,11 @@ public class Main {
             <b className='text-[#b07219]'>{num(7)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Abstraction = &quot;Hide the how, show only the what.&quot; <br />
-            • Achieved using <b>abstract classes</b> and <b>interfaces</b>. <br />
-            • Abstract class → partial abstraction. <br />
-            • Interface → complete abstraction. <br />
-            • Encourages clean, modular, and maintainable design.
+            <b>•</b> Abstraction = &quot;Hide the how, show only the what.&quot; <br />
+            <b>•</b> Achieved using <b>abstract classes</b> and <b>interfaces</b>. <br />
+            <b>•</b> Abstract class → partial abstraction. <br />
+            <b>•</b> Interface → complete abstraction. <br />
+            <b>•</b> Encourages clean, modular, and maintainable design.
           </div>
         </motion.div>
       </div>

@@ -87,10 +87,10 @@ git log --until="2023-01-01"`
             The simplest command to view history: <br />
             <CodeBlock language="bash" filename="" code={code1} /> <br />
             This shows: <br />
-            • Commit hash <br />
-            • Author <br />
-            • Date <br />
-            • Commit message <br />
+            <b>•</b> Commit hash <br />
+            <b>•</b> Author <br />
+            <b>•</b> Date <br />
+            <b>•</b> Commit message <br />
             <br />
             Example output:
             <CodeBlock language="bash" filename="" code={code2} /> <br />
@@ -180,9 +180,9 @@ git log --until="2023-01-01"`
             Example:
             <CodeBlock language="bash" filename="" code={code14} /> <br />
             This reveals: <br />
-            • Added lines <br />
-            • Removed lines <br />
-            • Updated code segments <br />
+            <b>•</b> Added lines <br />
+            <b>•</b> Removed lines <br />
+            <b>•</b> Updated code segments <br />
             <br />
             This is essential for debugging or code review.
           </div>
@@ -204,9 +204,9 @@ git log --until="2023-01-01"`
             You get output like:
             <CodeBlock language="bash" filename="" code={code16} /> <br />
             Use this to trace: <br />
-            • When a bug was introduced <br />
-            • Who last edited a specific line <br />
-            • The context around a change
+            <b>•</b> When a bug was introduced <br />
+            <b>•</b> Who last edited a specific line <br />
+            <b>•</b> The context around a change
           </div>
         </motion.div>
 
@@ -240,12 +240,12 @@ git log --until="2023-01-01"`
             <b className='text-[#F05032]'>{num(8)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>git log</span> is the main tool for exploring commit history. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>--online</span>, <span className='bg-neutral-800 px-2 rounded-lg'>--graph</span>, and <span className='bg-neutral-800 px-2 rounded-lg'>--decorate</span> for simplified and visual history. <br />
-            • Filtering options like <span className='bg-neutral-800 px-2 rounded-lg'>--author</span>, <span className='bg-neutral-800 px-2 rounded-lg'>--grep</span>, <span className='bg-neutral-800 px-2 rounded-lg'>--since</span>, and file-specific logs help pinpoint changes. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>git show</span> and <span className='bg-neutral-800 px-2 rounded-lg'>git log -p</span> reveal actual code modifications. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>git blame</span> identifies line-by-line authorship for deeper investigation. <br />
-            • Git&apos;s history tools make it easy to understand, audit, and navigate your project&apos;s evolution.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>git log</span> is the main tool for exploring commit history. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>--online</span>, <span className='bg-neutral-800 px-2 rounded-lg'>--graph</span>, and <span className='bg-neutral-800 px-2 rounded-lg'>--decorate</span> for simplified and visual history. <br />
+            <b>•</b> Filtering options like <span className='bg-neutral-800 px-2 rounded-lg'>--author</span>, <span className='bg-neutral-800 px-2 rounded-lg'>--grep</span>, <span className='bg-neutral-800 px-2 rounded-lg'>--since</span>, and file-specific logs help pinpoint changes. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>git show</span> and <span className='bg-neutral-800 px-2 rounded-lg'>git log -p</span> reveal actual code modifications. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>git blame</span> identifies line-by-line authorship for deeper investigation. <br />
+            <b>•</b> Git&apos;s history tools make it easy to understand, audit, and navigate your project&apos;s evolution.
           </div>
         </motion.div>
       </div>

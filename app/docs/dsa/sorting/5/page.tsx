@@ -271,10 +271,10 @@ print(arr)`
 						<span className='bg-neutral-800 px-2 rounded-lg'>[5, 3, 8, 4, 2]</span> <br />
 						<br />
 						Process: <br />
-						• Pass 1 → <span className='bg-neutral-800 px-2 rounded-lg'>[3, 5, 4, 2, 8]</span> <br />
-						• Pass 2 → <span className='bg-neutral-800 px-2 rounded-lg'>[3, 4, 2, 5, 8]</span> <br />
-						• Pass 3 → <span className='bg-neutral-800 px-2 rounded-lg'>[3, 2, 4, 5, 8]</span> <br />
-						• Pass 4 → <span className='bg-neutral-800 px-2 rounded-lg'>[2, 3, 4, 5, 8]</span> <br />
+						<b>•</b> Pass 1 → <span className='bg-neutral-800 px-2 rounded-lg'>[3, 5, 4, 2, 8]</span> <br />
+						<b>•</b> Pass 2 → <span className='bg-neutral-800 px-2 rounded-lg'>[3, 4, 2, 5, 8]</span> <br />
+						<b>•</b> Pass 3 → <span className='bg-neutral-800 px-2 rounded-lg'>[3, 2, 4, 5, 8]</span> <br />
+						<b>•</b> Pass 4 → <span className='bg-neutral-800 px-2 rounded-lg'>[2, 3, 4, 5, 8]</span> <br />
 						<br />
 						Output: <br />
 						<span className='bg-neutral-800 px-2 rounded-lg'>[2, 3, 4, 5, 8]</span>
@@ -330,11 +330,11 @@ print(arr)`
 						<b className='text-[#16a085]'>5.6</b> Complexity Analysis
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• <b>Best Case (Already Sorted)</b>: O(n) with optimization <br />
-						• <b>Average Case</b>: O(n²) <br />
-						• <b>Worst Case</b>: O(n²) <br />
-						• <b>Space Complexity</b>: O(1) (in-place) <br />
-						• <b>Stability</b>: ✔️ Stable (equal elements retain order)
+						<b>•</b> <b>Best Case (Already Sorted)</b>: O(n) with optimization <br />
+						<b>•</b> <b>Average Case</b>: O(n²) <br />
+						<b>•</b> <b>Worst Case</b>: O(n²) <br />
+						<b>•</b> <b>Space Complexity</b>: O(1) (in-place) <br />
+						<b>•</b> <b>Stability</b>: ✔️ Stable (equal elements retain order)
 					</div>
 				</motion.div>
 
@@ -349,7 +349,7 @@ print(arr)`
 						<b className='text-[#16a085]'>5.7</b> Variants
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• <b>Optimized Bubble Sort</b>: O(n) Stops early if no swaps occur in a pass. <br />
+						<b>•</b> <b>Optimized Bubble Sort</b>: O(n) Stops early if no swaps occur in a pass. <br />
 						<br />
 						<CodeBlock
 							language="jsx"
@@ -361,7 +361,7 @@ print(arr)`
 							]}
 						/>
 						<br />
-						• <b>Recursive Bubble Sort</b>: Uses recursion instead of loops. <br />
+						<b>•</b> <b>Recursive Bubble Sort</b>: Uses recursion instead of loops. <br />
 						<br />
 						<CodeBlock
 							language="jsx"
@@ -387,9 +387,9 @@ print(arr)`
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						Rarely used in practice, but helpful for: <br />
-						• Teaching the fundamentals of sorting <br />
-						• Small datasets with nearly sorted data <br />
-						• Detecting if a list is already sorted
+						<b>•</b> Teaching the fundamentals of sorting <br />
+						<b>•</b> Small datasets with nearly sorted data <br />
+						<b>•</b> Detecting if a list is already sorted
 					</div>
 				</motion.div>
 
@@ -404,9 +404,9 @@ print(arr)`
 						<b className='text-[#16a085]'>5.9</b> Key Takeaways
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• Bubble Sort is <b>easy to understand</b> but <b>inefficient</b> for large inputs. <br />
-						• Time complexity: <b>O(n²)</b> (generally not practical). <br />
-						• Useful mainly for <b>educational purposes</b>.
+						<b>•</b> Bubble Sort is <b>easy to understand</b> but <b>inefficient</b> for large inputs. <br />
+						<b>•</b> Time complexity: <b>O(n²)</b> (generally not practical). <br />
+						<b>•</b> Useful mainly for <b>educational purposes</b>.
 					</div>
 				</motion.div>
 

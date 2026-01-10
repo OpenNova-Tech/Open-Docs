@@ -61,10 +61,10 @@ export default function page() {
 						<b className='text-[#F05032]'>1.2</b> Why use Git ?
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• Track every change: See what was changed, when, and by whom. <br />
-						• Work collaboratively: Multiple developers can contribute without overwriting each other&apos;s work. <br />
-						• Undo mistakes: Roll back to previous versions easily. <br />
-						• Branch with ease: Work on features in isolation, then merge them in.
+						<b>•</b> Track every change: See what was changed, when, and by whom. <br />
+						<b>•</b> Work collaboratively: Multiple developers can contribute without overwriting each other&apos;s work. <br />
+						<b>•</b> Undo mistakes: Roll back to previous versions easily. <br />
+						<b>•</b> Branch with ease: Work on features in isolation, then merge them in.
 					</div>
 				</motion.div>
 
@@ -112,9 +112,9 @@ export default function page() {
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						Imagine you are writing a novel with a friend: <br /><br />
-						• Git keeps a record of each edit. <br />
-						• It allows both of you to write in parallel, then merge. <br />
-						• If your friend deletes a paragraph accidentally, you can recover it.
+						<b>•</b> Git keeps a record of each edit. <br />
+						<b>•</b> It allows both of you to write in parallel, then merge. <br />
+						<b>•</b> If your friend deletes a paragraph accidentally, you can recover it.
 					</div>
 				</motion.div>
 			</div>

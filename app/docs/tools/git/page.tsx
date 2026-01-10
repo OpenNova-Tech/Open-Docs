@@ -55,10 +55,10 @@ const branch = [
 ]
 
 const remote = [
-  { title: 'Connecting to Github', description: 'Link local repo with GitHub using remote URL.', icon: <IconBrandGithub />, link: 'git/19' },
-  { title: 'Syncing with Remote', description: 'Push and pull changes to and from remote.', icon: <IconGitPullRequest />, link: 'git/20' },
-  { title: 'Cloning', description: 'Download full repository including history from GitHub.', icon: <IconCloudDownload />, link: 'git/21' },
-  { title: 'Collaboration Workflow', description: 'Best practices for working in teams with Git.', icon: <IconUsers />, link: 'git/22' }
+  { title: 'Connecting to Github', description: 'Link local repo with GitHub using remote URL.', icon: <IconBrandGithub />, link: 'git/18' },
+  { title: 'Syncing with Remote', description: 'Push and pull changes to and from remote.', icon: <IconGitPullRequest />, link: 'git/19' },
+  { title: 'Cloning', description: 'Download full repository including history from GitHub.', icon: <IconCloudDownload />, link: 'git/20' },
+  { title: 'Collaboration Workflow', description: 'Best practices for working in teams with Git.', icon: <IconUsers />, link: 'git/21' }
 ]
 
 const undo = [

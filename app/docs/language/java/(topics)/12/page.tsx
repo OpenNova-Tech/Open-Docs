@@ -97,8 +97,8 @@ System.out.println(a / b); // ArithmeticException`
           <div className='max-w-3xl mx-auto text-gray-300'>
             <CodeBlock language="bash" filename="" code={code3} />
             <br />
-            • <b>Error</b>: Serious issues (like memory overflow). <br />
-            • <b>Exception</b>: Conditions your program should handle.
+            <b>•</b> <b>Error</b>: Serious issues (like memory overflow). <br />
+            <b>•</b> <b>Exception</b>: Conditions your program should handle.
           </div>
         </motion.div>
 
@@ -150,8 +150,8 @@ System.out.println(a / b); // ArithmeticException`
             <b className='text-[#b07219]'>12.5</b> Throw and Throws
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>throw</b>: Used to manually throw an exception. <br />
-            • <b>throws</b>: Declares exceptions a method can throw. <br />
+            <b>•</b> <b>throw</b>: Used to manually throw an exception. <br />
+            <b>•</b> <b>throws</b>: Declares exceptions a method can throw. <br />
             <br />
             <CodeBlock language="java" filename="java" code={code7} />
           </div>
@@ -185,11 +185,11 @@ System.out.println(a / b); // ArithmeticException`
             <b className='text-[#b07219]'>12.7</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Exceptions prevent program crashes. <br />
-            • Use <b>try-catch</b> to handle runtime errors safely. <br />
-            • <b>finally</b> runs no matter what. <br />
-            • <b>throw</b> and <b>throws</b> help manage custom and declared exceptions. <br />
-            • Hierarchy ensures clear classification and recovery.
+            <b>•</b> Exceptions prevent program crashes. <br />
+            <b>•</b> Use <b>try-catch</b> to handle runtime errors safely. <br />
+            <b>•</b> <b>finally</b> runs no matter what. <br />
+            <b>•</b> <b>throw</b> and <b>throws</b> help manage custom and declared exceptions. <br />
+            <b>•</b> Hierarchy ensures clear classification and recovery.
           </div>
         </motion.div>
 

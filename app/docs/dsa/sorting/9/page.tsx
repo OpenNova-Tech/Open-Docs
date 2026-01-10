@@ -178,10 +178,10 @@ int main() {
 					<div className='text-gray-300'>
 						Input: <span className='bg-neutral-800 px-2 rounded-lg'>[7, 2, 1, 6, 8, 5, 3, 4]</span><br /><br />
 						Process:<br />
-						• Choose pivot = 4<br />
-						• Partition → [2, 1, 3] [4] [7, 6, 8, 5]<br />
-						• Recursively sort left and right parts<br />
-						• Final output → <span className='bg-neutral-800 px-2 rounded-lg'>[1, 2, 3, 4, 5, 6, 7, 8]</span>
+						<b>•</b> Choose pivot = 4<br />
+						<b>•</b> Partition → [2, 1, 3] [4] [7, 6, 8, 5]<br />
+						<b>•</b> Recursively sort left and right parts<br />
+						<b>•</b> Final output → <span className='bg-neutral-800 px-2 rounded-lg'>[1, 2, 3, 4, 5, 6, 7, 8]</span>
 					</div>
 				</motion.div>
 
@@ -233,11 +233,11 @@ int main() {
 						<b className='text-[#16a085]'>7.6</b> Complexity Analysis
 					</h2>
 					<div className='text-gray-300'>
-						• <b>Best Case</b>: O(n log n) <br />
-						• <b>Average Case</b>: O(n log n) <br />
-						• <b>Worst Case</b>: O(n²) (when pivot is smallest/largest)<br />
-						• <b>Space Complexity</b>: O(log n) <br />
-						• <b>Stability</b>: ❌ Unstable
+						<b>•</b> <b>Best Case</b>: O(n log n) <br />
+						<b>•</b> <b>Average Case</b>: O(n log n) <br />
+						<b>•</b> <b>Worst Case</b>: O(n²) (when pivot is smallest/largest)<br />
+						<b>•</b> <b>Space Complexity</b>: O(log n) <br />
+						<b>•</b> <b>Stability</b>: ❌ Unstable
 					</div>
 				</motion.div>
 
@@ -254,9 +254,9 @@ int main() {
 					</h2>
 					<div className='text-gray-300'>
 						Quick Sort is used in:<br />
-						• Built-in sorting functions like C’s `qsort()`.<br />
-						• Systems where <b>in-place sorting</b> is preferred.<br />
-						• Optimized libraries and database systems.
+						<b>•</b> Built-in sorting functions like C’s `qsort()`.<br />
+						<b>•</b> Systems where <b>in-place sorting</b> is preferred.<br />
+						<b>•</b> Optimized libraries and database systems.
 					</div>
 				</motion.div>
 
@@ -272,10 +272,10 @@ int main() {
 						<b className='text-[#16a085]'>7.8</b> Key Takeaways
 					</h2>
 					<div className='text-gray-300'>
-						• Quick Sort follows the <b>divide and conquer</b> method.<br />
-						• Performs best on average and for in-memory datasets.<br />
-						• Unstable but efficient and <b>in-place</b>.<br />
-						• Ideal for arrays where <b>extra space is limited</b>.
+						<b>•</b> Quick Sort follows the <b>divide and conquer</b> method.<br />
+						<b>•</b> Performs best on average and for in-memory datasets.<br />
+						<b>•</b> Unstable but efficient and <b>in-place</b>.<br />
+						<b>•</b> Ideal for arrays where <b>extra space is limited</b>.
 					</div>
 				</motion.div>
 

@@ -143,9 +143,9 @@ switch (day) {
             <CodeBlock language="java" filename="java" code={code5} />
             <br />
             Rules for switch: <br />
-            • Works with: <span className='bg-neutral-800 px-2 rounded-lg'>int</span>, <span className='bg-neutral-800 px-2 rounded-lg'>char</span>, <span className='bg-neutral-800 px-2 rounded-lg'>String</span>, <span className='bg-neutral-800 px-2 rounded-lg'>enum</span>. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>break</span> to avoid fall-through. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>default</span> executes if no case matches.
+            <b>•</b> Works with: <span className='bg-neutral-800 px-2 rounded-lg'>int</span>, <span className='bg-neutral-800 px-2 rounded-lg'>char</span>, <span className='bg-neutral-800 px-2 rounded-lg'>String</span>, <span className='bg-neutral-800 px-2 rounded-lg'>enum</span>. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>break</span> to avoid fall-through. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>default</span> executes if no case matches.
           </div>
         </motion.div>
 
@@ -160,11 +160,11 @@ switch (day) {
             <b className='text-[#b07219]'>10.6</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>if</span> → single condition. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>if-else</span> → two-way decision. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>if-else-if</span> ladder → multiple conditions. <br />
-            • <b>Nested if</b> → condition inside another. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>switch</span> → cleaner alternative for multiple discrete values.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>if</span> → single condition. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>if-else</span> → two-way decision. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>if-else-if</span> ladder → multiple conditions. <br />
+            <b>•</b> <b>Nested if</b> → condition inside another. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>switch</span> → cleaner alternative for multiple discrete values.
           </div>
         </motion.div>
 

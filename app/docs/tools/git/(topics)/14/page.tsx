@@ -62,8 +62,8 @@ git commit`
           <div className='max-w-3xl mx-auto text-gray-300'>
             A <b>merge</b> is the process of combining the latest commits from one branch into another. <br />
             Examples: <br />
-            • Merging a feature branch into <span className='bg-neutral-800 px-2 rounded-lg'>main</span> <br />
-            • Merging bugfix work into <span className='bg-neutral-800 px-2 rounded-lg'>develop</span> <br />
+            <b>•</b> Merging a feature branch into <span className='bg-neutral-800 px-2 rounded-lg'>main</span> <br />
+            <b>•</b> Merging bugfix work into <span className='bg-neutral-800 px-2 rounded-lg'>develop</span> <br />
             <br />
             Git tries to auto-combine file changes. If it cannot, it asks you to resolve conflicts manually.
           </div>
@@ -97,8 +97,8 @@ git commit`
             Combines all commits from a branch into a single commit.
             <CodeBlock language="bash" filename="" code={code4} /> 
             Useful for: <br />
-            • Cleaning up messy commit history <br />
-            • Feature branches with many WIP commits <br />
+            <b>•</b> Cleaning up messy commit history <br />
+            <b>•</b> Feature branches with many WIP commits <br />
             <br />
             <b>No-Fast-Forward Merge</b> <br />
             Forces Git to create a merge commit even if a fast-forward is possible.
@@ -121,9 +121,9 @@ git commit`
             Example:
             <CodeBlock language="bash" filename="" code={code6} /> <br />
             Git outputs either: <br />
-            • &quot;Fast-forward&quot; <br />
-            • &quot;Merge made by the &apos;recursive&apos; strategy&quot; <br />
-            • Or conflict information
+            <b>•</b> &quot;Fast-forward&quot; <br />
+            <b>•</b> &quot;Merge made by the &apos;recursive&apos; strategy&quot; <br />
+            <b>•</b> Or conflict information
           </div>
         </motion.div>
 
@@ -163,9 +163,9 @@ git commit`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             Merge is appropriate when: <br />
-            • You want to preserve the <b>true commit history</b> <br />
-            • You prefer a non-linear but complete visualization of work <br />
-            • Multiple developers contribute to the same code base <br />
+            <b>•</b> You want to preserve the <b>true commit history</b> <br />
+            <b>•</b> You prefer a non-linear but complete visualization of work <br />
+            <b>•</b> Multiple developers contribute to the same code base <br />
             Use merge when you want clarity and visibility of all changes.
           </div>
         </motion.div>
@@ -181,11 +181,11 @@ git commit`
             <b className='text-[#F05032]'>{num(6)}</b> Best Practices for Merging
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>Merge often</b> to reduce conflicts <br />
-            • Merge from <span className='bg-neutral-800 px-2 rounded-lg'>main</span> into your feature branch periodically <br />
-            • Avoid long-lived branches if possible <br />
-            • Name branches clearly before merging <br />
-            • Prefer <span className='bg-neutral-800 px-2 rounded-lg'>--no-ff</span> for feature development (optional but common)
+            <b>•</b> <b>Merge often</b> to reduce conflicts <br />
+            <b>•</b> Merge from <span className='bg-neutral-800 px-2 rounded-lg'>main</span> into your feature branch periodically <br />
+            <b>•</b> Avoid long-lived branches if possible <br />
+            <b>•</b> Name branches clearly before merging <br />
+            <b>•</b> Prefer <span className='bg-neutral-800 px-2 rounded-lg'>--no-ff</span> for feature development (optional but common)
           </div>
         </motion.div>
 
@@ -200,11 +200,11 @@ git commit`
             <b className='text-[#F05032]'>{num(7)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Merging integrates changes between branches. <br />
-            • Git supports fast-forward, no-ff, squash, and 3-way merges. <br />
-            • Merge conflicts must be resolved manually. <br />
-            • Merges preserve full commit history. <br />
-            • Choose merging when team collaboration requires safer, non-destructive history management.
+            <b>•</b> Merging integrates changes between branches. <br />
+            <b>•</b> Git supports fast-forward, no-ff, squash, and 3-way merges. <br />
+            <b>•</b> Merge conflicts must be resolved manually. <br />
+            <b>•</b> Merges preserve full commit history. <br />
+            <b>•</b> Choose merging when team collaboration requires safer, non-destructive history management.
           </div>
         </motion.div>
       </div>

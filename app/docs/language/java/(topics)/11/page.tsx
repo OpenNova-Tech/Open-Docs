@@ -261,14 +261,14 @@ for (int i = 1; i <= 3; i++) {
             <b className='text-[#b07219]'>11.10</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>for</span> → best for known iterations. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>while</span> → best when condition decides continuation. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>do-while</span> → executes at least once. <br />
-            • <b>Enhanced for</b> → used for arrays/collections. <br />
-            • Beware of <b>infinite loops</b>. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>break</span> → exits loop completely. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>continue</span> → skips current iteration, loop continues. <br />
-            • Labeled versions help with <b>nested loops</b>.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>for</span> → best for known iterations. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>while</span> → best when condition decides continuation. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>do-while</span> → executes at least once. <br />
+            <b>•</b> <b>Enhanced for</b> → used for arrays/collections. <br />
+            <b>•</b> Beware of <b>infinite loops</b>. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>break</span> → exits loop completely. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>continue</span> → skips current iteration, loop continues. <br />
+            <b>•</b> Labeled versions help with <b>nested loops</b>.
           </div>
         </motion.div>
 

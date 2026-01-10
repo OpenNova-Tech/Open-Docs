@@ -62,7 +62,7 @@ ls -l`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <CodeBlock language="shell" filename="bash" code={code1} /> <br />
-            • Prints the current working directory (where you are in the filesystem).
+            <b>•</b> Prints the current working directory (where you are in the filesystem).
           </div>
         </motion.div>
 
@@ -169,12 +169,12 @@ ls -l`
             <b className='text-[#89e051]'>5.8</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>pwd</span> shows your <b>current directory</b>. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>ls</span> lists files; add <span className='bg-neutral-800 px-2 rounded-lg'>-l</span> or <span className='bg-neutral-800 px-2 rounded-lg'>-a</span> for more details. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>cd</span> is used to <b>move around</b> the filesystem. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>mkdir</span> creates directories, <span className='bg-neutral-800 px-2 rounded-lg'>touch</span> creates files. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>cp</span> and <span className='bg-neutral-800 px-2 rounded-lg'>mv</span> are for <b>copying/moving</b>, while <span className='bg-neutral-800 px-2 rounded-lg'>rm</span> deletes. <br />
-            • Be <b>careful with</b> <span className='bg-neutral-800 px-2 rounded-lg'>rm -rf</span>, as it permanently deletes files/folders.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>pwd</span> shows your <b>current directory</b>. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>ls</span> lists files; add <span className='bg-neutral-800 px-2 rounded-lg'>-l</span> or <span className='bg-neutral-800 px-2 rounded-lg'>-a</span> for more details. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>cd</span> is used to <b>move around</b> the filesystem. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>mkdir</span> creates directories, <span className='bg-neutral-800 px-2 rounded-lg'>touch</span> creates files. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>cp</span> and <span className='bg-neutral-800 px-2 rounded-lg'>mv</span> are for <b>copying/moving</b>, while <span className='bg-neutral-800 px-2 rounded-lg'>rm</span> deletes. <br />
+            <b>•</b> Be <b>careful with</b> <span className='bg-neutral-800 px-2 rounded-lg'>rm -rf</span>, as it permanently deletes files/folders.
           </div>
         </motion.div>
 

@@ -42,8 +42,8 @@ echo "Hello from Shell!"`
 						<b>Shell</b> is the <b>command-line interpreter</b> and scripting language for operating systems like Linux, Unix, and macOS. It allows users to communicate with the computer by typing commands, running programs, and automating tasks through scripts. <br />
 						<br />
 						Think of it this way: <br />
-						• <b>Kernel (OS)</b> → The brain of your computer. <br />
-						• <b>Shell</b> → The messenger that takes your commands to the brain and brings back results.
+						<b>•</b> <b>Kernel (OS)</b> → The brain of your computer. <br />
+						<b>•</b> <b>Shell</b> → The messenger that takes your commands to the brain and brings back results.
 					</div>
 				</motion.div>
 
@@ -58,11 +58,11 @@ echo "Hello from Shell!"`
 						<b className='text-[#89e051]'>1.2</b> Why learn Shell ?
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• Directly interact with your system without a GUI. <br />
-						• Automate repetitive tasks using scripts. <br />
-						• Manage files, processes, and system resources efficiently. <br />
-						• Useful for system administration, DevOps, and development environments. <br />
-						• Works across almost all Unix/Linux systems.
+						<b>•</b> Directly interact with your system without a GUI. <br />
+						<b>•</b> Automate repetitive tasks using scripts. <br />
+						<b>•</b> Manage files, processes, and system resources efficiently. <br />
+						<b>•</b> Useful for system administration, DevOps, and development environments. <br />
+						<b>•</b> Works across almost all Unix/Linux systems.
 					</div>
 				</motion.div>
 
@@ -77,12 +77,12 @@ echo "Hello from Shell!"`
 						<b className='text-[#89e051]'>1.3</b>  What can Shell do ?
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• Navigate the file system (<span className='bg-neutral-800 px-2 rounded-lg'>cd</span>, <span className='bg-neutral-800 px-2 rounded-lg'>ls</span>, <span className='bg-neutral-800 px-2 rounded-lg'>pwd</span>). <br />
-						• Create, copy, move, and delete files (<span className='bg-neutral-800 px-2 rounded-lg'>mkdir</span>, <span className='bg-neutral-800 px-2 rounded-lg'>cp</span>, <span className='bg-neutral-800 px-2 rounded-lg'>mv</span>, <span className='bg-neutral-800 px-2 rounded-lg'>rm</span>). <br />
-						• Run scripts to automate tasks. <br />
-						• Monitor processes (<span className='bg-neutral-800 px-2 rounded-lg'>ps</span>, <span className='bg-neutral-800 px-2 rounded-lg'>top</span>) and system performance. <br />
-						• Handle text and data processing (<span className='bg-neutral-800 px-2 rounded-lg'>grep</span>, <span className='bg-neutral-800 px-2 rounded-lg'>awk</span>, <span className='bg-neutral-800 px-2 rounded-lg'>sed</span>, <span className='bg-neutral-800 px-2 rounded-lg'>sort</span>). <br />
-						• Schedule recurring tasks using cron jobs.
+						<b>•</b> Navigate the file system (<span className='bg-neutral-800 px-2 rounded-lg'>cd</span>, <span className='bg-neutral-800 px-2 rounded-lg'>ls</span>, <span className='bg-neutral-800 px-2 rounded-lg'>pwd</span>). <br />
+						<b>•</b> Create, copy, move, and delete files (<span className='bg-neutral-800 px-2 rounded-lg'>mkdir</span>, <span className='bg-neutral-800 px-2 rounded-lg'>cp</span>, <span className='bg-neutral-800 px-2 rounded-lg'>mv</span>, <span className='bg-neutral-800 px-2 rounded-lg'>rm</span>). <br />
+						<b>•</b> Run scripts to automate tasks. <br />
+						<b>•</b> Monitor processes (<span className='bg-neutral-800 px-2 rounded-lg'>ps</span>, <span className='bg-neutral-800 px-2 rounded-lg'>top</span>) and system performance. <br />
+						<b>•</b> Handle text and data processing (<span className='bg-neutral-800 px-2 rounded-lg'>grep</span>, <span className='bg-neutral-800 px-2 rounded-lg'>awk</span>, <span className='bg-neutral-800 px-2 rounded-lg'>sed</span>, <span className='bg-neutral-800 px-2 rounded-lg'>sort</span>). <br />
+						<b>•</b> Schedule recurring tasks using cron jobs.
 					</div>
 				</motion.div>
 
@@ -122,9 +122,9 @@ echo "Hello from Shell!"`
 						<b className='text-[#89e051]'>1.5</b> How Shell Fits in System Interaction
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• <b>User</b> → Types commands in terminal. <br />
-						• <b>Shell</b> → Interprets commands and communicates with the OS. <br />
-						• <b>OS Kernel</b> → Executes the commands and returns results. <br />
+						<b>•</b> <b>User</b> → Types commands in terminal. <br />
+						<b>•</b> <b>Shell</b> → Interprets commands and communicates with the OS. <br />
+						<b>•</b> <b>OS Kernel</b> → Executes the commands and returns results. <br />
 						<br />
 						Without the shell, interacting with the system would be much slower and less flexible.
 					</div>
@@ -141,9 +141,9 @@ echo "Hello from Shell!"`
 						<b className='text-[#89e051]'>1.6</b> Fun Facts
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• The <b>first Unix shell</b> was the <b>Thompson shell</b> (1971). <br />
-						• <b>Bash</b> (Bourne Again Shell) is the most widely used shell today. <br />
-						• Shell scripting is older than most modern programming languages!
+						<b>•</b> The <b>first Unix shell</b> was the <b>Thompson shell</b> (1971). <br />
+						<b>•</b> <b>Bash</b> (Bourne Again Shell) is the most widely used shell today. <br />
+						<b>•</b> Shell scripting is older than most modern programming languages!
 					</div>
 				</motion.div>
 
@@ -158,11 +158,11 @@ echo "Hello from Shell!"`
 						<b className='text-[#89e051]'>1.7</b> Key Takeaways
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• Shell is a <b>command-line interface and scripting tool</b>. <br />
-						• It acts as a <b>bridge between the user and the OS</b>. <br />
-						• You can <b>execute commands, automate tasks, and manage the system</b> efficiently. <br />
-						• <b>Bash</b> is the most popular shell; others include sh, zsh, csh, ksh. <br />
-						• Learning Shell is essential for <b>system administration, automation, and programming workflows</b>.
+						<b>•</b> Shell is a <b>command-line interface and scripting tool</b>. <br />
+						<b>•</b> It acts as a <b>bridge between the user and the OS</b>. <br />
+						<b>•</b> You can <b>execute commands, automate tasks, and manage the system</b> efficiently. <br />
+						<b>•</b> <b>Bash</b> is the most popular shell; others include sh, zsh, csh, ksh. <br />
+						<b>•</b> Learning Shell is essential for <b>system administration, automation, and programming workflows</b>.
 					</div>
 				</motion.div>
 

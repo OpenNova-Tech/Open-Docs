@@ -80,9 +80,9 @@ git commit -m "Add login feature"`
             <b>No merge commit is created.</b> <br />
             <br />
             <b>When to use fast-forward:</b> <br />
-            • Small feature branches <br />
-            • Solo development <br />
-            • When a simple, linear history is preferred 
+            <b>•</b> Small feature branches <br />
+            <b>•</b> Solo development <br />
+            <b>•</b> When a simple, linear history is preferred 
           </div>
         </motion.div>
 
@@ -102,9 +102,9 @@ git commit -m "Add login feature"`
             Result history:
             <CodeBlock language="bash" filename="" code={code5} /> <br />
             Why use <span className='bg-neutral-800 px-2 rounded-lg'>--no-ff</span> ? <br />
-            • Preserves the idea of a branch in history <br />
-            • Makes it clear what work belonged to which feature <br />
-            • Helpful in team environments <br />
+            <b>•</b> Preserves the idea of a branch in history <br />
+            <b>•</b> Makes it clear what work belonged to which feature <br />
+            <b>•</b> Helpful in team environments <br />
             <br />
             Many teams use:
             <CodeBlock language="bash" filename="" code={code6} />
@@ -130,9 +130,9 @@ git commit -m "Add login feature"`
             Command:
             <CodeBlock language="bash" filename="" code={code8} /> <br />
             Git finds: <br />
-            • Base commit (B) <br />
-            • Current branch commit (C) <br />
-            • Branch being merged commit (E) <br />
+            <b>•</b> Base commit (B) <br />
+            <b>•</b> Current branch commit (C) <br />
+            <b>•</b> Branch being merged commit (E) <br />
             <br />
             It combines all three → creates a <b>merge commit</b>. <br />
             3-way merges preserve full history and are the standard merge type in shared repos.
@@ -156,13 +156,13 @@ git commit -m "Add login feature"`
             Result:
             <CodeBlock language="bash" filename="" code={code10} /> <br />
             <b>Why squash?</b> <br />
-            • Simplifies messy or experimental commit history <br />
-            • Keeps  <span className='bg-neutral-800 px-2 rounded-lg'>main</span> very clean <br />
+            <b>•</b> Simplifies messy or experimental commit history <br />
+            <b>•</b> Keeps  <span className='bg-neutral-800 px-2 rounded-lg'>main</span> very clean <br />
             <br />
             It is ideal for: <br />
-            • Early stage prototypes <br />
-            • Inexperienced contributors <br />
-            • Large PRs broken into many small commits 
+            <b>•</b> Early stage prototypes <br />
+            <b>•</b> Inexperienced contributors <br />
+            <b>•</b> Large PRs broken into many small commits 
           </div>
         </motion.div>
 
@@ -188,8 +188,8 @@ git commit -m "Add login feature"`
             Keeps your branch&apos;s changes, ignores the incoming branch.
             <CodeBlock language="bash" filename="" code={code12} />
             Useful for: <br />
-            • Marking a branch as merged <br />
-            • Keeping history but discarding code <br />
+            <b>•</b> Marking a branch as merged <br />
+            <b>•</b> Keeping history but discarding code <br />
             <br />
             <b>5.3 Octopus Strategy</b> <br />
             <br />
@@ -213,20 +213,20 @@ git commit -m "Add login feature"`
             Your decision depends on your team&apos;s workflow: <br />
             <br />
             <b>Fast-Forward (Default)</b> <br />
-            • Clean linear history <br />
-            • Simple and useful for solo developers <br />
+            <b>•</b> Clean linear history <br />
+            <b>•</b> Simple and useful for solo developers <br />
             <br />
             <b>No Fast-Forward</b> <br />
-            • Keeps feature branches visible in history <br />
-            • Enables better code review tracking <br />
+            <b>•</b> Keeps feature branches visible in history <br />
+            <b>•</b> Enables better code review tracking <br />
             <br />
             <b>Squash</b> <br />
-            • Great for tidying up messy branches <br />
-            • Best for feature branches with many commits <br />
+            <b>•</b> Great for tidying up messy branches <br />
+            <b>•</b> Best for feature branches with many commits <br />
             <br />
             <b>3-Way Merge</b> <br />
-            • Safe, preserves all contributions <br />
-            • Standard in teams with parallel work
+            <b>•</b> Safe, preserves all contributions <br />
+            <b>•</b> Standard in teams with parallel work
           </div>
         </motion.div>
 
@@ -241,11 +241,11 @@ git commit -m "Add login feature"`
             <b className='text-[#F05032]'>{num(7)}</b> Best Practices
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Fast-forward for small or personal branches <br />
-            • No-ff for major features to preserve branch structure <br />
-            • Squash for cleanup <br />
-            • Avoid rewriting history on shared branches <br />
-            • Keep branches short-lived to avoid complex merges
+            <b>•</b> Fast-forward for small or personal branches <br />
+            <b>•</b> No-ff for major features to preserve branch structure <br />
+            <b>•</b> Squash for cleanup <br />
+            <b>•</b> Avoid rewriting history on shared branches <br />
+            <b>•</b> Keep branches short-lived to avoid complex merges
           </div>
         </motion.div>
 
@@ -260,12 +260,12 @@ git commit -m "Add login feature"`
             <b className='text-[#F05032]'>{num(8)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>Fast-forward moves the branch pointer directly</b>—no merge commit. <br />
-            • <b>No-fast-forward creates a merge commit</b>, even if not needed. <br />
-            • <b>3-way merge</b> handles diverged branches with a new commit. <br />
-            • <b>Squash merge</b> compresses all commits into one. <br />
-            • Merge strategies (<span className='bg-neutral-800 px-2 rounded-lg'>recursive</span>, <span className='bg-neutral-800 px-2 rounded-lg'>ours</span>, <span className='bg-neutral-800 px-2 rounded-lg'>octopus</span>) offer additional control. <br />
-            • Choose merge type based on whether you want a clean history, explicit feature boundaries, or simplified commits.
+            <b>•</b> <b>Fast-forward moves the branch pointer directly</b>—no merge commit. <br />
+            <b>•</b> <b>No-fast-forward creates a merge commit</b>, even if not needed. <br />
+            <b>•</b> <b>3-way merge</b> handles diverged branches with a new commit. <br />
+            <b>•</b> <b>Squash merge</b> compresses all commits into one. <br />
+            <b>•</b> Merge strategies (<span className='bg-neutral-800 px-2 rounded-lg'>recursive</span>, <span className='bg-neutral-800 px-2 rounded-lg'>ours</span>, <span className='bg-neutral-800 px-2 rounded-lg'>octopus</span>) offer additional control. <br />
+            <b>•</b> Choose merge type based on whether you want a clean history, explicit feature boundaries, or simplified commits.
           </div>
         </motion.div>
       </div>

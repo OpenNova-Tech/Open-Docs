@@ -114,8 +114,8 @@ class Dog extends Animal {}  // ❌ Error`
           <div className='max-w-3xl mx-auto text-gray-300'>
             Inheritance allows one class to <b>acquire properties and methods</b> of another. <br />
             It promotes <b>code reusability</b> and forms the basis of <b>polymorphism</b> and <b>hierarchical design</b> in Java. <br />
-            • The class that is inherited from is called the <b>parent (superclass)</b>. <br />
-            • The class that inherits is called the <b>child (subclass)</b>. <br />
+            <b>•</b> The class that is inherited from is called the <b>parent (superclass)</b>. <br />
+            <b>•</b> The class that inherits is called the <b>child (subclass)</b>. <br />
             <br />
             <CodeBlock language="java" filename="java" code={code1} /> <br />
             Output:
@@ -135,8 +135,8 @@ class Dog extends Animal {}  // ❌ Error`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <CodeBlock language="java" filename="java" code={code3} /> <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>extends</span> keyword establishes the inheritance relationship. <br />
-            • The subclass gets <b>all accessible members</b> (fields and methods) of the superclass.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>extends</span> keyword establishes the inheritance relationship. <br />
+            <b>•</b> The subclass gets <b>all accessible members</b> (fields and methods) of the superclass.
           </div>
         </motion.div>
 
@@ -224,8 +224,8 @@ class Dog extends Animal {}  // ❌ Error`
             <b className='text-[#b07219]'>{num(6)}</b> The final Keyword in Inheritance
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>final</span> class → cannot be inherited. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>final</span> method → cannot be overridden. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>final</span> class → cannot be inherited. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>final</span> method → cannot be overridden. <br />
             <br />
             Example: 
             <CodeBlock language="java" filename="java" code={code8} />
@@ -243,8 +243,8 @@ class Dog extends Animal {}  // ❌ Error`
             <b className='text-[#b07219]'>{num(7)}</b> Constructors and Inheritance
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • A subclass constructor <b>automatically calls</b> its parent&apos;s constructor first. <br />
-            • If the parent has no no-arg constructor, you must explicitly call one using <span className='bg-neutral-800 px-2 rounded-lg'>super(args)</span>.
+            <b>•</b> A subclass constructor <b>automatically calls</b> its parent&apos;s constructor first. <br />
+            <b>•</b> If the parent has no no-arg constructor, you must explicitly call one using <span className='bg-neutral-800 px-2 rounded-lg'>super(args)</span>.
           </div>
         </motion.div>
 
@@ -259,11 +259,11 @@ class Dog extends Animal {}  // ❌ Error`
             <b className='text-[#b07219]'>{num(8)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Inheritance enables <b>reusability</b> and <b>method overriding</b>. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>extends</span> keyword to inherit a class. <br />
-            • Types: <b>Single, Multilevel, Hierarchical</b>. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>super</span> accesses parent methods or constructors. <br />
-            • Java doesn&apos;t support multiple inheritance (except via interfaces).
+            <b>•</b> Inheritance enables <b>reusability</b> and <b>method overriding</b>. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>extends</span> keyword to inherit a class. <br />
+            <b>•</b> Types: <b>Single, Multilevel, Hierarchical</b>. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>super</span> accesses parent methods or constructors. <br />
+            <b>•</b> Java doesn&apos;t support multiple inheritance (except via interfaces).
           </div>
         </motion.div>
       </div>

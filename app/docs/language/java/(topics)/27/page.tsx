@@ -239,34 +239,34 @@ Mango - 20`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>HashMap</b> <br />
-            • Based on <b>hash table</b> data structure. <br />
-            • <b>No order</b> is guaranteed. <br />
-            • <b>Allows one</b> <span className='bg-neutral-800 px-2 rounded-lg'>null</span> <b>key</b> and multiple <span className='bg-neutral-800 px-2 rounded-lg'>null</span> values. <br />
-            • <b>Fastest performance (O(1))</b> for most operations. <br />
+            <b>•</b> Based on <b>hash table</b> data structure. <br />
+            <b>•</b> <b>No order</b> is guaranteed. <br />
+            <b>•</b> <b>Allows one</b> <span className='bg-neutral-800 px-2 rounded-lg'>null</span> <b>key</b> and multiple <span className='bg-neutral-800 px-2 rounded-lg'>null</span> values. <br />
+            <b>•</b> <b>Fastest performance (O(1))</b> for most operations. <br />
             <br />
             <b>Example</b>:
             <CodeBlock language="java" filename="java" code={code2} /> <br />
             <b>LinkedHashMap</b> <br />
-            • Maintains <b>insertion order</b> using a <b>doubly-linked list</b>. <br />
-            • Slightly slower than <span className='bg-neutral-800 px-2 rounded-lg'>HashMap</span> due to ordering overhead. <br />
+            <b>•</b> Maintains <b>insertion order</b> using a <b>doubly-linked list</b>. <br />
+            <b>•</b> Slightly slower than <span className='bg-neutral-800 px-2 rounded-lg'>HashMap</span> due to ordering overhead. <br />
             <br />
             <b>Example</b>:
             <CodeBlock language="java" filename="java" code={code3} /> <br />
             <b>TreeMap</b> <br />
-            • Implements the <b>SortedMap</b> interface. <br />
-            • Maintains entries in <b>ascending order of keys</b> (by default). <br />
-            • <b>Does not allow null keys</b>. <br />
-            • Backed by a <b>Red-Black Tree</b> (balanced tree). <br />
+            <b>•</b> Implements the <b>SortedMap</b> interface. <br />
+            <b>•</b> Maintains entries in <b>ascending order of keys</b> (by default). <br />
+            <b>•</b> <b>Does not allow null keys</b>. <br />
+            <b>•</b> Backed by a <b>Red-Black Tree</b> (balanced tree). <br />
             <br />
             <b>Example</b>:
             <CodeBlock language="java" filename="java" code={code4} /> <br />
             <b>Custom ordering</b>:
             <CodeBlock language="java" filename="java" code={code5} /> <br />
             <b>Hashtable</b> <br />
-            • Legacy implementation (older than Java Collections Framework). <br />
-            • <b>Thread-safe</b> (synchronized). <br />
-            • <b>No null keys or values</b> allowed. <br />
-            • Generally slower due to synchronization overhead. <br />
+            <b>•</b> Legacy implementation (older than Java Collections Framework). <br />
+            <b>•</b> <b>Thread-safe</b> (synchronized). <br />
+            <b>•</b> <b>No null keys or values</b> allowed. <br />
+            <b>•</b> Generally slower due to synchronization overhead. <br />
             <br />
             <b>Example</b>:
             <CodeBlock language="java" filename="java" code={code6} />
@@ -370,9 +370,9 @@ Mango - 20`
             <b className='text-[#b07219]'>{num(9)}</b> Special Maps
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>ConcurrentHashMap</b> → Thread-safe and highly efficient alternative to Hashtable. <br />
-            • <b>EnumMap</b> → Optimized for keys that are <span className='bg-neutral-800 px-2 rounded-lg'>enum</span> types. <br />
-            • <b>WeakHashMap</b> → Entries are garbage-collected when keys are no longer referenced. <br />
+            <b>•</b> <b>ConcurrentHashMap</b> → Thread-safe and highly efficient alternative to Hashtable. <br />
+            <b>•</b> <b>EnumMap</b> → Optimized for keys that are <span className='bg-neutral-800 px-2 rounded-lg'>enum</span> types. <br />
+            <b>•</b> <b>WeakHashMap</b> → Entries are garbage-collected when keys are no longer referenced. <br />
             <br />
             <CodeBlock language="java" filename="java" code={code10} />
           </div>
@@ -406,11 +406,11 @@ Mango - 20`
             <b className='text-[#b07219]'>{num(11)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • A <b>Map</b> associates <b>unique keys</b> with <b>specific values</b>. <br />
-            • <b>HashMap</b> is the default go-to for speed and flexibility. <br />
-            • <b>LinkedHashMap</b> maintains order; <b>TreeMap</b> maintains sorting. <br />
-            • <b>Hashtable</b> is legacy but thread-safe. <br />
-            • For concurrent programs, <b>ConcurrentHashMap</b> is preferred.
+            <b>•</b> A <b>Map</b> associates <b>unique keys</b> with <b>specific values</b>. <br />
+            <b>•</b> <b>HashMap</b> is the default go-to for speed and flexibility. <br />
+            <b>•</b> <b>LinkedHashMap</b> maintains order; <b>TreeMap</b> maintains sorting. <br />
+            <b>•</b> <b>Hashtable</b> is legacy but thread-safe. <br />
+            <b>•</b> For concurrent programs, <b>ConcurrentHashMap</b> is preferred.
           </div>
         </motion.div>
       </div>

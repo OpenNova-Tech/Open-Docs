@@ -43,12 +43,12 @@ export default function page() {
 						<b className='text-[#e34c26]'>5.1</b> What are Tags?
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• <b>Tags</b> are the building blocks of HTML. <br />
-						• They tell the browser how to interpret and display content. <br />
-						• Most tags come in <b>pairs</b>: <br />
-						&nbsp;&nbsp;&nbsp;• <b>Opening tag</b> → <span className='bg-neutral-800 px-2 rounded-lg'>&lt;p&gt;</span> <br />
-						&nbsp;&nbsp;&nbsp;• <b>Closing tag</b> → <span className='bg-neutral-800 px-2 rounded-lg'>&lt;/p&gt;</span> <br />
-						&nbsp;&nbsp;&nbsp;• <b>Content in between</b> → <span className='bg-neutral-800 px-2 rounded-lg'>&lt;p&gt;Hello World&lt;/p&gt;</span>
+						<b>•</b> <b>Tags</b> are the building blocks of HTML. <br />
+						<b>•</b> They tell the browser how to interpret and display content. <br />
+						<b>•</b> Most tags come in <b>pairs</b>: <br />
+						&nbsp;&nbsp;&nbsp;<b>•</b> <b>Opening tag</b> → <span className='bg-neutral-800 px-2 rounded-lg'>&lt;p&gt;</span> <br />
+						&nbsp;&nbsp;&nbsp;<b>•</b> <b>Closing tag</b> → <span className='bg-neutral-800 px-2 rounded-lg'>&lt;/p&gt;</span> <br />
+						&nbsp;&nbsp;&nbsp;<b>•</b> <b>Content in between</b> → <span className='bg-neutral-800 px-2 rounded-lg'>&lt;p&gt;Hello World&lt;/p&gt;</span>
 					</div>
 				</motion.div>
 
@@ -82,12 +82,12 @@ export default function page() {
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						<b>1. Container (Paired) Tags</b> <br />
-						&nbsp;&nbsp;&nbsp;• Have an opening <span className='bg-neutral-800 px-2 rounded-lg'>&lt;tag&gt;</span> and a closing <span className='bg-neutral-800 px-2 rounded-lg'>&lt;/tag&gt;</span>. <br />
-						&nbsp;&nbsp;&nbsp;• Example: <span className='bg-neutral-800 px-2 rounded-lg'>&lt;p&gt;Some text&lt;/p&gt;</span>. <br />
+						&nbsp;&nbsp;&nbsp;<b>•</b> Have an opening <span className='bg-neutral-800 px-2 rounded-lg'>&lt;tag&gt;</span> and a closing <span className='bg-neutral-800 px-2 rounded-lg'>&lt;/tag&gt;</span>. <br />
+						&nbsp;&nbsp;&nbsp;<b>•</b> Example: <span className='bg-neutral-800 px-2 rounded-lg'>&lt;p&gt;Some text&lt;/p&gt;</span>. <br />
 						<br />
 						<b>2. Empty (Self-Closing) Tags</b> <br />
-						&nbsp;&nbsp;&nbsp;• Do not wrap content. <br />
-						&nbsp;&nbsp;&nbsp;• Example: <span className='bg-neutral-800 px-2 rounded-lg'>&lt;br /&gt;</span> (line break), <span className='bg-neutral-800 px-2 rounded-lg'>&lt;img /&gt;</span> (image). <br />
+						&nbsp;&nbsp;&nbsp;<b>•</b> Do not wrap content. <br />
+						&nbsp;&nbsp;&nbsp;<b>•</b> Example: <span className='bg-neutral-800 px-2 rounded-lg'>&lt;br /&gt;</span> (line break), <span className='bg-neutral-800 px-2 rounded-lg'>&lt;img /&gt;</span> (image). <br />
 					</div>
 				</motion.div>
 
@@ -102,9 +102,9 @@ export default function page() {
 						<b className='text-[#e34c26]'>5.4</b> What are Attributes ?
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• Attributes give <b>extra information</b> about elements. <br />
-						• Written inside the opening tag. <br />
-						• Always in the <span className='bg-neutral-800 px-2 rounded-lg'>form → name=&quot;value&quot;</span>. <br />
+						<b>•</b> Attributes give <b>extra information</b> about elements. <br />
+						<b>•</b> Written inside the opening tag. <br />
+						<b>•</b> Always in the <span className='bg-neutral-800 px-2 rounded-lg'>form → name=&quot;value&quot;</span>. <br />
 						<br />
 						<CodeBlock language="html" filename="html" code={code3} /> <br />
 						Here: <br />
@@ -124,11 +124,11 @@ export default function page() {
 						<b className='text-[#e34c26]'>5.5</b> Common Global Attributes
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• <span className='bg-neutral-800 px-2 rounded-lg'>id</span> → unique identifier. <br />
-						• <span className='bg-neutral-800 px-2 rounded-lg'>class</span> → groups elements for styling. <br />
-						• <span className='bg-neutral-800 px-2 rounded-lg'>title</span> → tooltip text. <br />
-						• <span className='bg-neutral-800 px-2 rounded-lg'>lang</span> → language of content. <br />
-						• <span className='bg-neutral-800 px-2 rounded-lg'>style</span> → inline CSS styling. <br />
+						<b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>id</span> → unique identifier. <br />
+						<b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>class</span> → groups elements for styling. <br />
+						<b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>title</span> → tooltip text. <br />
+						<b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>lang</span> → language of content. <br />
+						<b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>style</span> → inline CSS styling. <br />
 						<br />
 						Example:
 						<CodeBlock language="html" filename="html" code={code4} /> <br />
@@ -146,9 +146,9 @@ export default function page() {
 						<b className='text-[#e34c26]'>5.6</b> Pro Tips
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• Tag names are <b>not case-sensitive</b> (<span className='bg-neutral-800 px-2 rounded-lg'>&lt;P&gt;</span> = <span className='bg-neutral-800 px-2 rounded-lg'>&lt;p&gt;</span>), but convention is lowercase. <br />
-						• Always quote attribute values (<span className='bg-neutral-800 px-2 rounded-lg'>alt=&quot;Logo&quot;</span>, not <span className='bg-neutral-800 px-2 rounded-lg'>alt=Logo</span>). <br />
-						• Avoid mixing content with inline <span className='bg-neutral-800 px-2 rounded-lg'>style</span> — better handled in CSS.
+						<b>•</b> Tag names are <b>not case-sensitive</b> (<span className='bg-neutral-800 px-2 rounded-lg'>&lt;P&gt;</span> = <span className='bg-neutral-800 px-2 rounded-lg'>&lt;p&gt;</span>), but convention is lowercase. <br />
+						<b>•</b> Always quote attribute values (<span className='bg-neutral-800 px-2 rounded-lg'>alt=&quot;Logo&quot;</span>, not <span className='bg-neutral-800 px-2 rounded-lg'>alt=Logo</span>). <br />
+						<b>•</b> Avoid mixing content with inline <span className='bg-neutral-800 px-2 rounded-lg'>style</span> — better handled in CSS.
 					</div>
 				</motion.div>
 
@@ -163,10 +163,10 @@ export default function page() {
 						<b className='text-[#e34c26]'>5.7</b> Key Takeaways
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• HTML is built from <b>tags</b>, usually in opening/closing pairs. <br />
-						• <b>Empty tags</b> exist for things like images and line breaks. <br />
-						• <b>Attributes</b> provide extra details (like links, IDs, or alt text). <br />
-						• Global attributes (<span className='bg-neutral-800 px-2 rounded-lg'>id</span>, <span className='bg-neutral-800 px-2 rounded-lg'>class</span>, <span className='bg-neutral-800 px-2 rounded-lg'>title</span>, <span className='bg-neutral-800 px-2 rounded-lg'>lang</span>, <span className='bg-neutral-800 px-2 rounded-lg'>style</span>) can be used on almost any tag.
+						<b>•</b> HTML is built from <b>tags</b>, usually in opening/closing pairs. <br />
+						<b>•</b> <b>Empty tags</b> exist for things like images and line breaks. <br />
+						<b>•</b> <b>Attributes</b> provide extra details (like links, IDs, or alt text). <br />
+						<b>•</b> Global attributes (<span className='bg-neutral-800 px-2 rounded-lg'>id</span>, <span className='bg-neutral-800 px-2 rounded-lg'>class</span>, <span className='bg-neutral-800 px-2 rounded-lg'>title</span>, <span className='bg-neutral-800 px-2 rounded-lg'>lang</span>, <span className='bg-neutral-800 px-2 rounded-lg'>style</span>) can be used on almost any tag.
 					</div>
 				</motion.div>
 

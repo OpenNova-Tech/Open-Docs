@@ -107,9 +107,9 @@ git pull`
             Example:
             <CodeBlock language="bash" filename="" code={code7} /> <br />
             Useful for: <br />
-            • Fixing older versions <br />
-            • Starting a patch on historical code <br />
-            • Creating branches from tags or stable release points
+            <b>•</b> Fixing older versions <br />
+            <b>•</b> Starting a patch on historical code <br />
+            <b>•</b> Creating branches from tags or stable release points
           </div>
         </motion.div>
 
@@ -164,11 +164,11 @@ git pull`
             <b className='text-[#F05032]'>{num(6)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>git branch &lt;name&gt;</span> creates a branch; <span className='bg-neutral-800 px-2 rounded-lg'>git switch -c &lt;name&gt;</span> creates and switches to it. <br />
-            • Follow clean naming conventions like <span className='bg-neutral-800 px-2 rounded-lg'>feature/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>bugfix/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>hotfix/</span>, and <span className='bg-neutral-800 px-2 rounded-lg'>release/</span>. <br />
-            • You can create branches from any commit or tag, not just the latest one. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>git branch -a</span> to view local and remote branches. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>git push -u origin &lt;branch&gt;</span> to publish a new branch and set upstream tracking.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>git branch &lt;name&gt;</span> creates a branch; <span className='bg-neutral-800 px-2 rounded-lg'>git switch -c &lt;name&gt;</span> creates and switches to it. <br />
+            <b>•</b> Follow clean naming conventions like <span className='bg-neutral-800 px-2 rounded-lg'>feature/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>bugfix/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>hotfix/</span>, and <span className='bg-neutral-800 px-2 rounded-lg'>release/</span>. <br />
+            <b>•</b> You can create branches from any commit or tag, not just the latest one. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>git branch -a</span> to view local and remote branches. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>git push -u origin &lt;branch&gt;</span> to publish a new branch and set upstream tracking.
           </div>
         </motion.div>
       </div>
