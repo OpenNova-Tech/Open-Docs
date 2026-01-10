@@ -74,11 +74,11 @@ export default function page() {
             <b className='text-[#701516]'>1.4</b> Characteristics
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>Interpreted</b>: No need for compilation before running. <br />
-            • <b>Object-Oriented</b>: Everything in Ruby is treated as an object. <br />
-            • <b>Dynamic Typing</b>: You don&apos;t need to declare data types explicitly. <br />
-            • <b>Portable</b>: Works across platforms like Windows, macOS, and Linux. <br />
-            • <b>Open Source</b>: Freely available with a strong global community.
+            <b>•</b> <b>Interpreted</b>: No need for compilation before running. <br />
+            <b>•</b> <b>Object-Oriented</b>: Everything in Ruby is treated as an object. <br />
+            <b>•</b> <b>Dynamic Typing</b>: You don&apos;t need to declare data types explicitly. <br />
+            <b>•</b> <b>Portable</b>: Works across platforms like Windows, macOS, and Linux. <br />
+            <b>•</b> <b>Open Source</b>: Freely available with a strong global community.
           </div>
         </motion.div>
 
@@ -108,10 +108,10 @@ export default function page() {
             <b className='text-[#701516]'>1.6</b> Where Ruby is Used
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>Web development</b> (especially with Ruby on Rails) <br />
-            • <b>Data processing scripts</b> <br />
-            • <b>Automation and DevOps tools</b> <br />
-            • <b>Prototyping applications</b>
+            <b>•</b> <b>Web development</b> (especially with Ruby on Rails) <br />
+            <b>•</b> <b>Data processing scripts</b> <br />
+            <b>•</b> <b>Automation and DevOps tools</b> <br />
+            <b>•</b> <b>Prototyping applications</b>
           </div>
         </motion.div>
 
@@ -126,10 +126,10 @@ export default function page() {
             <b className='text-[#701516]'>1.7</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Ruby emphasizes <b>simplicity and productivity</b>. <br />
-            • Designed for <b>developer happiness</b>, not machine efficiency. <br />
-            • Ideal for <b>web development</b>, scripting, and automation. <br />
-            • Created by <b>Yukihiro &quot;Matz&quot; Matsumoto</b> in <b>1995</b>.
+            <b>•</b> Ruby emphasizes <b>simplicity and productivity</b>. <br />
+            <b>•</b> Designed for <b>developer happiness</b>, not machine efficiency. <br />
+            <b>•</b> Ideal for <b>web development</b>, scripting, and automation. <br />
+            <b>•</b> Created by <b>Yukihiro &quot;Matz&quot; Matsumoto</b> in <b>1995</b>.
           </div>
         </motion.div>
 

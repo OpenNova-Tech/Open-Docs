@@ -57,8 +57,8 @@ export default function page() {
             <b className='text-[#e34c26]'>1.2</b> Why It Matters ?
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Without HTML, browsers wouldn&apos;t know how to display text, images, or links. <br />
-            • It acts as the <b>skeleton</b> of every website — CSS gives it style, JavaScript gives it interactivity.
+            <b>•</b> Without HTML, browsers wouldn&apos;t know how to display text, images, or links. <br />
+            <b>•</b> It acts as the <b>skeleton</b> of every website — CSS gives it style, JavaScript gives it interactivity.
           </div>
         </motion.div>
 
@@ -75,9 +75,9 @@ export default function page() {
           <div className='max-w-3xl mx-auto text-gray-300'>
             Think of a house: 🔍 <br />
             <br />
-            • <b>HTML</b> = the walls, rooms, and layout (structure). <br />
-            • <b>CSS</b> = the paint, furniture, and decoration (style). <br />
-            • <b>JavaScript</b> = electricity, doors, and appliances (interactivity).
+            <b>•</b> <b>HTML</b> = the walls, rooms, and layout (structure). <br />
+            <b>•</b> <b>CSS</b> = the paint, furniture, and decoration (style). <br />
+            <b>•</b> <b>JavaScript</b> = electricity, doors, and appliances (interactivity).
           </div>
         </motion.div>
 
@@ -95,10 +95,10 @@ export default function page() {
             <CodeBlock language="html" filename="example.html" code={code1} /> <br />
             ✅ Here, <br />
             <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>&lt;!DOCTYPE html&gt;</span> → tells the browser this is an HTML5 document. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>&lt;html&gt;</span> → root element. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>&lt;head&gt;</span> → contains metadata (title, links, etc.). <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>&lt;body&gt;</span> → visible content of the page. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>&lt;!DOCTYPE html&gt;</span> → tells the browser this is an HTML5 document. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>&lt;html&gt;</span> → root element. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>&lt;head&gt;</span> → contains metadata (title, links, etc.). <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>&lt;body&gt;</span> → visible content of the page. <br />
           </div>
         </motion.div>
 
@@ -113,10 +113,10 @@ export default function page() {
             <b className='text-[#e34c26]'>1.5</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • HTML = HyperText Markup Language. <br />
-            • It structures web content using <b>elements</b> (tags). <br />
-            • Every website you visit is built with HTML. <br />
-            • HTML works with <b>CSS</b> (style) and <b>JavaScript</b> (functionality). 
+            <b>•</b> HTML = HyperText Markup Language. <br />
+            <b>•</b> It structures web content using <b>elements</b> (tags). <br />
+            <b>•</b> Every website you visit is built with HTML. <br />
+            <b>•</b> HTML works with <b>CSS</b> (style) and <b>JavaScript</b> (functionality). 
           </div>
         </motion.div>
 

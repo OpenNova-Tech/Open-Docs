@@ -73,9 +73,9 @@ int b = 20;`
             <b className='text-[#b07219]'>7.2</b> Case Sensitivity
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Java is <b>case-sensitive</b>. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>Main</span> ≠ <span className='bg-neutral-800 px-2 rounded-lg'>main</span> and <span className='bg-neutral-800 px-2 rounded-lg'>System</span> ≠ <span className='bg-neutral-800 px-2 rounded-lg'>system</span>. <br />
-            • Incorrect casing leads to compilation errors.
+            <b>•</b> Java is <b>case-sensitive</b>. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>Main</span> ≠ <span className='bg-neutral-800 px-2 rounded-lg'>main</span> and <span className='bg-neutral-800 px-2 rounded-lg'>System</span> ≠ <span className='bg-neutral-800 px-2 rounded-lg'>system</span>. <br />
+            <b>•</b> Incorrect casing leads to compilation errors.
           </div>
         </motion.div>
 
@@ -90,7 +90,7 @@ int b = 20;`
             <b className='text-[#b07219]'>7.3</b> Statements & Semicolons
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Each statement in Java ends with a <span className='bg-neutral-800 px-2 rounded-lg'>;</span>. <br />
+            <b>•</b> Each statement in Java ends with a <span className='bg-neutral-800 px-2 rounded-lg'>;</span>. <br />
             <br />
             <CodeBlock language="java" filename="java" code={code2} />
           </div>
@@ -107,8 +107,8 @@ int b = 20;`
             <b className='text-[#b07219]'>7.4</b> Code Blocks with Braces { }
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Blocks group multiple statements. <br />
-            • Used in classes, methods, loops, and conditionals. <br />
+            <b>•</b> Blocks group multiple statements. <br />
+            <b>•</b> Used in classes, methods, loops, and conditionals. <br />
             <br />
             <CodeBlock language="java" filename="java" code={code3} />
           </div>
@@ -125,11 +125,11 @@ int b = 20;`
             <b className='text-[#b07219]'>7.5</b> Identifiers & Naming Rules
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>Identifiers</b>: Names given to variables, classes, methods, etc. <br />
-            • Rules: <br />
-            &nbsp;&nbsp; • Must start with a letter, <span className='bg-neutral-800 px-2 rounded-lg'>$</span>, or <span className='bg-neutral-800 px-2 rounded-lg'>_</span>. <br />
-            &nbsp;&nbsp; • Cannot start with a digit. <br />
-            &nbsp;&nbsp; • Cannot use reserved keywords. <br />
+            <b>•</b> <b>Identifiers</b>: Names given to variables, classes, methods, etc. <br />
+            <b>•</b> Rules: <br />
+            &nbsp;&nbsp; <b>•</b> Must start with a letter, <span className='bg-neutral-800 px-2 rounded-lg'>$</span>, or <span className='bg-neutral-800 px-2 rounded-lg'>_</span>. <br />
+            &nbsp;&nbsp; <b>•</b> Cannot start with a digit. <br />
+            &nbsp;&nbsp; <b>•</b> Cannot use reserved keywords. <br />
             <br />
             <CodeBlock language="java" filename="java" code={code4} />
           </div>
@@ -146,7 +146,7 @@ int b = 20;`
             <b className='text-[#b07219]'>7.6</b> Keywords in Java
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Reserved words that cannot be used as identifiers. <br />
+            <b>•</b> Reserved words that cannot be used as identifiers. <br />
             <br />
             Examples: <span className='bg-neutral-800 px-2 rounded-lg'>class</span>, <span className='bg-neutral-800 px-2 rounded-lg'>public</span>, <span className='bg-neutral-800 px-2 rounded-lg'>static</span>, <span className='bg-neutral-800 px-2 rounded-lg'>void</span>, <span className='bg-neutral-800 px-2 rounded-lg'>if</span>, <span className='bg-neutral-800 px-2 rounded-lg'>while</span>, <span className='bg-neutral-800 px-2 rounded-lg'>return</span>.
           </div>
@@ -163,9 +163,9 @@ int b = 20;`
             <b className='text-[#b07219]'>7.7</b> Comments
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Single-line: <span className='bg-neutral-800 px-2 rounded-lg'>{'// comment'}</span> <br />
-            • Multi-line: <span className='bg-neutral-800 px-2 rounded-lg'>{'/* comment */'}</span>  <br />
-            • Documentation: <span className='bg-neutral-800 px-2 rounded-lg'>{'/** comment */'}</span>  <br />
+            <b>•</b> Single-line: <span className='bg-neutral-800 px-2 rounded-lg'>{'// comment'}</span> <br />
+            <b>•</b> Multi-line: <span className='bg-neutral-800 px-2 rounded-lg'>{'/* comment */'}</span>  <br />
+            <b>•</b> Documentation: <span className='bg-neutral-800 px-2 rounded-lg'>{'/** comment */'}</span>  <br />
             <br />
             <CodeBlock language="java" filename="java" code={code5} />
           </div>
@@ -182,8 +182,8 @@ int b = 20;`
             <b className='text-[#b07219]'>7.8</b> Whitespace
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Java ignores extra spaces, tabs, and newlines. <br />
-            • Improves readability but not mandatory for functionality. <br />
+            <b>•</b> Java ignores extra spaces, tabs, and newlines. <br />
+            <b>•</b> Improves readability but not mandatory for functionality. <br />
             <br />
             <CodeBlock language="java" filename="java" code={code6} />
           </div>
@@ -200,11 +200,11 @@ int b = 20;`
             <b className='text-[#b07219]'>7.9</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Java code <b>must</b> be inside a class. <br />
-            • The <span className='bg-neutral-800 px-2 rounded-lg'>main()</span> method is the <b>entry point</b>. <br />
-            • <b>Case-sensitive</b>, <b>semicolon-terminated</b>, and <b>block-structured</b>. <br />
-            • Follow naming conventions for identifiers. <br />
-            • Use comments and whitespace to make code clean.
+            <b>•</b> Java code <b>must</b> be inside a class. <br />
+            <b>•</b> The <span className='bg-neutral-800 px-2 rounded-lg'>main()</span> method is the <b>entry point</b>. <br />
+            <b>•</b> <b>Case-sensitive</b>, <b>semicolon-terminated</b>, and <b>block-structured</b>. <br />
+            <b>•</b> Follow naming conventions for identifiers. <br />
+            <b>•</b> Use comments and whitespace to make code clean.
           </div>
         </motion.div>
 

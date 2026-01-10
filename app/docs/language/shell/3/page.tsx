@@ -116,9 +116,9 @@ echo "Hello, World!"`
             <b className='text-[#89e051]'>3.5</b> Understanding the Script
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>#!/bin/bash</span> → Called a <b>shebang</b>, tells the system which interpreter to use (in this case, Bash). <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>#</span> → Anything after <span className='bg-neutral-800 px-2 rounded-lg'>#</span> is a <b>comment</b>, ignored by the shell. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>echo &apos;Hello, World!&apos;</span> → Prints text to the terminal.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>#!/bin/bash</span> → Called a <b>shebang</b>, tells the system which interpreter to use (in this case, Bash). <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>#</span> → Anything after <span className='bg-neutral-800 px-2 rounded-lg'>#</span> is a <b>comment</b>, ignored by the shell. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>echo &apos;Hello, World!&apos;</span> → Prints text to the terminal.
           </div>
         </motion.div>
 
@@ -133,11 +133,11 @@ echo "Hello, World!"`
             <b className='text-[#89e051]'>3.6</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • A shell script is just a <b>file with commands</b> executed in sequence. <br />
-            • Always start scripts with a <b>shebang</b> (<span className='bg-neutral-800 px-2 rounded-lg'>#!/bin/bash</span>). <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>chmod +x</span> to make scripts executable. <br />
-            • Run scripts with <span className='bg-neutral-800 px-2 rounded-lg'>./filename.sh</span>. <br />
-            • Even a simple &apos;Hello World&apos; teaches the basics of <b>comments, shebangs, and echo</b>.
+            <b>•</b> A shell script is just a <b>file with commands</b> executed in sequence. <br />
+            <b>•</b> Always start scripts with a <b>shebang</b> (<span className='bg-neutral-800 px-2 rounded-lg'>#!/bin/bash</span>). <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>chmod +x</span> to make scripts executable. <br />
+            <b>•</b> Run scripts with <span className='bg-neutral-800 px-2 rounded-lg'>./filename.sh</span>. <br />
+            <b>•</b> Even a simple &apos;Hello World&apos; teaches the basics of <b>comments, shebangs, and echo</b>.
           </div>
         </motion.div>
 

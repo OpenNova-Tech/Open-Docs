@@ -85,8 +85,8 @@ int x = (int) d; // double to int`
             <b className='text-[#b07219]'>8.1</b> What is a Variable?
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • A <b>variable</b> is a named memory location used to store values. <br />
-            • It must be declared with a <b>type</b> before use. <br />
+            <b>•</b> A <b>variable</b> is a named memory location used to store values. <br />
+            <b>•</b> It must be declared with a <b>type</b> before use. <br />
             <br />
             Example:
             <br />
@@ -128,7 +128,7 @@ int x = (int) d; // double to int`
             Java provides two categories of data types: <br />
             <br />
             <b>A. Primitive Data Types</b> <br />
-            • Built-in, simple types (8 total). <br />
+            <b>•</b> Built-in, simple types (8 total). <br />
             <br />
             <Table>
               <TableHeader>
@@ -150,7 +150,7 @@ int x = (int) d; // double to int`
             </Table>
             <br />
             <b>B. Non-Primitive Data Types</b> <br />
-            • More complex, created from classes. <br />
+            <b>•</b> More complex, created from classes. <br />
             <br />
             Examples: <span className='bg-neutral-800 px-2 rounded-lg'>String</span>, arrays, objects, user-defined classes. <br />
             <br />
@@ -169,11 +169,11 @@ int x = (int) d; // double to int`
             <b className='text-[#b07219]'>8.4</b> Variable Declaration and Initialization
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Declaration: <br />
+            <b>•</b> Declaration: <br />
             <CodeBlock language="java" filename="java" code={code4} /> <br />
-            • Initialization: <br />
+            <b>•</b> Initialization: <br />
             <CodeBlock language="java" filename="java" code={code5} /> <br />
-            • Combined: <br />
+            <b>•</b> Combined: <br />
             <CodeBlock language="java" filename="java" code={code6} />
           </div>
         </motion.div>
@@ -189,8 +189,8 @@ int x = (int) d; // double to int`
             <b className='text-[#b07219]'>8.5</b> Default Values
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Instance and static variables get default values. <br />
-            • Local variables <b>do not</b> (must be explicitly initialized). <br />
+            <b>•</b> Instance and static variables get default values. <br />
+            <b>•</b> Local variables <b>do not</b> (must be explicitly initialized). <br />
             <br />
             <Table>
               <TableHeader>
@@ -224,9 +224,9 @@ int x = (int) d; // double to int`
           <div className='max-w-3xl mx-auto text-gray-300'>
             Java supports <b>type conversion</b> between data types: <br />
             <br />
-            • <b>Implicit Casting (Widening)</b>: Smaller → Larger type.
+            <b>•</b> <b>Implicit Casting (Widening)</b>: Smaller → Larger type.
             <CodeBlock language="java" filename="java" code={code7} /> <br />
-            • <b>Explicit Casting (Narrowing)</b>: Larger → Smaller type.
+            <b>•</b> <b>Explicit Casting (Narrowing)</b>: Larger → Smaller type.
             <CodeBlock language="java" filename="java" code={code8} />
           </div>
         </motion.div>
@@ -242,11 +242,11 @@ int x = (int) d; // double to int`
             <b className='text-[#b07219]'>8.7</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Java variables must have a <b>declared type</b>. <br />
-            • Two categories: <b>Primitive</b> (8 types) and <b>Non-Primitive</b> (Strings, arrays, objects). <br />
-            • Three variable types: <b>local, instance, static</b>. <br />
-            • Default values apply only to instance/static variables, not locals. <br />
-            • Type casting allows conversion between compatible data types.
+            <b>•</b> Java variables must have a <b>declared type</b>. <br />
+            <b>•</b> Two categories: <b>Primitive</b> (8 types) and <b>Non-Primitive</b> (Strings, arrays, objects). <br />
+            <b>•</b> Three variable types: <b>local, instance, static</b>. <br />
+            <b>•</b> Default values apply only to instance/static variables, not locals. <br />
+            <b>•</b> Type casting allows conversion between compatible data types.
           </div>
         </motion.div>
 

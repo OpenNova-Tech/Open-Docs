@@ -40,10 +40,10 @@ export default function Page() {
             <br />
             <br />
             By isolating work, branches allow: <br />
-            • Safe experimentation <br />
-            • Independent feature development <br />
-            • Collaboration without stepping on each other&apos;s changes <br />
-            • Testing ideas without affecting main code
+            <b>•</b> Safe experimentation <br />
+            <b>•</b> Independent feature development <br />
+            <b>•</b> Collaboration without stepping on each other&apos;s changes <br />
+            <b>•</b> Testing ideas without affecting main code
           </div>
         </motion.div>
 
@@ -59,16 +59,16 @@ export default function Page() {
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             A branch is essentially: <br />
-            • A <b>lightweight pointer</b> to a commit. <br />
-            • Stored as a simple file under <span className='bg-neutral-800 px-2 rounded-lg'>.git/refs/heads/</span>. <br />
+            <b>•</b> A <b>lightweight pointer</b> to a commit. <br />
+            <b>•</b> Stored as a simple file under <span className='bg-neutral-800 px-2 rounded-lg'>.git/refs/heads/</span>. <br />
             <br />
             When you create a branch: <br />
-            • Git doesn&apos;t copy your project. <br />
-            • It just creates a new label pointing to the current commit. <br />
+            <b>•</b> Git doesn&apos;t copy your project. <br />
+            <b>•</b> It just creates a new label pointing to the current commit. <br />
             <br />
             When you make a commit on that branch: <br />
-            • The branch pointer moves forward. <br />
-            • Other branches remain unchanged. <br />
+            <b>•</b> The branch pointer moves forward. <br />
+            <b>•</b> Other branches remain unchanged. <br />
             <br />
             This makes branching extremely fast and cheap compared to older VCS tools.
           </div>
@@ -148,10 +148,10 @@ export default function Page() {
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             Branches make collaboration smooth because: <br />
-            • Each developer can work in their own isolated branch. <br />
-            • No conflicts until merging. <br />
-            • Teams can run CI/CD pipelines for individual branches. <br />
-            • Risky experiments do not affect production code. <br />
+            <b>•</b> Each developer can work in their own isolated branch. <br />
+            <b>•</b> No conflicts until merging. <br />
+            <b>•</b> Teams can run CI/CD pipelines for individual branches. <br />
+            <b>•</b> Risky experiments do not affect production code. <br />
             This is one reason Git is dominant in modern workflows.
           </div>
         </motion.div>
@@ -167,11 +167,11 @@ export default function Page() {
             <b className='text-[#F05032]'>{num(6)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • A <b>branch</b> is a lightweight pointer to a commit, enabling isolated work. <br />
-            • Branches allow teams to work in parallel without interfering with each other. <br />
-            • Common types include feature, bugfix, release, and hotfix branches. <br />
-            • Git branches are extremely fast and flexible because they are just references, not copies. <br />
-            • HEAD determines which branch you&apos;re currently on and moves as you commit.
+            <b>•</b> A <b>branch</b> is a lightweight pointer to a commit, enabling isolated work. <br />
+            <b>•</b> Branches allow teams to work in parallel without interfering with each other. <br />
+            <b>•</b> Common types include feature, bugfix, release, and hotfix branches. <br />
+            <b>•</b> Git branches are extremely fast and flexible because they are just references, not copies. <br />
+            <b>•</b> HEAD determines which branch you&apos;re currently on and moves as you commit.
           </div>
         </motion.div>
 

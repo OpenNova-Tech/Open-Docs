@@ -29,10 +29,10 @@ export default function page() {
             <b className='text-[#b07219]'>1.1</b> What is Java ?
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Java is a <b>class-based, object-oriented programming language</b>. <br />
-            • It is designed to be <b>platform-independent</b>: &quot;Write Once, Run Anywhere&quot; (WORA). <br />
-            • Java programs compile into <b>bytecode</b>, which runs on the <b>Java Virtual Machine (JVM)</b>. <br />
-            • Developed by <b>James Gosling at Sun Microsystems in 1995</b> (later acquired by Oracle).
+            <b>•</b> Java is a <b>class-based, object-oriented programming language</b>. <br />
+            <b>•</b> It is designed to be <b>platform-independent</b>: &quot;Write Once, Run Anywhere&quot; (WORA). <br />
+            <b>•</b> Java programs compile into <b>bytecode</b>, which runs on the <b>Java Virtual Machine (JVM)</b>. <br />
+            <b>•</b> Developed by <b>James Gosling at Sun Microsystems in 1995</b> (later acquired by Oracle).
           </div>
         </motion.div>
 
@@ -47,11 +47,11 @@ export default function page() {
             <b className='text-[#b07219]'>1.2</b> Why Java ?
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>Cross-platform</b> → Runs on Windows, macOS, Linux, Android, etc. <br />
-            • <b>Object-Oriented</b> → Follows principles like encapsulation, inheritance, polymorphism. <br />
-            • <b>Secure</b> → Strong memory management, runtime checks, and a security manager. <br />
-            • <b>Scalable & Robust</b> → Used for small apps to enterprise-level systems. <br />
-            • <b>Huge Ecosystem</b> → Rich libraries, frameworks, and strong community support.
+            <b>•</b> <b>Cross-platform</b> → Runs on Windows, macOS, Linux, Android, etc. <br />
+            <b>•</b> <b>Object-Oriented</b> → Follows principles like encapsulation, inheritance, polymorphism. <br />
+            <b>•</b> <b>Secure</b> → Strong memory management, runtime checks, and a security manager. <br />
+            <b>•</b> <b>Scalable & Robust</b> → Used for small apps to enterprise-level systems. <br />
+            <b>•</b> <b>Huge Ecosystem</b> → Rich libraries, frameworks, and strong community support.
           </div>
         </motion.div>
 
@@ -66,12 +66,12 @@ export default function page() {
             <b className='text-[#b07219]'>1.3</b> Where is Java used?
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>Desktop Applications</b> → Swing, JavaFX <br />
-            • <b>Web Applications</b> → JSP, Servlets, Spring <br />
-            • <b>Enterprise Applications</b> → Banking, ERP systems, enterprise-level backends <br />
-            • <b>Mobile Applications</b> → Android (Java was the primary language before Kotlin) <br />
-            • <b>Big Data & Cloud</b> → Hadoop, Spark, microservices <br />
-            • <b>Game Development</b> → Popular engines and libraries
+            <b>•</b> <b>Desktop Applications</b> → Swing, JavaFX <br />
+            <b>•</b> <b>Web Applications</b> → JSP, Servlets, Spring <br />
+            <b>•</b> <b>Enterprise Applications</b> → Banking, ERP systems, enterprise-level backends <br />
+            <b>•</b> <b>Mobile Applications</b> → Android (Java was the primary language before Kotlin) <br />
+            <b>•</b> <b>Big Data & Cloud</b> → Hadoop, Spark, microservices <br />
+            <b>•</b> <b>Game Development</b> → Popular engines and libraries
           </div>
         </motion.div>
 
@@ -86,9 +86,9 @@ export default function page() {
             <b className='text-[#b07219]'>1.4</b> Java Architecture (Quick Overview)
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>JDK (Java Development Kit)</b>: Tools for developing Java apps. <br />
-            • <b>JRE (Java Runtime Environment)</b>: Libraries + JVM to run Java apps. <br />
-            • <b>JVM (Java Virtual Machine)</b>: Executes bytecode, provides platform independence.
+            <b>•</b> <b>JDK (Java Development Kit)</b>: Tools for developing Java apps. <br />
+            <b>•</b> <b>JRE (Java Runtime Environment)</b>: Libraries + JVM to run Java apps. <br />
+            <b>•</b> <b>JVM (Java Virtual Machine)</b>: Executes bytecode, provides platform independence.
           </div>
         </motion.div>
 
@@ -103,10 +103,10 @@ export default function page() {
             <b className='text-[#b07219]'>1.5</b> Real-World Examples
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <b>Banking Systems</b> → Secure, large-scale applications (ICICI, SBI use Java stacks). <br />
-            • <b>E-commerce Platforms</b> → Amazon, Flipkart backend services. <br />
-            • <b>Android Apps</b> → A majority of legacy apps are built in Java. <br />
-            • <b>Enterprise Software</b> → ERP, HRMS, CRM solutions.
+            <b>•</b> <b>Banking Systems</b> → Secure, large-scale applications (ICICI, SBI use Java stacks). <br />
+            <b>•</b> <b>E-commerce Platforms</b> → Amazon, Flipkart backend services. <br />
+            <b>•</b> <b>Android Apps</b> → A majority of legacy apps are built in Java. <br />
+            <b>•</b> <b>Enterprise Software</b> → ERP, HRMS, CRM solutions.
           </div>
         </motion.div>
 
@@ -121,10 +121,10 @@ export default function page() {
             <b className='text-[#b07219]'>1.6</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Java is <b>object-oriented, platform-independent, and secure</b>. <br />
-            • Runs on JVM, enabling <b>&quot;Write Once, Run Anywhere&quot;</b>. <br />
-            • Has <b>wide applications</b> — desktop, web, mobile, enterprise, big data. <br />
-            • Strong <b>ecosystem and community</b> support makes it one of the most reliable programming languages.
+            <b>•</b> Java is <b>object-oriented, platform-independent, and secure</b>. <br />
+            <b>•</b> Runs on JVM, enabling <b>&quot;Write Once, Run Anywhere&quot;</b>. <br />
+            <b>•</b> Has <b>wide applications</b> — desktop, web, mobile, enterprise, big data. <br />
+            <b>•</b> Strong <b>ecosystem and community</b> support makes it one of the most reliable programming languages.
           </div>
         </motion.div>
 

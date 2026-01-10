@@ -126,10 +126,10 @@ export default function Page() {
             <b className='text-[#F05032]'>{num(5)}</b> Best Practices
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Delete feature branches after merging <br />
-            • Never delete shared branches like <span className='bg-neutral-800 px-2 rounded-lg'>main</span> or <span className='bg-neutral-800 px-2 rounded-lg'>develop</span> <br />
-            • Clean up stale branches regularly <br /> 
-            • Coordinate before deleting someone else&apos;s branch  
+            <b>•</b> Delete feature branches after merging <br />
+            <b>•</b> Never delete shared branches like <span className='bg-neutral-800 px-2 rounded-lg'>main</span> or <span className='bg-neutral-800 px-2 rounded-lg'>develop</span> <br />
+            <b>•</b> Clean up stale branches regularly <br /> 
+            <b>•</b> Coordinate before deleting someone else&apos;s branch  
           </div>
         </motion.div>
 
@@ -144,11 +144,11 @@ export default function Page() {
             <b className='text-[#F05032]'>{num(6)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>git branch -d</span> for safe local deletion. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>git branch -D</span> to force delete unmerged branches. <br />
-            • Remote branches are deleted with <span className='bg-neutral-800 px-2 rounded-lg'>git push origin --delete</span>. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>git fetch --prune</span> cleans stale remote references. <br />
-            • Regular cleanup keeps repositories readable and manageable.
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>git branch -d</span> for safe local deletion. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>git branch -D</span> to force delete unmerged branches. <br />
+            <b>•</b> Remote branches are deleted with <span className='bg-neutral-800 px-2 rounded-lg'>git push origin --delete</span>. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>git fetch --prune</span> cleans stale remote references. <br />
+            <b>•</b> Regular cleanup keeps repositories readable and manageable.
           </div>
         </motion.div>
       </div>

@@ -148,9 +148,9 @@ git config --global core.editor "vim"           # Vim`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             Git stores configurations in text files: <br />
-            • <b>System level</b>: <span className='bg-neutral-800 px-2 rounded-lg'>/etc/gitconfig</span> <br />
-            • <b>Global level</b>: <span className='bg-neutral-800 px-2 rounded-lg'>~/.gitconfig</span> or <span className='bg-neutral-800 px-2 rounded-lg'>C:\Users\&lt;username&gt;\.gitconfig</span> <br />
-            • <b>Local level</b>: <span className='bg-neutral-800 px-2 rounded-lg'>.git/config</span> inside the repository <br />
+            <b>•</b> <b>System level</b>: <span className='bg-neutral-800 px-2 rounded-lg'>/etc/gitconfig</span> <br />
+            <b>•</b> <b>Global level</b>: <span className='bg-neutral-800 px-2 rounded-lg'>~/.gitconfig</span> or <span className='bg-neutral-800 px-2 rounded-lg'>C:\Users\&lt;username&gt;\.gitconfig</span> <br />
+            <b>•</b> <b>Local level</b>: <span className='bg-neutral-800 px-2 rounded-lg'>.git/config</span> inside the repository <br />
             <br />
             Open <span className='bg-neutral-800 px-2 rounded-lg'>.gitconfig</span> for manual editing:
             <CodeBlock language="bash" filename="" code={code9} />

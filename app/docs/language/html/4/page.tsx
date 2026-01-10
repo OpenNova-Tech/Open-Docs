@@ -67,8 +67,8 @@ export default function page() {
 						<br />
 						📸 <b>How It Looks in a Browser</b> <br />
 						<br />
-						• A <b>big heading</b>: “Hello, World!” <br />
-						• A <b>paragraph</b> below it: “Welcome to my very first webpage.”
+						<b>•</b> A <b>big heading</b>: “Hello, World!” <br />
+						<b>•</b> A <b>paragraph</b> below it: “Welcome to my very first webpage.”
 					</div>
 				</motion.div>
 
@@ -83,9 +83,9 @@ export default function page() {
 						<b className='text-[#e34c26]'>4.3</b> Try It Yourself
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• Save the code in a file named <span className='bg-neutral-800 px-2 rounded-lg'>&lt;hello.html&gt;</span>. <br />
-						• Open it in your browser by double-clicking it. <br />
-						• 🎉 You&apos;ve just built your <b>first webpage</b>!
+						<b>•</b> Save the code in a file named <span className='bg-neutral-800 px-2 rounded-lg'>&lt;hello.html&gt;</span>. <br />
+						<b>•</b> Open it in your browser by double-clicking it. <br />
+						<b>•</b> 🎉 You&apos;ve just built your <b>first webpage</b>!
 					</div>
 				</motion.div>
 
@@ -100,10 +100,10 @@ export default function page() {
 						<b className='text-[#e34c26]'>4.4</b> Key Takeaways
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• A “Hello World” page is the <b>simplest valid HTML document</b>. <br />
-						• It shows the <b>basic structure</b>: doctype, head, body. <br />
-						• <span className='bg-neutral-800 px-2 rounded-lg'>&lt;h1&gt;</span> is for headings, <span className='bg-neutral-800 px-2 rounded-lg'>&lt;p&gt;</span> is for text. <br />
-						• You only need a <b>text editor</b> + <b>browser</b> to start coding HTML.
+						<b>•</b> A “Hello World” page is the <b>simplest valid HTML document</b>. <br />
+						<b>•</b> It shows the <b>basic structure</b>: doctype, head, body. <br />
+						<b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>&lt;h1&gt;</span> is for headings, <span className='bg-neutral-800 px-2 rounded-lg'>&lt;p&gt;</span> is for text. <br />
+						<b>•</b> You only need a <b>text editor</b> + <b>browser</b> to start coding HTML.
 					</div>
 				</motion.div>
 

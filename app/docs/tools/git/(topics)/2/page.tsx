@@ -50,8 +50,8 @@ sudo apt install git`
             2. Click Download for Windows. <br />
             3. Run the downloaded <span className='bg-neutral-800 px-2 rounded-lg'>.exe</span> file. <br />
             4. During Installation: <br />
-            &nbsp;&nbsp; • Select &quot;Use Git from the command line and also from 3rd-party software&quot;. <br />
-            &nbsp;&nbsp; • Use default options unless you have specific preferences. <br />
+            &nbsp;&nbsp; <b>•</b> Select &quot;Use Git from the command line and also from 3rd-party software&quot;. <br />
+            &nbsp;&nbsp; <b>•</b> Use default options unless you have specific preferences. <br />
             <br />
             Once done, open Git Bash from the Start Menu <br />
             <CodeBlock language='bash' filename='bash' code={code1} /> <br />

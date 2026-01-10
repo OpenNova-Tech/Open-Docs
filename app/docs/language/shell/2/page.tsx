@@ -47,9 +47,9 @@ export default function page() {
 						<b className='text-[#89e051]'>2.2</b> Early Shells
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• <b>Thompson Shell (sh)</b> – Introduced in <b>1971</b>, the very first Unix shell, created by Ken Thompson. <br />
-						• <b>Mashey Shell</b> – Focused on adding features for programming-like constructs. <br />
-						• <b>Bourne Shell (sh)</b> – Released in <b>1979</b> by Stephen Bourne at Bell Labs. It became the standard shell for Unix systems and introduced powerful scripting features.
+						<b>•</b> <b>Thompson Shell (sh)</b> – Introduced in <b>1971</b>, the very first Unix shell, created by Ken Thompson. <br />
+						<b>•</b> <b>Mashey Shell</b> – Focused on adding features for programming-like constructs. <br />
+						<b>•</b> <b>Bourne Shell (sh)</b> – Released in <b>1979</b> by Stephen Bourne at Bell Labs. It became the standard shell for Unix systems and introduced powerful scripting features.
 					</div>
 				</motion.div>
 
@@ -64,10 +64,10 @@ export default function page() {
 						<b className='text-[#89e051]'>2.3</b> Evolution of Shells
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• <b>C Shell (csh)</b> – Introduced in the late 1970s by Bill Joy; syntax similar to the C programming language, popular among programmers. <br />
-						• <b>Korn Shell (ksh)</b> – Developed in the early 1980s by David Korn at AT&T; combined features of Bourne and C shells. <br />
-						• <b>Bash (Bourne Again Shell) </b> – Released in 1989 as part of the GNU Project. It is now the <b>default shell</b> on most Linux systems and macOS. <br />
-						• <b>Z Shell (zsh)</b> – Known for advanced features like auto-completion, themes, and plugins, widely used by developers today.
+						<b>•</b> <b>C Shell (csh)</b> – Introduced in the late 1970s by Bill Joy; syntax similar to the C programming language, popular among programmers. <br />
+						<b>•</b> <b>Korn Shell (ksh)</b> – Developed in the early 1980s by David Korn at AT&T; combined features of Bourne and C shells. <br />
+						<b>•</b> <b>Bash (Bourne Again Shell) </b> – Released in 1989 as part of the GNU Project. It is now the <b>default shell</b> on most Linux systems and macOS. <br />
+						<b>•</b> <b>Z Shell (zsh)</b> – Known for advanced features like auto-completion, themes, and plugins, widely used by developers today.
 					</div>
 				</motion.div>
 
@@ -82,10 +82,10 @@ export default function page() {
 						<b className='text-[#89e051]'>2.4</b> Why Bash became popular
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• Fully compatible with Bourne Shell (sh). <br />
-						• Added powerful scripting improvements. <br />
-						• Became the default on Linux and macOS. <br />
-						• Huge community support and documentation.
+						<b>•</b> Fully compatible with Bourne Shell (sh). <br />
+						<b>•</b> Added powerful scripting improvements. <br />
+						<b>•</b> Became the default on Linux and macOS. <br />
+						<b>•</b> Huge community support and documentation.
 					</div>
 				</motion.div>
 
@@ -100,11 +100,11 @@ export default function page() {
 						<b className='text-[#89e051]'>2.5</b> Key Takeaways
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• The <b>first shell</b> was the <b>Thompson Shell</b> in 1971. <br />
-						• <b>Bourne Shell</b> set the standard for scripting and became widely adopted. <br />
-						• <b>C Shell, Korn Shell, and Bash</b> further expanded functionality. <br />
-						• <b>Bash</b> is the most widely used today, with <b>Zsh</b> being popular for developers. <br />
-						• Shell history reflects the evolution of <b>Unix and Linux systems</b>.
+						<b>•</b> The <b>first shell</b> was the <b>Thompson Shell</b> in 1971. <br />
+						<b>•</b> <b>Bourne Shell</b> set the standard for scripting and became widely adopted. <br />
+						<b>•</b> <b>C Shell, Korn Shell, and Bash</b> further expanded functionality. <br />
+						<b>•</b> <b>Bash</b> is the most widely used today, with <b>Zsh</b> being popular for developers. <br />
+						<b>•</b> Shell history reflects the evolution of <b>Unix and Linux systems</b>.
 					</div>
 				</motion.div>
 

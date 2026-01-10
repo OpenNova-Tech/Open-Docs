@@ -153,8 +153,8 @@ Constructor Called`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>a. Default Constructor</b> <br />
-            • Provided by Java <b>if you don&apos;t define any</b>. <br />
-            • Initializes variables with <b>default values</b> (<span className='bg-neutral-800 px-2 rounded-lg'>0</span>, <span className='bg-neutral-800 px-2 rounded-lg'>null</span>, <span className='bg-neutral-800 px-2 rounded-lg'>false</span>). <br />
+            <b>•</b> Provided by Java <b>if you don&apos;t define any</b>. <br />
+            <b>•</b> Initializes variables with <b>default values</b> (<span className='bg-neutral-800 px-2 rounded-lg'>0</span>, <span className='bg-neutral-800 px-2 rounded-lg'>null</span>, <span className='bg-neutral-800 px-2 rounded-lg'>false</span>). <br />
             <br />
             <CodeBlock language="java" filename="java" code={code3} /> <br />
             <b>b. No-Argument Constructor</b> <br />
@@ -235,11 +235,11 @@ Constructor Called`
             <b className='text-[#b07219]'>{num(6)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Constructor name = Class name, no return type. <br />
-            • Automatically called when using <span className='bg-neutral-800 px-2 rounded-lg'>new</span>. <br />
-            • Types: Default, No-arg, Parameterized. <br />
-            • Supports <b>overloading</b> and <b>chaining</b> via <span className='bg-neutral-800 px-2 rounded-lg'>this()</span>. <br />
-            • Initialization Blocks run before constructors.
+            <b>•</b> Constructor name = Class name, no return type. <br />
+            <b>•</b> Automatically called when using <span className='bg-neutral-800 px-2 rounded-lg'>new</span>. <br />
+            <b>•</b> Types: Default, No-arg, Parameterized. <br />
+            <b>•</b> Supports <b>overloading</b> and <b>chaining</b> via <span className='bg-neutral-800 px-2 rounded-lg'>this()</span>. <br />
+            <b>•</b> Initialization Blocks run before constructors.
           </div>
         </motion.div>
       </div>

@@ -226,8 +226,8 @@ Contains 'Java': true`
             <b className='text-[#b07219]'>{num(6)}</b> Comparing Strings
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>==</span> → compares <b>memory reference</b> <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>equals()</span> → compares <b>actual value</b> <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>==</span> → compares <b>memory reference</b> <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>equals()</span> → compares <b>actual value</b> <br />
             <br />
             Example:
             <CodeBlock language="java" filename="java" code={code10} />
@@ -264,8 +264,8 @@ Contains 'Java': true`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             Since strings are immutable: <br />
-            • Frequent concatenation creates <b>many temporary objects</b>. <br />
-            • For high-performance operations, use <b>StringBuilder</b> or <b>StringBuffer instead</b>.
+            <b>•</b> Frequent concatenation creates <b>many temporary objects</b>. <br />
+            <b>•</b> For high-performance operations, use <b>StringBuilder</b> or <b>StringBuffer instead</b>.
           </div>
         </motion.div>
 
@@ -297,10 +297,10 @@ Contains 'Java': true`
             <b className='text-[#b07219]'>{num(10)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Strings are <b>immutable</b> objects stored in the <b>String Pool</b>. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>equals()</span> for <b>value comparison</b>, not <span className='bg-neutral-800 px-2 rounded-lg'>==</span>. <br />
-            • Avoid frequent concatenation — use <b>StringBuilder</b> for better performance. <br />
-            • The <span className='bg-neutral-800 px-2 rounded-lg'>String</span> class provides a rich set of methods for manipulation, comparison, and formatting.
+            <b>•</b> Strings are <b>immutable</b> objects stored in the <b>String Pool</b>. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>equals()</span> for <b>value comparison</b>, not <span className='bg-neutral-800 px-2 rounded-lg'>==</span>. <br />
+            <b>•</b> Avoid frequent concatenation — use <b>StringBuilder</b> for better performance. <br />
+            <b>•</b> The <span className='bg-neutral-800 px-2 rounded-lg'>String</span> class provides a rich set of methods for manipulation, comparison, and formatting.
           </div>
         </motion.div>
       </div>

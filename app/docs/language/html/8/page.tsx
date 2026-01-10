@@ -61,8 +61,8 @@ export default function page() {
 						<b className='text-[#e34c26]'>7.1</b> Unordered List (&lt;ul&gt;)
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• Used when order doesn&apos;t matter. <br />
-						• Default bullets: • <br />
+						<b>•</b> Used when order doesn&apos;t matter. <br />
+						<b>•</b> Default bullets: <b>•</b> <br />
 						<br />
 						<b>Example:</b> <br />
 						<br />
@@ -70,9 +70,9 @@ export default function page() {
 						<br />
 						<b>✅ Output: </b> <br />
 						<br />
-						• Apples <br />
-						• Bananas <br />
-						• Oranges
+						<b>•</b> Apples <br />
+						<b>•</b> Bananas <br />
+						<b>•</b> Oranges
 					</div>
 				</motion.div>
 
@@ -87,8 +87,8 @@ export default function page() {
 						<b className='text-[#e34c26]'>7.2</b> Ordered List (&lt;ol&gt;)
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• Used when sequence/order matters. <br />
-						• Default numbers: 1, 2, 3… <br />
+						<b>•</b> Used when sequence/order matters. <br />
+						<b>•</b> Default numbers: 1, 2, 3… <br />
 						<br />
 						<b>Example:</b> <br />
 						<br />
@@ -113,7 +113,7 @@ export default function page() {
 						<b className='text-[#e34c26]'>7.3</b> Description List (&lt;dl&gt;)
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• Used for terms and their descriptions. <br />
+						<b>•</b> Used for terms and their descriptions. <br />
 						<br />
 						<b>Example:</b> <br />
 						<br />
@@ -147,10 +147,10 @@ export default function page() {
 						<CodeBlock language="html" filename="html" code={code4} /> <br />
 						<b>✅ Output: </b> <br />
 						<br />
-						• Fruits <br />
-						&nbsp;&nbsp;&nbsp;• Apple <br />
-						&nbsp;&nbsp;&nbsp;• Mango <br />
-						• Vegetables
+						<b>•</b> Fruits <br />
+						&nbsp;&nbsp;&nbsp;<b>•</b> Apple <br />
+						&nbsp;&nbsp;&nbsp;<b>•</b> Mango <br />
+						<b>•</b> Vegetables
 					</div>
 				</motion.div>
 
@@ -165,17 +165,17 @@ export default function page() {
 						<b className='text-[#e34c26]'>7.5</b> Key Takeaways
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						•  <span className='bg-neutral-800 px-2 rounded-lg'>&lt;ul&gt;</span> stands for unordered list. <br />
-						•  <span className='bg-neutral-800 px-2 rounded-lg'>&lt;li&gt;</span> means list item. <br />
-						• Useful for menus, features, or collections. <br />
-						•  <span className='bg-neutral-800 px-2 rounded-lg'>&lt;ol&gt;</span> = ordered list. <br />
-						• Can customize numbers using <span className='bg-neutral-800 px-2 rounded-lg'>type</span> (<span className='bg-neutral-800 px-2 rounded-lg'>1</span>, <span className='bg-neutral-800 px-2 rounded-lg'>A</span>, <span className='bg-neutral-800 px-2 rounded-lg'>a</span>, <span className='bg-neutral-800 px-2 rounded-lg'>I</span>, <span className='bg-neutral-800 px-2 rounded-lg'>i</span>). <br />
-						• Example:  <span className='bg-neutral-800 px-2 rounded-lg'>&lt;ol type=&apos;A&apos;&gt;</span> → A, B, C. <br />
-						•	 <span className='bg-neutral-800 px-2 rounded-lg'>&lt;dl&gt;</span> = description list. <br />
-						•  <span className='bg-neutral-800 px-2 rounded-lg'>&lt;dt&gt;</span> = description term. <br />
-						•  <span className='bg-neutral-800 px-2 rounded-lg'>&lt;dd&gt;</span> = description details. <br />
-						•	Nesting helps create menus & hierarchies. <br />
-						• Be careful not to nest too deep (bad for readability).
+						<b>•</b>  <span className='bg-neutral-800 px-2 rounded-lg'>&lt;ul&gt;</span> stands for unordered list. <br />
+						<b>•</b>  <span className='bg-neutral-800 px-2 rounded-lg'>&lt;li&gt;</span> means list item. <br />
+						<b>•</b> Useful for menus, features, or collections. <br />
+						<b>•</b>  <span className='bg-neutral-800 px-2 rounded-lg'>&lt;ol&gt;</span> = ordered list. <br />
+						<b>•</b> Can customize numbers using <span className='bg-neutral-800 px-2 rounded-lg'>type</span> (<span className='bg-neutral-800 px-2 rounded-lg'>1</span>, <span className='bg-neutral-800 px-2 rounded-lg'>A</span>, <span className='bg-neutral-800 px-2 rounded-lg'>a</span>, <span className='bg-neutral-800 px-2 rounded-lg'>I</span>, <span className='bg-neutral-800 px-2 rounded-lg'>i</span>). <br />
+						<b>•</b> Example:  <span className='bg-neutral-800 px-2 rounded-lg'>&lt;ol type=&apos;A&apos;&gt;</span> → A, B, C. <br />
+						<b>•</b>	 <span className='bg-neutral-800 px-2 rounded-lg'>&lt;dl&gt;</span> = description list. <br />
+						<b>•</b>  <span className='bg-neutral-800 px-2 rounded-lg'>&lt;dt&gt;</span> = description term. <br />
+						<b>•</b>  <span className='bg-neutral-800 px-2 rounded-lg'>&lt;dd&gt;</span> = description details. <br />
+						<b>•</b>	Nesting helps create menus & hierarchies. <br />
+						<b>•</b> Be careful not to nest too deep (bad for readability).
 					</div>
 				</motion.div>
 

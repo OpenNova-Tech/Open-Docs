@@ -80,8 +80,8 @@ git init`
           <div className='max-w-3xl mx-auto text-gray-300'>
             A <b>repository (repo)</b> is a workspace where Git keeps track of your project&apos;s entire history. <br />
             There are two main types: <br />
-            • <b>Local Repository</b>: Exists on your system and contains your project files along with the .git directory. <br />
-            • <b>Remote Repository</b>: Hosted on a platform like GitHub, GitLab, or Bitbucket for collaboration and backup. <br />
+            <b>•</b> <b>Local Repository</b>: Exists on your system and contains your project files along with the .git directory. <br />
+            <b>•</b> <b>Remote Repository</b>: Hosted on a platform like GitHub, GitLab, or Bitbucket for collaboration and backup. <br />
             <br />
             You can think of it like this: <br />
             &quot;The folder you work in&quot; = Working Directory <br />
@@ -107,8 +107,8 @@ git init`
             If you have an existing project folder:
             <CodeBlock language="bash" filename="" code={code1} />
             This command: <br />
-            • Creates a new <span className='bg-neutral-800 px-2 rounded-lg'>.git</span> folder (where all Git data lives) <br />
-            • Starts tracking the directory as a new repository <br />
+            <b>•</b> Creates a new <span className='bg-neutral-800 px-2 rounded-lg'>.git</span> folder (where all Git data lives) <br />
+            <b>•</b> Starts tracking the directory as a new repository <br />
             <br />
             Example:
             <CodeBlock language="bash" filename="" code={code2} /> <br />
@@ -121,9 +121,9 @@ git init`
             Example:
             <CodeBlock language="bash" filename="" code={code5} /> <br />
             This will: <br />
-            • Download the entire history of the repository <br />
-            • Create a new folder with the project files <br />
-            • Automatically link it to the remote origin
+            <b>•</b> Download the entire history of the repository <br />
+            <b>•</b> Create a new folder with the project files <br />
+            <b>•</b> Automatically link it to the remote origin
           </div>
         </motion.div>
 
@@ -141,9 +141,9 @@ git init`
             After initialization or cloning:
             <CodeBlock language="bash" filename="" code={code6} /> <br />
             This shows: <br />
-            • Whether the current folder is under Git control <br />
-            • Which branch you&apos;re on <br />
-            • Which files are tracked or untracked <br />
+            <b>•</b> Whether the current folder is under Git control <br />
+            <b>•</b> Which branch you&apos;re on <br />
+            <b>•</b> Which files are tracked or untracked <br />
             <br />
             You can also check the repository details:
             <CodeBlock language="bash" filename="" code={code7} /> <br />
@@ -241,11 +241,11 @@ git init`
             <b className='text-[#F05032]'>{num(7)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • A <b>Git repository</b> is the foundation of version control — it tracks all your project changes. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>git init</span> to start fresh or <span className='bg-neutral-800 px-2 rounded-lg'>git clone</span> to copy an existing project. <br />
-            • Avoid re-initializing repositories or committing unwanted files. <br />
-            • Always confirm your remote and branch setup before pushing code. <br />
-            • Once a repository is set up, you can move on to <b>staging changes</b> — the next step in Git&apos;s workflow.
+            <b>•</b> A <b>Git repository</b> is the foundation of version control — it tracks all your project changes. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>git init</span> to start fresh or <span className='bg-neutral-800 px-2 rounded-lg'>git clone</span> to copy an existing project. <br />
+            <b>•</b> Avoid re-initializing repositories or committing unwanted files. <br />
+            <b>•</b> Always confirm your remote and branch setup before pushing code. <br />
+            <b>•</b> Once a repository is set up, you can move on to <b>staging changes</b> — the next step in Git&apos;s workflow.
           </div>
         </motion.div>
       </div>

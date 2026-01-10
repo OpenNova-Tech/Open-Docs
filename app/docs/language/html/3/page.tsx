@@ -45,8 +45,8 @@ export default function page() {
 					<div className='max-w-3xl mx-auto text-gray-300'>
 						To write HTML, you only need: <br />
 						<br />
-						• A <b>text editor</b> (e.g., VS Code, Sublime, Notepad). <br />
-						• A <b>web browser</b> (e.g., Chrome, Firefox, Safari). <br />
+						<b>•</b> A <b>text editor</b> (e.g., VS Code, Sublime, Notepad). <br />
+						<b>•</b> A <b>web browser</b> (e.g., Chrome, Firefox, Safari). <br />
 						Save your file with the <span className='bg-neutral-800 px-2 rounded-lg'>.html</span> extension (like <span className='bg-neutral-800 px-2 rounded-lg'>index.html</span>), then open it in a browser. 
 					</div>
 				</motion.div>
@@ -84,9 +84,9 @@ export default function page() {
 						<b className='text-[#e34c26]'>3.3</b> Pro Tips
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• Always include <span className='bg-neutral-800 px-2 rounded-lg'>&lt;!DOCTYPE html&gt;</span> at the top for modern standards. <br />
-						• Use <b>UTF-8 encoding</b> (<span className='bg-neutral-800 px-2 rounded-lg'>&lt;meta charset=&quot;UTF-8&quot;&gt;</span>) to support all languages. <br />
-						• Keep only one <span className='bg-neutral-800 px-2 rounded-lg'>&lt;h1&gt;</span> per page for SEO and accessibility.
+						<b>•</b> Always include <span className='bg-neutral-800 px-2 rounded-lg'>&lt;!DOCTYPE html&gt;</span> at the top for modern standards. <br />
+						<b>•</b> Use <b>UTF-8 encoding</b> (<span className='bg-neutral-800 px-2 rounded-lg'>&lt;meta charset=&quot;UTF-8&quot;&gt;</span>) to support all languages. <br />
+						<b>•</b> Keep only one <span className='bg-neutral-800 px-2 rounded-lg'>&lt;h1&gt;</span> per page for SEO and accessibility.
 					</div>
 				</motion.div>
 
@@ -101,10 +101,10 @@ export default function page() {
 						<b className='text-[#e34c26]'>3.4</b> Key Takeaways
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• Every HTML page follows a <b>head + body structure</b>. <br />
-						• <span className='bg-neutral-800 px-2 rounded-lg'>&lt;!DOCTYPE html&gt;</span> = tells the browser it&apos;s HTML5. <br />
-						• <span className='bg-neutral-800 px-2 rounded-lg'>&lt;head&gt;</span>= information about the page, <span className='bg-neutral-800 px-2 rounded-lg'>&lt;body&gt;</span> = visible content. <br />
-						• Save files with .html and open in a browser to run them.
+						<b>•</b> Every HTML page follows a <b>head + body structure</b>. <br />
+						<b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>&lt;!DOCTYPE html&gt;</span> = tells the browser it&apos;s HTML5. <br />
+						<b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>&lt;head&gt;</span>= information about the page, <span className='bg-neutral-800 px-2 rounded-lg'>&lt;body&gt;</span> = visible content. <br />
+						<b>•</b> Save files with .html and open in a browser to run them.
 					</div>
 				</motion.div>
 

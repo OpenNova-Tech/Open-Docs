@@ -187,9 +187,9 @@ System.out.println(l1.getClass() == l2.getClass()); // true`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             Wildcards make generics more flexible: <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>?</span> — unknown type <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>? extends T</span> — upper bounded (subtypes of T) <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>? super T</span> — lower bounded (supertypes of T) <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>?</span> — unknown type <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>? extends T</span> — upper bounded (subtypes of T) <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>? super T</span> — lower bounded (supertypes of T) <br />
             <br />
             Example:
             <CodeBlock language="java" filename="java" code={code6} />
@@ -225,12 +225,12 @@ System.out.println(l1.getClass() == l2.getClass()); // true`
             <b className='text-[#b07219]'>{num(9)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Generics provide <b>type safety</b> and <b>reusability</b>. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>T</span>, <span className='bg-neutral-800 px-2 rounded-lg'>E</span>, <span className='bg-neutral-800 px-2 rounded-lg'>K</span>, <span className='bg-neutral-800 px-2 rounded-lg'>V</span> are common type parameter names. <br />
-            • <b>Generic methods</b> use <span className='bg-neutral-800 px-2 rounded-lg'>&lt;T&gt;</span> before the return type. <br />
-            • <b>Bounded types</b> restrict allowed type parameters. <br />
-            • <b>Wildcards</b> (<span className='bg-neutral-800 px-2 rounded-lg'>?</span>) make generics flexible. <br />
-            • <b>Type erasure</b> means generics exist only at compile time.
+            <b>•</b> Generics provide <b>type safety</b> and <b>reusability</b>. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>T</span>, <span className='bg-neutral-800 px-2 rounded-lg'>E</span>, <span className='bg-neutral-800 px-2 rounded-lg'>K</span>, <span className='bg-neutral-800 px-2 rounded-lg'>V</span> are common type parameter names. <br />
+            <b>•</b> <b>Generic methods</b> use <span className='bg-neutral-800 px-2 rounded-lg'>&lt;T&gt;</span> before the return type. <br />
+            <b>•</b> <b>Bounded types</b> restrict allowed type parameters. <br />
+            <b>•</b> <b>Wildcards</b> (<span className='bg-neutral-800 px-2 rounded-lg'>?</span>) make generics flexible. <br />
+            <b>•</b> <b>Type erasure</b> means generics exist only at compile time.
           </div>
         </motion.div>
       </div>

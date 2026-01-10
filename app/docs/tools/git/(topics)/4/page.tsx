@@ -164,9 +164,9 @@ export default function Page() {
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             Inside <span className='bg-neutral-800 px-2 rounded-lg'>objects/</span>, Git stores everything as <b>compressed snapshots</b>: <br />
-            • <b>Blobs</b> → file content <br />
-            • <b>Trees</b> → directory structure <br />
-            • <b>Commits</b> → references to trees and parent commits <br />
+            <b>•</b> <b>Blobs</b> → file content <br />
+            <b>•</b> <b>Trees</b> → directory structure <br />
+            <b>•</b> <b>Commits</b> → references to trees and parent commits <br />
             <br />
             Each object is identified by a <b>SHA-1 hash</b> (a unique ID). <br />
             Example object name: <span className='bg-neutral-800 px-2 rounded-lg'>b1/3f9c4d1e2a8d...</span> <br />
@@ -187,9 +187,9 @@ export default function Page() {
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             References (or <b>refs</b>) act like bookmarks to specific commits: <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>refs/heads/main</span> → current branch&apos;s latest commit <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>refs/tags/v1.0</span> → commit tagged as version 1.0 <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>refs/remotes/origin/main</span> → last fetched commit from the remote repo <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>refs/heads/main</span> → current branch&apos;s latest commit <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>refs/tags/v1.0</span> → commit tagged as version 1.0 <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>refs/remotes/origin/main</span> → last fetched commit from the remote repo <br />
             <br />
             You can inspect them manually: <br />
             <CodeBlock language="bash" filename="" code={code5} /> <br />
@@ -211,8 +211,8 @@ export default function Page() {
             <span className='bg-neutral-800 px-2 rounded-lg'>hooks/</span> contains example scripts for automation. <br />
             <br />
             For instance: <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>pre-commit</span> → Runs before a commit <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>post-merge</span> → Runs after merging branches <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>pre-commit</span> → Runs before a commit <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>post-merge</span> → Runs after merging branches <br />
             <br />
             To activate one, remove the <span className='bg-neutral-800 px-2 rounded-lg'>.sample</span> extension and make it executable:
             <CodeBlock language="bash" filename="" code={code6} />
@@ -248,11 +248,11 @@ export default function Page() {
             <b className='text-[#F05032]'>{num(9)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>.git/</span> is <b>the repository&apos;s brain</b> — it holds all history, metadata, and configuration. <br />
-            • Deleting or moving it disconnects your project from version control. <br />
-            • The <span className='bg-neutral-800 px-2 rounded-lg'>objects/</span> and <span className='bg-neutral-800 px-2 rounded-lg'>refs/</span> directories power Git&apos;s entire commit and branch system. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>HEAD</span> shows which branch you&apos;re on; <span className='bg-neutral-800 px-2 rounded-lg'>index</span> tracks what&apos;s staged. <br />
-            • Understanding <span className='bg-neutral-800 px-2 rounded-lg'>.git</span> helps you debug, recover commits, and use advanced Git commands confidently.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>.git/</span> is <b>the repository&apos;s brain</b> — it holds all history, metadata, and configuration. <br />
+            <b>•</b> Deleting or moving it disconnects your project from version control. <br />
+            <b>•</b> The <span className='bg-neutral-800 px-2 rounded-lg'>objects/</span> and <span className='bg-neutral-800 px-2 rounded-lg'>refs/</span> directories power Git&apos;s entire commit and branch system. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>HEAD</span> shows which branch you&apos;re on; <span className='bg-neutral-800 px-2 rounded-lg'>index</span> tracks what&apos;s staged. <br />
+            <b>•</b> Understanding <span className='bg-neutral-800 px-2 rounded-lg'>.git</span> helps you debug, recover commits, and use advanced Git commands confidently.
           </div>
         </motion.div>
       </div>

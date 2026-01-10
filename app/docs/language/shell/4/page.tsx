@@ -63,8 +63,8 @@ rm file.txt`
             <b className='text-[#89e051]'>4.2</b> Starting the Terminal
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • On <b>Linux/macOS</b>: Search for Terminal in applications or use <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl+Alt+T</span> (Linux). <br />
-            • On <b>Windows</b>: Use  a terminal emulator like Git Bash / WSL.
+            <b>•</b> On <b>Linux/macOS</b>: Search for Terminal in applications or use <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl+Alt+T</span> (Linux). <br />
+            <b>•</b> On <b>Windows</b>: Use  a terminal emulator like Git Bash / WSL.
           </div>
         </motion.div>
 
@@ -95,13 +95,13 @@ rm file.txt`
             <b className='text-[#89e051]'>4.4</b> Working with Files & Directories
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Creating a directory:
+            <b>•</b> Creating a directory:
             <CodeBlock language="shell" filename="bash" code={code2} />
             <br />
-            • Creating a file:
+            <b>•</b> Creating a file:
             <CodeBlock language="shell" filename="bash" code={code3} />
             <br />
-            • Copy, move, or delete:
+            <b>•</b> Copy, move, or delete:
             <CodeBlock language="shell" filename="bash" code={code4} />
           </div>
         </motion.div>
@@ -117,10 +117,10 @@ rm file.txt`
             <b className='text-[#89e051]'>4.5</b> Running Programs & Scripts
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Run a command (example):
+            <b>•</b> Run a command (example):
             <CodeBlock language="shell" filename="bash" code={code5} />
             <br />
-            • Run a shell script:
+            <b>•</b> Run a shell script:
             <CodeBlock language="shell" filename="bash" code={code6} />
           </div>
         </motion.div>
@@ -138,8 +138,8 @@ rm file.txt`
           <div className='max-w-3xl mx-auto text-gray-300'>
             Sometimes a command keeps running (like <span className='bg-neutral-800 px-2 rounded-lg'>ping</span> or <span className='bg-neutral-800 px-2 rounded-lg'>top</span>). To stop it: <br />
             <br />
-            • Press <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + C</span> → Interrupts the running process. <br />
-            • Press <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + Z</span> → Suspends the process.
+            <b>•</b> Press <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + C</span> → Interrupts the running process. <br />
+            <b>•</b> Press <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + Z</span> → Suspends the process.
           </div>
         </motion.div>
 
@@ -154,11 +154,11 @@ rm file.txt`
             <b className='text-[#89e051]'>4.7</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • The <b>terminal</b> is your main gateway to interact with the shell. <br />
-            • Use commands like <span className='bg-neutral-800 px-2 rounded-lg'>pwd</span>, <span className='bg-neutral-800 px-2 rounded-lg'>ls</span>, and <span className='bg-neutral-800 px-2 rounded-lg'>cd</span> to <b>navigate</b>. <br />
-            • Manage files with <span className='bg-neutral-800 px-2 rounded-lg'>mkdir</span>, <span className='bg-neutral-800 px-2 rounded-lg'>touch</span>, <span className='bg-neutral-800 px-2 rounded-lg'>cp</span>, <span className='bg-neutral-800 px-2 rounded-lg'>mv</span>, <span className='bg-neutral-800 px-2 rounded-lg'>rm</span>. <br />
-            • <b>Execute scripts</b> directly from the terminal. <br />
-            • Learn <b>keyboard shortcuts</b> like <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + C</span> and <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + Z</span> to control running processes.
+            <b>•</b> The <b>terminal</b> is your main gateway to interact with the shell. <br />
+            <b>•</b> Use commands like <span className='bg-neutral-800 px-2 rounded-lg'>pwd</span>, <span className='bg-neutral-800 px-2 rounded-lg'>ls</span>, and <span className='bg-neutral-800 px-2 rounded-lg'>cd</span> to <b>navigate</b>. <br />
+            <b>•</b> Manage files with <span className='bg-neutral-800 px-2 rounded-lg'>mkdir</span>, <span className='bg-neutral-800 px-2 rounded-lg'>touch</span>, <span className='bg-neutral-800 px-2 rounded-lg'>cp</span>, <span className='bg-neutral-800 px-2 rounded-lg'>mv</span>, <span className='bg-neutral-800 px-2 rounded-lg'>rm</span>. <br />
+            <b>•</b> <b>Execute scripts</b> directly from the terminal. <br />
+            <b>•</b> Learn <b>keyboard shortcuts</b> like <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + C</span> and <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + Z</span> to control running processes.
           </div>
         </motion.div>
 

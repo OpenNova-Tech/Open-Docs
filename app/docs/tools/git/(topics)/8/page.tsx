@@ -68,9 +68,9 @@ Date:   Wed Nov 5 20:13 2025
             A commit represents a saved state of your project&apos;s files. <br />
             <br />
             Each commit stores: <br />
-            • The <b>changes</b> (diffs) made to files. <br />
-            • <b>Metadata</b>: author, timestamp, commit message. <br />
-            • A unique <b>SHA-1 hash</b> to identify it. <br />
+            <b>•</b> The <b>changes</b> (diffs) made to files. <br />
+            <b>•</b> <b>Metadata</b>: author, timestamp, commit message. <br />
+            <b>•</b> A unique <b>SHA-1 hash</b> to identify it. <br />
             This makes Git&apos;s history traceable and tamper-proof. <br />
             <br />
             Example:
@@ -97,9 +97,9 @@ Date:   Wed Nov 5 20:13 2025
             🔹<b>Example of a Good Commit:</b> <br />
             <CodeBlock language="bash" filename="" code={code3} /> <br />
             ✍️ <b>Commit Message Tips:</b> <br />
-            • Use <b>present tense</b> (&quot;Add feature&quot; not &quot;Added feature&quot;). <br />
-            • Keep the <b>subject line under 50 characters</b>. <br />
-            • Use the body (optional) for explanation: <br />
+            <b>•</b> Use <b>present tense</b> (&quot;Add feature&quot; not &quot;Added feature&quot;). <br />
+            <b>•</b> Keep the <b>subject line under 50 characters</b>. <br />
+            <b>•</b> Use the body (optional) for explanation: <br />
             <br />
             <CodeBlock language="bash" filename="" code={code4} /> <br />
             Then type:
@@ -185,8 +185,8 @@ Date:   Wed Nov 5 20:13 2025
             In Git, <b>HEAD</b> is a pointer to your current commit — the &quot;tip&quot; of the branch you&apos;re working on. <br />
             <br />
             When you make a new commit: <br />
-            • Git moves HEAD to that new commit. <br />
-            • The previous commit becomes its parent. <br />
+            <b>•</b> Git moves HEAD to that new commit. <br />
+            <b>•</b> The previous commit becomes its parent. <br />
             <br />
             You can check this relationship with:
             <CodeBlock language="bash" filename="" code={code13} />
@@ -223,11 +223,11 @@ Date:   Wed Nov 5 20:13 2025
             <b className='text-[#F05032]'>{num(8)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • A <b>commit</b> records staged changes into Git&apos;s permanent history. <br />
-            • Use clear, concise <b>commit messages</b> that explain purpose and context. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>git commit --m</span> for simple commits, or <span className='bg-neutral-800 px-2 rounded-lg'>git commit</span> for detailed ones. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>git log</span> to review history and <span className='bg-neutral-800 px-2 rounded-lg'>git commit --amend</span> to fix the latest commit. <br />
-            • Every commit should represent one logical step in your project&apos;s journey.
+            <b>•</b> A <b>commit</b> records staged changes into Git&apos;s permanent history. <br />
+            <b>•</b> Use clear, concise <b>commit messages</b> that explain purpose and context. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>git commit --m</span> for simple commits, or <span className='bg-neutral-800 px-2 rounded-lg'>git commit</span> for detailed ones. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>git log</span> to review history and <span className='bg-neutral-800 px-2 rounded-lg'>git commit --amend</span> to fix the latest commit. <br />
+            <b>•</b> Every commit should represent one logical step in your project&apos;s journey.
           </div>
         </motion.div>
       </div>

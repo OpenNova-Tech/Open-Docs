@@ -46,10 +46,10 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
     {
       header: 'Remote',
       topics: [
-        { id: 19, title: 'Connecting to Github' },
-        { id: 20, title: 'Syncing with Remote' },
-        { id: 21, title: 'Cloning' },
-        { id: 22, title: 'Collaboration Workflow' },
+        { id: 18, title: 'Connecting to Github' },
+        { id: 19, title: 'Syncing with Remote' },
+        { id: 20, title: 'Cloning' },
+        { id: 21, title: 'Collaboration Workflow' },
       ],
     },
     {

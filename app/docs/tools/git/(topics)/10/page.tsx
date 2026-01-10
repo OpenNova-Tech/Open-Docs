@@ -78,16 +78,16 @@ Thumbs.db
             A <span className='bg-neutral-800 px-2 rounded-lg'>.gitignore</span> file tells Git <b>which files or directories should be completely ignored</b>. <br />
             <br />
             Git will: <br />
-            • Not track them <br />
-            • Not show them in <span className='bg-neutral-800 px-2 rounded-lg'>git status</span> <br />
-            • Not include them in commits <br />
+            <b>•</b> Not track them <br />
+            <b>•</b> Not show them in <span className='bg-neutral-800 px-2 rounded-lg'>git status</span> <br />
+            <b>•</b> Not include them in commits <br />
             <br />
             Examples of files usually ignored: <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>node_modules/</span> <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>*.log</span> <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>.env</span> <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>dist/</span> <br />
-            • Temporary IDE files like <span className='bg-neutral-800 px-2 rounded-lg'>.vscode/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>.idea/</span>
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>node_modules/</span> <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>*.log</span> <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>.env</span> <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>dist/</span> <br />
+            <b>•</b> Temporary IDE files like <span className='bg-neutral-800 px-2 rounded-lg'>.vscode/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>.idea/</span>
           </div>
         </motion.div>
 
@@ -212,11 +212,11 @@ Thumbs.db
             <b className='text-[#F05032]'>{num(7)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>.gitignore</span> tells Git which files or folders to ignore, preventing them from being tracked. <br />
-            • It supports powerful patterns: extensions, names, directories, wildcard rules, and exceptions. <br />
-            • To stop tracking an already-committed file, use <span className='bg-neutral-800 px-2 rounded-lg'>git rm --cached</span>. <br />
-            • You can set up a <b>global</b> ignore file for system-wide patterns. <br />
-            • Using standard ignore templates helps maintain clean repos and avoid accidental commits of sensitive or unnecessary files.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>.gitignore</span> tells Git which files or folders to ignore, preventing them from being tracked. <br />
+            <b>•</b> It supports powerful patterns: extensions, names, directories, wildcard rules, and exceptions. <br />
+            <b>•</b> To stop tracking an already-committed file, use <span className='bg-neutral-800 px-2 rounded-lg'>git rm --cached</span>. <br />
+            <b>•</b> You can set up a <b>global</b> ignore file for system-wide patterns. <br />
+            <b>•</b> Using standard ignore templates helps maintain clean repos and avoid accidental commits of sensitive or unnecessary files.
           </div>
         </motion.div>
       </div>

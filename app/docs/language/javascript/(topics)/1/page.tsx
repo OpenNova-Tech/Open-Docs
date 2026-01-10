@@ -65,10 +65,10 @@ export default function page() {
             <b className='text-[#F1E05A]'>1.2</b> Why learn JavaScript ?
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Runs directly in your browser — no setup needed. <br />
-            • Used by all major websites (YouTube, Facebook, Amazon). <br />
-            • Works on both frontend (browser) and backend (with Node.js). <br />
-            • Beginner-friendly and one of the most in-demand languages.
+            <b>•</b> Runs directly in your browser — no setup needed. <br />
+            <b>•</b> Used by all major websites (YouTube, Facebook, Amazon). <br />
+            <b>•</b> Works on both frontend (browser) and backend (with Node.js). <br />
+            <b>•</b> Beginner-friendly and one of the most in-demand languages.
           </div>
         </motion.div>
 
@@ -83,11 +83,11 @@ export default function page() {
             <b className='text-[#F1E05A]'>1.3</b>  What can JavaScript do ?
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Show alerts and pop-ups. <br />
-            • Validate user input in forms. <br />
-            • Change content dynamically without reloading the page. <br />
-            • Add animations and effects. <br />
-            • Build games, mobile apps, and full web applications.
+            <b>•</b> Show alerts and pop-ups. <br />
+            <b>•</b> Validate user input in forms. <br />
+            <b>•</b> Change content dynamically without reloading the page. <br />
+            <b>•</b> Add animations and effects. <br />
+            <b>•</b> Build games, mobile apps, and full web applications.
           </div>
         </motion.div>
 
@@ -119,9 +119,9 @@ export default function page() {
             <b className='text-[#F1E05A]'>1.5</b> How JavaScript fits in Web Development
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • HTML → Structure (headings, paragraphs, buttons). <br />
-            • CSS → Style (colors, fonts, layouts). <br />
-            • JavaScript → Logic & Interactivity (clicks, animations, dynamic updates). <br />
+            <b>•</b> HTML → Structure (headings, paragraphs, buttons). <br />
+            <b>•</b> CSS → Style (colors, fonts, layouts). <br />
+            <b>•</b> JavaScript → Logic & Interactivity (clicks, animations, dynamic updates). <br />
             <br />
             Without JavaScript, web pages would just be static posters. With JavaScript, they become interactive apps. 🚀
           </div>
@@ -138,9 +138,9 @@ export default function page() {
             <b className='text-[#F1E05A]'>1.6</b> Fun Facts
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • JavaScript was created in just 10 days in 1995 by Brendan Eich. <br />
-            • It was originally called LiveScript, but renamed to JavaScript. <br />
-            • Despite the name, it has nothing to do with Java!
+            <b>•</b> JavaScript was created in just 10 days in 1995 by Brendan Eich. <br />
+            <b>•</b> It was originally called LiveScript, but renamed to JavaScript. <br />
+            <b>•</b> Despite the name, it has nothing to do with Java!
           </div>
         </motion.div>
 

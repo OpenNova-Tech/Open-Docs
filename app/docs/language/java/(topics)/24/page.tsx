@@ -81,7 +81,7 @@ System.out.println(index); // 2`
             Example: <br />
             <br />
             <CodeBlock language="java" filename="java" code={code1} /> <br />
-            • Works for all primitive types and objects that implement <span className='bg-neutral-800 px-2 rounded-lg'> Comparable</span>.
+            <b>•</b> Works for all primitive types and objects that implement <span className='bg-neutral-800 px-2 rounded-lg'> Comparable</span>.
           </div>
         </motion.div>
 
@@ -100,7 +100,7 @@ System.out.println(index); // 2`
             Example: <br />
             <br />
             <CodeBlock language="java" filename="java" code={code2} /> <br />
-            • You can specify a new length — shorter or longer than the original.
+            <b>•</b> You can specify a new length — shorter or longer than the original.
           </div>
         </motion.div>
 
@@ -165,7 +165,7 @@ System.out.println(index); // 2`
           <div className='max-w-3xl mx-auto text-gray-300'>
             Searches for an element in a <b>sorted array</b> and returns its index.
             <CodeBlock language="java" filename="java" code={code6} />
-            • Returns a negative value if the element isn&apos;t found.
+            <b>•</b> Returns a negative value if the element isn&apos;t found.
           </div>
         </motion.div>
 
@@ -196,12 +196,12 @@ System.out.println(index); // 2`
             <b className='text-[#b07219]'>{num(9)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>Arrays.sort()</span> sorts efficiently. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>Arrays.copyOf()</span> duplicates arrays easily. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>Arrays.equals()</span> and <span className='bg-neutral-800 px-2 rounded-lg'>Arrays.fill()</span> simplify comparisons and initialization. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>Arrays.toString()</span> is useful for printing. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>Arrays.binarySearch()</span> requires a sorted array. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>Arrays.stream()</span> enables modern Java Stream API usage.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>Arrays.sort()</span> sorts efficiently. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>Arrays.copyOf()</span> duplicates arrays easily. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>Arrays.equals()</span> and <span className='bg-neutral-800 px-2 rounded-lg'>Arrays.fill()</span> simplify comparisons and initialization. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>Arrays.toString()</span> is useful for printing. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>Arrays.binarySearch()</span> requires a sorted array. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>Arrays.stream()</span> enables modern Java Stream API usage.
           </div>
         </motion.div>
       </div>

@@ -56,8 +56,8 @@ export default function page() {
 						<b className='text-[#e34c26]'>2.1</b> Origins
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• <b>1991</b> → HTML was invented by <b>Tim Berners-Lee</b>, a physicist at CERN. <br />
-						• It was created to help scientists share documents easily over the internet.
+						<b>•</b> <b>1991</b> → HTML was invented by <b>Tim Berners-Lee</b>, a physicist at CERN. <br />
+						<b>•</b> It was created to help scientists share documents easily over the internet.
 					</div>
 				</motion.div>
 
@@ -72,13 +72,13 @@ export default function page() {
 						<b className='text-[#e34c26]'>2.2</b> Evolution Timeline
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• <b>1991</b> → First proposal of HTML (with just 18 tags). <br />
-						• <b>1995</b> → <b>HTML 2.0</b> (official specification, more standard). <br />
-						• <b>1997</b> → <b>HTML 3.2</b> (tables, applets, scripting). <br />
-						• <b>1999</b> → <b>HTML 4.01</b> (forms, accessibility, CSS support). <br />
-						• <b>2008</b> → <b>HTML5 draft</b> released by <b>WHATWG</b>. <br />
-						• <b>2014</b> → <b>HTML5 official standard</b> (multimedia, APIs, semantic tags). <br />
-						• <b>Today</b> → Living standard maintained by <b>WHATWG</b> (not versioned, continuously updated).
+						<b>•</b> <b>1991</b> → First proposal of HTML (with just 18 tags). <br />
+						<b>•</b> <b>1995</b> → <b>HTML 2.0</b> (official specification, more standard). <br />
+						<b>•</b> <b>1997</b> → <b>HTML 3.2</b> (tables, applets, scripting). <br />
+						<b>•</b> <b>1999</b> → <b>HTML 4.01</b> (forms, accessibility, CSS support). <br />
+						<b>•</b> <b>2008</b> → <b>HTML5 draft</b> released by <b>WHATWG</b>. <br />
+						<b>•</b> <b>2014</b> → <b>HTML5 official standard</b> (multimedia, APIs, semantic tags). <br />
+						<b>•</b> <b>Today</b> → Living standard maintained by <b>WHATWG</b> (not versioned, continuously updated).
 					</div>
 				</motion.div>
 
@@ -93,8 +93,8 @@ export default function page() {
 						<b className='text-[#e34c26]'>2.3</b> Key Organizations
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• <b>W3C (World Wide Web Consortium)</b> → Early standardization body. <br />
-						• <b>WHATWG (Web Hypertext Application Technology Working Group)</b> → Now maintains HTML as a “living standard.”
+						<b>•</b> <b>W3C (World Wide Web Consortium)</b> → Early standardization body. <br />
+						<b>•</b> <b>WHATWG (Web Hypertext Application Technology Working Group)</b> → Now maintains HTML as a “living standard.”
 					</div>
 				</motion.div>
 
@@ -127,10 +127,10 @@ export default function page() {
 						<b className='text-[#e34c26]'>2.5</b> Key Takeaways
 					</h2>
 					<div className='max-w-3xl mx-auto text-gray-300'>
-						• HTML was invented in <b>1991 by Tim Berners-Lee</b>. <br />
-						• It evolved through versions: <b>2.0 → 3.2 → 4.01 → 5.0 → Living Standard</b>. <br />
-						• Now maintained by <b>WHATWG</b> instead of W3C. <br />
-						• HTML5 introduced <b>semantic elements, multimedia, and APIs</b>.
+						<b>•</b> HTML was invented in <b>1991 by Tim Berners-Lee</b>. <br />
+						<b>•</b> It evolved through versions: <b>2.0 → 3.2 → 4.01 → 5.0 → Living Standard</b>. <br />
+						<b>•</b> Now maintained by <b>WHATWG</b> instead of W3C. <br />
+						<b>•</b> HTML5 introduced <b>semantic elements, multimedia, and APIs</b>.
 					</div>
 				</motion.div>
 

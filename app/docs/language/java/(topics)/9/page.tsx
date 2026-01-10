@@ -360,11 +360,11 @@ System.out.println(s instanceof String); // true`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             Determines the <b>order of evaluation</b>. <br />
-            • Highest: <span className='bg-neutral-800 px-2 rounded-lg'>()</span>, <span className='bg-neutral-800 px-2 rounded-lg'>[]</span>, <span className='bg-neutral-800 px-2 rounded-lg'>.</span> <br />
-            • Next: <span className='bg-neutral-800 px-2 rounded-lg'>++</span>, <span className='bg-neutral-800 px-2 rounded-lg'>--</span> <br />
-            • Multiplicative: <span className='bg-neutral-800 px-2 rounded-lg'>*</span>, <span className='bg-neutral-800 px-2 rounded-lg'>/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>%</span> <br />
-            • Additive: <span className='bg-neutral-800 px-2 rounded-lg'>+</span>, <span className='bg-neutral-800 px-2 rounded-lg'>-</span> <br />
-            • Lowest: <span className='bg-neutral-800 px-2 rounded-lg'>=</span>, <span className='bg-neutral-800 px-2 rounded-lg'>+=</span>, <span className='bg-neutral-800 px-2 rounded-lg'>-=</span> <br />
+            <b>•</b> Highest: <span className='bg-neutral-800 px-2 rounded-lg'>()</span>, <span className='bg-neutral-800 px-2 rounded-lg'>[]</span>, <span className='bg-neutral-800 px-2 rounded-lg'>.</span> <br />
+            <b>•</b> Next: <span className='bg-neutral-800 px-2 rounded-lg'>++</span>, <span className='bg-neutral-800 px-2 rounded-lg'>--</span> <br />
+            <b>•</b> Multiplicative: <span className='bg-neutral-800 px-2 rounded-lg'>*</span>, <span className='bg-neutral-800 px-2 rounded-lg'>/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>%</span> <br />
+            <b>•</b> Additive: <span className='bg-neutral-800 px-2 rounded-lg'>+</span>, <span className='bg-neutral-800 px-2 rounded-lg'>-</span> <br />
+            <b>•</b> Lowest: <span className='bg-neutral-800 px-2 rounded-lg'>=</span>, <span className='bg-neutral-800 px-2 rounded-lg'>+=</span>, <span className='bg-neutral-800 px-2 rounded-lg'>-=</span> <br />
             <br />
             <CodeBlock language="java" filename="java" code={code7} />
           </div>
@@ -381,9 +381,9 @@ System.out.println(s instanceof String); // true`
             <b className='text-[#b07219]'>9.10</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Java operators include arithmetic, relational, logical, assignment, bitwise, unary, ternary, and <span className='bg-neutral-800 px-2 rounded-lg'>instanceof</span>. <br />
-            • Precedence rules decide the order of execution. <br />
-            • Use parentheses <span className='bg-neutral-800 px-2 rounded-lg'>()</span> to make expressions more readable.
+            <b>•</b> Java operators include arithmetic, relational, logical, assignment, bitwise, unary, ternary, and <span className='bg-neutral-800 px-2 rounded-lg'>instanceof</span>. <br />
+            <b>•</b> Precedence rules decide the order of execution. <br />
+            <b>•</b> Use parentheses <span className='bg-neutral-800 px-2 rounded-lg'>()</span> to make expressions more readable.
           </div>
         </motion.div>
 

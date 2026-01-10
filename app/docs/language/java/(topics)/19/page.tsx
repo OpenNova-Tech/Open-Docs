@@ -216,8 +216,8 @@ Student: Student`
             <b className='text-[#b07219]'>{num(4)}</b> Key Rules
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>this()</span> and <span className='bg-neutral-800 px-2 rounded-lg'>super()</span> must be the first statement in a constructor. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>this</span> and <span className='bg-neutral-800 px-2 rounded-lg'>super</span> cannot be used in static methods, since static methods don&apos;t belong to any instance.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>this()</span> and <span className='bg-neutral-800 px-2 rounded-lg'>super()</span> must be the first statement in a constructor. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>this</span> and <span className='bg-neutral-800 px-2 rounded-lg'>super</span> cannot be used in static methods, since static methods don&apos;t belong to any instance.
           </div>
         </motion.div>
 
@@ -249,10 +249,10 @@ Student: Student`
             <b className='text-[#b07219]'>{num(6)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • <span className='bg-neutral-800 px-2 rounded-lg'>this</span> → refers to <b>current object</b>. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>super</span> → refers to <b>parent object</b>. <br />
-            • Both help in <b>constructor chaining</b>, <b>method overriding</b>, and <b>variable access</b>. <br />
-            • Strengthens the link between <b>child and parent</b> classes in OOP design.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>this</span> → refers to <b>current object</b>. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>super</span> → refers to <b>parent object</b>. <br />
+            <b>•</b> Both help in <b>constructor chaining</b>, <b>method overriding</b>, and <b>variable access</b>. <br />
+            <b>•</b> Strengthens the link between <b>child and parent</b> classes in OOP design.
           </div>
         </motion.div>
       </div>

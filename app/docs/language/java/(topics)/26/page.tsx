@@ -213,23 +213,23 @@ System.out.println("After removal: " + languages);`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>HashSet</b> <br />
-            • Based on <b>HashMap</b> internally — elements are stored as keys with a dummy value. <br />
-            • <b>No order is maintained</b>. <br />
-            • <b>Allows one</b> <span className='bg-neutral-800 px-2 rounded-lg'>null</span> <b>element</b>. <br />
-            • <b>Constant-time performance (O(1))</b> for add, remove, and contains (on average). <br />
+            <b>•</b> Based on <b>HashMap</b> internally — elements are stored as keys with a dummy value. <br />
+            <b>•</b> <b>No order is maintained</b>. <br />
+            <b>•</b> <b>Allows one</b> <span className='bg-neutral-800 px-2 rounded-lg'>null</span> <b>element</b>. <br />
+            <b>•</b> <b>Constant-time performance (O(1))</b> for add, remove, and contains (on average). <br />
             <br />
             <b>Example</b>:
             <CodeBlock language="java" filename="java" code={code2} /> <br />
             <b>LinkedHashSet</b> <br />
-            • Subclass of <span className='bg-neutral-800 px-2 rounded-lg'>HashSet</span> that <b>maintains insertion order</b>. <br />
-            • Slightly slower than <span className='bg-neutral-800 px-2 rounded-lg'>HashSet</span> due to the linked list used internally. <br />
+            <b>•</b> Subclass of <span className='bg-neutral-800 px-2 rounded-lg'>HashSet</span> that <b>maintains insertion order</b>. <br />
+            <b>•</b> Slightly slower than <span className='bg-neutral-800 px-2 rounded-lg'>HashSet</span> due to the linked list used internally. <br />
             <br />
             <b>Example</b>:
             <CodeBlock language="java" filename="java" code={code3} /> <br />
             <b>TreeSet</b> <br />
-            • Implements the <b>SortedSet</b> interface. <br />
-            • Stores elements in <b>ascending order</b> by default using <b>Red-Black Tree</b> internally. <br />
-            • Does <b>not allow</b> <span className='bg-neutral-800 px-2 rounded-lg'>null</span> <b>elements</b> (throws <span className='bg-neutral-800 px-2 rounded-lg'>NullPointerException</span>). <br />
+            <b>•</b> Implements the <b>SortedSet</b> interface. <br />
+            <b>•</b> Stores elements in <b>ascending order</b> by default using <b>Red-Black Tree</b> internally. <br />
+            <b>•</b> Does <b>not allow</b> <span className='bg-neutral-800 px-2 rounded-lg'>null</span> <b>elements</b> (throws <span className='bg-neutral-800 px-2 rounded-lg'>NullPointerException</span>). <br />
             <br />
             <b>Example</b>:
             <CodeBlock language="java" filename="java" code={code4} /> <br />
@@ -347,11 +347,11 @@ System.out.println("After removal: " + languages);`
             <b className='text-[#b07219]'>{num(10)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • A <span className='bg-neutral-800 px-2 rounded-lg'>Set</span> enforces <b>uniqueness</b> — duplicates are automatically removed. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>HashSet</span> is the most common implementation for speed. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>LinkedHashSet</span> preserves insertion order. <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>TreeSet</span> keeps elements sorted and supports range views (<span className='bg-neutral-800 px-2 rounded-lg'>headSet()</span>, <span className='bg-neutral-800 px-2 rounded-lg'>tailSet()</span>). <br />
-            • <span className='bg-neutral-800 px-2 rounded-lg'>Set</span> is best for <b>mathematical set operations</b> — union, intersection, and difference.
+            <b>•</b> A <span className='bg-neutral-800 px-2 rounded-lg'>Set</span> enforces <b>uniqueness</b> — duplicates are automatically removed. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>HashSet</span> is the most common implementation for speed. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>LinkedHashSet</span> preserves insertion order. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>TreeSet</span> keeps elements sorted and supports range views (<span className='bg-neutral-800 px-2 rounded-lg'>headSet()</span>, <span className='bg-neutral-800 px-2 rounded-lg'>tailSet()</span>). <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>Set</span> is best for <b>mathematical set operations</b> — union, intersection, and difference.
           </div>
         </motion.div>
       </div>

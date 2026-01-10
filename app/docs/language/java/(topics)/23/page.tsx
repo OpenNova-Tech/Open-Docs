@@ -74,8 +74,8 @@ a[0] = 10;`
           <div className='max-w-3xl mx-auto text-gray-300'>
             A 1D array stores elements in a single row. <br />
             Example: <span className='bg-neutral-800 px-2 rounded-lg'>int[] arr = &#123; 10, 20, 30, 40 &#125;;</span>  <br />
-            • Access elements using the index (starts from 0). <br />
-            • Example: <span className='bg-neutral-800 px-2 rounded-lg'>arr[2]</span> gives <span className='bg-neutral-800 px-2 rounded-lg'>30</span>.
+            <b>•</b> Access elements using the index (starts from 0). <br />
+            <b>•</b> Example: <span className='bg-neutral-800 px-2 rounded-lg'>arr[2]</span> gives <span className='bg-neutral-800 px-2 rounded-lg'>30</span>.
           </div>
         </motion.div>
 
@@ -94,8 +94,8 @@ a[0] = 10;`
             <br />
             Example:
             <CodeBlock language="java" filename="java" code={code1} /> <br />
-            • Access: <span className='bg-neutral-800 px-2 rounded-lg'>matrix[1][2]</span>  gives <span className='bg-neutral-800 px-2 rounded-lg'>6</span>. <br />
-            • Often used for tabular data like game boards or grids.
+            <b>•</b> Access: <span className='bg-neutral-800 px-2 rounded-lg'>matrix[1][2]</span>  gives <span className='bg-neutral-800 px-2 rounded-lg'>6</span>. <br />
+            <b>•</b> Often used for tabular data like game boards or grids.
           </div>
         </motion.div>
 
@@ -114,8 +114,8 @@ a[0] = 10;`
             <br />
             Example:
             <CodeBlock language="java" filename="java" code={code2} /> <br />
-            • Each sub-array can vary in size. <br />
-            • Useful for representing uneven structures.
+            <b>•</b> Each sub-array can vary in size. <br />
+            <b>•</b> Useful for representing uneven structures.
           </div>
         </motion.div>
 
@@ -131,8 +131,8 @@ a[0] = 10;`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             You can create arrays in different ways: <br />
-            • Static initialization: <span className='bg-neutral-800 px-2 rounded-lg'>int[] a = &#123; 1, 2, 3 &#125;;</span> <br />
-            • Dynamic initialization:
+            <b>•</b> Static initialization: <span className='bg-neutral-800 px-2 rounded-lg'>int[] a = &#123; 1, 2, 3 &#125;;</span> <br />
+            <b>•</b> Dynamic initialization:
             <CodeBlock language="java" filename="java" code={code3} />
           </div>
         </motion.div>
@@ -182,11 +182,11 @@ a[0] = 10;`
             <b className='text-[#b07219]'>{num(8)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            • Arrays store multiple same-type values efficiently. <br />
-            • Index starts from 0. <br />
-            • 1D, 2D, and jagged arrays are supported. <br />
-            • Use <span className='bg-neutral-800 px-2 rounded-lg'>.length</span> for size and enhanced for loop for easy traversal. <br />
-            • Jagged arrays allow variable-length rows for flexible data storage.
+            <b>•</b> Arrays store multiple same-type values efficiently. <br />
+            <b>•</b> Index starts from 0. <br />
+            <b>•</b> 1D, 2D, and jagged arrays are supported. <br />
+            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>.length</span> for size and enhanced for loop for easy traversal. <br />
+            <b>•</b> Jagged arrays allow variable-length rows for flexible data storage.
           </div>
         </motion.div>
       </div>
