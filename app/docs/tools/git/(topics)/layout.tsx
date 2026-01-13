@@ -55,11 +55,11 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
     {
       header: 'Undo',
       topics: [
-        { id: 23, title: 'Discarding Changes' },
-        { id: 24, title: 'Resetting Commits' },
-        { id: 25, title: 'Reverting Commits' },
-        { id: 26, title: 'Amending Commits' },
-        { id: 27, title: 'Stashing' },
+        { id: 22, title: 'Discarding Changes' },
+        { id: 23, title: 'Resetting Commits' },
+        { id: 24, title: 'Reverting Commits' },
+        { id: 25, title: 'Amending Commits' },
+        { id: 26, title: 'Stashing' },
       ],
     },
     {
