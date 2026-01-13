@@ -161,13 +161,16 @@ export function Footer() {
       </motion.div>
 
       <motion.div
-        className='text-center text-neutral-500 text-xs py-6 border-t border-neutral-800 mt-8'
+        className='flex justify-center gap-2 text-neutral-500 text-xs py-6 border-t border-neutral-800 mt-8'
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
         viewport={{ once: true }}
       >
-        © {new Date().getFullYear()} OpenDocs by OpenNova. All rights reserved.
+        <img src="/Flag_of_India.svg.png" alt="" className='h-4 w-max' />
+        © {new Date().getFullYear()} OpenDocs by Anurag Bhattacharjee and Co. 
+        <img src="/Flag_of_India.svg.png" alt="" className='h-4 w-max' />
+        {/* <img src="/Flag_of_Vietnam.svg.png" alt="" className='h-4 w-max' /> */}
       </motion.div>
     </footer>
   )
