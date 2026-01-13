@@ -5,24 +5,24 @@ import { HoverEffect } from '@/components/ui/card-hover-effect'
 
 export default function Page() {
   const objectOriented = [
+    // {
+    //   title: 'Java',
+    //   description: 'Platform-independent, object-oriented language widely used in enterprise systems.',
+    //   link: '/docs/language/java',
+    //   iconSrc: '/icons/langs/java.svg'
+    // },
     {
-      title: 'Java',
-      description: 'Platform-independent, object-oriented language widely used in enterprise systems.',
-      link: '/docs/language/java',
-      iconSrc: '/icons/langs/java.svg'
+      title: 'Python',
+      description: 'Multi-paradigm language supporting OOP, functional, and scripting styles.',
+      link: '/docs/language/python',
+      iconSrc: '/icons/langs/py.svg'
     },
-    // {
-    //   title: 'Python',
-    //   description: 'Multi-paradigm language supporting OOP, functional, and scripting styles.',
-    //   link: '/docs/language/python',
-    //   iconSrc: '/icons/langs/py.svg'
-    // },
-    // {
-    //   title: 'C++',
-    //   description: 'Extension of C with classes and OOP features for performance-critical systems.',
-    //   link: '/docs/language/cplusplus',
-    //   iconSrc: '/icons/langs/cpp.svg'
-    // },
+    {
+      title: 'C++',
+      description: 'Extension of C with classes and OOP features for performance-critical systems.',
+      link: '/docs/language/cplusplus',
+      iconSrc: '/icons/langs/cpp.svg'
+    },
     // {
     //   title: 'C#',
     //   description: 'Modern object-oriented language from Microsoft for .NET applications.',
@@ -49,19 +49,19 @@ export default function Page() {
     // }
   ]
 
-  // const procedural = [
+  const procedural = [
   //   {
   //     title: 'C',
   //     description: 'Foundational procedural language used in system and embedded programming.',
   //     link: '/docs/language/c',
   //     iconSrc: '/icons/langs/c.svg'
   //   },
-  //   {
-  //     title: 'Go',
-  //     description: 'Compiled procedural language by Google emphasizing simplicity and concurrency.',
-  //     link: '/docs/language/go',
-  //     iconSrc: '/icons/langs/go.svg'
-  //   },
+    {
+      title: 'Go',
+      description: 'Compiled procedural language by Google emphasizing simplicity and concurrency.',
+      link: '/docs/language/go',
+      iconSrc: '/icons/langs/go.svg'
+    },
   //   {
   //     title: 'Fortran',
   //     description: 'Procedural high-performance language for scientific and numerical computing.',
@@ -73,7 +73,7 @@ export default function Page() {
   //     description: 'Classic procedural teaching language emphasizing structured programming.',
   //     link: '/docs/language/pascal'
   //   },
-  // ]
+  ]
 
   // const functional = [
   //   {
@@ -102,20 +102,20 @@ export default function Page() {
   //   }
   // ]
 
-  // const markupAndStyling = [
-  //   {
-  //     title: 'HTML',
-  //     description: 'The standard markup language for structuring content on the web.',
-  //     link: '/docs/language/html',
-  //     iconSrc: '/icons/langs/html.svg'
-  //   },
+  const markupAndStyling = [
+    {
+      title: 'HTML',
+      description: 'The standard markup language for structuring content on the web.',
+      link: '/docs/language/html',
+      iconSrc: '/icons/langs/html.svg'
+    },
   //   {
   //     title: 'CSS',
   //     description: 'Style sheet language used to design the visual presentation of web pages.',
   //     link: '/docs/language/css',
   //     iconSrc: '/icons/langs/css.svg'
   //   }
-  // ]
+  ]
 
   // const compute = [
   //   {
@@ -138,19 +138,19 @@ export default function Page() {
   //   },
   // ]
 
-  // const scripting = [
-  //   {
-  //     title: 'JavaScript',
-  //     description: 'Lightweight interpreted scripting language for web interactivity.',
-  //     link: '/docs/language/javascript',
-  //     iconSrc: '/icons/langs/js.svg'
-  //   },
-  //   {
-  //     title: 'TypeScript',
-  //     description: 'Statically-typed superset of JavaScript improving maintainability and tooling.',
-  //     link: '/docs/language/typescript',
-  //     iconSrc: '/icons/langs/ts.svg'
-  //   },
+  const scripting = [
+    {
+      title: 'JavaScript',
+      description: 'Lightweight interpreted scripting language for web interactivity.',
+      link: '/docs/language/javascript',
+      iconSrc: '/icons/langs/js.svg'
+    },
+    {
+      title: 'TypeScript',
+      description: 'Statically-typed superset of JavaScript improving maintainability and tooling.',
+      link: '/docs/language/typescript',
+      iconSrc: '/icons/langs/ts.svg'
+    },
   //   {
   //     title: 'PHP',
   //     description: 'Server-side scripting language widely used for web applications and CMS.',
@@ -175,7 +175,7 @@ export default function Page() {
   //     link: '/docs/language/shell',
   //     iconSrc: '/icons/langs/sh.svg'
   //   }
-  // ]
+  ]
 
   // const modernHybrid = [
   //   {
@@ -243,12 +243,12 @@ export default function Page() {
           <HoverEffect items={objectOriented} />
         </div>
 
-        {/* <div>
+        <div>
           <h2 className="text-2xl font-semibold mb-4">Procedural Programming Languages</h2>
           <HoverEffect items={procedural} />
         </div>
 
-        <div>
+        {/* <div>
           <h2 className="text-2xl font-semibold mb-4">Functional Programming Languages</h2>
           <HoverEffect items={functional} />
         </div>
@@ -256,7 +256,7 @@ export default function Page() {
         <div>
           <h2 className="text-2xl font-semibold mb-4">Computation Languages</h2>
           <HoverEffect items={compute} />
-        </div>
+        </div> */}
 
         <div>
           <h2 className="text-2xl font-semibold mb-4">Markup & Styling Languages</h2>
@@ -268,12 +268,12 @@ export default function Page() {
           <HoverEffect items={scripting} />
         </div>
 
-        <div>
+        {/* <div>
           <h2 className="text-2xl font-semibold mb-4">Modern Multi-Paradigm Languages</h2>
           <HoverEffect items={modernHybrid} />
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <h2 className="text-2xl font-semibold mb-4">Legacy & System-Era Languages</h2>
           <HoverEffect items={legacy} />
         </div> */}
