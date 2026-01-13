@@ -62,11 +62,11 @@ const remote = [
 ]
 
 const undo = [
-  { title: 'Discarding Changes', description: 'Navigate branches or undo changes safely.', icon: <IconRestore />, link: 'git/23' },
-  { title: 'Resetting Commits', description: 'Move HEAD and optionally working directory backward.', icon: <IconArrowBackUp />, link: 'git/24' },
-  { title: 'Reverting Commits', description: 'Undo changes by creating a new inverse commit.', icon: <IconGitCommit />, link: 'git/25' },
-  { title: 'Amending Commits', description: 'Edit the most recent commit including message.', icon: <IconEdit />, link: 'git/26' },
-  { title: 'Stashing', description: 'Temporarily save changes not ready to commit.', icon: <IconFileSymlink />, link: 'git/27' }
+  { title: 'Discarding Changes', description: 'Navigate branches or undo changes safely.', icon: <IconRestore />, link: 'git/22' },
+  { title: 'Resetting Commits', description: 'Move HEAD and optionally working directory backward.', icon: <IconArrowBackUp />, link: 'git/23' },
+  { title: 'Reverting Commits', description: 'Undo changes by creating a new inverse commit.', icon: <IconGitCommit />, link: 'git/24' },
+  { title: 'Amending Commits', description: 'Edit the most recent commit including message.', icon: <IconEdit />, link: 'git/25' },
+  { title: 'Stashing', description: 'Temporarily save changes not ready to commit.', icon: <IconFileSymlink />, link: 'git/26' }
 ]
 
 const advanced = [
