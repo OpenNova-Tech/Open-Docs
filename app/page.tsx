@@ -5,6 +5,7 @@ import { OpenSource } from '@/components/open-source'
 import { WorldMap } from '@/components/ui/world-map'
 import { motion } from 'motion/react'
 import { StickyBanner } from '@/components/ui/sticky-banner'
+import SearchBar from '@/components/SearchBar'
 
 export default function Home() {
 	return (
@@ -40,6 +41,9 @@ export default function Home() {
 					<p className='text-sm md:text-lg text-neutral-300 max-w-2xl py-4'>
 						Building the coolest documentation website for programming, languages, frameworks, libraries, tools and systems.
 					</p>
+					<div className="w-full max-w-xl mt-4 pointer-events-auto">
+        <SearchBar />
+      </div>
 				</div>
 
 				<div className='mx-auto max-w-6xl z-0 relative'>
