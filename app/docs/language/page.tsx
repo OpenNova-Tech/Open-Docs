@@ -12,12 +12,6 @@ export default function Page() {
     //   iconSrc: '/icons/langs/java.svg'
     // },
     {
-      title: 'Python',
-      description: 'Multi-paradigm language supporting OOP, functional, and scripting styles.',
-      link: '/docs/language/python',
-      iconSrc: '/icons/langs/py.svg'
-    },
-    {
       title: 'C++',
       description: 'Extension of C with classes and OOP features for performance-critical systems.',
       link: '/docs/language/cplusplus',
@@ -50,12 +44,12 @@ export default function Page() {
   ]
 
   const procedural = [
-  //   {
-  //     title: 'C',
-  //     description: 'Foundational procedural language used in system and embedded programming.',
-  //     link: '/docs/language/c',
-  //     iconSrc: '/icons/langs/c.svg'
-  //   },
+    {
+      title: 'C',
+      description: 'Foundational procedural language used in system and embedded programming.',
+      link: '/docs/language/c',
+      iconSrc: '/icons/langs/c.svg'
+    },
     {
       title: 'Go',
       description: 'Compiled procedural language by Google emphasizing simplicity and concurrency.',
@@ -146,6 +140,12 @@ export default function Page() {
       iconSrc: '/icons/langs/js.svg'
     },
     {
+      title: 'Python',
+      description: 'Multi-paradigm language supporting OOP, functional, and scripting styles.',
+      link: '/docs/language/python',
+      iconSrc: '/icons/langs/py.svg'
+    },
+    {
       title: 'TypeScript',
       description: 'Statically-typed superset of JavaScript improving maintainability and tooling.',
       link: '/docs/language/typescript',
@@ -177,13 +177,13 @@ export default function Page() {
   //   }
   ]
 
-  // const modernHybrid = [
-  //   {
-  //     title: 'Rust',
-  //     description: 'Memory-safe systems language blending procedural and functional paradigms.',
-  //     link: '/docs/language/rust',
-  //     iconSrc: '/icons/langs/rs.svg'
-  //   },
+  const modernHybrid = [
+    {
+      title: 'Rust',
+      description: 'Memory-safe systems language blending procedural and functional paradigms.',
+      link: '/docs/language/rust',
+      iconSrc: '/icons/langs/rs.svg'
+    },
   //   {
   //     title: 'Julia',
   //     description: 'High-performance dynamic language combining scripting simplicity with compiled speed.',
@@ -208,7 +208,25 @@ export default function Page() {
   //     link: '/docs/language/crystal',
   //     iconSrc: '/icons/langs/cr.svg'
   //   }
+  ]
+
+  // const query = [
+  //   {
+  //     title: 'SQL',
+  //     description: '',
+  //     link: '/docs/language/sql',
+  //     iconSrc: '/icons/langs/sql.svg'
+  //   },
   // ]
+
+  const config = [
+    {
+      title: 'YAML',
+      description: '',
+      link: '/docs/language/yaml',
+      iconSrc: '/icons/langs/yaml.svg'
+    },
+  ]
 
   // const legacy = [
   //   {
@@ -244,6 +262,11 @@ export default function Page() {
         </div>
 
         <div>
+          <h2 className="text-2xl font-semibold mb-4">Dynamic Languages</h2>
+          <HoverEffect items={scripting} />
+        </div>
+
+        <div>
           <h2 className="text-2xl font-semibold mb-4">Procedural Programming Languages</h2>
           <HoverEffect items={procedural} />
         </div>
@@ -263,15 +286,17 @@ export default function Page() {
           <HoverEffect items={markupAndStyling} />
         </div>
 
+        
+
         <div>
-          <h2 className="text-2xl font-semibold mb-4">Scripting Languages</h2>
-          <HoverEffect items={scripting} />
+          <h2 className="text-2xl font-semibold mb-4">System-Level Programming Languages</h2>
+          <HoverEffect items={modernHybrid} />
         </div>
 
-        {/* <div>
-          <h2 className="text-2xl font-semibold mb-4">Modern Multi-Paradigm Languages</h2>
-          <HoverEffect items={modernHybrid} />
-        </div> */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">Configuration Languages</h2>
+          <HoverEffect items={config} />
+        </div>
 
         {/* <div>
           <h2 className="text-2xl font-semibold mb-4">Legacy & System-Era Languages</h2>
