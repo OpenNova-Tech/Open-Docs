@@ -5,11 +5,14 @@ export interface SearchItem {
 }
 
 export const SEARCH_ITEMS: SearchItem[] = [
+  { title: 'C++ Introduction', ref: '/docs/language/cplusplus/1', icon: '/icons/langs/cpp.svg' },
   { title: 'Git Introduction', ref: '/docs/tools/git/1', icon: '/icons/tools/git.svg' },
   { title: 'HTML Introduction', ref: '/docs/language/html/1', icon: '/icons/langs/html.svg' },
   { title: 'Java Introduction', ref: '/docs/language/java/1', icon: '/icons/langs/java.svg' },
   { title: 'JavaScript Introduction', ref: '/docs/language/javascript/1', icon: '/icons/langs/js.svg' },
   { title: 'Ruby Introduction', ref: '/docs/language/ruby/1', icon: '/icons/langs/rb.svg' },
+  { title: 'C++ History', ref: '/docs/language/cplusplus/2', icon: '/icons/langs/cpp.svg' },
+  { title: 'C++ Setup and Environment', ref: '/docs/language/cplusplus/3', icon: '/icons/langs/cpp.svg' },
   { title: 'Git Installation', ref: '/docs/tools/git/2', icon: '/icons/tools/git.svg' },
   { title: 'Git Configuration', ref: '/docs/tools/git/3', icon: '/icons/tools/git.svg' },
   { title: 'Git .git Folder', ref: '/docs/tools/git/4', icon: '/icons/tools/git.svg' },
