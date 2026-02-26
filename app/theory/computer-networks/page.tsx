@@ -158,8 +158,6 @@ const presentationLayer = [
 
 /* ================== APPLICATION LAYER ================== */
 
-/* ================== APPLICATION LAYER (OSI - Layer 7) ================== */
-
 const application = [
   { title: 'Network Services', description: 'User-level network services.', icon: <IconWorld />, link: 'networks/33' },
   { title: 'File Transfer Services', description: 'Remote file access.', icon: <IconDatabase />, link: 'networks/34' },
