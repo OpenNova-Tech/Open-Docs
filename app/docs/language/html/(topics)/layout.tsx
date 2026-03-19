@@ -7,7 +7,11 @@ import { ChevronRight } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HTML_TOPICS } from '@/lib/private/htmlTopics'
 
-export default function TopicsLayout({ children }: { children: React.ReactNode }) {
+export default function TopicsLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   const pathname = usePathname()
 
   const groupedTopics = [
@@ -16,16 +20,56 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
       topics: [
         { slug: 'introduction', title: 'Introduction' },
         { slug: 'history', title: 'History' },
-        { slug: 'setup-environment', title: 'Setup and Environment' },
+        { slug: 'setup-structure', title: 'Setup & Structure' },
         { slug: 'hello-world', title: 'Hello World' },
-        { slug: 'comments', title: 'Comments' },
-        { slug: 'compilation-process', title: 'Compilation Process' },
       ],
     },
-    
+    {
+      header: 'Elements & Syntax',
+      topics: [
+        { slug: 'tags', title: 'Tags' },
+        { slug: 'headings-paragraphs', title: 'Headings & Paragraphs' },
+        { slug: 'lists', title: 'Lists (ul/ol)' },
+        { slug: 'links-images', title: 'Links & Images' },
+        { slug: 'tables', title: 'Tables' },
+        { slug: 'attributes', title: 'Attributes' },
+        { slug: 'responsive-images', title: 'Responsive Images' },
+      ],
+    },
+    {
+      header: 'Layout & Media',
+      topics: [
+        { slug: 'div-span', title: 'Divs and Spans' },
+        { slug: 'semantic', title: 'Semantic Elements' },
+        { slug: 'forms-inputs', title: 'Forms and Inputs' },
+        { slug: 'forms-advanced', title: 'Advanced Form Controls' },
+        { slug: 'audio-video', title: 'Audio and Video' },
+      ]
+    },
+    {
+      header: 'Accessiblity',
+      topics: [
+        { slug: 'basics', title: 'Basics' },
+        { slug: 'aria-roles', title: 'ARIA Roles' },
+      ]
+    },
+    {
+      header: 'Advanced Concepts',
+      topics: [
+        { slug: 'apis', title: 'HTML5 APIs' },
+        { slug: 'meta-tags', title: 'Meta Tags & SEO' },
+        { slug: 'entities-symbols', title: 'Entities & Symbols' },
+        { slug: 'css-integration', title: 'CSS Integration' },
+        { slug: 'head-elements', title: 'Head Elements' },
+        { slug: 'web-components', title: 'Web Components' },
+        { slug: 'javascript', title: 'JavaScript Integration' },
+      ]
+    },
   ]
 
-  const [openSections, setOpenSections] = useState<{ [key: string]: boolean }>({})
+  const [openSections, setOpenSections] = useState<{ [key: string]: boolean }>(
+    {}
+  )
 
   const toggleSection = (header: string) => {
     setOpenSections((prev) => ({
@@ -39,7 +83,9 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
       <aside className='w-64 hidden md:flex bg-black pt-20 text-white border-r-2 border-[#e34c26]/50 sticky top-0 h-screen md:flex-col'>
         <div className='p-5'>
           <Link href='/docs/language/html'>
-            <h2 className='text-3xl font-bold text-center text-[#e34c26]'>HTML</h2>
+            <h2 className='text-3xl font-bold text-center text-[#e34c26]'>
+              HTML
+            </h2>
           </Link>
         </div>
 
@@ -81,8 +127,11 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
                             <li key={slug}>
                               <Link
                                 href={href}
-                                className={`block px-3 py-2 rounded-lg transition ${active ? 'bg-neutral-800' : 'hover:bg-neutral-700'
-                                  }`}
+                                className={`block px-3 py-2 rounded-lg transition ${
+                                  active
+                                    ? 'bg-neutral-800'
+                                    : 'hover:bg-neutral-700'
+                                }`}
                               >
                                 {title}
                               </Link>
@@ -155,7 +204,6 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
           )
         })()}
       </main>
-
     </div>
   )
 }
