@@ -4,20 +4,20 @@ import React from 'react'
 import { HoverEffect } from '@/components/ui/card-hover-effect'
 
 export default function Page() {
-  const objectOriented = [
+  // const objectOriented = [
     // {
     //   title: 'Java',
     //   description: 'Platform-independent, object-oriented language widely used in enterprise systems.',
     //   link: '/docs/language/java',
     //   iconSrc: '/icons/langs/java.svg'
     // },
-    {
-      title: 'C++',
-      description:
-        'Extension of C with classes and OOP features for performance-critical systems.',
-      link: '/docs/language/cplusplus',
-      iconSrc: '/icons/langs/cpp.svg',
-    },
+    // {
+    //   title: 'C++',
+    //   description:
+    //     'Extension of C with classes and OOP features for performance-critical systems.',
+    //   link: '/docs/language/cplusplus',
+    //   iconSrc: '/icons/langs/cpp.svg',
+    // },
     // {
     //   title: 'C#',
     //   description: 'Modern object-oriented language from Microsoft for .NET applications.',
@@ -42,23 +42,23 @@ export default function Page() {
     //   link: '/docs/language/ruby',
     //   iconSrc: '/icons/langs/rb.svg'
     // }
-  ]
+  // ]
 
-  const procedural = [
-    {
-      title: 'C',
-      description:
-        'Foundational procedural language used in system and embedded programming.',
-      link: '/docs/language/c',
-      iconSrc: '/icons/langs/c.svg',
-    },
-    {
-      title: 'Go',
-      description:
-        'Compiled procedural language by Google emphasizing simplicity and concurrency.',
-      link: '/docs/language/go',
-      iconSrc: '/icons/langs/go.svg',
-    },
+  // const procedural = [
+  //   {
+  //     title: 'C',
+  //     description:
+  //       'Foundational procedural language used in system and embedded programming.',
+  //     link: '/docs/language/c',
+  //     iconSrc: '/icons/langs/c.svg',
+  //   },
+  //   {
+  //     title: 'Go',
+  //     description:
+  //       'Compiled procedural language by Google emphasizing simplicity and concurrency.',
+  //     link: '/docs/language/go',
+  //     iconSrc: '/icons/langs/go.svg',
+  //   },
     //   {
     //     title: 'Fortran',
     //     description: 'Procedural high-performance language for scientific and numerical computing.',
@@ -70,7 +70,7 @@ export default function Page() {
     //     description: 'Classic procedural teaching language emphasizing structured programming.',
     //     link: '/docs/language/pascal'
     //   },
-  ]
+  // ]
 
   // const functional = [
   //   {
@@ -136,28 +136,28 @@ export default function Page() {
   //   },
   // ]
 
-  const scripting = [
-    {
-      title: 'JavaScript',
-      description:
-        'Lightweight interpreted scripting language for web interactivity.',
-      link: '/docs/language/javascript',
-      iconSrc: '/icons/langs/js.svg',
-    },
-    {
-      title: 'Python',
-      description:
-        'Multi-paradigm language supporting OOP, functional, and scripting styles.',
-      link: '/docs/language/python',
-      iconSrc: '/icons/langs/py.svg',
-    },
-    {
-      title: 'TypeScript',
-      description:
-        'Statically-typed superset of JavaScript improving maintainability and tooling.',
-      link: '/docs/language/typescript',
-      iconSrc: '/icons/langs/ts.svg',
-    },
+  // const scripting = [
+  //   {
+  //     title: 'JavaScript',
+  //     description:
+  //       'Lightweight interpreted scripting language for web interactivity.',
+  //     link: '/docs/language/javascript',
+  //     iconSrc: '/icons/langs/js.svg',
+  //   },
+  //   {
+  //     title: 'Python',
+  //     description:
+  //       'Multi-paradigm language supporting OOP, functional, and scripting styles.',
+  //     link: '/docs/language/python',
+  //     iconSrc: '/icons/langs/py.svg',
+  //   },
+  //   {
+  //     title: 'TypeScript',
+  //     description:
+  //       'Statically-typed superset of JavaScript improving maintainability and tooling.',
+  //     link: '/docs/language/typescript',
+  //     iconSrc: '/icons/langs/ts.svg',
+  //   },
     //   {
     //     title: 'PHP',
     //     description: 'Server-side scripting language widely used for web applications and CMS.',
@@ -182,16 +182,16 @@ export default function Page() {
     //     link: '/docs/language/shell',
     //     iconSrc: '/icons/langs/sh.svg'
     //   }
-  ]
+  // ]
 
-  const modernHybrid = [
-    {
-      title: 'Rust',
-      description:
-        'Memory-safe systems language blending procedural and functional paradigms.',
-      link: '/docs/language/rust',
-      iconSrc: '/icons/langs/rs.svg',
-    },
+  // const modernHybrid = [
+  //   {
+  //     title: 'Rust',
+  //     description:
+  //       'Memory-safe systems language blending procedural and functional paradigms.',
+  //     link: '/docs/language/rust',
+  //     iconSrc: '/icons/langs/rs.svg',
+  //   },
     //   {
     //     title: 'Julia',
     //     description: 'High-performance dynamic language combining scripting simplicity with compiled speed.',
@@ -216,7 +216,7 @@ export default function Page() {
     //     link: '/docs/language/crystal',
     //     iconSrc: '/icons/langs/cr.svg'
     //   }
-  ]
+  // ]
 
   // const query = [
   //   {
@@ -227,14 +227,14 @@ export default function Page() {
   //   },
   // ]
 
-  const config = [
-    {
-      title: 'YAML',
-      description: '',
-      link: '/docs/language/yaml',
-      iconSrc: '/icons/langs/yaml.svg',
-    },
-  ]
+  // const config = [
+  //   {
+  //     title: 'YAML',
+  //     description: '',
+  //     link: '/docs/language/yaml',
+  //     iconSrc: '/icons/langs/yaml.svg',
+  //   },
+  // ]
 
   // const legacy = [
   //   {

@@ -3,8 +3,6 @@
 import {
 	IconDatabase,
 	IconServer,
-	IconPlug,
-	IconTool,
 	IconTerminal2,
 	IconSearch,
 	IconFilter,
@@ -28,7 +26,6 @@ import {
 	IconShieldCheck,
 	IconRepeat,
 	IconLock,
-	IconAlertTriangle,
 	IconShieldLock,
 	IconUserCheck,
 	IconFingerprint,
@@ -41,15 +38,9 @@ import {
 	IconLayersIntersect,
 	IconNumbers,
 	IconChecklist,
-	IconArchive,
 	IconCodeDots,
 	IconSettings,
 	IconFunction,
-	IconSwitch,
-	IconClock,
-	IconTextSize,
-	IconCalculator,
-	IconCircleOff,
 	IconTableAlias,
 	IconTable,
 	IconArrowBackUp,
@@ -113,13 +104,13 @@ const advancedQueries = [
 
 
 /* ================= 6. FUNCTIONS & LOGIC ================= */
-const functions = [
-  { title: 'String Functions', description: 'CONCAT, SUBSTRING, TRIM.', icon: <IconTextSize />, link: 'sql/string-functions' },
-  { title: 'Date & Time Functions', description: 'NOW, INTERVAL, EXTRACT.', icon: <IconClock />, link: 'sql/date-functions' },
-  { title: 'Numeric Functions', description: 'ROUND, MOD, CEIL.', icon: <IconCalculator />, link: 'sql/numeric-functions' },
-  { title: 'NULL Handling', description: 'COALESCE, NULLIF.', icon: <IconCircleOff />, link: 'sql/null-functions' },
-  { title: 'Conditional Logic', description: 'CASE, WHEN, ELSE.', icon: <IconSwitch />, link: 'sql/case' },
-];
+// const functions = [
+//   { title: 'String Functions', description: 'CONCAT, SUBSTRING, TRIM.', icon: <IconTextSize />, link: 'sql/string-functions' },
+//   { title: 'Date & Time Functions', description: 'NOW, INTERVAL, EXTRACT.', icon: <IconClock />, link: 'sql/date-functions' },
+//   { title: 'Numeric Functions', description: 'ROUND, MOD, CEIL.', icon: <IconCalculator />, link: 'sql/numeric-functions' },
+//   { title: 'NULL Handling', description: 'COALESCE, NULLIF.', icon: <IconCircleOff />, link: 'sql/null-functions' },
+//   { title: 'Conditional Logic', description: 'CASE, WHEN, ELSE.', icon: <IconSwitch />, link: 'sql/case' },
+// ];
 
 
 /* ================= 7. TRANSACTIONS ================= */

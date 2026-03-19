@@ -1,16 +1,16 @@
 'use client'
 
 import React from 'react'
-import { HoverEffect } from '@/components/ui/card-hover-effect'
+// import { HoverEffect } from '@/components/ui/card-hover-effect'
 
 export default function page() {
-  const frontend = [
-    {
-      title: 'React.JS',
-      description: 'Component-based JavaScript library for building user interfaces efficiently.',
-      link: 'development/react',
-      iconSrc: '/icons/web/react.svg'
-    },
+  // const frontend = [
+  //   {
+  //     title: 'React.JS',
+  //     description: 'Component-based JavaScript library for building user interfaces efficiently.',
+  //     link: 'development/react',
+  //     iconSrc: '/icons/web/react.svg'
+  //   },
   //   {
   //     title: 'Angular',
   //     description: 'Robust TypeScript-based framework for scalable single-page applications.',
@@ -41,15 +41,15 @@ export default function page() {
   //     link: 'development/thymeleaf',
   //     iconSrc: '/icons/web/thymeleaf.svg'
   //   }
-  ]
+  // ]
 
-  const cross = [
-    {
-      title: 'React Native',
-      description: 'Build native mobile apps using React and JavaScript codebase.',
-      link: 'language/cplusplus',
-      iconSrc: '/icons/web/native.svg'
-    },
+  // const cross = [
+  //   {
+  //     title: 'React Native',
+  //     description: 'Build native mobile apps using React and JavaScript codebase.',
+  //     link: 'language/cplusplus',
+  //     iconSrc: '/icons/web/native.svg'
+  //   },
   //   {
   //     title: 'Flutter',
   //     description: 'Google’s UI toolkit for crafting natively compiled mobile apps.',
@@ -62,7 +62,7 @@ export default function page() {
   //     link: '/python',
   //     iconSrc: '/icons/web/lynx.svg'
   //   }
-  ]
+  // ]
 
 
   // const libraries = [
@@ -102,13 +102,13 @@ export default function page() {
   // ]
 
 
-  const full = [
-    {
-      title: 'Next.JS',
-      description: 'React-based full-stack framework for building server-side rendered and static web applications.',
-      link: 'fullstack/next',
-      iconSrc: '/icons/web/next.svg'
-    },
+  // const full = [
+  //   {
+  //     title: 'Next.JS',
+  //     description: 'React-based full-stack framework for building server-side rendered and static web applications.',
+  //     link: 'fullstack/next',
+  //     iconSrc: '/icons/web/next.svg'
+  //   },
   //   {
   //     title: 'Remix',
   //     description: 'Modern full-stack React framework focused on web standards and fast, dynamic UX.',
@@ -127,34 +127,34 @@ export default function page() {
   //     link: 'fullstack/astro',
   //     iconSrc: '/icons/web/astro.svg'
   //   }
-  ]
+  // ]
 
 
-  const backend = [
-    {
-      title: 'Express',
-      description: 'Minimal Node.js framework for building web apps and APIs.',
-      link: 'development/express',
-      iconSrc: '/icons/web/express.svg'
-    },
-    {
-      title: 'Django',
-      description: 'Python framework for clean, rapid, and secure web development.',
-      link: 'backend/django',
-      iconSrc: '/icons/web/django.svg'
-    },
+  // const backend = [
+  //   {
+  //     title: 'Express',
+  //     description: 'Minimal Node.js framework for building web apps and APIs.',
+  //     link: 'development/express',
+  //     iconSrc: '/icons/web/express.svg'
+  //   },
+  //   {
+  //     title: 'Django',
+  //     description: 'Python framework for clean, rapid, and secure web development.',
+  //     link: 'backend/django',
+  //     iconSrc: '/icons/web/django.svg'
+  //   },
   //   {
   //     title: 'Flask',
   //     description: 'Simple Python micro-framework for small and flexible web apps.',
   //     link: 'backend/flask',
   //     iconSrc: '/icons/web/flask.svg'
   //   },
-    {
-      title: 'FastAPI',
-      description: 'Modern Python framework for fast APIs using type hints.',
-      link: 'backend/fastapi',
-      iconSrc: '/icons/web/fastapi.svg'
-    },
+    // {
+    //   title: 'FastAPI',
+    //   description: 'Modern Python framework for fast APIs using type hints.',
+    //   link: 'backend/fastapi',
+    //   iconSrc: '/icons/web/fastapi.svg'
+    // },
   //   {
   //     title: 'Spring',
   //     description: 'Comprehensive Java framework for secure, scalable web apps.',
@@ -179,19 +179,19 @@ export default function page() {
   //     link: 'backend/nest',
   //     iconSrc: '/icons/web/nest.svg'
   //   },
-    {
-      title: 'Laravel',
-      description: 'Elegant PHP framework for modern and expressive web apps.',
-      link: 'backend/laravel',
-      iconSrc: '/icons/web/laravel.svg'
-    },
+    // {
+    //   title: 'Laravel',
+    //   description: 'Elegant PHP framework for modern and expressive web apps.',
+    //   link: 'backend/laravel',
+    //   iconSrc: '/icons/web/laravel.svg'
+    // },
   //   {
   //     title: 'Phoenix',
   //     description: 'Elixir web framework optimized for performance and concurrency.',
   //     link: 'backend/phoenix',
   //     iconSrc: '/icons/web/phoenix.svg'
   //   }
-  ]
+  // ]
 
   // const crossfull = [
   //   {

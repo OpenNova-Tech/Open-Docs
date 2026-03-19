@@ -109,15 +109,15 @@ export function Navbar() {
 		>
 			<div className="flex items-center justify-between w-full gap-x-6 sm:gap-x-8">
 				<Link href='/'>
-				<div className="flex items-center">
-					<div className="relative w-5 h-5 flex items-center justify-center">
-						<span className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 top-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
-						<span className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 left-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
-						<span className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 right-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
-						<span className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 bottom-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
+					<div className="flex items-center">
+						<div className="relative w-5 h-5 flex items-center justify-center">
+							<span className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 top-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
+							<span className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 left-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
+							<span className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 right-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
+							<span className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 bottom-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
+						</div>
+						<b className="pl-4 text-lg">OPEN DOCS</b>
 					</div>
-					<b className="pl-4 text-lg">OPEN DOCS</b>
-				</div>
 				</Link>
 
 				<nav className="hidden sm:flex items-center space-x-6 sm:space-x-10 text-sm relative">
@@ -132,6 +132,7 @@ export function Navbar() {
 										clearTimeout(closeTimer.current)
 									}
 
+									// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 									item.children && setOpenMenu(item.label)
 								}}
 								onMouseLeave={() => {
