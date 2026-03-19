@@ -15,7 +15,6 @@ import {
 	IconBolt,
 	IconLayersIntersect,
 	IconSettings,
-	IconClock,
 	IconFileAnalytics,
 	IconCpu,
 	IconDatabase,
