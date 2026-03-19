@@ -38,7 +38,7 @@ const cardVariant = {
       ease: 'easeOut',
     },
   },
-};
+} as const;
 
 /* ================= COMPONENT ================= */
 
