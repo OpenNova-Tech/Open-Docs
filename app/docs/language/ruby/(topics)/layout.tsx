@@ -4,7 +4,11 @@ import NavigationButtons from '@/components/PageChanger'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-export default function TopicsLayout({ children }: { children: React.ReactNode }) {
+export default function TopicsLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   const pathname = usePathname()
 
   const topics = [
@@ -29,7 +33,9 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
       <aside className='w-64 hidden md:flex bg-black pt-20 text-white border-r-2 border-[#701516]/50 sticky top-0 h-screen md:flex-col'>
         <div className='p-5'>
           <Link href='/docs/language/java'>
-            <h2 className='text-3xl font-bold text-center text-[#701516]'>Ruby</h2>
+            <h2 className='text-3xl font-bold text-center text-[#701516]'>
+              Ruby
+            </h2>
           </Link>
         </div>
         <div className='flex-1 overflow-y-auto p-5 sidebar-scroll'>

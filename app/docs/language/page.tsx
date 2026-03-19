@@ -13,9 +13,10 @@ export default function Page() {
     // },
     {
       title: 'C++',
-      description: 'Extension of C with classes and OOP features for performance-critical systems.',
+      description:
+        'Extension of C with classes and OOP features for performance-critical systems.',
       link: '/docs/language/cplusplus',
-      iconSrc: '/icons/langs/cpp.svg'
+      iconSrc: '/icons/langs/cpp.svg',
     },
     // {
     //   title: 'C#',
@@ -46,27 +47,29 @@ export default function Page() {
   const procedural = [
     {
       title: 'C',
-      description: 'Foundational procedural language used in system and embedded programming.',
+      description:
+        'Foundational procedural language used in system and embedded programming.',
       link: '/docs/language/c',
-      iconSrc: '/icons/langs/c.svg'
+      iconSrc: '/icons/langs/c.svg',
     },
     {
       title: 'Go',
-      description: 'Compiled procedural language by Google emphasizing simplicity and concurrency.',
+      description:
+        'Compiled procedural language by Google emphasizing simplicity and concurrency.',
       link: '/docs/language/go',
-      iconSrc: '/icons/langs/go.svg'
+      iconSrc: '/icons/langs/go.svg',
     },
-  //   {
-  //     title: 'Fortran',
-  //     description: 'Procedural high-performance language for scientific and numerical computing.',
-  //     link: '/docs/language/fortran',
-  //     iconSrc: '/icons/langs/f.svg'
-  //   },
-  //   {
-  //     title: 'Pascal',
-  //     description: 'Classic procedural teaching language emphasizing structured programming.',
-  //     link: '/docs/language/pascal'
-  //   },
+    //   {
+    //     title: 'Fortran',
+    //     description: 'Procedural high-performance language for scientific and numerical computing.',
+    //     link: '/docs/language/fortran',
+    //     iconSrc: '/icons/langs/f.svg'
+    //   },
+    //   {
+    //     title: 'Pascal',
+    //     description: 'Classic procedural teaching language emphasizing structured programming.',
+    //     link: '/docs/language/pascal'
+    //   },
   ]
 
   // const functional = [
@@ -99,16 +102,17 @@ export default function Page() {
   const markupAndStyling = [
     {
       title: 'HTML',
-      description: 'The standard markup language for structuring content on the web.',
+      description:
+        'The standard markup language for structuring content on the web.',
       link: '/docs/language/html',
-      iconSrc: '/icons/langs/html.svg'
+      iconSrc: '/icons/langs/html.svg',
     },
-  //   {
-  //     title: 'CSS',
-  //     description: 'Style sheet language used to design the visual presentation of web pages.',
-  //     link: '/docs/language/css',
-  //     iconSrc: '/icons/langs/css.svg'
-  //   }
+    //   {
+    //     title: 'CSS',
+    //     description: 'Style sheet language used to design the visual presentation of web pages.',
+    //     link: '/docs/language/css',
+    //     iconSrc: '/icons/langs/css.svg'
+    //   }
   ]
 
   // const compute = [
@@ -135,79 +139,83 @@ export default function Page() {
   const scripting = [
     {
       title: 'JavaScript',
-      description: 'Lightweight interpreted scripting language for web interactivity.',
+      description:
+        'Lightweight interpreted scripting language for web interactivity.',
       link: '/docs/language/javascript',
-      iconSrc: '/icons/langs/js.svg'
+      iconSrc: '/icons/langs/js.svg',
     },
     {
       title: 'Python',
-      description: 'Multi-paradigm language supporting OOP, functional, and scripting styles.',
+      description:
+        'Multi-paradigm language supporting OOP, functional, and scripting styles.',
       link: '/docs/language/python',
-      iconSrc: '/icons/langs/py.svg'
+      iconSrc: '/icons/langs/py.svg',
     },
     {
       title: 'TypeScript',
-      description: 'Statically-typed superset of JavaScript improving maintainability and tooling.',
+      description:
+        'Statically-typed superset of JavaScript improving maintainability and tooling.',
       link: '/docs/language/typescript',
-      iconSrc: '/icons/langs/ts.svg'
+      iconSrc: '/icons/langs/ts.svg',
     },
-  //   {
-  //     title: 'PHP',
-  //     description: 'Server-side scripting language widely used for web applications and CMS.',
-  //     link: '/docs/language/php',
-  //     iconSrc: '/icons/langs/php.svg'
-  //   },
-  //   {
-  //     title: 'Perl',
-  //     description: 'Scripting language known for text processing, sysadmin tasks, and automation.',
-  //     link: '/docs/language/perl',
-  //     iconSrc: '/icons/langs/pl.svg'
-  //   },
-  //   {
-  //     title: 'Lua',
-  //     description: 'Lightweight scripting language embedded in games and IoT applications.',
-  //     link: '/docs/language/lua',
-  //     iconSrc: '/icons/langs/lua.svg'
-  //   },
-  //   {
-  //     title: 'Shell',
-  //     description: 'Scripting language for automating Unix/Linux tasks and workflows.',
-  //     link: '/docs/language/shell',
-  //     iconSrc: '/icons/langs/sh.svg'
-  //   }
+    //   {
+    //     title: 'PHP',
+    //     description: 'Server-side scripting language widely used for web applications and CMS.',
+    //     link: '/docs/language/php',
+    //     iconSrc: '/icons/langs/php.svg'
+    //   },
+    //   {
+    //     title: 'Perl',
+    //     description: 'Scripting language known for text processing, sysadmin tasks, and automation.',
+    //     link: '/docs/language/perl',
+    //     iconSrc: '/icons/langs/pl.svg'
+    //   },
+    //   {
+    //     title: 'Lua',
+    //     description: 'Lightweight scripting language embedded in games and IoT applications.',
+    //     link: '/docs/language/lua',
+    //     iconSrc: '/icons/langs/lua.svg'
+    //   },
+    //   {
+    //     title: 'Shell',
+    //     description: 'Scripting language for automating Unix/Linux tasks and workflows.',
+    //     link: '/docs/language/shell',
+    //     iconSrc: '/icons/langs/sh.svg'
+    //   }
   ]
 
   const modernHybrid = [
     {
       title: 'Rust',
-      description: 'Memory-safe systems language blending procedural and functional paradigms.',
+      description:
+        'Memory-safe systems language blending procedural and functional paradigms.',
       link: '/docs/language/rust',
-      iconSrc: '/icons/langs/rs.svg'
+      iconSrc: '/icons/langs/rs.svg',
     },
-  //   {
-  //     title: 'Julia',
-  //     description: 'High-performance dynamic language combining scripting simplicity with compiled speed.',
-  //     link: '/docs/language/julia',
-  //     iconSrc: '/icons/langs/jl.svg'
-  //   },
-  //   {
-  //     title: 'Dart',
-  //     description: 'Optimized for UI, blending OOP and functional styles, used in Flutter.',
-  //     link: '/docs/language/dart',
-  //     iconSrc: '/icons/langs/dart.svg'
-  //   },
-  //   {
-  //     title: 'Nim',
-  //     description: 'Fast, expressive language that mixes procedural, OOP, and functional paradigms.',
-  //     link: '/docs/language/nim',
-  //     iconSrc: '/icons/langs/nim.svg'
-  //   },
-  //   {
-  //     title: 'Crystal',
-  //     description: 'Ruby-like syntax with compiled speed and static typing.',
-  //     link: '/docs/language/crystal',
-  //     iconSrc: '/icons/langs/cr.svg'
-  //   }
+    //   {
+    //     title: 'Julia',
+    //     description: 'High-performance dynamic language combining scripting simplicity with compiled speed.',
+    //     link: '/docs/language/julia',
+    //     iconSrc: '/icons/langs/jl.svg'
+    //   },
+    //   {
+    //     title: 'Dart',
+    //     description: 'Optimized for UI, blending OOP and functional styles, used in Flutter.',
+    //     link: '/docs/language/dart',
+    //     iconSrc: '/icons/langs/dart.svg'
+    //   },
+    //   {
+    //     title: 'Nim',
+    //     description: 'Fast, expressive language that mixes procedural, OOP, and functional paradigms.',
+    //     link: '/docs/language/nim',
+    //     iconSrc: '/icons/langs/nim.svg'
+    //   },
+    //   {
+    //     title: 'Crystal',
+    //     description: 'Ruby-like syntax with compiled speed and static typing.',
+    //     link: '/docs/language/crystal',
+    //     iconSrc: '/icons/langs/cr.svg'
+    //   }
   ]
 
   // const query = [
@@ -224,7 +232,7 @@ export default function Page() {
       title: 'YAML',
       description: '',
       link: '/docs/language/yaml',
-      iconSrc: '/icons/langs/yaml.svg'
+      iconSrc: '/icons/langs/yaml.svg',
     },
   ]
 
@@ -254,22 +262,26 @@ export default function Page() {
   // ]
 
   return (
-    <div className="bg-black pt-20">
-      <div className="max-w-5xl mx-auto px-8 py-12 space-y-12 text-white">
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">Object-Oriented Programming (OOP) Languages</h2>
+    <div className='bg-black pt-20'>
+      <div className='max-w-5xl mx-auto px-8 py-12 space-y-12 text-white'>
+        {/* <div>
+          <h2 className='text-2xl font-semibold mb-4'>
+            Object-Oriented Programming (OOP) Languages
+          </h2>
           <HoverEffect items={objectOriented} />
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold mb-4">Dynamic Languages</h2>
+          <h2 className='text-2xl font-semibold mb-4'>Dynamic Languages</h2>
           <HoverEffect items={scripting} />
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold mb-4">Procedural Programming Languages</h2>
+          <h2 className='text-2xl font-semibold mb-4'>
+            Procedural Programming Languages
+          </h2>
           <HoverEffect items={procedural} />
-        </div>
+        </div> */}
 
         {/* <div>
           <h2 className="text-2xl font-semibold mb-4">Functional Programming Languages</h2>
@@ -282,21 +294,25 @@ export default function Page() {
         </div> */}
 
         <div>
-          <h2 className="text-2xl font-semibold mb-4">Markup & Styling Languages</h2>
+          <h2 className='text-2xl font-semibold mb-4'>
+            Markup & Styling Languages
+          </h2>
           <HoverEffect items={markupAndStyling} />
         </div>
 
-        
-
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">System-Level Programming Languages</h2>
+        {/* <div>
+          <h2 className='text-2xl font-semibold mb-4'>
+            System-Level Programming Languages
+          </h2>
           <HoverEffect items={modernHybrid} />
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold mb-4">Configuration Languages</h2>
+          <h2 className='text-2xl font-semibold mb-4'>
+            Configuration Languages
+          </h2>
           <HoverEffect items={config} />
-        </div>
+        </div> */}
 
         {/* <div>
           <h2 className="text-2xl font-semibold mb-4">Legacy & System-Era Languages</h2>

@@ -7,7 +7,11 @@ import { usePathname } from 'next/navigation'
 import { ChevronRight } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-export default function TopicsLayout({ children }: { children: React.ReactNode }) {
+export default function TopicsLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   const pathname = usePathname()
 
   const groupedTopics = [
@@ -62,7 +66,6 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
     {
       header: 'Asynchronous JavaScript',
       topics: [
-        
         { id: 29, title: 'Callbacks' },
         { id: 30, title: 'Promises' },
         { id: 31, title: 'Async / Await' },
@@ -109,7 +112,9 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
     },
   ]
 
-  const [openSections, setOpenSections] = useState<{ [key: string]: boolean }>({})
+  const [openSections, setOpenSections] = useState<{ [key: string]: boolean }>(
+    {}
+  )
 
   const toggleSection = (header: string) => {
     setOpenSections((prev) => ({
@@ -123,7 +128,9 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
       <aside className='w-64 hidden md:flex bg-black pt-20 text-white border-r-2 border-[#F1E05A]/50 sticky top-0 h-screen md:flex-col'>
         <div className='p-5'>
           <Link href='/docs/language/java'>
-            <h2 className='text-3xl font-bold text-center text-[#F1E05A]'>JavaScript</h2>
+            <h2 className='text-3xl font-bold text-center text-[#F1E05A]'>
+              JavaScript
+            </h2>
           </Link>
         </div>
 
@@ -158,13 +165,16 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
                     >
                       <ul className='space-y-1 mt-2'>
                         {topics.map(({ id, title }) => {
-                          const active = pathname === `/docs/language/javascript/${id}`
+                          const active =
+                            pathname === `/docs/language/javascript/${id}`
                           return (
                             <li key={id}>
                               <Link
                                 href={`/docs/language/javascript/${id}`}
                                 className={`block px-3 py-2 rounded-lg transition ${
-                                  active ? 'bg-neutral-800' : 'hover:bg-neutral-700'
+                                  active
+                                    ? 'bg-neutral-800'
+                                    : 'hover:bg-neutral-700'
                                 }`}
                               >
                                 {title}
