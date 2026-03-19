@@ -50,7 +50,17 @@ export function Footer() {
         // { label: 'Community', href: '#' },
         { label: 'Forum', href: '/forum' },
         { label: 'Donate', href: '/support' },
+        { label: 'Jobs', href: '/jobs' },
         // { label: 'Chat', href: '#' },
+      ],
+    },
+    {
+      title: 'Main Links',
+      links: [
+        { label: 'Documentations', href: '/docs' },
+        { label: 'Knowledge', href: '/knowledge' },
+        { label: 'Tech Hubs', href: '/hubs' },
+        { label: 'Update Logs', href: '/updates' },
       ],
     },
     {
@@ -67,14 +77,15 @@ export function Footer() {
         // { label: 'Changelog', href: '#' },
         // { label: 'Roadmap', href: '#' },
         // { label: 'License', href: '#' },
-        { label: 'Open Quantum', href: 'https://rubys-beta.vercel.app' },
+        // { label: 'Open Quantum', href: 'https://rubys-beta.vercel.app' },
+        { label: 'Botla.AI', href: 'https://botla-ai.onrender.com' },
       ],
     },
   ]
 
   return (
     <footer className='bg-black text-white pt-20'>
-      <div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-8 pb-20'>
+      <div className='max-w-7xl mx-auto  grid grid-cols-2 md:grid-cols-6 gap-8 pb-20'>
 
         {sections.map((section, index) => (
           <motion.div
@@ -91,6 +102,7 @@ export function Footer() {
                 <motion.li key={link.label}>
                   <motion.a
                     href={link.href}
+                    target='_blank'
                     className='hover:text-indigo-400 inline-block'
                     whileHover={{ x: 4 }}
                     transition={{ type: 'spring', stiffness: 300 }}
