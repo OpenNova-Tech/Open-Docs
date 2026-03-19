@@ -36,16 +36,21 @@ echo "Hello, World!"`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#89e051]'>3.1</b> Writing Your First Shell Script
+            <b className='text-[#89e051]'>3.1</b> Writing Your First Shell
+            Script
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            A <b>shell script</b> is simply a text file containing a sequence of shell commands. Instead of typing commands one by one in the terminal, you can put them inside a file and execute the file. <br />
+            A <b>shell script</b> is simply a text file containing a sequence of
+            shell commands. Instead of typing commands one by one in the
+            terminal, you can put them inside a file and execute the file.{' '}
             <br />
-            This makes automation possible — from printing a simple message to running complex system tasks.
+            <br />
+            This makes automation possible — from printing a simple message to
+            running complex system tasks.
           </div>
         </motion.div>
 
@@ -53,7 +58,7 @@ echo "Hello, World!"`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -61,10 +66,10 @@ echo "Hello, World!"`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             1. Open a terminal and create a file:
-            <CodeBlock language="shell" filename="bash" code={code1} />
+            <CodeBlock language='shell' filename='bash' code={code1} />
             <br />
             2. Add the following content:
-            <CodeBlock language="shell" filename="hello.sh" code={code2} />
+            <CodeBlock language='shell' filename='hello.sh' code={code2} />
             <br />
             3. Save and exit
           </div>
@@ -74,15 +79,16 @@ echo "Hello, World!"`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>3.3</b> Making the Script Executable
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Before running, you need to give the script <b>execute permission</b>:
-            <CodeBlock language="shell" filename="bash" code={code3} />
+            Before running, you need to give the script{' '}
+            <b>execute permission</b>:
+            <CodeBlock language='shell' filename='bash' code={code3} />
           </div>
         </motion.div>
 
@@ -90,7 +96,7 @@ echo "Hello, World!"`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -98,10 +104,10 @@ echo "Hello, World!"`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             Now, run the script with:
-            <CodeBlock language="shell" filename="bash" code={code4} />
+            <CodeBlock language='shell' filename='bash' code={code4} />
             <br />
             👉 Output will be:
-            <CodeBlock language="shell" filename="bash" code={code5} />
+            <CodeBlock language='shell' filename='bash' code={code5} />
           </div>
         </motion.div>
 
@@ -109,16 +115,26 @@ echo "Hello, World!"`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>3.5</b> Understanding the Script
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>#!/bin/bash</span> → Called a <b>shebang</b>, tells the system which interpreter to use (in this case, Bash). <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>#</span> → Anything after <span className='bg-neutral-800 px-2 rounded-lg'>#</span> is a <b>comment</b>, ignored by the shell. <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>echo &apos;Hello, World!&apos;</span> → Prints text to the terminal.
+            <b>•</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>#!/bin/bash</span>{' '}
+            → Called a <b>shebang</b>, tells the system which interpreter to use
+            (in this case, Bash). <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>#</span> →
+            Anything after{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>#</span> is a{' '}
+            <b>comment</b>, ignored by the shell. <br />
+            <b>•</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>
+              echo &apos;Hello, World!&apos;
+            </span>{' '}
+            → Prints text to the terminal.
           </div>
         </motion.div>
 
@@ -126,18 +142,28 @@ echo "Hello, World!"`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>3.6</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> A shell script is just a <b>file with commands</b> executed in sequence. <br />
-            <b>•</b> Always start scripts with a <b>shebang</b> (<span className='bg-neutral-800 px-2 rounded-lg'>#!/bin/bash</span>). <br />
-            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>chmod +x</span> to make scripts executable. <br />
-            <b>•</b> Run scripts with <span className='bg-neutral-800 px-2 rounded-lg'>./filename.sh</span>. <br />
-            <b>•</b> Even a simple &apos;Hello World&apos; teaches the basics of <b>comments, shebangs, and echo</b>.
+            <b>•</b> A shell script is just a <b>file with commands</b> executed
+            in sequence. <br />
+            <b>•</b> Always start scripts with a <b>shebang</b> (
+            <span className='bg-neutral-800 px-2 rounded-lg'>#!/bin/bash</span>
+            ). <br />
+            <b>•</b> Use{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>chmod +x</span> to
+            make scripts executable. <br />
+            <b>•</b> Run scripts with{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>
+              ./filename.sh
+            </span>
+            . <br />
+            <b>•</b> Even a simple &apos;Hello World&apos; teaches the basics of{' '}
+            <b>comments, shebangs, and echo</b>.
           </div>
         </motion.div>
 

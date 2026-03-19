@@ -41,14 +41,16 @@ rm file.txt`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>4.1</b> What is a Terminal
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            A <b>terminal</b> (or console) is a text-based interface that allows users to interact with the operating system. It takes commands typed by the user and passes them to the shell for execution.
+            A <b>terminal</b> (or console) is a text-based interface that allows
+            users to interact with the operating system. It takes commands typed
+            by the user and passes them to the shell for execution.
           </div>
         </motion.div>
 
@@ -56,15 +58,19 @@ rm file.txt`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>4.2</b> Starting the Terminal
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> On <b>Linux/macOS</b>: Search for Terminal in applications or use <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl+Alt+T</span> (Linux). <br />
-            <b>•</b> On <b>Windows</b>: Use  a terminal emulator like Git Bash / WSL.
+            <b>•</b> On <b>Linux/macOS</b>: Search for Terminal in applications
+            or use{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl+Alt+T</span>{' '}
+            (Linux). <br />
+            <b>•</b> On <b>Windows</b>: Use a terminal emulator like Git Bash /
+            WSL.
           </div>
         </motion.div>
 
@@ -72,7 +78,7 @@ rm file.txt`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -80,7 +86,7 @@ rm file.txt`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             Some of the most common commands:
-            <CodeBlock language="shell" filename="bash" code={code1} />
+            <CodeBlock language='shell' filename='bash' code={code1} />
           </div>
         </motion.div>
 
@@ -88,21 +94,22 @@ rm file.txt`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#89e051]'>4.4</b> Working with Files & Directories
+            <b className='text-[#89e051]'>4.4</b> Working with Files &
+            Directories
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> Creating a directory:
-            <CodeBlock language="shell" filename="bash" code={code2} />
+            <CodeBlock language='shell' filename='bash' code={code2} />
             <br />
             <b>•</b> Creating a file:
-            <CodeBlock language="shell" filename="bash" code={code3} />
+            <CodeBlock language='shell' filename='bash' code={code3} />
             <br />
             <b>•</b> Copy, move, or delete:
-            <CodeBlock language="shell" filename="bash" code={code4} />
+            <CodeBlock language='shell' filename='bash' code={code4} />
           </div>
         </motion.div>
 
@@ -110,7 +117,7 @@ rm file.txt`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -118,10 +125,10 @@ rm file.txt`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> Run a command (example):
-            <CodeBlock language="shell" filename="bash" code={code5} />
+            <CodeBlock language='shell' filename='bash' code={code5} />
             <br />
             <b>•</b> Run a shell script:
-            <CodeBlock language="shell" filename="bash" code={code6} />
+            <CodeBlock language='shell' filename='bash' code={code6} />
           </div>
         </motion.div>
 
@@ -129,17 +136,24 @@ rm file.txt`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>4.6</b> Stopping Commands
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Sometimes a command keeps running (like <span className='bg-neutral-800 px-2 rounded-lg'>ping</span> or <span className='bg-neutral-800 px-2 rounded-lg'>top</span>). To stop it: <br />
+            Sometimes a command keeps running (like{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>ping</span> or{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>top</span>). To
+            stop it: <br />
             <br />
-            <b>•</b> Press <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + C</span> → Interrupts the running process. <br />
-            <b>•</b> Press <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + Z</span> → Suspends the process.
+            <b>•</b> Press{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + C</span> →
+            Interrupts the running process. <br />
+            <b>•</b> Press{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + Z</span> →
+            Suspends the process.
           </div>
         </motion.div>
 
@@ -147,18 +161,31 @@ rm file.txt`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>4.7</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> The <b>terminal</b> is your main gateway to interact with the shell. <br />
-            <b>•</b> Use commands like <span className='bg-neutral-800 px-2 rounded-lg'>pwd</span>, <span className='bg-neutral-800 px-2 rounded-lg'>ls</span>, and <span className='bg-neutral-800 px-2 rounded-lg'>cd</span> to <b>navigate</b>. <br />
-            <b>•</b> Manage files with <span className='bg-neutral-800 px-2 rounded-lg'>mkdir</span>, <span className='bg-neutral-800 px-2 rounded-lg'>touch</span>, <span className='bg-neutral-800 px-2 rounded-lg'>cp</span>, <span className='bg-neutral-800 px-2 rounded-lg'>mv</span>, <span className='bg-neutral-800 px-2 rounded-lg'>rm</span>. <br />
+            <b>•</b> The <b>terminal</b> is your main gateway to interact with
+            the shell. <br />
+            <b>•</b> Use commands like{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>pwd</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>ls</span>, and{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>cd</span> to{' '}
+            <b>navigate</b>. <br />
+            <b>•</b> Manage files with{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>mkdir</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>touch</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>cp</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>mv</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>rm</span>. <br />
             <b>•</b> <b>Execute scripts</b> directly from the terminal. <br />
-            <b>•</b> Learn <b>keyboard shortcuts</b> like <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + C</span> and <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + Z</span> to control running processes.
+            <b>•</b> Learn <b>keyboard shortcuts</b> like{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + C</span> and{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>Ctrl + Z</span> to
+            control running processes.
           </div>
         </motion.div>
 

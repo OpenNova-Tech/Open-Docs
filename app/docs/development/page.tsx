@@ -315,11 +315,11 @@ export default function page() {
     <div className='bg-black pt-20'>
       <div className='max-w-5xl mx-auto px-8 py-12'>
 
-        <p className="text-white text-xl font-semibold mt-10 mb-4">Frontend Web Frameworks</p>
+        {/* <p className="text-white text-xl font-semibold mt-10 mb-4">Frontend Web Frameworks</p>
         <HoverEffect items={frontend} />
 
         <p className="text-white text-xl font-semibold mt-10 mb-4">Frontend Cross-Platform Frameworks</p>
-        <HoverEffect items={cross} />
+        <HoverEffect items={cross} /> */}
 
         {/* <p className="text-white text-xl font-semibold mt-10 mb-4">UI Libraries</p>
         <HoverEffect items={libraries} />
@@ -327,11 +327,11 @@ export default function page() {
         <p className="text-white text-xl font-semibold mt-10 mb-4">State Management Libraries</p>
         <HoverEffect items={state} /> */}
 
-        <p className="text-white text-xl font-semibold mt-10 mb-4">Backend Frameworks</p>
+        {/* <p className="text-white text-xl font-semibold mt-10 mb-4">Backend Frameworks</p>
         <HoverEffect items={backend} />
 
         <p className="text-white text-xl font-semibold mt-10 mb-4">Full Stack Web Frameworks</p>
-        <HoverEffect items={full} />
+        <HoverEffect items={full} /> */}
 
         {/* <p className="text-white text-xl font-semibold mt-10 mb-4">Full Stack Cross Platform Frameworks</p>
         <HoverEffect items={crossfull} />

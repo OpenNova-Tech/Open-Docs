@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { MessageCircle, User, Bot, SendHorizonal, Loader2 } from 'lucide-react'
+import ReactMarkdown from 'react-markdown'
 
 type Message = {
 	role: 'user' | 'bot'
@@ -43,11 +44,17 @@ export default function Chatbot() {
 				const botMsg: Message = { role: 'bot', text: data.reply }
 				setMessages((prev) => [...prev, botMsg])
 			} else {
-				const errorMsg: Message = { role: 'bot', text: data.reply || '⚠️ Botla is busy, please try again.' }
+				const errorMsg: Message = {
+					role: 'bot',
+					text: data.reply || '⚠️ Botla is busy, please try again.',
+				}
 				setMessages((prev) => [...prev, errorMsg])
 			}
 		} catch {
-			const errorMsg: Message = { role: 'bot', text: '⚠️ Failed to reach Botla. Try again later.' }
+			const errorMsg: Message = {
+				role: 'bot',
+				text: '⚠️ Failed to reach Botla. Try again later.',
+			}
 			setMessages((prev) => [...prev, errorMsg])
 		} finally {
 			setLoading(false)
@@ -108,7 +115,9 @@ export default function Chatbot() {
 													: 'bg-zinc-800 text-gray-200'
 												}`}
 										>
-											{msg.text}
+											<ReactMarkdown>
+												{msg.text}
+											</ReactMarkdown>
 										</span>
 
 										{msg.role === 'user' && (
@@ -146,7 +155,11 @@ export default function Chatbot() {
 								disabled={loading}
 								className='ml-2 px-3 py-1 bg-gradient-to-r from-[#4285F4] via-[#6858c4] to-[#EA4335] text-white rounded disabled:opacity-50 cursor-pointer'
 							>
-								{loading ? <Loader2 className='w-5 h-5 animate-spin' /> : <SendHorizonal />}
+								{loading ? (
+									<Loader2 className='w-5 h-5 animate-spin' />
+								) : (
+									<SendHorizonal />
+								)}
 							</button>
 						</div>
 					</motion.div>
@@ -168,9 +181,18 @@ export default function Chatbot() {
 function TypingLoader() {
 	return (
 		<div className='flex space-x-1 items-center ml-2'>
-			<span className='w-2 h-2 bg-gray-400 rounded-full animate-bounce' style={{ animationDelay: '0s' }}></span>
-			<span className='w-2 h-2 bg-gray-400 rounded-full animate-bounce' style={{ animationDelay: '0.2s' }}></span>
-			<span className='w-2 h-2 bg-gray-400 rounded-full animate-bounce' style={{ animationDelay: '0.4s' }}></span>
+			<span
+				className='w-2 h-2 bg-gray-400 rounded-full animate-bounce'
+				style={{ animationDelay: '0s' }}
+			></span>
+			<span
+				className='w-2 h-2 bg-gray-400 rounded-full animate-bounce'
+				style={{ animationDelay: '0.2s' }}
+			></span>
+			<span
+				className='w-2 h-2 bg-gray-400 rounded-full animate-bounce'
+				style={{ animationDelay: '0.4s' }}
+			></span>
 		</div>
 	)
 }

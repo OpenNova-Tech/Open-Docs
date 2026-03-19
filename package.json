@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.11.0",
@@ -32,6 +33,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-katex": "^3.1.0",
+    "react-markdown": "^10.1.0",
     "react-syntax-highlighter": "^15.6.1",
     "react-use-measure": "^2.1.7",
     "tailwind-merge": "^3.3.1",
@@ -47,6 +49,7 @@
     "@types/react-syntax-highlighter": "^15.5.13",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
+    "prettier": "^3.8.1",
     "tailwindcss": "^4",
     "tw-animate-css": "^1.2.8",
     "typescript": "^5"

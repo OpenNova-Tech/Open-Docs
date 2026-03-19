@@ -54,15 +54,16 @@ ls -l`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>5.1</b> Viewing Your Location
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <CodeBlock language="shell" filename="bash" code={code1} /> <br />
-            <b>•</b> Prints the current working directory (where you are in the filesystem).
+            <CodeBlock language='shell' filename='bash' code={code1} /> <br />
+            <b>•</b> Prints the current working directory (where you are in the
+            filesystem).
           </div>
         </motion.div>
 
@@ -70,14 +71,14 @@ ls -l`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>5.2</b> Listing Files & Directories
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <CodeBlock language="shell" filename="bash" code={code2} />
+            <CodeBlock language='shell' filename='bash' code={code2} />
           </div>
         </motion.div>
 
@@ -85,14 +86,14 @@ ls -l`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>5.3</b> Navigating Between Directories
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <CodeBlock language="shell" filename="bash" code={code3} />
+            <CodeBlock language='shell' filename='bash' code={code3} />
           </div>
         </motion.div>
 
@@ -100,14 +101,14 @@ ls -l`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>5.4</b> Creating Files & Folders
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <CodeBlock language="shell" filename="bash" code={code4} />
+            <CodeBlock language='shell' filename='bash' code={code4} />
           </div>
         </motion.div>
 
@@ -115,14 +116,14 @@ ls -l`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>5.5</b> Copying & Moving Files
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <CodeBlock language="shell" filename="bash" code={code5} />
+            <CodeBlock language='shell' filename='bash' code={code5} />
           </div>
         </motion.div>
 
@@ -130,15 +131,16 @@ ls -l`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>5.6</b> Deleting Files & Folders
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            ⚠️ Use carefully — deleted files usually don&apos;t go to &quot;Recycle Bin.&quot;
-            <CodeBlock language="shell" filename="bash" code={code6} />
+            ⚠️ Use carefully — deleted files usually don&apos;t go to
+            &quot;Recycle Bin.&quot;
+            <CodeBlock language='shell' filename='bash' code={code6} />
           </div>
         </motion.div>
 
@@ -146,15 +148,19 @@ ls -l`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>5.7</b> Examples
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <CodeBlock language="shell" filename="bash" code={code7} /> <br />
-            👉 Creates a folder <span className='bg-neutral-800 px-2 rounded-lg'>projects</span>, enters it, makes a file <span className='bg-neutral-800 px-2 rounded-lg'>notes.txt</span>, and lists it.
+            <CodeBlock language='shell' filename='bash' code={code7} /> <br />
+            👉 Creates a folder{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>projects</span>,
+            enters it, makes a file{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>notes.txt</span>,
+            and lists it.
           </div>
         </motion.div>
 
@@ -162,19 +168,35 @@ ls -l`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#89e051] border border-[#89e051]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#89e051]'>5.8</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>pwd</span> shows your <b>current directory</b>. <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>ls</span> lists files; add <span className='bg-neutral-800 px-2 rounded-lg'>-l</span> or <span className='bg-neutral-800 px-2 rounded-lg'>-a</span> for more details. <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>cd</span> is used to <b>move around</b> the filesystem. <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>mkdir</span> creates directories, <span className='bg-neutral-800 px-2 rounded-lg'>touch</span> creates files. <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>cp</span> and <span className='bg-neutral-800 px-2 rounded-lg'>mv</span> are for <b>copying/moving</b>, while <span className='bg-neutral-800 px-2 rounded-lg'>rm</span> deletes. <br />
-            <b>•</b> Be <b>careful with</b> <span className='bg-neutral-800 px-2 rounded-lg'>rm -rf</span>, as it permanently deletes files/folders.
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>pwd</span>{' '}
+            shows your <b>current directory</b>. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>ls</span>{' '}
+            lists files; add{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>-l</span> or{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>-a</span> for more
+            details. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>cd</span>{' '}
+            is used to <b>move around</b> the filesystem. <br />
+            <b>•</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>mkdir</span>{' '}
+            creates directories,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>touch</span>{' '}
+            creates files. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>cp</span>{' '}
+            and <span className='bg-neutral-800 px-2 rounded-lg'>mv</span> are
+            for <b>copying/moving</b>, while{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>rm</span> deletes.{' '}
+            <br />
+            <b>•</b> Be <b>careful with</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>rm -rf</span>, as
+            it permanently deletes files/folders.
           </div>
         </motion.div>
 
