@@ -50,7 +50,8 @@ export function Footer() {
         // { label: 'Community', href: '#' },
         { label: 'Forum', href: '/forum' },
         { label: 'Donate', href: '/support' },
-        { label: 'Jobs', href: '/jobs' },
+        // { label: 'Jobs', href: '/jobs' },
+        { label: 'Update Logs', href: '/updates' },
         // { label: 'Chat', href: '#' },
       ],
     },
@@ -58,9 +59,9 @@ export function Footer() {
       title: 'Main Links',
       links: [
         { label: 'Documentations', href: '/docs' },
-        { label: 'Knowledge', href: '/knowledge' },
-        { label: 'Tech Hubs', href: '/hubs' },
-        { label: 'Update Logs', href: '/updates' },
+        { label: 'Dev Myths', href: '/others/dev-myths' },
+        { label: 'The Workshop', href: '/workshop' },
+        
       ],
     },
     {
@@ -102,7 +103,7 @@ export function Footer() {
                 <motion.li key={link.label}>
                   <motion.a
                     href={link.href}
-                    target='_blank'
+                    // target='_blank'
                     className='hover:text-indigo-400 inline-block'
                     whileHover={{ x: 4 }}
                     transition={{ type: 'spring', stiffness: 300 }}

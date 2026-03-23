@@ -1,0 +1,124 @@
+# Authentication vs. Authorization
+
+> **The Golden Rule:** Authentication is the *who*, Authorization is the *what*. You cannot safely determine the "what" until you are 100% sure of the "who."
+
+---
+
+## ⚖️ The Quick Comparison
+
+| Feature | Authentication (AuthN) | Authorization (AuthZ) |
+| :--- | :--- | :--- |
+| **Focus** | Identity | Permissions |
+| **Question** | "Who are you?" | "What can you do?" |
+| **Method** | Passwords, Biometrics, OTPs | Roles (RBAC), Scopes, Policies |
+| **Token Type** | ID Token | Access Token |
+| **Timing** | Happens first | Happens second |
+
+---
+
+## ⚠️ The "Same Thing" Myth
+It’s common to hear "Auth" and assume it covers everything. It doesn't. 
+
+**Authentication without Authorization** is like getting a VIP pass to a festival but being told you aren't allowed to enter any of the stages. You're "in," but you're useless.
+
+**Authorization without Authentication** is like letting someone into a vault because they have a key, but never checking if they stole that key from the owner.
+
+---
+
+## 🔄 The Logic Flow
+
+In a modern application, the handshake follows a strict sequence:
+
+1.  **Identification:** User provides a username/email.
+2.  **Authentication:** User provides a secret (Password/Passkey). The system issues an **ID Token**.
+3.  **Authorization:** The system checks the user's "claims" (e.g., `role: "editor"`). The system issues an **Access Token**.
+4.  **Access:** The user presents the Access Token to the API to get data.
+
+
+
+---
+
+## 💡 Real-World Analogy: The Hotel
+
+* **Checking in at the Front Desk:** You show your ID. The receptionist confirms you are who you say you are. **(Authentication)**
+* **The Key Card:** The receptionist gives you a card. This card doesn't just "work"—it is programmed *only* for Room 302 and the Gym. It won't open the Manager's office. **(Authorization)**
+
+---
+
+## 🌐 Modern Implementation (OAuth2/OIDC)
+
+When using tools like Auth0, Clerk, or NextAuth, keep your tokens straight:
+
+### 🔑 ID Token (AuthN)
+Contains user information (name, email, profile picture). It is for the **Frontend** to display a "Welcome, Dave!" message. 
+*Never use this to secure an API.*
+
+### 🛂 Access Token (AuthZ)
+Contains scopes or roles. It is for the **Backend** to verify permissions.
+*This is the "Key Card" for your resources.*
+
+---
+
+## ⚙️ The Code-Level View
+
+```typescript
+/**
+ * 1. Authentication Check (Middleware Level)
+ */
+const user = await authenticate(request); 
+if (!user) throw new Error("401 Unauthorized: Who are you?");
+
+/**
+ * 2. Authorization Check (Resource Level)
+ */
+const canDelete = user.permissions.includes('post:delete');
+
+if (!canDelete) {
+  throw new Error("403 Forbidden: You can't do that.");
+}
+
+// Proceed with sensitive logic
+db.posts.delete(id);
+```
+
+---
+
+## 🚫 Common Security Pitfalls
+
+Don't let these typical implementation errors leave your application vulnerable:
+
+### 401 vs. 403: The "Status" Confusion
+One of the most frequent mistakes in API design is returning the wrong status code.
+* **`401 Unauthorized`**: This actually means **Unauthenticated**. The system doesn't know who you are. Provide credentials.
+* **`403 Forbidden`**: The system knows exactly who you are, but you are **not allowed** to touch this resource.
+
+
+
+### 🛡️ The "Hidden Button" Fallacy
+Hiding a "Delete" or "Admin" button in your React/Next.js frontend is **User Experience (UX)**, not security. 
+> **Never trust the frontend.** If your API endpoint doesn't perform a server-side authorization check, a malicious user can simply open the browser console and trigger the `fetch()` request manually.
+
+### ⏳ Stale Role Vulnerability
+When a user’s permissions change (e.g., they are fired or demoted), their **Access Token** might still be valid.
+* **The Risk:** They keep their high-level access until the token expires.
+* **The Fix:** Use short **TTL (Time To Live)** for tokens or implement a "Token Revocation" list for critical permission changes.
+
+---
+
+## 🧠 Summary
+
+**Authentication verifies the person; Authorization verifies the permission.**
+
+Always build your systems to **Fail Closed**. If the system is ever unsure about a user's identity or their right to access a resource, the default response should always be a hard **Access Denied**.
+
+--- 
+
+## 🔑 Key Takeaway
+
+> * **AuthN** = Identity (The Passport)
+> * **AuthZ** = Permissions (The Boarding Pass)
+
+---
+
+### 👤 Author 
+**Anurag Bhattacharjee** (SDE - LTM Limited)
