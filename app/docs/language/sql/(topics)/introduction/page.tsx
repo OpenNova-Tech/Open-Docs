@@ -23,7 +23,7 @@ export default function Page() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className='text-5xl font-extrabold tracking-tight bg-clip-text text-[#e34c26] bg-black'>
+          <h1 className='text-5xl font-extrabold tracking-tight bg-clip-text text-[#e38c00] bg-black'>
             Introduction
           </h1>
         </motion.header>
@@ -33,10 +33,10 @@ export default function Page() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           whileHover={{ scale: 1.03, }}
-          className='shadow-[#e34c26] border border-[#e34c26]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
+          className='shadow-[#e38c00] border border-[#e38c00]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#e34c26]'>{num(1)}</b> What is SQL
+            <b className='text-[#e38c00]'>{num(1)}</b> What is SQL
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>SQL (Structured Query Language)</b> is the standard language used to manage and manipulate relational databases. <br />
@@ -63,10 +63,10 @@ export default function Page() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           whileHover={{ scale: 1.03, }}
-          className='shadow-[#e34c26] border border-[#e34c26]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
+          className='shadow-[#e38c00] border border-[#e38c00]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#e34c26]'>{num(2)}</b> Subtle Information
+            <b className='text-[#e38c00]'>{num(2)}</b> Subtle Information
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             SQL is <b>not a single uniform implementation</b>— it&apos;s a standard with variations. <br />
@@ -90,10 +90,10 @@ export default function Page() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           whileHover={{ scale: 1.03, }}
-          className='shadow-[#e34c26] border border-[#e34c26]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
+          className='shadow-[#e38c00] border border-[#e38c00]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#e34c26]'>{num(3)}</b> Why SQL Was Created
+            <b className='text-[#e38c00]'>{num(3)}</b> Why SQL Was Created
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             SQL was built to answer one question: <br />
@@ -113,10 +113,10 @@ export default function Page() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           whileHover={{ scale: 1.03, }}
-          className='shadow-[#e34c26] border border-[#e34c26]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
+          className='shadow-[#e38c00] border border-[#e38c00]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#e34c26]'>{num(4)}</b> Core Characteristics
+            <b className='text-[#e38c00]'>{num(4)}</b> Core Characteristics
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>Declarative Language</b> <br />
@@ -157,10 +157,10 @@ export default function Page() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           whileHover={{ scale: 1.03, }}
-          className='shadow-[#e34c26] border border-[#e34c26]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
+          className='shadow-[#e38c00] border border-[#e38c00]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#e34c26]'>{num(5)}</b> Where SQL Is Commonly Used
+            <b className='text-[#e38c00]'>{num(5)}</b> Where SQL Is Commonly Used
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             SQL is used in environments where <b>data management and retrieval are critical</b>: <br />
@@ -179,10 +179,10 @@ export default function Page() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           whileHover={{ scale: 1.03, }}
-          className='shadow-[#e34c26] border border-[#e34c26]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
+          className='shadow-[#e38c00] border border-[#e38c00]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#e34c26]'>{num(6)}</b> Key Takeaways
+            <b className='text-[#e38c00]'>{num(6)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> SQL is a <b>declarative query language</b> for managing data <br />
@@ -198,10 +198,10 @@ export default function Page() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           whileHover={{ scale: 1.03, }}
-          className='shadow-[#e34c26] border border-[#e34c26]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
+          className='shadow-[#e38c00] border border-[#e38c00]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#e34c26]'>{num(7)}</b> Fun Facts 😄
+            <b className='text-[#e38c00]'>{num(7)}</b> Fun Facts 😄
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> SQL was originally called <b>&quot;SEQUEL&quot;</b> <br />
