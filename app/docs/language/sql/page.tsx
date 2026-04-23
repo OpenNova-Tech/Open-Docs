@@ -2,7 +2,6 @@
 
 import {
 	IconDatabase,
-	IconServer,
 	IconTerminal2,
 	IconSearch,
 	IconFilter,
