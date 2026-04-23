@@ -134,7 +134,7 @@ export default function Page() {
 
             Example: <br />
             <span className='bg-neutral-800 px-2 rounded-lg'>
-              SELECT * FROM students WHERE name LIKE 'A%';
+              SELECT * FROM students WHERE name LIKE &apos;A%&apos;;
             </span>
           </div>
         </motion.div>

@@ -3,20 +3,20 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { CodeBlock } from '@/components/ui/code-block'
+// import { CodeBlock } from '@/components/ui/code-block'
 
 export default function page() {
-    const code1 = `<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>My First HTML Page</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-    <p>This is a basic HTML structure.</p>
-  </body>
-</html>`
+//     const code1 = `<!DOCTYPE html>
+// <html>
+//   <head>
+//     <meta charset="UTF-8" />
+//     <title>My First HTML Page</title>
+//   </head>
+//   <body>
+//     <h1>Hello World</h1>
+//     <p>This is a basic HTML structure.</p>
+//   </body>
+// </html>`
 
     return (
         <main className='pt-32 bg-black py-12 px-6'>
