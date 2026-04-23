@@ -1,8 +1,36 @@
 'use client'
 
 import React, { useState } from 'react';
-import { Code2, Search, Filter, ExternalLink, Trophy, TrendingUp, BookOpen } from 'lucide-react';
-// import { useRouter } from "next/navigation";
+import { Code2, Search, BookOpen, Database, Terminal, Braces } from 'lucide-react';
+import { useRouter } from "next/navigation";
+import { motion } from "framer-motion"
+
+const categories = [
+  {
+    name: "DSA",
+    icon: Code2,
+    route: "code/dsa",
+    description: "Master data structures & algorithms with curated problems."
+  },
+  {
+    name: "SQL",
+    icon: Database,
+    route: "/sql",
+    description: "Practice queries, joins, and database concepts."
+  },
+  {
+    name: "BASH",
+    icon: Terminal,
+    route: "/bash",
+    description: "Shell scripting, commands, and automation basics."
+  },
+  {
+    name: "JS",
+    icon: Braces,
+    route: "/js",
+    description: "JavaScript coding challenges and core concepts."
+  },
+]
 
 const problems = [
   {
@@ -116,7 +144,7 @@ const CodeVault = () => {
   const [selectedDifficulty, setSelectedDifficulty] = useState('all');
   const [searchQuery, setSearchQuery] = useState('')
 
-  // const router = useRouter();
+  const router = useRouter();
 
   const filteredProblems = problems.filter(problem => {
     const matchesPlatform = selectedPlatform === 'all' || problem.platform === selectedPlatform;
@@ -151,9 +179,16 @@ const CodeVault = () => {
 
   return (
     <div className="min-h-screen bg-black text-gray-100">
+
       {/* Header */}
-      <div className="bg-gradient-to-r mt-32 mb-20 from-cyan-600 to-cyan-900 border-b border-cyan-500/20">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="bg-gradient-to-r mt-32 mb-20 from-cyan-600 to-cyan-900 border-b border-cyan-500/20"
+      >
         <div className="max-w-7xl mx-auto px-6 py-8">
+
           <div className="flex items-center gap-4 mb-4">
             <div className="w-16 h-16 bg-cyan-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/50">
               <Code2 className="w-9 h-9 text-white" />
@@ -165,158 +200,234 @@ const CodeVault = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-            <div className="bg-cyan-950/50 rounded-lg p-4 border border-cyan-500/20">
-              <div className="flex items-center gap-2 mb-1">
-                <Trophy className="w-4 h-4 text-cyan-400" />
-                <span className="text-xs text-cyan-300 font-medium">Total</span>
-              </div>
-              <p className="text-2xl font-bold text-white">{stats.total}</p>
-            </div>
-            <div className="bg-green-950/30 rounded-lg p-4 border border-green-500/20">
-              <div className="flex items-center gap-2 mb-1">
-                <TrendingUp className="w-4 h-4 text-green-400" />
-                <span className="text-xs text-green-300 font-medium">Easy</span>
-              </div>
-              <p className="text-2xl font-bold text-green-400">{stats.easy}</p>
-            </div>
-            <div className="bg-yellow-950/30 rounded-lg p-4 border border-yellow-500/20">
-              <div className="flex items-center gap-2 mb-1">
-                <TrendingUp className="w-4 h-4 text-yellow-400" />
-                <span className="text-xs text-yellow-300 font-medium">Medium</span>
-              </div>
-              <p className="text-2xl font-bold text-yellow-400">{stats.medium}</p>
-            </div>
-            <div className="bg-red-950/30 rounded-lg p-4 border border-red-500/20">
-              <div className="flex items-center gap-2 mb-1">
-                <TrendingUp className="w-4 h-4 text-red-400" />
-                <span className="text-xs text-red-300 font-medium">Hard</span>
-              </div>
-              <p className="text-2xl font-bold text-red-400">{stats.hard}</p>
-            </div>
-          </div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.1 } }
+            }}
+            className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6"
+          >
+            {[
+              { label: "Total", value: stats.total, color: "cyan" },
+              { label: "Easy", value: stats.easy, color: "green" },
+              { label: "Medium", value: stats.medium, color: "yellow" },
+              { label: "Hard", value: stats.hard, color: "red" }
+            ].map((stat, i) => (
+              <motion.div
+                key={i}
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0 }
+                }}
+                whileHover={{ scale: 1.05 }}
+                className={`rounded-lg p-4 border bg-${stat.color}-950/30 border-${stat.color}-500/20`}
+              >
+                <p className={`text-xs text-${stat.color}-300`}>{stat.label}</p>
+                <p className={`text-2xl font-bold text-${stat.color}-400`}>
+                  {stat.value}
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
+      </motion.div>
+
+      {/* Categories */}
+      <div className="max-w-7xl mx-auto px-6 -mt-10 mb-10">
+
+        <div className="mb-6">
+          <h2 className="text-xl md:text-2xl font-semibold text-white">
+            Explore by Category
+          </h2>
+          <p className="text-gray-400 mt-1 text-sm">
+            Jump directly into focused problem sets across different domains.
+          </p>
+        </div>
+
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {},
+            visible: { transition: { staggerChildren: 0.08 } }
+          }}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
+        >
+          {categories.map((cat) => {
+            const Icon = cat.icon
+
+            return (
+              <motion.div
+                key={cat.name}
+                onClick={() => router.push(cat.route)}
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: { opacity: 1, y: 0 }
+                }}
+                whileHover={{ scale: 1.03, y: -4 }}
+                whileTap={{ scale: 0.97 }}
+                className="cursor-pointer group relative rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900 to-gray-950 p-5 hover:border-cyan-500 transition-all overflow-hidden"
+              >
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-cyan-500/10 blur-xl" />
+
+                <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-800 border border-gray-700 mb-4 group-hover:bg-cyan-600/20 transition">
+                  <Icon className="w-5 h-5 text-cyan-400 group-hover:text-white transition" />
+                </div>
+
+                <h3 className="text-lg font-semibold text-white mb-1">
+                  {cat.name} Codes
+                </h3>
+
+                <p className="text-sm text-gray-400 group-hover:text-gray-300 transition">
+                  {cat.description}
+                </p>
+              </motion.div>
+            )
+          })}
+        </motion.div>
       </div>
 
       {/* Filters */}
       <div className="max-w-7xl mx-auto px-6 py-6">
-        <div className="bg-gray-900 rounded-xl p-6 border border-gray-800 mb-6">
-          <div className="grid md:grid-cols-3 gap-4">
-            {/* Search */}
-            <div className="md:col-span-1">
-              <label className="block text-sm font-medium text-gray-400 mb-2">Search</label>
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-500" />
-                <input
-                  type="text"
-                  placeholder="Problem or tag..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full bg-gray-800 border border-gray-700 rounded-lg pl-10 pr-4 py-2.5 text-gray-100 placeholder-gray-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500"
-                />
-              </div>
-            </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="relative rounded-xl p-[1px] bg-gradient-to-r from-cyan-500/30 via-transparent to-cyan-500/30"
+        >
 
-            {/* Platform Filter */}
-            <div>
-              <label className="block text-sm font-medium text-gray-400 mb-2">Platform</label>
-              <div className="relative">
-                <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-500" />
+          {/* Inner Container */}
+          <div className="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg relative overflow-hidden">
+
+            {/* Glow Overlay */}
+            <div className="absolute inset-0 opacity-0 hover:opacity-100 transition bg-cyan-500/5 blur-2xl pointer-events-none" />
+
+            <div className="grid md:grid-cols-3 gap-4 relative z-10">
+
+              {/* Search */}
+              <div className="group">
+                <label className="text-sm text-gray-400 mb-2 block group-hover:text-cyan-400 transition">
+                  Search
+                </label>
+                <div className="relative">
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 group-hover:text-cyan-400 transition" />
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Problem or tag..."
+                    className="w-full bg-gray-800 border border-gray-700 rounded-lg pl-10 pr-4 py-2.5 text-gray-100 
+              placeholder-gray-500 
+              focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/30 
+              hover:border-cyan-400/50 
+              transition-all duration-200"
+                  />
+                </div>
+              </div>
+
+              {/* Platform */}
+              <div className="group">
+                <label className="text-sm text-gray-400 mb-2 block group-hover:text-cyan-400 transition">
+                  Platform
+                </label>
                 <select
                   value={selectedPlatform}
                   onChange={(e) => setSelectedPlatform(e.target.value)}
-                  className="w-full bg-gray-800 border border-gray-700 rounded-lg pl-10 pr-4 py-2.5 text-gray-100 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 appearance-none"
+                  className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2.5 text-gray-100
+            focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/30
+            hover:border-cyan-400/50
+            transition-all duration-200"
                 >
                   <option value="all">All Platforms</option>
                   <option value="LeetCode">LeetCode</option>
                   <option value="HackerRank">HackerRank</option>
-                  <option value="CodeForces">CodeForces</option>
                 </select>
               </div>
-            </div>
 
-            {/* Difficulty Filter */}
-            <div>
-              <label className="block text-sm font-medium text-gray-400 mb-2">Difficulty</label>
-              <select
-                value={selectedDifficulty}
-                onChange={(e) => setSelectedDifficulty(e.target.value)}
-                className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2.5 text-gray-100 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 appearance-none"
-              >
-                <option value="all">All Levels</option>
-                <option value="Easy">Easy</option>
-                <option value="Medium">Medium</option>
-                <option value="Hard">Hard</option>
-              </select>
+              {/* Difficulty */}
+              <div className="group">
+                <label className="text-sm text-gray-400 mb-2 block group-hover:text-cyan-400 transition">
+                  Difficulty
+                </label>
+                <select
+                  value={selectedDifficulty}
+                  onChange={(e) => setSelectedDifficulty(e.target.value)}
+                  className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2.5 text-gray-100
+            focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/30
+            hover:border-cyan-400/50
+            transition-all duration-200"
+                >
+                  <option value="all">All Levels</option>
+                  <option value="Easy">Easy</option>
+                  <option value="Medium">Medium</option>
+                </select>
+              </div>
+
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Problems List */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        {/* Problems */}
+        <motion.div
+          layout
+          className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
           {filteredProblems.length === 0 ? (
-            <div className="bg-gray-900 rounded-xl p-12 border border-gray-800 text-center">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="bg-gray-900 rounded-xl p-12 border border-gray-800 text-center"
+            >
               <BookOpen className="w-12 h-12 text-gray-600 mx-auto mb-4" />
-              <p className="text-gray-400 text-lg">No problems found matching your filters</p>
-            </div>
+              <p className="text-gray-400">No problems found</p>
+            </motion.div>
           ) : (
             filteredProblems.map((problem) => (
-              <div
+              <motion.div
                 key={problem.id}
+                layout
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.03, y: -5 }}
+                whileTap={{ scale: 0.98 }}
                 onClick={() => window.location.href = problem.link}
-                className="cursor-pointer bg-gray-900 rounded-xl border border-gray-800 overflow-hidden hover:border-cyan-500/50 transition-colors hover:scale-[1.01]"
+                className="cursor-pointer group relative bg-gradient-to-br from-gray-900 to-gray-950 rounded-xl border border-gray-800 hover:border-cyan-500/50 transition-all overflow-hidden"
               >
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-cyan-500/5 blur-xl transition" />
+
                 <div className="p-6">
-                  <div className="flex items-start justify-between mb-3">
-                    <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-gray-100 mb-2">
-                        {problem.title}
-                      </h3>
+                  <h3 className="text-lg font-semibold mb-3">{problem.title}</h3>
 
-                      <div className="flex flex-wrap items-center gap-3">
-                        <span className="px-3 py-1 bg-cyan-500/10 text-cyan-400 rounded-full text-xs font-medium border border-cyan-500/20">
-                          {problem.platform}
-                        </span>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 text-xs bg-cyan-500/10 text-cyan-400 rounded-full border border-cyan-500/20">
+                      {problem.platform}
+                    </span>
 
-                        <span
-                          className={`px-3 py-1 rounded-full text-xs font-medium border ${getDifficultyColor(
-                            problem.difficulty
-                          )}`}
-                        >
-                          {problem.difficulty}
-                        </span>
+                    <span className={`px-3 py-1 text-xs rounded-full border ${getDifficultyColor(problem.difficulty)}`}>
+                      {problem.difficulty}
+                    </span>
 
-                        {problem.tags.map((tag, idx) => (
-                          <span
-                            key={idx}
-                            className="px-3 py-1 bg-gray-800 text-gray-400 rounded-full text-xs border border-gray-700"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* External Link (New Tab) */}
-                    <a
-                      href={problem.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      className="ml-4 p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors border border-gray-700"
-                    >
-                      <ExternalLink className="w-5 h-5 text-cyan-400" />
-                    </a>
+                    {problem.tags.map((tag, i) => (
+                      <span
+                        key={i}
+                        className="px-3 py-1 text-xs bg-gray-800 text-gray-400 rounded-full border border-gray-700 group-hover:text-gray-200"
+                      >
+                        {tag}
+                      </span>
+                    ))}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))
-
           )}
-        </div>
+        </motion.div>
+
       </div>
     </div>
-  );
+  )
 };
 
 export default CodeVault;
