@@ -68,19 +68,20 @@ System.out.println(a / b); // ArithmeticException`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>12.1</b> What is an Exception?
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            An <b>exception</b> is an event that occurs during program execution which disrupts the normal flow. <br />
+            An <b>exception</b> is an event that occurs during program execution
+            which disrupts the normal flow. <br />
             <br />
             <b>Example:</b>
-            <CodeBlock language="java" filename="java" code={code1} /> <br />
+            <CodeBlock language='java' filename='java' code={code1} /> <br />
             🧠 Output:
-            <CodeBlock language="bash" filename="" code={code2} />
+            <CodeBlock language='bash' filename='' code={code2} />
           </div>
         </motion.div>
 
@@ -88,14 +89,14 @@ System.out.println(a / b); // ArithmeticException`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>12.2</b> Exception Hierarchy
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <CodeBlock language="bash" filename="" code={code3} />
+            <CodeBlock language='bash' filename='' code={code3} />
             <br />
             <b>•</b> <b>Error</b>: Serious issues (like memory overflow). <br />
             <b>•</b> <b>Exception</b>: Conditions your program should handle.
@@ -106,7 +107,7 @@ System.out.println(a / b); // ArithmeticException`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -115,9 +116,9 @@ System.out.println(a / b); // ArithmeticException`
           <div className='max-w-3xl mx-auto text-gray-300'>
             Used to <b>handle exceptions gracefully</b>. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code4} /> <br />
+            <CodeBlock language='java' filename='java' code={code4} /> <br />
             ✅ Output: <br />
-            <CodeBlock language="bash" filename="" code={code5} />
+            <CodeBlock language='bash' filename='' code={code5} />
           </div>
         </motion.div>
 
@@ -125,7 +126,7 @@ System.out.println(a / b); // ArithmeticException`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -135,7 +136,7 @@ System.out.println(a / b); // ArithmeticException`
             Executes <b>always</b>, whether exception occurs or not. <br />
             Used for cleanup like closing files or connections. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code6} /> 
+            <CodeBlock language='java' filename='java' code={code6} />
           </div>
         </motion.div>
 
@@ -143,7 +144,7 @@ System.out.println(a / b); // ArithmeticException`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -151,9 +152,10 @@ System.out.println(a / b); // ArithmeticException`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> <b>throw</b>: Used to manually throw an exception. <br />
-            <b>•</b> <b>throws</b>: Declares exceptions a method can throw. <br />
+            <b>•</b> <b>throws</b>: Declares exceptions a method can throw.{' '}
             <br />
-            <CodeBlock language="java" filename="java" code={code7} />
+            <br />
+            <CodeBlock language='java' filename='java' code={code7} />
           </div>
         </motion.div>
 
@@ -161,7 +163,7 @@ System.out.println(a / b); // ArithmeticException`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -170,7 +172,7 @@ System.out.println(a / b); // ArithmeticException`
           <div className='max-w-3xl mx-auto text-gray-300'>
             You can handle <b>different exception types separately</b>. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code8} />
+            <CodeBlock language='java' filename='java' code={code8} />
           </div>
         </motion.div>
 
@@ -178,7 +180,7 @@ System.out.println(a / b); // ArithmeticException`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -186,13 +188,14 @@ System.out.println(a / b); // ArithmeticException`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> Exceptions prevent program crashes. <br />
-            <b>•</b> Use <b>try-catch</b> to handle runtime errors safely. <br />
+            <b>•</b> Use <b>try-catch</b> to handle runtime errors safely.{' '}
+            <br />
             <b>•</b> <b>finally</b> runs no matter what. <br />
-            <b>•</b> <b>throw</b> and <b>throws</b> help manage custom and declared exceptions. <br />
+            <b>•</b> <b>throw</b> and <b>throws</b> help manage custom and
+            declared exceptions. <br />
             <b>•</b> Hierarchy ensures clear classification and recovery.
           </div>
         </motion.div>
-
       </div>
     </main>
   )

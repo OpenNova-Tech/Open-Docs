@@ -4,7 +4,14 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { CodeBlock } from '@/components/ui/code-block'
 import { usePathname } from 'next/navigation'
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table'
 
 export default function Page() {
   const pathname = usePathname()
@@ -13,9 +20,21 @@ export default function Page() {
 
   const table1 = [
     { aspect: 'Belongs to', instance: 'Object', static: 'Class' },
-    { aspect: 'Memory Allocation', instance: 'Created for each object', static: 'Created once per class' },
-    { aspect: 'Access', instance: 'Through object', static: 'Through class name' },
-    { aspect: 'Lifecycle', instance: 'Exists as long as the object exists', static: 'Exists till program ends' },
+    {
+      aspect: 'Memory Allocation',
+      instance: 'Created for each object',
+      static: 'Created once per class',
+    },
+    {
+      aspect: 'Access',
+      instance: 'Through object',
+      static: 'Through class name',
+    },
+    {
+      aspect: 'Lifecycle',
+      instance: 'Exists as long as the object exists',
+      static: 'Exists till program ends',
+    },
     { aspect: 'Example', instance: 'name, age', static: 'count, college' },
   ]
 
@@ -25,7 +44,6 @@ export default function Page() {
     { scenario: 'Utility or helper methods', use: 'Static' },
     { scenario: 'Operations dependent on object data', use: 'Instance' },
   ]
-
 
   const code1 = `class Student {
     String name; // instance variable
@@ -98,7 +116,6 @@ class Main {
     }
 }`
 
-
   return (
     <main className='pt-32 bg-black py-12 px-6'>
       <div className='max-w-4xl mx-auto space-y-12'>
@@ -117,19 +134,21 @@ class Main {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(1)}</b> Instance Members
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Instance members belong to a <b>specific object</b> of the class. <br />
+            Instance members belong to a <b>specific object</b> of the class.{' '}
+            <br />
             Each object gets <b>its own copy</b> of these members. <br />
             <br />
             <b>Example</b>
-            <CodeBlock language="java" filename="java" code={code1} /> <br />
-            ➡️ Each student has their <b>own data</b> — instance members are <b>unique</b> for each object.
+            <CodeBlock language='java' filename='java' code={code1} /> <br />
+            ➡️ Each student has their <b>own data</b> — instance members are{' '}
+            <b>unique</b> for each object.
           </div>
         </motion.div>
 
@@ -137,19 +156,24 @@ class Main {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(2)}</b> Static Members
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Static members belong to the <b>class itself</b>, not to individual objects. <br />
+            Static members belong to the <b>class itself</b>, not to individual
+            objects. <br />
             They are <b>shared</b> among all instances of the class. <br />
             <br />
             <b>Example</b>
-            <CodeBlock language="java" filename="java" code={code2} /> <br />
-            ➡️ The <span className='bg-neutral-800 px-2 rounded-lg'>college</span> variable is <b>shared</b> by all objects of <span className='bg-neutral-800 px-2 rounded-lg'>Student</span>. <br />
+            <CodeBlock language='java' filename='java' code={code2} /> <br />
+            ➡️ The{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>college</span>{' '}
+            variable is <b>shared</b> by all objects of{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>Student</span>.{' '}
+            <br />
             If one object changes it, the change reflects in all others.
           </div>
         </motion.div>
@@ -158,7 +182,7 @@ class Main {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -190,16 +214,17 @@ class Main {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(4)}</b> Practical Example
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <CodeBlock language="java" filename="java" code={code3} /> <br />
+            <CodeBlock language='java' filename='java' code={code3} /> <br />
             Even though three different objects are created, <br />
-            <span className='bg-neutral-800 px-2 rounded-lg'>count</span> is shared — so it increases <b>collectively</b>.
+            <span className='bg-neutral-800 px-2 rounded-lg'>count</span> is
+            shared — so it increases <b>collectively</b>.
           </div>
         </motion.div>
 
@@ -207,16 +232,17 @@ class Main {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(5)}</b> Static Blocks
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Static blocks are executed <b>once when the class is loaded</b>, before any object is created. <br />
+            Static blocks are executed <b>once when the class is loaded</b>,
+            before any object is created. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code4} />
+            <CodeBlock language='java' filename='java' code={code4} />
           </div>
         </motion.div>
 
@@ -224,16 +250,22 @@ class Main {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(6)}</b> Rules & Restrictions
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> Static methods <b>cannot access instance variables</b> directly.
-            <b>•</b> You <b>can&apos;t use</b>  <span className='bg-neutral-800 px-2 rounded-lg'>this</span> <b>or</b> <span className='bg-neutral-800 px-2 rounded-lg'>super</span> inside static methods.
-            <b>•</b> Static variables and methods are <b>initialized once</b>, not per object.
+            <b>•</b> Static methods <b>cannot access instance variables</b>{' '}
+            directly.
+            <b>•</b> You <b>can&apos;t use</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>this</span>{' '}
+            <b>or</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>super</span> inside
+            static methods.
+            <b>•</b> Static variables and methods are <b>initialized once</b>,
+            not per object.
           </div>
         </motion.div>
 
@@ -241,7 +273,7 @@ class Main {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -271,17 +303,20 @@ class Main {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(8)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> <b>Static</b> → shared by all, class-level, single copy. <br />
+            <b>•</b> <b>Static</b> → shared by all, class-level, single copy.{' '}
+            <br />
             <b>•</b> <b>Instance</b> → unique to each object. <br />
-            <b>•</b> Static members save memory and define global behaviors. <br />
-            <b>•</b> Use static wisely — overuse can break object-oriented principles.
+            <b>•</b> Static members save memory and define global behaviors.{' '}
+            <br />
+            <b>•</b> Use static wisely — overuse can break object-oriented
+            principles.
           </div>
         </motion.div>
       </div>

@@ -17,8 +17,16 @@ export default function page() {
     { operator: '+', description: 'Addition', example: '5 + 3 = 8' },
     { operator: '-', description: 'Subtraction', example: '5 - 3 = 2' },
     { operator: '*', description: 'Multiplication', example: '5 * 3 = 15' },
-    { operator: '/', description: 'Division (quotient)', example: '10 / 3 = 3' },
-    { operator: '%', description: 'Modulus (remainder)', example: '10 % 3 = 1' }
+    {
+      operator: '/',
+      description: 'Division (quotient)',
+      example: '10 / 3 = 3',
+    },
+    {
+      operator: '%',
+      description: 'Modulus (remainder)',
+      example: '10 % 3 = 1',
+    },
   ]
 
   const table2 = [
@@ -26,7 +34,7 @@ export default function page() {
     { operator: '-', description: 'Negation', example: '-a' },
     { operator: '++', description: 'Increment by 1', example: '++a a++' },
     { operator: '--', description: 'Decrement by 1', example: '--a a--' },
-    { operator: '!', description: 'Logical NOT', example: '!true = false' }
+    { operator: '!', description: 'Logical NOT', example: '!true = false' },
   ]
 
   const table3 = [
@@ -35,12 +43,20 @@ export default function page() {
     { operator: '>', description: 'Greater than', example: 'a > b' },
     { operator: '<', description: 'Less than', example: 'a < b' },
     { operator: '>=', description: 'Greater or equal', example: 'a >= b' },
-    { operator: '<=', description: 'Less or equal', example: 'a <= b' }
+    { operator: '<=', description: 'Less or equal', example: 'a <= b' },
   ]
 
   const table4 = [
-    { operator: '&&', description: 'Logical AND', example: 'true && false → false' },
-    { operator: '||', description: 'Logical OR', example: 'true || false → true' },
+    {
+      operator: '&&',
+      description: 'Logical AND',
+      example: 'true && false → false',
+    },
+    {
+      operator: '||',
+      description: 'Logical OR',
+      example: 'true || false → true',
+    },
     { operator: '!', description: 'Logical NOT', example: '!true → false' },
   ]
 
@@ -52,7 +68,7 @@ export default function page() {
     { operator: '/=', example: 'x /= 5', equivalent: 'x = x / 5' },
     { operator: '%=', example: 'x %= 5', equivalent: 'x = x % 5' },
   ]
-  
+
   const table6 = [
     { operator: '&', description: 'AND', example: 'a & b' },
     { operator: '', description: 'OR', example: '' },
@@ -60,7 +76,11 @@ export default function page() {
     { operator: '~', description: 'NOT', example: '~a' },
     { operator: '<<', description: 'Left shift', example: 'a << 2' },
     { operator: '>>', description: 'Right shift', example: 'a >> 2' },
-    { operator: '>>>', description: 'Unsigned right shift', example: 'a >>> 2' }
+    {
+      operator: '>>>',
+      description: 'Unsigned right shift',
+      example: 'a >>> 2',
+    },
   ]
 
   const code1 = `int a = 10, b = 3;
@@ -106,7 +126,7 @@ System.out.println(s instanceof String); // true`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -126,15 +146,23 @@ System.out.println(s instanceof String); // true`
               <TableBody>
                 {table1.map((content) => (
                   <TableRow key={content.operator}>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.operator}</span></TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.operator}
+                      </span>
+                    </TableCell>
                     <TableCell>{content.description}</TableCell>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.example}</span></TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.example}
+                      </span>
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
             </Table>
             <br />
-            <CodeBlock language="java" filename="java" code={code1} />
+            <CodeBlock language='java' filename='java' code={code1} />
           </div>
         </motion.div>
 
@@ -142,7 +170,7 @@ System.out.println(s instanceof String); // true`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -162,15 +190,23 @@ System.out.println(s instanceof String); // true`
               <TableBody>
                 {table2.map((content) => (
                   <TableRow key={content.operator}>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.operator}</span></TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.operator}
+                      </span>
+                    </TableCell>
                     <TableCell>{content.description}</TableCell>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.example}</span></TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.example}
+                      </span>
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
             </Table>
             <br />
-            <CodeBlock language="java" filename="java" code={code2} />
+            <CodeBlock language='java' filename='java' code={code2} />
           </div>
         </motion.div>
 
@@ -178,7 +214,7 @@ System.out.println(s instanceof String); // true`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -198,9 +234,17 @@ System.out.println(s instanceof String); // true`
               <TableBody>
                 {table3.map((content) => (
                   <TableRow key={content.operator}>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.operator}</span></TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.operator}
+                      </span>
+                    </TableCell>
                     <TableCell>{content.description}</TableCell>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.example}</span></TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.example}
+                      </span>
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -212,7 +256,7 @@ System.out.println(s instanceof String); // true`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -232,15 +276,23 @@ System.out.println(s instanceof String); // true`
               <TableBody>
                 {table4.map((content) => (
                   <TableRow key={content.operator}>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.operator}</span></TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.operator}
+                      </span>
+                    </TableCell>
                     <TableCell>{content.description}</TableCell>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.example}</span></TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.example}
+                      </span>
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
             </Table>
             <br />
-            <CodeBlock language="java" filename="java" code={code3} />
+            <CodeBlock language='java' filename='java' code={code3} />
           </div>
         </motion.div>
 
@@ -248,7 +300,7 @@ System.out.println(s instanceof String); // true`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -268,9 +320,21 @@ System.out.println(s instanceof String); // true`
               <TableBody>
                 {table5.map((content) => (
                   <TableRow key={content.operator}>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.operator}</span></TableCell>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.example}</span></TableCell>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.equivalent}</span></TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.operator}
+                      </span>
+                    </TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.example}
+                      </span>
+                    </TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.equivalent}
+                      </span>
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -282,7 +346,7 @@ System.out.println(s instanceof String); // true`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -302,15 +366,23 @@ System.out.println(s instanceof String); // true`
               <TableBody>
                 {table6.map((content) => (
                   <TableRow key={content.operator}>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.operator}</span></TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.operator}
+                      </span>
+                    </TableCell>
                     <TableCell>{content.description}</TableCell>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.example}</span></TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.example}
+                      </span>
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
             </Table>
             <br />
-            <CodeBlock language="java" filename="java" code={code4} />
+            <CodeBlock language='java' filename='java' code={code4} />
           </div>
         </motion.div>
 
@@ -318,7 +390,7 @@ System.out.println(s instanceof String); // true`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -327,7 +399,7 @@ System.out.println(s instanceof String); // true`
           <div className='max-w-3xl mx-auto text-gray-300'>
             A shorthand for if-else. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code5} />
+            <CodeBlock language='java' filename='java' code={code5} />
           </div>
         </motion.div>
 
@@ -335,7 +407,7 @@ System.out.println(s instanceof String); // true`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -344,7 +416,7 @@ System.out.println(s instanceof String); // true`
           <div className='max-w-3xl mx-auto text-gray-300'>
             Checks whether an object is of a particular type. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code6} />
+            <CodeBlock language='java' filename='java' code={code6} />
           </div>
         </motion.div>
 
@@ -352,7 +424,7 @@ System.out.println(s instanceof String); // true`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -360,13 +432,26 @@ System.out.println(s instanceof String); // true`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             Determines the <b>order of evaluation</b>. <br />
-            <b>•</b> Highest: <span className='bg-neutral-800 px-2 rounded-lg'>()</span>, <span className='bg-neutral-800 px-2 rounded-lg'>[]</span>, <span className='bg-neutral-800 px-2 rounded-lg'>.</span> <br />
-            <b>•</b> Next: <span className='bg-neutral-800 px-2 rounded-lg'>++</span>, <span className='bg-neutral-800 px-2 rounded-lg'>--</span> <br />
-            <b>•</b> Multiplicative: <span className='bg-neutral-800 px-2 rounded-lg'>*</span>, <span className='bg-neutral-800 px-2 rounded-lg'>/</span>, <span className='bg-neutral-800 px-2 rounded-lg'>%</span> <br />
-            <b>•</b> Additive: <span className='bg-neutral-800 px-2 rounded-lg'>+</span>, <span className='bg-neutral-800 px-2 rounded-lg'>-</span> <br />
-            <b>•</b> Lowest: <span className='bg-neutral-800 px-2 rounded-lg'>=</span>, <span className='bg-neutral-800 px-2 rounded-lg'>+=</span>, <span className='bg-neutral-800 px-2 rounded-lg'>-=</span> <br />
+            <b>•</b> Highest:{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>()</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>[]</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>.</span> <br />
+            <b>•</b> Next:{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>++</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>--</span> <br />
+            <b>•</b> Multiplicative:{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>*</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>/</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>%</span> <br />
+            <b>•</b> Additive:{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>+</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>-</span> <br />
+            <b>•</b> Lowest:{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>=</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>+=</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>-=</span> <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code7} />
+            <CodeBlock language='java' filename='java' code={code7} />
           </div>
         </motion.div>
 
@@ -374,20 +459,23 @@ System.out.println(s instanceof String); // true`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>9.10</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> Java operators include arithmetic, relational, logical, assignment, bitwise, unary, ternary, and <span className='bg-neutral-800 px-2 rounded-lg'>instanceof</span>. <br />
+            <b>•</b> Java operators include arithmetic, relational, logical,
+            assignment, bitwise, unary, ternary, and{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>instanceof</span>.{' '}
+            <br />
             <b>•</b> Precedence rules decide the order of execution. <br />
-            <b>•</b> Use parentheses <span className='bg-neutral-800 px-2 rounded-lg'>()</span> to make expressions more readable.
+            <b>•</b> Use parentheses{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>()</span> to make
+            expressions more readable.
           </div>
         </motion.div>
-
-       
       </div>
     </main>
   )

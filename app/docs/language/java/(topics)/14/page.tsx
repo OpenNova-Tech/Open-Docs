@@ -123,21 +123,27 @@ Constructor Called`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(1)}</b> What Is a Constructor?
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            A <b>constructor</b> in Java is a <b>special method</b> used to <b>initialize objects</b>. <br />
-            It has the <b>same name as the class</b> and <b>no return type</b> (not even <span className='bg-neutral-800 px-2 rounded-lg'>void</span>). <br />
+            A <b>constructor</b> in Java is a <b>special method</b> used to{' '}
+            <b>initialize objects</b>. <br />
+            It has the <b>same name as the class</b> and <b>no return type</b>{' '}
+            (not even{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>void</span>).{' '}
             <br />
-            When you create an object with <span className='bg-neutral-800 px-2 rounded-lg'>new</span>, the constructor runs automatically. <br />
+            <br />
+            When you create an object with{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>new</span>, the
+            constructor runs automatically. <br />
             <br />
             <b>Example:</b>
-            <CodeBlock language="java" filename="java" code={code1} /> <br />
-            <CodeBlock language="java" filename="java" code={code2} /> <br />
+            <CodeBlock language='java' filename='java' code={code1} /> <br />
+            <CodeBlock language='java' filename='java' code={code2} /> <br />
           </div>
         </motion.div>
 
@@ -145,7 +151,7 @@ Constructor Called`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -153,21 +159,27 @@ Constructor Called`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>a. Default Constructor</b> <br />
-            <b>•</b> Provided by Java <b>if you don&apos;t define any</b>. <br />
-            <b>•</b> Initializes variables with <b>default values</b> (<span className='bg-neutral-800 px-2 rounded-lg'>0</span>, <span className='bg-neutral-800 px-2 rounded-lg'>null</span>, <span className='bg-neutral-800 px-2 rounded-lg'>false</span>). <br />
+            <b>•</b> Provided by Java <b>if you don&apos;t define any</b>.{' '}
             <br />
-            <CodeBlock language="java" filename="java" code={code3} /> <br />
+            <b>•</b> Initializes variables with <b>default values</b> (
+            <span className='bg-neutral-800 px-2 rounded-lg'>0</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>null</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>false</span>).{' '}
+            <br />
+            <br />
+            <CodeBlock language='java' filename='java' code={code3} /> <br />
             <b>b. No-Argument Constructor</b> <br />
             A constructor you define yourself without parameters. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code4} /> <br />
+            <CodeBlock language='java' filename='java' code={code4} /> <br />
             <b>c. Parameterized Constructor</b> <br />
-            Accepts arguments to initialize data at the time of object creation. <br />
+            Accepts arguments to initialize data at the time of object creation.{' '}
             <br />
-            <CodeBlock language="java" filename="java" code={code5} /> <br />
-            <CodeBlock language="java" filename="java" code={code6} /> <br />
-            Output: 
-            <CodeBlock language="bash" filename="" code={code7} />
+            <br />
+            <CodeBlock language='java' filename='java' code={code5} /> <br />
+            <CodeBlock language='java' filename='java' code={code6} /> <br />
+            Output:
+            <CodeBlock language='bash' filename='' code={code7} />
           </div>
         </motion.div>
 
@@ -175,17 +187,18 @@ Constructor Called`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(3)}</b> Constructor Overloading
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            You can define <b>multiple constructors</b> with different parameter lists (same name, different signatures). <br />
+            You can define <b>multiple constructors</b> with different parameter
+            lists (same name, different signatures). <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code8} /> <br />
-            <CodeBlock language="java" filename="java" code={code9} />
+            <CodeBlock language='java' filename='java' code={code8} /> <br />
+            <CodeBlock language='java' filename='java' code={code9} />
           </div>
         </motion.div>
 
@@ -193,16 +206,19 @@ Constructor Called`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#b07219]'>{num(4)}</b> Constructor Chaining using this()
+            <b className='text-[#b07219]'>{num(4)}</b> Constructor Chaining
+            using this()
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            You can call one constructor from another using (<span className='bg-neutral-800 px-2 rounded-lg'>this()</span>). <br />
+            You can call one constructor from another using (
+            <span className='bg-neutral-800 px-2 rounded-lg'>this()</span>).{' '}
             <br />
-            <CodeBlock language="java" filename="java" code={code10} />
+            <br />
+            <CodeBlock language='java' filename='java' code={code10} />
           </div>
         </motion.div>
 
@@ -210,17 +226,19 @@ Constructor Called`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#b07219]'>{num(5)}</b> Instance Initialization Blocks (IIB)
+            <b className='text-[#b07219]'>{num(5)}</b> Instance Initialization
+            Blocks (IIB)
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Used for initializing instance variables — runs <b>before constructors</b>. <br />
-            <CodeBlock language="java" filename="java" code={code11} /> <br />
+            Used for initializing instance variables — runs{' '}
+            <b>before constructors</b>. <br />
+            <CodeBlock language='java' filename='java' code={code11} /> <br />
             Output:
-            <CodeBlock language="bash" filename="" code={code12} />
+            <CodeBlock language='bash' filename='' code={code12} />
           </div>
         </motion.div>
 
@@ -228,7 +246,7 @@ Constructor Called`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -236,9 +254,12 @@ Constructor Called`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> Constructor name = Class name, no return type. <br />
-            <b>•</b> Automatically called when using <span className='bg-neutral-800 px-2 rounded-lg'>new</span>. <br />
+            <b>•</b> Automatically called when using{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>new</span>. <br />
             <b>•</b> Types: Default, No-arg, Parameterized. <br />
-            <b>•</b> Supports <b>overloading</b> and <b>chaining</b> via <span className='bg-neutral-800 px-2 rounded-lg'>this()</span>. <br />
+            <b>•</b> Supports <b>overloading</b> and <b>chaining</b> via{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>this()</span>.{' '}
+            <br />
             <b>•</b> Initialization Blocks run before constructors.
           </div>
         </motion.div>
