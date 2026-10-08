@@ -1,16 +1,12 @@
 export const HTML_TOPICS = [
   'introduction',
   'history',
-  'setup-environment',
+  'setup-structure',
   'hello-world',
-  'comments',
-  'compilation-process',
-  'input-and-output',
-  'data-types-and-variables',
-  'constants-and-literals',
-  'type-casting',
-  'operators',
-  'control-flow',
-  'loops',
-  'exception-handling'
+  'tags',
+  'headings-paragraphs',
+  'lists',
+  'links-images',
+  'tables',
+  'attributes'
 ]
