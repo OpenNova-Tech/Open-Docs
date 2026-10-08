@@ -10,7 +10,7 @@ const topics = [
     name: "Arrays",
     problems: [
       { title: "Greatest Element", link: "#" },
-      { title: "Second Largest Element", link: "#" },
+      { title: "Second Largest Element", link: "dsa/array/second-largest-element" },
       { title: "Check if Sorted", link: "#" },
       { title: "Reverse Array", link: "dsa/array/reverse-array" },
       { title: "Remove Duplicates", link: "#" },
