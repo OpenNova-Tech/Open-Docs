@@ -4,7 +4,14 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { CodeBlock } from '@/components/ui/code-block'
 import { usePathname } from 'next/navigation'
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table'
 
 export default function Page() {
   const pathname = usePathname()
@@ -14,40 +21,90 @@ export default function Page() {
   const table1 = [
     { property: 'Order', description: 'Maintains insertion order.' },
     { property: 'Duplicates', description: 'Allowed.' },
-    { property: 'Index-based Access', description: 'Supports get(index) and set(index, element).' },
-    { property: 'Null Elements', description: 'Permitted (depending on implementation).' },
-    { property: 'Random Access', description: 'Fast in ArrayList, slow in LinkedList.' },
+    {
+      property: 'Index-based Access',
+      description: 'Supports get(index) and set(index, element).',
+    },
+    {
+      property: 'Null Elements',
+      description: 'Permitted (depending on implementation).',
+    },
+    {
+      property: 'Random Access',
+      description: 'Fast in ArrayList, slow in LinkedList.',
+    },
   ]
 
   const table2 = [
     { method: 'add(E e)', description: 'Adds an element.' },
-    { method: 'add(int index, E e)', description: 'Inserts element at specified position.' },
+    {
+      method: 'add(int index, E e)',
+      description: 'Inserts element at specified position.',
+    },
     { method: 'get(int index)', description: 'Returns element at index.' },
-    { method: 'set(int index, E e)', description: 'Replaces element at index.' },
+    {
+      method: 'set(int index, E e)',
+      description: 'Replaces element at index.',
+    },
     { method: 'remove(int index)', description: 'Removes element at index.' },
-    { method: 'indexOf(Object o)', description: 'Returns first index of element.' },
+    {
+      method: 'indexOf(Object o)',
+      description: 'Returns first index of element.',
+    },
     { method: 'lastIndexOf(Object o)', description: 'Returns last index.' },
     { method: 'size()', description: 'Returns total elements.' },
     { method: 'isEmpty()', description: 'Checks if list is empty.' },
-    { method: 'contains(Object o)', description: 'Checks for element presence.' },
+    {
+      method: 'contains(Object o)',
+      description: 'Checks for element presence.',
+    },
     { method: 'clear()', description: 'Removes all elements.' },
   ]
 
   const table3 = [
-    { feature: 'Insertion (end)', arraylist: 'O(1)', linkedlist: 'O(1)', vector: 'O(1)', stack: 'O(1)' },
-    { feature: 'Insertion (middle)', arraylist: 'O(n)', linkedlist: 'O(n)', vector: 'O(n)', stack: 'O(n)' },
-    { feature: 'Deletion (middle)', arraylist: 'O(n)', linkedlist: 'O(1) if node known', vector: 'O(n)', stack: 'O(n)' },
-    { feature: 'Random Access', arraylist: 'O(1)', linkedlist: 'O(n)', vector: 'O(1)', stack: 'O(1)' },
-    { feature: 'Thread Safety', arraylist: 'No', linkedlist: 'No', vector: 'Yes', stack: 'Yes' },
+    {
+      feature: 'Insertion (end)',
+      arraylist: 'O(1)',
+      linkedlist: 'O(1)',
+      vector: 'O(1)',
+      stack: 'O(1)',
+    },
+    {
+      feature: 'Insertion (middle)',
+      arraylist: 'O(n)',
+      linkedlist: 'O(n)',
+      vector: 'O(n)',
+      stack: 'O(n)',
+    },
+    {
+      feature: 'Deletion (middle)',
+      arraylist: 'O(n)',
+      linkedlist: 'O(1) if node known',
+      vector: 'O(n)',
+      stack: 'O(n)',
+    },
+    {
+      feature: 'Random Access',
+      arraylist: 'O(1)',
+      linkedlist: 'O(n)',
+      vector: 'O(1)',
+      stack: 'O(1)',
+    },
+    {
+      feature: 'Thread Safety',
+      arraylist: 'No',
+      linkedlist: 'No',
+      vector: 'Yes',
+      stack: 'Yes',
+    },
   ]
 
   const table4 = [
     { scenario: 'Frequent random access', recommend: 'ArrayList' },
     { scenario: 'Frequent insert/remove', recommend: 'LinkedList' },
     { scenario: 'Multi-threaded environment', recommend: 'Vector' },
-    { scenario: 'Need LIFO behavior', recommend: 'Stack.' }
+    { scenario: 'Need LIFO behavior', recommend: 'Stack.' },
   ]
-
 
   const code1 = `Iterable
    ↑
@@ -91,7 +148,6 @@ for (String s : list) { ... }                       // Enhanced for-loop
 list.forEach(System.out::println);                  // Lambda
 Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
 
-
   return (
     <main className='pt-32 bg-black py-12 px-6'>
       <div className='max-w-4xl mx-auto space-y-12'>
@@ -110,15 +166,24 @@ Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(1)}</b> What Are Lists?
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            The <b>List interface</b> in Java represents an <b>ordered collection</b> (also known as a <b>sequence</b>) that allows <b>duplicate elements</b> and provides <b>positional access</b> (index-based operations). <br />
-            It extends the <span className='bg-neutral-800 px-2 rounded-lg'>Collection</span> interface and is implemented by several classes such as <b>ArrayList</b>, <b>LinkedList</b>, <b>Vector</b>, and <b>Stack</b>.
+            The <b>List interface</b> in Java represents an{' '}
+            <b>ordered collection</b> (also known as a <b>sequence</b>) that
+            allows <b>duplicate elements</b> and provides{' '}
+            <b>positional access</b> (index-based operations). <br />
+            It extends the{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>
+              Collection
+            </span>{' '}
+            interface and is implemented by several classes such as{' '}
+            <b>ArrayList</b>, <b>LinkedList</b>, <b>Vector</b>, and <b>Stack</b>
+            .
           </div>
         </motion.div>
 
@@ -126,14 +191,14 @@ Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(2)}</b> Hierarchy Overview
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <CodeBlock language="java" filename="" code={code1} />
+            <CodeBlock language='java' filename='' code={code1} />
           </div>
         </motion.div>
 
@@ -141,7 +206,7 @@ Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -158,7 +223,9 @@ Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
               <TableBody>
                 {table1.map((content) => (
                   <TableRow key={content.property}>
-                    <TableCell className='font-bold'>{content.property}</TableCell>
+                    <TableCell className='font-bold'>
+                      {content.property}
+                    </TableCell>
                     <TableCell>{content.description}</TableCell>
                   </TableRow>
                 ))}
@@ -171,7 +238,7 @@ Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -188,7 +255,11 @@ Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
               <TableBody>
                 {table2.map((content) => (
                   <TableRow key={content.method}>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.method}</span></TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.method}
+                      </span>
+                    </TableCell>
                     <TableCell>{content.description}</TableCell>
                   </TableRow>
                 ))}
@@ -201,7 +272,7 @@ Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -210,30 +281,37 @@ Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>ArrayList</b> <br />
             <b>•</b> Backed by a <b>dynamic array</b>. <br />
-            <b>•</b> Default initial capacity: <b>10</b> (doubles automatically when exceeded). <br />
-            <b>•</b> Provides <b>O(1)</b> access, <b>O(n)</b> insertion/removal in the middle. <br />
+            <b>•</b> Default initial capacity: <b>10</b> (doubles automatically
+            when exceeded). <br />
+            <b>•</b> Provides <b>O(1)</b> access, <b>O(n)</b> insertion/removal
+            in the middle. <br />
             <br />
             <b>Example</b>:
-            <CodeBlock language="java" filename="java" code={code2} /> <br />
+            <CodeBlock language='java' filename='java' code={code2} /> <br />
             <b>LinkedList</b> <br />
             <b>•</b> Based on <b>doubly linked list</b>. <br />
-            <b>•</b> Provides <b>O(1)</b> insertion/deletion at head or tail. <br />
+            <b>•</b> Provides <b>O(1)</b> insertion/deletion at head or tail.{' '}
+            <br />
             <b>•</b> Slightly higher memory due to node references. <br />
             <br />
             <b>Example</b>:
-            <CodeBlock language="java" filename="java" code={code3} /> <br />
+            <CodeBlock language='java' filename='java' code={code3} /> <br />
             <b>Vector</b> <br />
-            <b>•</b> <b>Synchronized</b>, making it thread-safe but slower. <br />
-            <b>•</b> Capacity doubles by <b>100%</b> (unlike ArrayList&apos;s 50%). <br />
+            <b>•</b> <b>Synchronized</b>, making it thread-safe but slower.{' '}
+            <br />
+            <b>•</b> Capacity doubles by <b>100%</b> (unlike ArrayList&apos;s
+            50%). <br />
             <br />
             <b>Example</b>:
-            <CodeBlock language="java" filename="java" code={code4} /> <br />
+            <CodeBlock language='java' filename='java' code={code4} /> <br />
             <b>Stack</b> <br />
-            <b>•</b> Subclass of Vector following <b>LIFO</b> (Last In, First Out). <br />
-            <b>•</b> Used for <b>backtracking</b>, <b>parsing</b>, and <b>undo</b> operations. <br />
+            <b>•</b> Subclass of Vector following <b>LIFO</b> (Last In, First
+            Out). <br />
+            <b>•</b> Used for <b>backtracking</b>, <b>parsing</b>, and{' '}
+            <b>undo</b> operations. <br />
             <br />
             <b>Example</b>:
-            <CodeBlock language="java" filename="java" code={code5} />
+            <CodeBlock language='java' filename='java' code={code5} />
           </div>
         </motion.div>
 
@@ -241,14 +319,14 @@ Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(6)}</b> Iterating Through a List
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <CodeBlock language="java" filename="java" code={code6} />
+            <CodeBlock language='java' filename='java' code={code6} />
           </div>
         </motion.div>
 
@@ -256,7 +334,7 @@ Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -292,7 +370,7 @@ Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -322,18 +400,31 @@ Iterator<String> it = list.iterator(); while(it.hasNext()) { ... } // Iterator`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(9)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>List</span> maintains insertion order and supports duplicates. <br />
-            <b>•</b> Choose <span className='bg-neutral-800 px-2 rounded-lg'>ArrayList</span> for most general purposes. <br />
-            <b>•</b> Use <span className='bg-neutral-800 px-2 rounded-lg'>LinkedList</span> for efficient insertions/deletions. <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>Vector</span> and <span className='bg-neutral-800 px-2 rounded-lg'>Stack</span> are legacy but still usable when synchronization is needed. <br />
-            <b>•</b> Prefer <b>interface references</b> (<span className='bg-neutral-800 px-2 rounded-lg'>List&lt;String&gt; list = new ArrayList&lt;&gt;();</span>) for flexibility.
+            <b>•</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>List</span>{' '}
+            maintains insertion order and supports duplicates. <br />
+            <b>•</b> Choose{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>ArrayList</span>{' '}
+            for most general purposes. <br />
+            <b>•</b> Use{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>LinkedList</span>{' '}
+            for efficient insertions/deletions. <br />
+            <b>•</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>Vector</span> and{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>Stack</span> are
+            legacy but still usable when synchronization is needed. <br />
+            <b>•</b> Prefer <b>interface references</b> (
+            <span className='bg-neutral-800 px-2 rounded-lg'>
+              List&lt;String&gt; list = new ArrayList&lt;&gt;();
+            </span>
+            ) for flexibility.
           </div>
         </motion.div>
       </div>

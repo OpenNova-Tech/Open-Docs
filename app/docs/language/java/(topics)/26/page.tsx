@@ -4,7 +4,14 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { CodeBlock } from '@/components/ui/code-block'
 import { usePathname } from 'next/navigation'
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table'
 
 export default function Page() {
   const pathname = usePathname()
@@ -15,7 +22,11 @@ export default function Page() {
     { property: 'Duplicates', description: 'Not allowed' },
     { property: 'Order', description: 'Unordered (except LinkedHashSet)' },
     { property: 'Null Elements', description: 'Allowed (only one)' },
-    { property: 'Performance', description: 'Very fast for search, insert, delete (O(1) avg for HashSet)' },
+    {
+      property: 'Performance',
+      description:
+        'Very fast for search, insert, delete (O(1) avg for HashSet)',
+    },
     { property: 'Indexing', description: 'Not supported (no get(index))' },
   ]
 
@@ -30,17 +41,40 @@ export default function Page() {
   ]
 
   const table3 = [
-    { implementation: 'HashSet', order: 'Unordered', duplicates: '❌', null: '✅ (1)', structure: 'Hash Table', time: 'O(1)' },
-    { implementation: 'LinkedHashSet', order: 'Insertion Order', duplicates: '❌', null: '✅ (1)', structure: 'Hash Table + Linked List', time: 'O(1)' },
-    { implementation: 'TreeSet', order: 'Sorted Order', duplicates: '❌', null: '❌', structure: 'Red-Black Tree', time: 'O(log n)' },
+    {
+      implementation: 'HashSet',
+      order: 'Unordered',
+      duplicates: '❌',
+      null: '✅ (1)',
+      structure: 'Hash Table',
+      time: 'O(1)',
+    },
+    {
+      implementation: 'LinkedHashSet',
+      order: 'Insertion Order',
+      duplicates: '❌',
+      null: '✅ (1)',
+      structure: 'Hash Table + Linked List',
+      time: 'O(1)',
+    },
+    {
+      implementation: 'TreeSet',
+      order: 'Sorted Order',
+      duplicates: '❌',
+      null: '❌',
+      structure: 'Red-Black Tree',
+      time: 'O(log n)',
+    },
   ]
 
   const table4 = [
     { scenario: 'Need fastest lookup', recommend: 'HashSet' },
-    { scenario: 'Need predictable insertion order', recommend: 'LinkedHashSet' },
+    {
+      scenario: 'Need predictable insertion order',
+      recommend: 'LinkedHashSet',
+    },
     { scenario: 'Need sorted elements', recommend: 'TreeSet' },
   ]
-
 
   const code1 = `Iterable
    ↑
@@ -95,7 +129,6 @@ System.out.println("Contains Python? " + languages.contains("Python"));
 languages.remove("C++");
 System.out.println("After removal: " + languages);`
 
-
   return (
     <main className='pt-32 bg-black py-12 px-6'>
       <div className='max-w-4xl mx-auto space-y-12'>
@@ -114,15 +147,22 @@ System.out.println("After removal: " + languages);`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(1)}</b> What Are Sets?
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            A <b>Set</b> in Java is a <b>collection that does not allow duplicate elements</b>. It models the mathematical set abstraction and is part of the <span className='bg-neutral-800 px-2 rounded-lg'>java.util</span> package. <br />
-            Unlike <span className='bg-neutral-800 px-2 rounded-lg'>List</span>, it <b>does not maintain insertion order</b> (except for specific implementations) and offers <b> efficient lookup and uniqueness checking</b>.
+            A <b>Set</b> in Java is a{' '}
+            <b>collection that does not allow duplicate elements</b>. It models
+            the mathematical set abstraction and is part of the{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>java.util</span>{' '}
+            package. <br />
+            Unlike <span className='bg-neutral-800 px-2 rounded-lg'>List</span>,
+            it <b>does not maintain insertion order</b> (except for specific
+            implementations) and offers{' '}
+            <b> efficient lookup and uniqueness checking</b>.
           </div>
         </motion.div>
 
@@ -130,14 +170,14 @@ System.out.println("After removal: " + languages);`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(2)}</b> Hierarchy Overview
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <CodeBlock language="java" filename="" code={code1} />
+            <CodeBlock language='java' filename='' code={code1} />
           </div>
         </motion.div>
 
@@ -145,7 +185,7 @@ System.out.println("After removal: " + languages);`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -162,7 +202,9 @@ System.out.println("After removal: " + languages);`
               <TableBody>
                 {table1.map((content) => (
                   <TableRow key={content.property}>
-                    <TableCell className='font-bold'>{content.property}</TableCell>
+                    <TableCell className='font-bold'>
+                      {content.property}
+                    </TableCell>
                     <TableCell>{content.description}</TableCell>
                   </TableRow>
                 ))}
@@ -175,7 +217,7 @@ System.out.println("After removal: " + languages);`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -192,7 +234,11 @@ System.out.println("After removal: " + languages);`
               <TableBody>
                 {table2.map((content) => (
                   <TableRow key={content.method}>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.method}</span></TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.method}
+                      </span>
+                    </TableCell>
                     <TableCell>{content.description}</TableCell>
                   </TableRow>
                 ))}
@@ -205,7 +251,7 @@ System.out.println("After removal: " + languages);`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -213,28 +259,44 @@ System.out.println("After removal: " + languages);`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>HashSet</b> <br />
-            <b>•</b> Based on <b>HashMap</b> internally — elements are stored as keys with a dummy value. <br />
+            <b>•</b> Based on <b>HashMap</b> internally — elements are stored as
+            keys with a dummy value. <br />
             <b>•</b> <b>No order is maintained</b>. <br />
-            <b>•</b> <b>Allows one</b> <span className='bg-neutral-800 px-2 rounded-lg'>null</span> <b>element</b>. <br />
-            <b>•</b> <b>Constant-time performance (O(1))</b> for add, remove, and contains (on average). <br />
+            <b>•</b> <b>Allows one</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>null</span>{' '}
+            <b>element</b>. <br />
+            <b>•</b> <b>Constant-time performance (O(1))</b> for add, remove,
+            and contains (on average). <br />
             <br />
             <b>Example</b>:
-            <CodeBlock language="java" filename="java" code={code2} /> <br />
+            <CodeBlock language='java' filename='java' code={code2} /> <br />
             <b>LinkedHashSet</b> <br />
-            <b>•</b> Subclass of <span className='bg-neutral-800 px-2 rounded-lg'>HashSet</span> that <b>maintains insertion order</b>. <br />
-            <b>•</b> Slightly slower than <span className='bg-neutral-800 px-2 rounded-lg'>HashSet</span> due to the linked list used internally. <br />
+            <b>•</b> Subclass of{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>HashSet</span> that{' '}
+            <b>maintains insertion order</b>. <br />
+            <b>•</b> Slightly slower than{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>HashSet</span> due
+            to the linked list used internally. <br />
             <br />
             <b>Example</b>:
-            <CodeBlock language="java" filename="java" code={code3} /> <br />
+            <CodeBlock language='java' filename='java' code={code3} /> <br />
             <b>TreeSet</b> <br />
             <b>•</b> Implements the <b>SortedSet</b> interface. <br />
-            <b>•</b> Stores elements in <b>ascending order</b> by default using <b>Red-Black Tree</b> internally. <br />
-            <b>•</b> Does <b>not allow</b> <span className='bg-neutral-800 px-2 rounded-lg'>null</span> <b>elements</b> (throws <span className='bg-neutral-800 px-2 rounded-lg'>NullPointerException</span>). <br />
+            <b>•</b> Stores elements in <b>ascending order</b> by default using{' '}
+            <b>Red-Black Tree</b> internally. <br />
+            <b>•</b> Does <b>not allow</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>null</span>{' '}
+            <b>elements</b> (throws{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>
+              NullPointerException
+            </span>
+            ). <br />
             <br />
             <b>Example</b>:
-            <CodeBlock language="java" filename="java" code={code4} /> <br />
-            <b>Note</b>: Custom sorting can be applied using a <b>Comparator</b>:
-            <CodeBlock language="java" filename="java" code={code5} />
+            <CodeBlock language='java' filename='java' code={code4} /> <br />
+            <b>Note</b>: Custom sorting can be applied using a <b>Comparator</b>
+            :
+            <CodeBlock language='java' filename='java' code={code5} />
           </div>
         </motion.div>
 
@@ -242,14 +304,14 @@ System.out.println("After removal: " + languages);`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(6)}</b> Iterating Through a Set
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <CodeBlock language="java" filename="java" code={code6} />
+            <CodeBlock language='java' filename='java' code={code6} />
           </div>
         </motion.div>
 
@@ -257,7 +319,7 @@ System.out.println("After removal: " + languages);`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -278,7 +340,9 @@ System.out.println("After removal: " + languages);`
               <TableBody>
                 {table3.map((content) => (
                   <TableRow key={content.implementation}>
-                    <TableCell className='font-bold'>{content.implementation}</TableCell>
+                    <TableCell className='font-bold'>
+                      {content.implementation}
+                    </TableCell>
                     <TableCell>{content.order}</TableCell>
                     <TableCell>{content.duplicates}</TableCell>
                     <TableCell>{content.null}</TableCell>
@@ -295,7 +359,7 @@ System.out.println("After removal: " + languages);`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -325,14 +389,14 @@ System.out.println("After removal: " + languages);`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(9)}</b> Practical Example
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <CodeBlock language="java" filename="java" code={code7} />
+            <CodeBlock language='java' filename='java' code={code7} />
           </div>
         </motion.div>
 
@@ -340,18 +404,33 @@ System.out.println("After removal: " + languages);`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03, }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>{num(10)}</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> A <span className='bg-neutral-800 px-2 rounded-lg'>Set</span> enforces <b>uniqueness</b> — duplicates are automatically removed. <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>HashSet</span> is the most common implementation for speed. <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>LinkedHashSet</span> preserves insertion order. <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>TreeSet</span> keeps elements sorted and supports range views (<span className='bg-neutral-800 px-2 rounded-lg'>headSet()</span>, <span className='bg-neutral-800 px-2 rounded-lg'>tailSet()</span>). <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>Set</span> is best for <b>mathematical set operations</b> — union, intersection, and difference.
+            <b>•</b> A{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>Set</span> enforces{' '}
+            <b>uniqueness</b> — duplicates are automatically removed. <br />
+            <b>•</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>HashSet</span> is
+            the most common implementation for speed. <br />
+            <b>•</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>
+              LinkedHashSet
+            </span>{' '}
+            preserves insertion order. <br />
+            <b>•</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>TreeSet</span>{' '}
+            keeps elements sorted and supports range views (
+            <span className='bg-neutral-800 px-2 rounded-lg'>headSet()</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>tailSet()</span>).{' '}
+            <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>Set</span>{' '}
+            is best for <b>mathematical set operations</b> — union,
+            intersection, and difference.
           </div>
         </motion.div>
       </div>

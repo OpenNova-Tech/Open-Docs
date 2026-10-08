@@ -49,16 +49,19 @@ int b = 20;`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>7.1</b> Structure of a Java Program
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Every Java program is made up of classes, and the entry point of execution is the <span className='bg-neutral-800 px-2 rounded-lg'>main()</span> method. <br />
+            Every Java program is made up of classes, and the entry point of
+            execution is the{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>main()</span>{' '}
+            method. <br />
             <br />
-            <CodeBlock language="java" filename="hello.java" code={code1} />
+            <CodeBlock language='java' filename='hello.java' code={code1} />
           </div>
         </motion.div>
 
@@ -66,7 +69,7 @@ int b = 20;`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -74,7 +77,12 @@ int b = 20;`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> Java is <b>case-sensitive</b>. <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>Main</span> ≠ <span className='bg-neutral-800 px-2 rounded-lg'>main</span> and <span className='bg-neutral-800 px-2 rounded-lg'>System</span> ≠ <span className='bg-neutral-800 px-2 rounded-lg'>system</span>. <br />
+            <b>•</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>Main</span> ≠{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>main</span> and{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>System</span> ≠{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>system</span>.{' '}
+            <br />
             <b>•</b> Incorrect casing leads to compilation errors.
           </div>
         </motion.div>
@@ -83,16 +91,17 @@ int b = 20;`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>7.3</b> Statements & Semicolons
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> Each statement in Java ends with a <span className='bg-neutral-800 px-2 rounded-lg'>;</span>. <br />
+            <b>•</b> Each statement in Java ends with a{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>;</span>. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code2} />
+            <CodeBlock language='java' filename='java' code={code2} />
           </div>
         </motion.div>
 
@@ -100,17 +109,17 @@ int b = 20;`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#b07219]'>7.4</b> Code Blocks with Braces { }
+            <b className='text-[#b07219]'>7.4</b> Code Blocks with Braces {}
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> Blocks group multiple statements. <br />
             <b>•</b> Used in classes, methods, loops, and conditionals. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code3} />
+            <CodeBlock language='java' filename='java' code={code3} />
           </div>
         </motion.div>
 
@@ -118,20 +127,23 @@ int b = 20;`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>7.5</b> Identifiers & Naming Rules
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> <b>Identifiers</b>: Names given to variables, classes, methods, etc. <br />
+            <b>•</b> <b>Identifiers</b>: Names given to variables, classes,
+            methods, etc. <br />
             <b>•</b> Rules: <br />
-            &nbsp;&nbsp; <b>•</b> Must start with a letter, <span className='bg-neutral-800 px-2 rounded-lg'>$</span>, or <span className='bg-neutral-800 px-2 rounded-lg'>_</span>. <br />
+            &nbsp;&nbsp; <b>•</b> Must start with a letter,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>$</span>, or{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>_</span>. <br />
             &nbsp;&nbsp; <b>•</b> Cannot start with a digit. <br />
             &nbsp;&nbsp; <b>•</b> Cannot use reserved keywords. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code4} />
+            <CodeBlock language='java' filename='java' code={code4} />
           </div>
         </motion.div>
 
@@ -139,7 +151,7 @@ int b = 20;`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -148,7 +160,14 @@ int b = 20;`
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> Reserved words that cannot be used as identifiers. <br />
             <br />
-            Examples: <span className='bg-neutral-800 px-2 rounded-lg'>class</span>, <span className='bg-neutral-800 px-2 rounded-lg'>public</span>, <span className='bg-neutral-800 px-2 rounded-lg'>static</span>, <span className='bg-neutral-800 px-2 rounded-lg'>void</span>, <span className='bg-neutral-800 px-2 rounded-lg'>if</span>, <span className='bg-neutral-800 px-2 rounded-lg'>while</span>, <span className='bg-neutral-800 px-2 rounded-lg'>return</span>.
+            Examples:{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>class</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>public</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>static</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>void</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>if</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>while</span>,{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>return</span>.
           </div>
         </motion.div>
 
@@ -156,18 +175,30 @@ int b = 20;`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>7.7</b> Comments
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> Single-line: <span className='bg-neutral-800 px-2 rounded-lg'>{'// comment'}</span> <br />
-            <b>•</b> Multi-line: <span className='bg-neutral-800 px-2 rounded-lg'>{'/* comment */'}</span>  <br />
-            <b>•</b> Documentation: <span className='bg-neutral-800 px-2 rounded-lg'>{'/** comment */'}</span>  <br />
+            <b>•</b> Single-line:{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>
+              {'// comment'}
+            </span>{' '}
             <br />
-            <CodeBlock language="java" filename="java" code={code5} />
+            <b>•</b> Multi-line:{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>
+              {'/* comment */'}
+            </span>{' '}
+            <br />
+            <b>•</b> Documentation:{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>
+              {'/** comment */'}
+            </span>{' '}
+            <br />
+            <br />
+            <CodeBlock language='java' filename='java' code={code5} />
           </div>
         </motion.div>
 
@@ -175,7 +206,7 @@ int b = 20;`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -183,9 +214,10 @@ int b = 20;`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> Java ignores extra spaces, tabs, and newlines. <br />
-            <b>•</b> Improves readability but not mandatory for functionality. <br />
+            <b>•</b> Improves readability but not mandatory for functionality.{' '}
             <br />
-            <CodeBlock language="java" filename="java" code={code6} />
+            <br />
+            <CodeBlock language='java' filename='java' code={code6} />
           </div>
         </motion.div>
 
@@ -193,7 +225,7 @@ int b = 20;`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -201,14 +233,15 @@ int b = 20;`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> Java code <b>must</b> be inside a class. <br />
-            <b>•</b> The <span className='bg-neutral-800 px-2 rounded-lg'>main()</span> method is the <b>entry point</b>. <br />
-            <b>•</b> <b>Case-sensitive</b>, <b>semicolon-terminated</b>, and <b>block-structured</b>. <br />
+            <b>•</b> The{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>main()</span>{' '}
+            method is the <b>entry point</b>. <br />
+            <b>•</b> <b>Case-sensitive</b>, <b>semicolon-terminated</b>, and{' '}
+            <b>block-structured</b>. <br />
             <b>•</b> Follow naming conventions for identifiers. <br />
             <b>•</b> Use comments and whitespace to make code clean.
           </div>
         </motion.div>
-
-       
       </div>
     </main>
   )

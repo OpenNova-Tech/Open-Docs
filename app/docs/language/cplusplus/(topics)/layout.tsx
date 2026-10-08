@@ -7,7 +7,11 @@ import { ChevronRight } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { CPLUSPLUS_TOPICS } from '@/lib/private/cplusplusTopics'
 
-export default function TopicsLayout({ children }: { children: React.ReactNode }) {
+export default function TopicsLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   const pathname = usePathname()
 
   const groupedTopics = [
@@ -64,7 +68,9 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
     },
   ]
 
-  const [openSections, setOpenSections] = useState<{ [key: string]: boolean }>({})
+  const [openSections, setOpenSections] = useState<{ [key: string]: boolean }>(
+    {}
+  )
 
   const toggleSection = (header: string) => {
     setOpenSections((prev) => ({
@@ -78,7 +84,9 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
       <aside className='w-64 hidden md:flex bg-black pt-20 text-white border-r-2 border-[#F34B7D]/50 sticky top-0 h-screen md:flex-col'>
         <div className='p-5'>
           <Link href='/docs/language/cplusplus'>
-            <h2 className='text-3xl font-bold text-center text-[#F34B7D]'>C++</h2>
+            <h2 className='text-3xl font-bold text-center text-[#F34B7D]'>
+              C++
+            </h2>
           </Link>
         </div>
 
@@ -120,8 +128,11 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
                             <li key={slug}>
                               <Link
                                 href={href}
-                                className={`block px-3 py-2 rounded-lg transition ${active ? 'bg-neutral-800' : 'hover:bg-neutral-700'
-                                  }`}
+                                className={`block px-3 py-2 rounded-lg transition ${
+                                  active
+                                    ? 'bg-neutral-800'
+                                    : 'hover:bg-neutral-700'
+                                }`}
                               >
                                 {title}
                               </Link>
@@ -194,7 +205,6 @@ export default function TopicsLayout({ children }: { children: React.ReactNode }
           )
         })()}
       </main>
-
     </div>
   )
 }

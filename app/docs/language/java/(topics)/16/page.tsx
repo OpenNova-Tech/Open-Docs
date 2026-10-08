@@ -4,7 +4,14 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { CodeBlock } from '@/components/ui/code-block'
 import { usePathname } from 'next/navigation'
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table'
 
 export default function Page() {
   const pathname = usePathname()
@@ -12,10 +19,17 @@ export default function Page() {
   const num = (sub: number) => `${currentSection}.${sub}`
 
   const table = [
-  { type: 'Compile-time (Static)', whenItHappens: 'At compile time', mechanism: 'Method overloading' },
-  { type: 'Runtime (Dynamic)', whenItHappens: 'At runtime', mechanism: 'Method overriding' }
-];
-
+    {
+      type: 'Compile-time (Static)',
+      whenItHappens: 'At compile time',
+      mechanism: 'Method overloading',
+    },
+    {
+      type: 'Runtime (Dynamic)',
+      whenItHappens: 'At runtime',
+      mechanism: 'Method overriding',
+    },
+  ]
 
   const code1 = `class Calculator {
     int add(int a, int b) {
@@ -111,7 +125,7 @@ double add(int a, int b);  // ❌ Error`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -119,9 +133,12 @@ double add(int a, int b);  // ❌ Error`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>Polymorphism</b> means many forms. <br />
-            In Java, it allows <b>one interface (method name)</b> to be used for <b>different behaviors</b>, depending on the object calling it. <br />
+            In Java, it allows <b>one interface (method name)</b> to be used for{' '}
+            <b>different behaviors</b>, depending on the object calling it.{' '}
             <br />
-            It enhances <b>code flexibility</b>, <b>reusability</b>, and forms the foundation of <b>runtime method dispatch</b>.
+            <br />
+            It enhances <b>code flexibility</b>, <b>reusability</b>, and forms
+            the foundation of <b>runtime method dispatch</b>.
           </div>
         </motion.div>
 
@@ -129,7 +146,7 @@ double add(int a, int b);  // ❌ Error`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -147,9 +164,13 @@ double add(int a, int b);  // ❌ Error`
               <TableBody>
                 {table.map((content) => (
                   <TableRow key={content.type}>
-                    <TableCell><span className='font-bold'>{content.type}</span></TableCell>
+                    <TableCell>
+                      <span className='font-bold'>{content.type}</span>
+                    </TableCell>
                     <TableCell>{content.whenItHappens}</TableCell>
-                    <TableCell><span>{content.mechanism}</span></TableCell>
+                    <TableCell>
+                      <span>{content.mechanism}</span>
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -161,17 +182,20 @@ double add(int a, int b);  // ❌ Error`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#b07219]'>{num(3)}</b> Compile-time Polymorphism (Method Overloading)
+            <b className='text-[#b07219]'>{num(3)}</b> Compile-time Polymorphism
+            (Method Overloading)
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Occurs when <b>multiple methods have the same name</b> but <b>different parameters</b> (number or type). <br />
+            Occurs when <b>multiple methods have the same name</b> but{' '}
+            <b>different parameters</b> (number or type). <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code1} /> <br />
-            ✅ The compiler decides <b>which method to call</b> based on argument types — hence <b>compile-time</b>.
+            <CodeBlock language='java' filename='java' code={code1} /> <br />✅
+            The compiler decides <b>which method to call</b> based on argument
+            types — hence <b>compile-time</b>.
           </div>
         </motion.div>
 
@@ -179,17 +203,20 @@ double add(int a, int b);  // ❌ Error`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#b07219]'>{num(4)}</b> Runtime Polymorphism (Method Overriding)
+            <b className='text-[#b07219]'>{num(4)}</b> Runtime Polymorphism
+            (Method Overriding)
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Happens when a <b>subclass provides its own version</b> of a method defined in its superclass. <br />
+            Happens when a <b>subclass provides its own version</b> of a method
+            defined in its superclass. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code2} /> <br />
-            ✅ The decision of which method to run happens at <b>runtime</b>, based on the <b>object type</b>, not reference type.
+            <CodeBlock language='java' filename='java' code={code2} /> <br />✅
+            The decision of which method to run happens at <b>runtime</b>, based
+            on the <b>object type</b>, not reference type.
           </div>
         </motion.div>
 
@@ -197,18 +224,22 @@ double add(int a, int b);  // ❌ Error`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#b07219]'>{num(5)}</b> Upcasting and Dynamic Method Dispatch
+            <b className='text-[#b07219]'>{num(5)}</b> Upcasting and Dynamic
+            Method Dispatch
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> <b>Upcasting</b>: Reference of parent class refers to a child object. <br />
-            <CodeBlock language="java" filename="java" code={code3} /> <br />
-            <b>•</b> <b>Dynamic Method Dispatch</b>: JVM determines which overridden method to invoke at runtime. <br />
+            <b>•</b> <b>Upcasting</b>: Reference of parent class refers to a
+            child object. <br />
+            <CodeBlock language='java' filename='java' code={code3} /> <br />
+            <b>•</b> <b>Dynamic Method Dispatch</b>: JVM determines which
+            overridden method to invoke at runtime. <br />
             <br />
-            This mechanism allows Java to call the <b>most specific method implementation</b> dynamically.
+            This mechanism allows Java to call the{' '}
+            <b>most specific method implementation</b> dynamically.
           </div>
         </motion.div>
 
@@ -216,18 +247,21 @@ double add(int a, int b);  // ❌ Error`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#b07219]'>{num(6)}</b> Polymorphism with Interfaces
+            <b className='text-[#b07219]'>{num(6)}</b> Polymorphism with
+            Interfaces
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            You can also achieve polymorphism via <b>interfaces</b> — a class can implement multiple interfaces, each defining common behaviors. <br />
+            You can also achieve polymorphism via <b>interfaces</b> — a class
+            can implement multiple interfaces, each defining common behaviors.{' '}
             <br />
-            <CodeBlock language="java" filename="java" code={code4} /> <br />
+            <br />
+            <CodeBlock language='java' filename='java' code={code4} /> <br />
             Output:
-            <CodeBlock language="bash" filename="" code={code5} />
+            <CodeBlock language='bash' filename='' code={code5} />
           </div>
         </motion.div>
 
@@ -235,16 +269,18 @@ double add(int a, int b);  // ❌ Error`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#b07219]'>{num(7)}</b> Cannot Overload by Return Type Alone
+            <b className='text-[#b07219]'>{num(7)}</b> Cannot Overload by Return
+            Type Alone
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            You <b>cannot</b> have two methods with the same name and parameters but only different return types. <br />
+            You <b>cannot</b> have two methods with the same name and parameters
+            but only different return types. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code6} />
+            <CodeBlock language='java' filename='java' code={code6} />
           </div>
         </motion.div>
 
@@ -252,7 +288,7 @@ double add(int a, int b);  // ❌ Error`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -260,10 +296,13 @@ double add(int a, int b);  // ❌ Error`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> <b>Polymorphism</b> = <b>One name, many forms</b>. <br />
-            <b>•</b> <b>Compile-time</b>: Method overloading (decided by compiler). <br />
+            <b>•</b> <b>Compile-time</b>: Method overloading (decided by
+            compiler). <br />
             <b>•</b> <b>Runtime</b>: Method overriding (decided by JVM). <br />
-            <b>•</b> Achieved via <b>inheritance</b> or <b>interfaces</b>. <br />
-            <b>•</b> Enables <b>dynamic behavior</b> and <b>flexible code design</b>.
+            <b>•</b> Achieved via <b>inheritance</b> or <b>interfaces</b>.{' '}
+            <br />
+            <b>•</b> Enables <b>dynamic behavior</b> and{' '}
+            <b>flexible code design</b>.
           </div>
         </motion.div>
       </div>

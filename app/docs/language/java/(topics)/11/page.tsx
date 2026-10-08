@@ -80,14 +80,15 @@ for (int i = 1; i <= 3; i++) {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>11.1</b> What is a Loop
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Loops let you <b>execute a block of code multiple times</b> until a condition is met.
+            Loops let you <b>execute a block of code multiple times</b> until a
+            condition is met.
           </div>
         </motion.div>
 
@@ -95,7 +96,7 @@ for (int i = 1; i <= 3; i++) {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -104,7 +105,7 @@ for (int i = 1; i <= 3; i++) {
           <div className='max-w-3xl mx-auto text-gray-300'>
             Used when the <b>number of iterations is known</b>. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code1} />
+            <CodeBlock language='java' filename='java' code={code1} />
             <br />
             👉 Initialization → Condition → Update → Repeat
           </div>
@@ -114,16 +115,17 @@ for (int i = 1; i <= 3; i++) {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>11.3</b> while Loop
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Used when the <b>number of iterations is unknown</b>, but depends on a condition. <br />
+            Used when the <b>number of iterations is unknown</b>, but depends on
+            a condition. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code2} />
+            <CodeBlock language='java' filename='java' code={code2} />
             <br />
             👉 Condition is checked <b>before execution</b>.
           </div>
@@ -133,16 +135,17 @@ for (int i = 1; i <= 3; i++) {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>11.4</b> do-while Loop
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Executes the block <b>at least once</b>, even if condition is false. <br />
+            Executes the block <b>at least once</b>, even if condition is false.{' '}
             <br />
-            <CodeBlock language="java" filename="java" code={code3} />
+            <br />
+            <CodeBlock language='java' filename='java' code={code3} />
             <br />
             👉 Condition is checked <b>after execution</b>.
           </div>
@@ -152,7 +155,7 @@ for (int i = 1; i <= 3; i++) {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -161,7 +164,7 @@ for (int i = 1; i <= 3; i++) {
           <div className='max-w-3xl mx-auto text-gray-300'>
             Simpler way to iterate over arrays or collections. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code4} />
+            <CodeBlock language='java' filename='java' code={code4} />
             <br />
             👉 Automatically iterates through elements.
           </div>
@@ -171,7 +174,7 @@ for (int i = 1; i <= 3; i++) {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -180,7 +183,7 @@ for (int i = 1; i <= 3; i++) {
           <div className='max-w-3xl mx-auto text-gray-300'>
             Possible if condition never becomes false. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code5} />
+            <CodeBlock language='java' filename='java' code={code5} />
           </div>
         </motion.div>
 
@@ -188,22 +191,25 @@ for (int i = 1; i <= 3; i++) {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>11.7</b> break Statement
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Used to <b>exit the loop immediately</b>, regardless of condition. <br />
+            Used to <b>exit the loop immediately</b>, regardless of condition.{' '}
+            <br />
             <br />
             <b>Example: Exit loop when number is 3</b>
-            <CodeBlock language="java" filename="java" code={code6} />
+            <CodeBlock language='java' filename='java' code={code6} />
             <br />
             <b>Output:</b>
-            <CodeBlock language="" filename="" code={code7} />
+            <CodeBlock language='' filename='' code={code7} />
             <br />
-            👉 After <span className='bg-neutral-800 px-2 rounded-lg'>break</span>, control moves <b>outside</b> the loop.
+            👉 After{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>break</span>,
+            control moves <b>outside</b> the loop.
           </div>
         </motion.div>
 
@@ -211,22 +217,26 @@ for (int i = 1; i <= 3; i++) {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>11.8</b> continue Statement
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            Used to <b>skip the current iteration</b> and move to the next one. <br />
+            Used to <b>skip the current iteration</b> and move to the next one.{' '}
+            <br />
             <br />
             <b>Example: Skip number 3</b>
-            <CodeBlock language="java" filename="java" code={code8} />
+            <CodeBlock language='java' filename='java' code={code8} />
             <br />
             <b>Output:</b>
-            <CodeBlock language="" filename="" code={code9} />
+            <CodeBlock language='' filename='' code={code9} />
             <br />
-            👉 <span className='bg-neutral-800 px-2 rounded-lg'>continue</span> does <b>not exit</b> the loop, only skips current iteration.
+            👉 <span className='bg-neutral-800 px-2 rounded-lg'>
+              continue
+            </span>{' '}
+            does <b>not exit</b> the loop, only skips current iteration.
           </div>
         </motion.div>
 
@@ -234,7 +244,7 @@ for (int i = 1; i <= 3; i++) {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -244,9 +254,13 @@ for (int i = 1; i <= 3; i++) {
             Useful for <b>nested loops</b>. <br />
             <br />
             <b>Example: Skip number 3</b>
-            <CodeBlock language="java" filename="java" code={code10} />
+            <CodeBlock language='java' filename='java' code={code10} />
             <br />
-            👉 <span className='bg-neutral-800 px-2 rounded-lg'>break outer;</span> exits <b>both loops</b>.
+            👉{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>
+              break outer;
+            </span>{' '}
+            exits <b>both loops</b>.
           </div>
         </motion.div>
 
@@ -254,25 +268,32 @@ for (int i = 1; i <= 3; i++) {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>11.10</b> Key Takeaways
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>for</span> → best for known iterations. <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>while</span> → best when condition decides continuation. <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>do-while</span> → executes at least once. <br />
+            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>for</span>{' '}
+            → best for known iterations. <br />
+            <b>•</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>while</span> → best
+            when condition decides continuation. <br />
+            <b>•</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>do-while</span> →
+            executes at least once. <br />
             <b>•</b> <b>Enhanced for</b> → used for arrays/collections. <br />
             <b>•</b> Beware of <b>infinite loops</b>. <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>break</span> → exits loop completely. <br />
-            <b>•</b> <span className='bg-neutral-800 px-2 rounded-lg'>continue</span> → skips current iteration, loop continues. <br />
+            <b>•</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>break</span> →
+            exits loop completely. <br />
+            <b>•</b>{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>continue</span> →
+            skips current iteration, loop continues. <br />
             <b>•</b> Labeled versions help with <b>nested loops</b>.
           </div>
         </motion.div>
-
-        
       </div>
     </main>
   )

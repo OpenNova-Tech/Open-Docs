@@ -29,7 +29,7 @@ export default function page() {
     { type: 'float, double', default: '0.0' },
     { type: 'char', default: `'\\u0000'` },
     { type: 'boolean', default: 'false' },
-    { type: 'object references', default: 'null' }
+    { type: 'object references', default: 'null' },
   ]
 
   const code1 = `int age = 20;
@@ -78,19 +78,20 @@ int x = (int) d; // double to int`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow duration-150 ease-out bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
             <b className='text-[#b07219]'>8.1</b> What is a Variable?
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
-            <b>•</b> A <b>variable</b> is a named memory location used to store values. <br />
+            <b>•</b> A <b>variable</b> is a named memory location used to store
+            values. <br />
             <b>•</b> It must be declared with a <b>type</b> before use. <br />
             <br />
             Example:
             <br />
-            <CodeBlock language="java" filename="java" code={code1} />
+            <CodeBlock language='java' filename='java' code={code1} />
           </div>
         </motion.div>
 
@@ -98,7 +99,7 @@ int x = (int) d; // double to int`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -106,11 +107,15 @@ int x = (int) d; // double to int`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             Java has three main kinds of variables: <br />
-            1. <b>Local Variables</b> - Declared inside methods/blocks, destroyed after use. <br />
-            2. <b>Instance Variables</b> - Declared inside a class but outside methods, each object has its own copy. <br />
-            3. <b>Static Variables</b> - Declared with <span className='bg-neutral-800 px-2 rounded-lg'>static</span> keyword, shared among all objects of the class. <br />
+            1. <b>Local Variables</b> - Declared inside methods/blocks,
+            destroyed after use. <br />
+            2. <b>Instance Variables</b> - Declared inside a class but outside
+            methods, each object has its own copy. <br />
+            3. <b>Static Variables</b> - Declared with{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>static</span>{' '}
+            keyword, shared among all objects of the class. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code2} />
+            <CodeBlock language='java' filename='java' code={code2} />
           </div>
         </motion.div>
 
@@ -118,7 +123,7 @@ int x = (int) d; // double to int`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -141,7 +146,11 @@ int x = (int) d; // double to int`
               <TableBody>
                 {table.map((content) => (
                   <TableRow key={content.feature}>
-                    <TableCell><span className='bg-neutral-800 px-2 rounded-lg'>{content.feature}</span></TableCell>
+                    <TableCell>
+                      <span className='bg-neutral-800 px-2 rounded-lg'>
+                        {content.feature}
+                      </span>
+                    </TableCell>
                     <TableCell>{content.git}</TableCell>
                     <TableCell>{content.central}</TableCell>
                   </TableRow>
@@ -152,9 +161,11 @@ int x = (int) d; // double to int`
             <b>B. Non-Primitive Data Types</b> <br />
             <b>•</b> More complex, created from classes. <br />
             <br />
-            Examples: <span className='bg-neutral-800 px-2 rounded-lg'>String</span>, arrays, objects, user-defined classes. <br />
+            Examples:{' '}
+            <span className='bg-neutral-800 px-2 rounded-lg'>String</span>,
+            arrays, objects, user-defined classes. <br />
             <br />
-            <CodeBlock language="java" filename="java" code={code3} />
+            <CodeBlock language='java' filename='java' code={code3} />
           </div>
         </motion.div>
 
@@ -162,19 +173,20 @@ int x = (int) d; // double to int`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
-            <b className='text-[#b07219]'>8.4</b> Variable Declaration and Initialization
+            <b className='text-[#b07219]'>8.4</b> Variable Declaration and
+            Initialization
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> Declaration: <br />
-            <CodeBlock language="java" filename="java" code={code4} /> <br />
+            <CodeBlock language='java' filename='java' code={code4} /> <br />
             <b>•</b> Initialization: <br />
-            <CodeBlock language="java" filename="java" code={code5} /> <br />
+            <CodeBlock language='java' filename='java' code={code5} /> <br />
             <b>•</b> Combined: <br />
-            <CodeBlock language="java" filename="java" code={code6} />
+            <CodeBlock language='java' filename='java' code={code6} />
           </div>
         </motion.div>
 
@@ -182,7 +194,7 @@ int x = (int) d; // double to int`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -190,7 +202,8 @@ int x = (int) d; // double to int`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> Instance and static variables get default values. <br />
-            <b>•</b> Local variables <b>do not</b> (must be explicitly initialized). <br />
+            <b>•</b> Local variables <b>do not</b> (must be explicitly
+            initialized). <br />
             <br />
             <Table>
               <TableHeader>
@@ -215,7 +228,7 @@ int x = (int) d; // double to int`
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -225,9 +238,9 @@ int x = (int) d; // double to int`
             Java supports <b>type conversion</b> between data types: <br />
             <br />
             <b>•</b> <b>Implicit Casting (Widening)</b>: Smaller → Larger type.
-            <CodeBlock language="java" filename="java" code={code7} /> <br />
+            <CodeBlock language='java' filename='java' code={code7} /> <br />
             <b>•</b> <b>Explicit Casting (Narrowing)</b>: Larger → Smaller type.
-            <CodeBlock language="java" filename="java" code={code8} />
+            <CodeBlock language='java' filename='java' code={code8} />
           </div>
         </motion.div>
 
@@ -235,7 +248,7 @@ int x = (int) d; // double to int`
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.03,  }}
+          whileHover={{ scale: 1.03 }}
           className='shadow-[#b07219] border border-[#b07219]/15 rounded-2xl shadow-lg p-8 transition-shadow bg-black hover:shadow-2xl'
         >
           <h2 className='text-2xl font-bold mb-4 text-gray-100'>
@@ -243,14 +256,16 @@ int x = (int) d; // double to int`
           </h2>
           <div className='max-w-3xl mx-auto text-gray-300'>
             <b>•</b> Java variables must have a <b>declared type</b>. <br />
-            <b>•</b> Two categories: <b>Primitive</b> (8 types) and <b>Non-Primitive</b> (Strings, arrays, objects). <br />
-            <b>•</b> Three variable types: <b>local, instance, static</b>. <br />
-            <b>•</b> Default values apply only to instance/static variables, not locals. <br />
-            <b>•</b> Type casting allows conversion between compatible data types.
+            <b>•</b> Two categories: <b>Primitive</b> (8 types) and{' '}
+            <b>Non-Primitive</b> (Strings, arrays, objects). <br />
+            <b>•</b> Three variable types: <b>local, instance, static</b>.{' '}
+            <br />
+            <b>•</b> Default values apply only to instance/static variables, not
+            locals. <br />
+            <b>•</b> Type casting allows conversion between compatible data
+            types.
           </div>
         </motion.div>
-
-      
       </div>
     </main>
   )

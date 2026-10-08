@@ -1,9 +1,11 @@
 # Java
+
 Contains information about the modules and topics of the information about Java.
 
 ## Core Concepts and Setups
 
 ### 1. Introduction to Java
+
 - What is Java?
 - Why one should learn Java?
 - Where Java is used?
@@ -11,6 +13,7 @@ Contains information about the modules and topics of the information about Java.
 - Real World usages
 
 ### 2. History of Java
+
 - Origins of Java
 - Timeline of Java versions
 - Acquisition and Stewardship
@@ -26,6 +29,7 @@ Contains information about the modules and topics of the information about Java.
 ## Syntax and Building Blocks
 
 ### 6. Java Syntax Basics
+
 - Structure of a Java Program
 - Case Sensitivity
 - Statements and Semicolons
@@ -35,6 +39,7 @@ Contains information about the modules and topics of the information about Java.
 - Whitespaces
 
 ### 7. Variables and Data Types
+
 - What is a variable?
 - Types of Variables
 - Data Types in Java
@@ -43,6 +48,7 @@ Contains information about the modules and topics of the information about Java.
 - Type Casting
 
 ### 8. Operators
+
 - Arithmatic Operators
 - Unary Operators
 - Relational Operators
@@ -54,6 +60,7 @@ Contains information about the modules and topics of the information about Java.
 - Operators Precedence
 
 ### 9. Conditionals
+
 - if Statement
 - if-else Statement
 - if-else-if Ladder
@@ -61,6 +68,7 @@ Contains information about the modules and topics of the information about Java.
 - switch Statement
 
 ### 10. Loops
+
 - What are loops?
 - for Loop
 - while Loop
@@ -72,6 +80,7 @@ Contains information about the modules and topics of the information about Java.
 - Labeled break and continue
 
 ### 11. Exception Basics
+
 - What are exceptions?
 - Exception Hierarchy
 - Try-Catch Block
@@ -82,6 +91,7 @@ Contains information about the modules and topics of the information about Java.
 ## Object Oriented Programming
 
 ### 12. Classes and Objects
+
 - What are classes and objects?
 - Creating objects
 - Class members
@@ -90,6 +100,7 @@ Contains information about the modules and topics of the information about Java.
 - Memory Allocation for objects
 
 ### 13. Constructors
+
 - What are constructors?
 - Types of Constructors
 - Constructor overloading
@@ -97,6 +108,7 @@ Contains information about the modules and topics of the information about Java.
 - Instance Initialization Blocks (IIB)
 
 ### 14. Inheritance
+
 - What is Inheritance?
 - Syntax of inheritance
 - Types of Inheritance in Java
@@ -106,6 +118,7 @@ Contains information about the modules and topics of the information about Java.
 - Constructors and Inheritance
 
 ### 15. Polymorphism
+
 - What is Polymorphism?
 - Types of Polymorphism
 - Compile-time Polymorphism (Method Overloading)
@@ -115,6 +128,7 @@ Contains information about the modules and topics of the information about Java.
 - Cannot overload by return type alone
 
 ### 16. Abstraction
+
 - What is Abstraction?
 - Abstract Classes
 - Interfaces
@@ -123,6 +137,7 @@ Contains information about the modules and topics of the information about Java.
 - Why use Abstraction
 
 ### 17. Encapsulation
+
 - What is Encapsulation?
 - How it works?
 - Benefits of Encapsulation
@@ -131,12 +146,14 @@ Contains information about the modules and topics of the information about Java.
 - Encapsulation vs Abstraction
 
 ### 18. this & super
+
 - this Keyword
 - super Keyword
 - this vs super
 - Key Rules
 
 ### 19. Static and Instance
+
 - Instance members
 - Static members
 - Key differences
