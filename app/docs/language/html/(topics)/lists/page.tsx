@@ -58,27 +58,27 @@ const code8 = `<nav>
   </ul>
 </nav>`
 
-const code9 = `<a href="https://example.com">Visit</a>`
+// const code9 = `<a href="https://example.com">Visit</a>`
 
-const code10 = `<p id="intro" class="highlight">Text</p>`
+// const code10 = `<p id="intro" class="highlight">Text</p>`
 
-const code11 = `<input type="text" required>`
+// const code11 = `<input type="text" required>`
 
-const code12 = `required="required"`
+// const code12 = `required="required"`
 
-const code13 = `<p><strong>Hello</strong></p>`
+// const code13 = `<p><strong>Hello</strong></p>`
 
-const code14 = `<p><strong>Hello</p></strong>`
+// const code14 = `<p><strong>Hello</p></strong>`
 
-const code15 = `data-*`
+// const code15 = `data-*`
 
-const code16 = `<div data-user-id="123"></div>`
+// const code16 = `<div data-user-id="123"></div>`
 
-const code17 = `element.dataset.userId`
+// const code17 = `element.dataset.userId`
 
-const code18 = `<P>Hello</P>`
+// const code18 = `<P>Hello</P>`
 
-const code19 = `<p>Hello</p>`
+// const code19 = `<p>Hello</p>`
 
 
 
