@@ -39,41 +39,41 @@ export default function Page() {
 
 	const code11 = `<a href="#main-title">Go to Title</a>`
 
-	const code12 = `<p class="card">Text</p>
-<p class="card">Another</p>`
+// 	const code12 = `<p class="card">Text</p>
+// <p class="card">Another</p>`
 
-	const code13 = `.card {
-  border: 1px solid black;
-}`
+// 	const code13 = `.card {
+//   border: 1px solid black;
+// }`
 
-	const code14 = `<div class="card active large"></div>`
+// 	const code14 = `<div class="card active large"></div>`
 
-	const code15 = `<div data-user-id="42" data-role="admin"></div>`
+// 	const code15 = `<div data-user-id="42" data-role="admin"></div>`
 
-	const code16 = `element.dataset.userId
-element.dataset.role`
+// 	const code16 = `element.dataset.userId
+// element.dataset.role`
 
-	const code17 = `<input type="text" required>`
+// 	const code17 = `<input type="text" required>`
 
-	const code18 = `<input type="text" required="required">`
+// 	const code18 = `<input type="text" required="required">`
 
-	const code19 = `<p title="Hello"></p>`
+// 	const code19 = `<p title="Hello"></p>`
 
-	const code20 = `<a href="https://example.com"></a>`
+// 	const code20 = `<a href="https://example.com"></a>`
 
-	const code21 = `<img width="300">`
+// 	const code21 = `<img width="300">`
 
-	const code22 = `<input required>`
+// 	const code22 = `<input required>`
 
-	const code23 = `class="box"`
+// 	const code23 = `class="box"`
 
-	const code24 = `class=box`
+// 	const code24 = `class=box`
 
-	const code25 = `<img src="image.jpg" alt="Photo" width="300">`
+// 	const code25 = `<img src="image.jpg" alt="Photo" width="300">`
 
-	const code26 = `<div user="123"></div>`
+// 	const code26 = `<div user="123"></div>`
 
-	const code27 = `<div data-user="123"></div>`
+// 	const code27 = `<div data-user="123"></div>`
 
 	return (
 		<main className='pt-32 bg-black py-12 px-6'>

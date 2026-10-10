@@ -67,35 +67,35 @@ td, th {
   <caption>User Data</caption>
 </table>`
 
-	const code9 = `.table-container {
-  overflow-x: auto;
-}`
+// 	const code9 = `.table-container {
+//   overflow-x: auto;
+// }`
 
-	const code10 = `<a href="mailto:example@email.com">Send Email</a>`
+// 	const code10 = `<a href="mailto:example@email.com">Send Email</a>`
 
-	const code11 = `<a href="tel:+1234567890">Call Now</a>`
+// 	const code11 = `<a href="tel:+1234567890">Call Now</a>`
 
-	const code12 = `<a href="#section1">Go to Section 1</a>
+// 	const code12 = `<a href="#section1">Go to Section 1</a>
 
-<h2 id="section1">Section 1</h2>`
+// <h2 id="section1">Section 1</h2>`
 
-	const code13 = `<img src="image.jpg" alt="Description">`
+// 	const code13 = `<img src="image.jpg" alt="Description">`
 
-	const code14 = `<img src="images/photo.jpg" alt="Photo">`
+// 	const code14 = `<img src="images/photo.jpg" alt="Photo">`
 
-	const code15 = `<img src="https://example.com/photo.jpg" alt="Photo">`
+// 	const code15 = `<img src="https://example.com/photo.jpg" alt="Photo">`
 
-	const code16 = `<img src="/assets/photo.jpg" alt="Photo">`
+// 	const code16 = `<img src="/assets/photo.jpg" alt="Photo">`
 
-	const code17 = `<img src="logo.png" alt="Company Logo">`
+// 	const code17 = `<img src="logo.png" alt="Company Logo">`
 
-	const code18 = `<img src="photo.jpg" alt="Photo" width="300" height="200">`
+// 	const code18 = `<img src="photo.jpg" alt="Photo" width="300" height="200">`
 
-	const code19 = `<a href="index.html">
-  <img src="logo.png" alt="Home">
-</a>`
+// 	const code19 = `<a href="index.html">
+//   <img src="logo.png" alt="Home">
+// </a>`
 
-	const code20 = `<img src="photo.jpg" alt="Photo" loading="lazy">`
+// 	const code20 = `<img src="photo.jpg" alt="Photo" loading="lazy">`
 
 
 
@@ -228,7 +228,7 @@ td, th {
 						Benefits: <br />
 						<b>•</b> Improves readability <br />
 						<b>•</b> Helps screen readers <br />
-						<b>•</b> Enables better styling and scripting 
+						<b>•</b> Enables better styling and scripting
 					</div>
 				</motion.div>
 
@@ -318,7 +318,7 @@ td, th {
 						<br />
 						Screen readers: <br />
 						<b>•</b> Use headers to interpret data relationships. <br />
-						<b>•</b> Navigate row-by-row or column-by-column. 
+						<b>•</b> Navigate row-by-row or column-by-column.
 					</div>
 				</motion.div>
 
@@ -342,7 +342,7 @@ td, th {
 						Tables should be: <br />
 						<b>•</b> Clear <br />
 						<b>•</b> Logical <br />
-						<b>•</b> Accessible 
+						<b>•</b> Accessible
 					</div>
 				</motion.div>
 
